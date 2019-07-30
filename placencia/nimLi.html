@@ -1,0 +1,202 @@
+<!doctype html/> 
+
+<head>
+        <title> Nim Li Punit Mayan Ruins Tour </title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<nav id="navbar"> 
+        <div class = "container"> 
+            <ul>
+                <li> 
+                    <button class="blueButton">
+                        <a href="index.html">Home</a>
+                    </button>
+                </li>
+                <li>
+                    <button class="redButton">
+                        <a href="#">About </a>
+                    </button>
+                </li> 
+                <li style="color:rgb(16, 154, 43)"> 
+                    
+                    <div class="dropdown">
+                        <button class="dropbtn">Tours</button>
+                        <div class="dropdown-content">
+                          <a href="allTours.html">All Tours</a>
+                          <a href="nimLi.html">Nim Li Punit Mayan Ruins</a>
+                          <a href="lubaantun.html">Lubaantun Mayan Ruins</a>
+                          <a href="#">Spice Farm</a>
+                          <a href="#">River Tubing</a>
+                          <a href="#">Waterfall Sightseeing</a>
+                          <a href="#">Inland Blue Hole & Cave</a>
+                        </div>
+                    </div>
+                
+                </li>
+                <li>
+                        <button class="orangeButton">
+                                <a href="#">Contact </a>
+                        </button>
+            </ul>
+        </div>
+    </nav>
+
+<nav id="navBorder">
+    a
+</nav>
+
+<body> 
+
+
+<div class="slideshow-container"> 
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img class="slideImage" src="images/kat1.jpg"> <!-- you could do "style=width:100% if you want"--> 
+          <div class="text">Caption Text</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img class="slideImage" src="images/kat2.jpg" >
+          <div class="text">Caption Two</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img class="slideImage" src="images/kat3.jpg"  >
+          <div class="text">Caption Three</div>
+        </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<div style="display:inline-block;justify-content: center;display:flex;margin-top:10px;">
+    <span class="dot" onclick="currentSlide(1)">
+        <image src="images/kat1.jpg" height=50px width=50px></image>
+    </span> 
+    <span class="dot" onclick="currentSlide(2)">
+        <image src="images/kat2.jpg" height=50px width=50px></image>
+    </span> 
+    <span class="dot" onclick="currentSlide(3)">
+         <image src="images/kat3.jpg" height=50px width=50px></image>
+    </span> 
+</div>
+
+<br>
+      
+<script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+</script>
+
+<span style="color:rgb(23, 123, 211);font-size:40px;padding-left:20px;padding-top:30px;margin-left:70px;padding-bottom:100px;">Nim Li Punit Mayan Ruins</span>
+
+<div class="textGridContainer">
+        <div class="textGridItemThicccc">
+                Well known for the large amount of stelae found at this site. When visiting you can expect to see remnants of the ancient mayan culture that is depicted on the 20+ stele found at this particular site. These stelae commemorate the ancient royalty, culture and general records of the site.    
+        </div>
+
+        <div class="textGridItemThicc">
+           This includes:
+           <ul> 
+               <li> Food </li> 
+               <li> Transport </li>
+               <li> Water </li>
+           </ul>
+        </div>
+
+        <div class="textGridItemThicc">   
+            You should bring: 
+            <ul> 
+                <li> Skin </li>
+                <li> Sunscreen </li>
+                <li> A hat </li>
+                <li> A wallet </li>
+            </ul>
+        </div>
+
+        <div class="textGridItemThicccc">
+            Pricing: 
+        </div>
+
+        <div class=textGridItem>
+            This
+        </div>
+
+        <div class=textGridItem> 
+            This
+        </div>
+
+        <div class=textGridItem>
+            This
+        </div>
+
+        <br> 
+        <div class="textGridItem">
+            +
+        </div>
+
+        <div class=textGridItem>
+            +
+        </div>
+
+        <br>
+
+        <div class=textGridItem>That</div>
+
+        <div class=textGridItem>That</div>
+
+        <div class=textGridItem></div>
+
+        <br> 
+ 
+</div>
+
+<a href="purchaseForm.html"><button class="bookThisButton">Book This</button></a>
+
+
+
+</body>
+
+<nav id="navBorderTop">
+        a
+    </nav>
+
+<nav id="navbar"> 
+        <div class = "container"> 
+            <ol>
+                
+                <li style="color:rgb(23, 123, 211)"> <a href="https://www.linkedin.com/in/ianfeekes/" target = "_blank"><img src="images/insta.png" width="50" height="50"/> </a></li>
+                <li style="color:rgb(16, 154, 43)"> <a href="https://www.facebook.com/pages/category/Tour-Agency/Placencia-Action-Tours-537314880112426/" target="_blank"> <img src="images/facebook.png" width="50" height="50"/> </a></li>
+                <li style="color:rgb(16, 154, 43)"> <a href="https://www.facebook.com/pages/category/Tour-Agency/Placencia-Action-Tours-537314880112426/" target="_blank"> <img src="images/whatsapp.png" width="50" height="50"/> </a></li>
+                <li style="color:rgb(16, 154, 43)"> <a href="https://www.facebook.com/pages/category/Tour-Agency/Placencia-Action-Tours-537314880112426/" target="_blank"> <img src="images/viber.png" width="50" height="50"/> </a></li>
+            </ol>
+        </div>
+    </nav>
+

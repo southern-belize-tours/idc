@@ -1,0 +1,795 @@
+*{
+
+}
+
+body
+{
+	 /* background-size:     cover; */                     /* This and the next line are added code to make the image not repeat */
+    /*background-repeat:   no-repeat;*/
+    background-size: auto;
+
+    background-color: rgb(238, 219, 238); 
+
+
+	/*background-color: black;*/ /*I want this to be a cool image*/ 
+	color: rgb(46, 44, 44);
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 16;
+	line-height: 1.6em;
+    margin: 0px;
+}
+
+p
+{
+    margin-top: 20px; 
+	margin-bottom: 20px; 
+	margin-left:70px; 
+	margin-right: 70px; 
+}
+
+.homePageInfo
+{
+    padding-left: 30px;
+}
+
+#navBorderTop
+{
+    height:2px; 
+    font-size: 1; 
+    color: rgb(255,255,255); 
+	background-color: rgb(0, 0, 0);
+    margin-top: 20px; 
+}
+
+#navBorder
+{
+    height:2px; 
+    font-size: 1; 
+    color: rgb(255,255,255); 
+    background-color: rgb(0, 0, 0);
+	margin-bottom: 25px;
+}
+
+#rightPic
+{
+	float: right;
+	padding-top: none;
+}
+
+.container
+{
+    width:80%;
+    padding-left: 0px; 
+    padding-right: 0px; 
+    margin-left: 0px; 
+    margin-right: 0px; 
+	/*margin-bottom: 20px;*/ /*was auto*/
+	overflow: hidden;  
+}
+
+.container h2
+{
+	float: left;
+}
+
+#mainHeader
+{
+	color: white;
+}
+
+#icons ul
+{
+	padding: 0;
+	list-style: none;
+}
+
+#icons li
+{
+	display:inline; 
+	padding-right: 13%;
+}
+
+#icons a
+{
+	text-decoration: none;
+	font-size: 18px;
+	padding-right: 15px;
+}
+
+#contactList
+{
+    padding-left: 10px;
+}
+
+#contactList span
+{
+	font-size: 20; 
+	font-weight: bold; 
+}
+
+#contactList li
+{
+    margin-right: 10px; 
+    padding-left: 20px; 
+}
+
+#navbar
+{
+	background-color: rgb(225, 225, 116);
+}
+
+#navbar ul
+{
+	padding: 0;
+	margin-top: -3px; 
+	margin-bottom: -3px; 
+	list-style: none;
+}
+
+#navbar ol 
+{
+	margin-left: 20px; 
+	padding: 0; 
+	margin-top: 10px; 
+	margin-bottom:0px; 
+	list-style: none; 
+}
+
+#navbar li
+{ 
+	display: inline; /*this is cool it displays the list items on the same line*/
+    padding-top: none; 
+	padding-bottom: none; 
+	margin-left: -4px; 
+	margin-right: -4px; 
+}
+
+.blueButton
+{
+	background-color: rgb(225, 225, 116);
+	padding: 20px;  
+	padding-bottom: 25px;
+	border: none;
+}
+
+.blueButton a
+{
+	color:rgb(23, 123, 211); 
+	font-size: 16px;
+}
+
+.blueButton:hover
+{
+	background-color: rgb(23, 123, 211); 
+}
+
+.blueButton:hover a
+{
+	color: rgb(225, 225, 116);
+}
+
+.redButton
+{
+	background-color: rgb(225, 225, 116);
+	padding: 20px;  
+	padding-bottom: 25px;
+	border: none;
+}
+
+.redButton a
+{
+	color:rgb(222, 60, 71); 
+	font-size: 16px;
+}
+
+.redButton:hover
+{
+	background-color: rgb(222,60,71); 
+}
+
+.redButton:hover a
+{
+	color: rgb(225, 225, 116);
+}
+
+.orangeButton
+{
+	background-color: rgb(225, 225, 116);
+	padding: 20px;  
+	padding-bottom: 25px;
+	border: none;
+}
+
+.orangeButton a
+{
+	color:rgb(227, 159, 42); 
+	font-size: 16px;
+}
+
+.orangeButton:hover
+{
+	background-color: rgb(227, 159, 42); 
+}
+
+.orangeButton:hover a
+{
+	color: rgb(225, 225, 116);
+}
+
+#navbar a
+{
+	/*color: white; */ 
+	text-decoration: none;
+    font-size: 18px;
+	padding-right: 15px; /*this will separate them when the list items are displayed net to eachother so that they are not so close together PRO COMMMENT */ 
+}
+
+#main
+{
+
+	padding: 2%;
+	background-color: #f4f4f4;
+	float: left;
+	width: 70%;
+
+
+	/*padding: 0 30px; */
+	/*box-sizing: border-box;*/
+
+}
+
+#sidebar
+{
+	float: right;
+	width: 30%;
+	background: #333;
+	color: white;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+
+.dropbtn {
+	background-color: rgb(225, 225, 116);
+	color: rgb(16, 154, 43);
+	font-size:16; 
+	padding: 20px;  
+	padding-bottom: 25px;
+	padding-top: 21px; 
+	border: none;
+  }
+
+  
+  .dropdown {
+	/*position: relative; */ 
+	display: inline-block;
+	position: sticky; 
+  }
+  
+  .dropdown-content {
+	margin-top: -2px;  
+	margin-left: 2px; 
+	display: none;  
+	position: absolute; 
+	background-color:rgb(225, 225, 116); 
+	min-width: 160px;
+	z-index: 1;
+  }
+  
+  .dropdown-content a {
+	color: rgb(16, 154, 43);
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+  }
+
+.dropdown-content a:hover {
+	background-color: rgb(16, 154, 43);
+	color: rgb(225, 225, 116);}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: rgb(16, 154, 43); color:rgb(225, 225, 116);}
+
+.textGridContainer{
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+	grid-template-columns: repeat(4, 1fr);
+    display: grid;
+    grid-column-gap: 1rem; 
+    grid-row-gap: 1rem; 
+	/*grid-gap: 2rem; */ 
+
+}
+
+.textGridContainerSix{
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+	grid-template-columns: repeat(6, 1fr);
+    display: grid;
+    grid-column-gap: 1rem; 
+    grid-row-gap: 1rem; 
+	/*grid-gap: 2rem; */ 
+
+}
+
+.textGridItem, .textGridItemThicc, .textGridItemThicccc {
+	background-color: None; /*rgb(200,200,200); */ 
+	border: 3px solid rgba(0, 0, 0, 0.8);
+	border-radius: 3px; 
+	font-size: 16px; 
+
+
+  }
+
+  .textGridItem input, .textGridItem select{
+      float: right;
+      max-width: 47%; 
+  }
+
+  .textGridItemThicc{
+	  grid-column: span 2; 
+  }
+
+  .textGridItemThicccc {
+    grid-column: span 4;
+  }
+
+.grid-container {
+  display: grid;
+  grid-column-gap: 1rem; 
+  grid-row-gap: 1rem; 
+	grid-template-columns: auto auto auto;
+  margin-bottom:1rem; 
+  margin-top:1rem; 
+  margin-left: 5rem; 
+	justify-content: space-evenly;  
+  }
+
+.grid-item {
+	background-color: none; 
+	/*border: 1px solid rgba(0, 0, 0, 0.8);*/ 
+	max-width:200px; 
+    max-height:150px; 
+
+	border: none; 
+	/*padding: 20px;  
+	font-size: 20;*/ 
+	text-align: center; 
+  }
+
+  .grid-image{
+
+      height: 100%; 
+      width: 100%; 
+  }
+
+  .grid-item a{
+	  font-size: 20; 
+	  text-decoration: none; 
+	  /*background-color: rgba(255, 255, 255, 0.8);
+	  border: 1px solid rgba(0, 0, 0, 0.8);*/
+  }
+
+
+  .grid-item p
+  {
+	  font-size: 16; 
+  }
+
+  .grid-item:hover 
+  {
+	-webkit-filter: brightness(70%); 
+	color: rgb(23, 123, 211)
+	/*-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	transition: all 1s ease;*/
+  }
+
+  .mySlides {display: grid;}
+  
+  /* Slideshow container */
+  .slideshow-container {
+
+	margin: auto; 
+	margin-top: -25px; 		/*The navbar has a 25px margin we don't want*/ 
+	margin-bottom: 2%; 
+}
+
+  .slideImage{
+	  height:75%; 
+	  width:100%; 
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+	  padding-left: 2%; 
+	  padding-right: 2%; 
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+	right: 0; 
+	border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+	background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+	color: #f2f2f2;
+	font-size: 15px;
+	width: 100%; 
+	padding: 8px 12px;
+	bottom: 15%; 
+	position: absolute; 
+	text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+ 
+	/*cursor: pointer;*/ 
+	height: 50px;
+	width: 50px;
+	margin: 0 4px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+	background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+  }
+  
+.bookThisButton{
+	margin-left: 70px; 
+}
+
+.reservationForms
+{
+	margin-left: 70px; 
+	margin-right: 70px; 
+	margin-top: 30px; 
+}
+
+
+:checked + .checklistContainer:before {
+    background-image: "images/kat2.jpg";
+}
+
+.checklistContainer:before {
+    background-image: "images/kat3.jpg";
+}
+
+
+.checklistContainer {
+    margin:none; padding:none; 
+    color: rgba(255, 255, 255, 0); 
+
+  position: relative;  
+  /*padding-left: 35px;
+  margin-bottom: 12px;   */ 
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.checklistContainer input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  /*height: 0;
+  width: 0; */ 
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin:none;
+  padding:none; 
+  
+
+  /*background-color: #eee; */ 
+}
+
+/* On mouse-over, add a grey background color */
+.checklistContainer:hover input ~ .checkmark {
+  /*background-color: rgb(176, 212, 225); */ 
+}
+
+/* When the checkbox is checked, add a blue background */
+.checklistContainer input:checked ~ .checkmark {
+  /*background-color: #2196F3; */ 
+  -webkit-filter: brightness(70%); 
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checklistContainer input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checklistContainer .checkmark:after {
+  /*left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px; */
+  top:0px;left:0px; 
+  width:100%; 
+  height:100%; 
+  /*background-color: rgb(176, 212, 225); */
+  
+  -webkit-filter: brightness(70%); 
+
+  border-width: 0 3px 3px 0;
+ /* -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);   */ 
+}
+
+.custom-select {
+    display: inline-block; 
+    float:right; 
+    position: relative;
+    font-family: Arial;
+}
+
+  .custom-select select {
+    display: none; /*hide original SELECT element:*/
+  }
+  
+  .select-selected {
+    background-color: rgb(23, 123, 211);
+    /*color: #ffff; */ 
+  }
+  
+  /*style the arrow inside the select element:*/
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top:50%; 
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+  }
+
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    /*top: 7px;*/
+    top:5px; 
+  }
+
+
+  /*style the items (options), including the selected item:*/
+  .select-items div,.select-selected {
+    color: #ffffff;
+    padding-left:16px;
+    padding-right:16px; 
+    /*padding: 8px 16px;*/ 
+    /*border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent; */
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  /*style items (options):*/
+  .select-items {
+    position: absolute;
+    background-color: rgb(23, 123, 211);
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  
+  /*hide the items when the select box is closed:*/
+  .select-hide {
+    display: none;
+  }
+  
+  .select-items div:hover{
+    background-color: #ffffff;  
+    color: rgb(23, 123, 211,)
+  }
+  
+  .select-items div:hover{
+    color: rgb(23, 123, 211)
+  }  
+
+
+/*anything in here must be under 600 px*/ 
+@media(max-width: 600px) 
+{
+	#main
+	{
+		width: 100%; /* makes it so that shit goes on top of eachother if the width is super restricted */ 
+		float: none; 
+	}
+}
+
+
+
+
+
+
+
+
+.fancy-checkbox-label > input[type=checkbox] {
+    position: absolute;
+    opacity: 0;
+    cursor: inherit;
+  }
+  .fancy-checkbox-label {
+    font-weight: normal;
+    cursor: pointer;
+  }
+  .fancy-checkbox:before {
+    display:none; 
+   /* font-family: FontAwesome;
+    content: "\f00c";
+    background: #fff;
+    color: transparent;
+    border: 3px solid #ddd;
+    border-radius: 3px;
+    z-index: 1;*/
+  }
+
+  input:checked + .fancy-checkbox-img + img {
+    transform: scale(1.02); 
+    -webkit-filter: brightness(50%); 
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .creditCardForm {
+    max-width: 700px;
+    background-color: #fff;
+    margin: 100px auto;
+    overflow: hidden;
+    padding: 25px;
+    color: #4c4e56;
+}
+.creditCardForm label {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.creditCardForm .heading h1 {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: #4c4e56;
+}
+.creditCardForm .payment {
+    float: left;
+    font-size: 18px;
+    padding: 10px 25px;
+    margin-top: 20px;
+    position: relative;
+}
+.creditCardForm .payment .form-group {
+    float: left;
+    margin-bottom: 15px;
+}
+.creditCardForm .payment .form-control {
+    line-height: 40px;
+    height: auto;
+    padding: 0 16px;
+}
+.creditCardForm .owner {
+    width: 63%;
+    margin-right: 10px;
+}
+.creditCardForm .CVV {
+    width: 35%;
+}
+.creditCardForm #card-number-field {
+    width: 100%;
+}
+.creditCardForm #expiration-date {
+    width: 49%;
+}
+.creditCardForm #credit_cards {
+    width: 50%;
+    margin-top: 25px;
+    text-align: right;
+}
+.creditCardForm #pay-now {
+    width: 100%;
+    margin-top: 25px;
+}
+.creditCardForm .payment .btn {
+    width: 100%;
+    margin-top: 3px;
+    font-size: 24px;
+    background-color: #2ec4a5;
+    color: white;
+}
+.creditCardForm .payment select {
+    padding: 10px;
+    margin-right: 15px;
+}
+.transparent {
+    opacity: 0.2;
+}
+@media(max-width: 650px) {
+  .creditCardForm .owner,
+  .creditCardForm .CVV,
+  .creditCardForm #expiration-date,
+  .creditCardForm #credit_cards {
+      width: 100%;
+  }
+  .creditCardForm #credit_cards {
+      text-align: left;
+  }
+}
