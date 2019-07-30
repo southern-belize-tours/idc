@@ -2,7 +2,7 @@
 
 <head>
         <title> Placencia Action Tours </title>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/homeStyle.css">
 </head>
 
 <nav id="navbar"> 
@@ -10,7 +10,7 @@
 		<ul>
             <li> 
                 <button class="blueButton">
-                    <a href="julian_site.html">Home</a>
+                    <a href="index.html">Home</a>
                 </button>
             </li>
 			<li>
@@ -49,12 +49,90 @@
 
 <body> 
 
+<div class="slideshow-container"> 
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img class="slideImage" src="images/quetz1.png"> <!-- you could do "style=width:100% if you want"--> 
+      <div class="text">Caption Text</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img class="slideImage" src="images/hammock.png" >
+      <div class="text">Caption Two</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img class="slideImage" src="images/babyTurtle.png"  >
+      <div class="text">Caption Three</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 4</div>
+        <img class="slideImage" src="images/palm.png"  >
+        <div class="text">Caption Three</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 4</div>
+        <img class="slideImage" src="images/turtle1.png" >
+        <div class="text">Caption Three</div>
+    </div>
+  
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<div style="display:inline-block;justify-content: center;display:flex;margin-top:10px;">
+<span class="dot" onclick="currentSlide(1)">
+    <image src="images/kat1.jpg" height=50px width=50px></image>
+</span> 
+<span class="dot" onclick="currentSlide(2)">
+    <image src="images/kat2.jpg" height=50px width=50px></image>
+</span> 
+<span class="dot" onclick="currentSlide(3)">
+     <image src="images/kat3.jpg" height=50px width=50px></image>
+</span> 
+</div>
+
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+</script>
+
 <div >
     <span style="color:rgb(23, 123, 211);font-size:40px;padding-left:20px;padding-top:30px">Dream.</span>
     <span style="color:rgb(222, 60, 71);font-size:40px;">Explore.</span>
     <span style="color:rgb(16, 154, 43);font-size:40px;">Discover.</span>
     <span style="color:rgb(227, 159, 42);font-size:40px;">Southern Belize.</span>
 </div>
+
 
 <p>
     Placencia Action Tours is your number one choice in tour operations when visiting the placencia peninsula. We offer tours in the southern region of Belize and with sister companies all across the country we are the most viable choice for reaching any and all of your vacation goals while visiting Beautiful Belize. We offer a variety of inland, sea and air tours and with our courteous and professional guides and drivers at your full disposal you are sure to have a wonderful time while visiting ancient Mayan ruins, beautiful nature parks and mystical cave systems.

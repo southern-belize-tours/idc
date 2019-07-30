@@ -372,12 +372,18 @@ p
 
 	margin: auto; 
 	margin-top: -25px; 		/*The navbar has a 25px margin we don't want*/ 
-	margin-bottom: 2%; 
+    margin-bottom: 2%; 
+    max-width:1300px; 
+    max-height:975px; 
+    background-image: "images/mayanPattern.jpg"
 }
 
   .slideImage{
 	  height:75%; 
-	  width:100%; 
+      width:100%;  
+      
+      height: 25%; 
+      width: 50%; 
   }
   
   /* Next & previous buttons */
@@ -435,7 +441,8 @@ p
 	margin: 0 4px;
 	background-color: #bbb;
 	border-radius: 50%;
-	display: inline-block;
+    /*display: inline-block; */
+    display:hidden; 
 	transition: background-color 0.6s ease;
   }
   
