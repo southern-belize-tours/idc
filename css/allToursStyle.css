@@ -372,16 +372,12 @@ p
 
 	margin: auto; 
 	margin-top: -25px; 		/*The navbar has a 25px margin we don't want*/ 
-    margin-bottom: 20px;  
-    max-width:1300px; 
-    max-height:975px; 
+	margin-bottom: 2%; 
 }
 
-  .slideImage{ 
-	  height:80%; 
-      width:100%; 
-      max-width:1300px; 
-      max-height:975px; 
+  .slideImage{
+	  height:75%; 
+	  width:100%; 
   }
   
   /* Next & previous buttons */
@@ -436,11 +432,10 @@ p
 	/*cursor: pointer;*/ 
 	height: 50px;
 	width: 50px;
-	margin: 0 10px;
+	margin: 0 4px;
 	background-color: #bbb;
 	border-radius: 50%;
-    /*display: inline-block; */
-    display:hidden; 
+	display: inline-block;
 	transition: background-color 0.6s ease;
   }
   
