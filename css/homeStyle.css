@@ -378,8 +378,10 @@ p
 }
 
   .slideImage{ 
-	  height:75%; 
-      width:100%;  
+	  height:80%; 
+      width:100%; 
+      max-width:1300px; 
+      max-height:975px; 
   }
   
   /* Next & previous buttons */
