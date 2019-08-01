@@ -293,18 +293,21 @@ p
 .dropdown:hover .dropbtn {background-color: rgb(16, 154, 43); color:rgb(225, 225, 116);}
 
 .textGridContainer{
-    margin: 70px; 
+    margin: 70px;     
     margin-top: 2rem; 
 	grid-template-columns: repeat(4, 1fr);
 	display: grid;
-	grid-gap: 2rem; 
+    grid-gap: 2rem; 
 
 }
 
 .textGridItem, .textGridItemThicc, .textGridItemThicccc {
-	justify-content: center; 
-	align-items: center; 
+	/*justify-content: center; 
+    align-items: center; 
+    align-items: none;  */ 
     font-size: 18;
+    padding:none; 
+    margin:none; 
   }
 
   .textGridItemTitle{
@@ -328,26 +331,56 @@ p
   }
 
   .tourText{
+      margin-top:0px; 
       list-style:none; 
-      text-align: center; 
-      font-size: 35; 
+      text-align:center;  
   }
 
-  .tourText li, .price{
+  .tourText:hover{
+    -webkit-transform:scale(1.02,1.02); 
+  }
+
+
+  .tourText:hover .tourDropdownContent{
+      display:block;
+  }
+
+  .tourText li, .price, .tourDropdownContent{
     padding: 10px; 
-    margin-bottom: 10px; 
-    background-color: rgb(225, 225, 116); 
-    text-align: center; 
+    padding-left:none; 
+    /*margin-bottom: .5rem;*/ 
+    background-color: rgb(23, 123, 211); 
+    text-align: center;  
     font-size: 27; 
+    margin-left:-40px; 
+  }
+
+  .tourDropdownContent{
+    display: none;  
+    position:sticky;
+    padding-left: 100px; 
+    padding-right:100px; 
+	background-color:rgb(225, 225, 116); 
+    z-index: 1;
+  }
+
+  .tourDropDownContent:hover{
+      -webkit-transform: scale(1.03,1.03); 
+  }
+
+  .tourText .noShow{
+    background:none; 
+    font-size:35; 
   }
 
   .price{
-    background-color: rgb(227, 159, 42);
+    background-color: rgb(225, 225, 116);
 }
 
   
 
 .grid-container {
+    margin-top: -40px; 
 	display: grid;
     padding: 10px;   
     margin-left: 20px; 
@@ -356,7 +389,7 @@ p
 	grid-column-gap: 10px; 
 	grid-row-gap: 10px; 
 
-	justify-content: space-evenly;  
+    justify-content: space-evenly;  
   }
 
 .grid-item {
@@ -371,26 +404,27 @@ p
   }
 
   .grid-item a{
-	  font-size: 16; 
-	  text-decoration: none; 
+      margin-top: 5px; 
+	  font-size: 18; 
+      text-decoration: none; 
+      color: rgb(46, 44, 44);
 	  /*background-color: rgba(255, 255, 255, 0.8);
 	  border: 1px solid rgba(0, 0, 0, 0.8);*/
-  }
-
-  .grid-item p
-  {
-	  font-size: 16; 
   }
 
   .grid-item:hover 
   {
 	-webkit-filter: brightness(70%);
-	color: rgb(23, 123, 211)
 	/*-webkit-transition: all 1s ease;
 	-moz-transition: all 1s ease;
 	-o-transition: all 1s ease;
 	-ms-transition: all 1s ease;
 	transition: all 1s ease;*/
+  }
+
+  .grid-item:hover a{
+      color: rgb(23, 123, 211);
+      font-size: 19;
   }
 
   .mySlides {display: grid;}
@@ -407,6 +441,8 @@ p
 	  height:75%; 
 	  width:100%; 
   }
+
+  
   
   /* Next & previous buttons */
   .prev, .next {
@@ -460,7 +496,8 @@ p
 	/*cursor: pointer;*/ 
 	height: 50px;
 	width: 50px;
-	margin: 0 4px;
+    margin: 0 4px;
+    margin: 0 10px; 
 	background-color: #bbb;
 	border-radius: 50%;
 	display: inline-block;
@@ -468,7 +505,8 @@ p
   }
   
   .active, .dot:hover {
-	background-color: #717171;
+    background-color: #717171;
+        -webkit-filter: brightness(70%); 
   }
   
   /* Fading animation */
@@ -478,9 +516,12 @@ p
 	animation-name: fade;
 	animation-duration: 1.5s;
   }
-  
-.bookThisButton{
-	margin-left: 70px; 
+
+.purchaseButton{
+    text-decoration:none;
+    color: rgb(46, 44, 44);
+    padding: none; 
+    margin:none; 
 }
 
 .reservationForms

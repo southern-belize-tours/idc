@@ -96,7 +96,7 @@
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
 </div>
 
-<div style="display:inline-block;justify-content: center;display:flex;margin-top:10px;">
+<div style="display:inline-block;justify-content: center;display:flex;margin-top:10px;padding-left:10px; padding-right:10px;">
     <span class="dot" onclick="currentSlide(1)">
         <image src="images/lubaantun/lubaantun1Square.png" height=50px width=50px></image>
     </span> 
@@ -164,7 +164,7 @@
 
         <div class="textGridItemThicc">
            <label class = "textGridSmallTitle">This Includes</label>
-           <ul> 
+           <ul style="list-style:none;"> 
                <li> Food </li> 
                <li> Transport </li>
                <li> Water </li>
@@ -173,7 +173,7 @@
 
         <div class="textGridItemThicc">   
             <label class = "textGridSmallTitle">What to Bring </label>
-            <ul> 
+            <ul style="list-style:none;"> 
                 <li> Skin </li>
                 <li> Sunscreen </li>
                 <li> A hat </li>
@@ -185,91 +185,108 @@
             <label class="textGridSmallTitle">Pricing & Frequently-Paired-Tours</label>
         </div>
 
-        <div class = "textGridItem">
-                <ul class="tourText">
-                    <li>Lubaantun</li>
-                    =
-                    <div class = "price"> 
-                       Total: $56
-                    </div>
-                </ul>
-            </div>
-
-        <div class = "textGridItem">
-            <ul class="tourText">
-                <li>Lubaantun</li>
-                +
-                <li>Nim Li Punit</li>
-                =
-                <div class = "price"> 
-                   Total: $56
-                </div>
-            </ul>
-        </div>
-
-        <div class = "textGridItem">
-                <ul class="tourText">
-                    <li>Lubaantun</li>
-                    +
-                    <li>Waterfalls</li>
-                    +
-                    <li>Nim Li Punit</li>
-                    =
-                    <div class = "price"> 
-                       Total: $56
-                    </div>
-                </ul>
-            </div>
-
+       
             <div class = "textGridItem">
+                <a href="purchaseForm.html" class="purchaseButton">
                     <ul class="tourText">
                         <li>Lubaantun</li>
-                        +
-                        <li>Nim Li Punit</li>
-                        +
-                        <li>Spice Farm</li>
-                        =
+                        <li class="noShow">=</li>
                         <div class = "price"> 
-                           Total: $56
+                        Total: $56
                         </div>
+
+                        <li class="tourDropdownContent">
+                                Book Now
+                        </li>
                     </ul>
+                    
+                </a> 
+            </div>
+
+       
+            <div class = "textGridItem">
+                    <a href="purchaseForm.html" class="purchaseButton">
+                    <ul class="tourText">
+                        <li>Lubaantun</li>
+                        <li class="noShow">+</li>
+                        <li>Nim Li Punit</li>
+                        <li class="noShow">=</li>
+                        <div class = "price"> 
+                        Total: $56
+                        </div> 
+                        <li class="tourDropdownContent">
+                                Book Now
+                        </li>
+                    </ul>
+                    </a> 
+            </div>
+
+        
+            <div class = "textGridItem">
+                <a href="purchaseForm.html" class="purchaseButton">
+                <ul class="tourText">
+                    <li>Lubaantun</li>
+                    <li class="noShow">+</li>
+                    <li>Waterfalls</li>
+                    <li class="noShow">+</li>
+                    <li>Nim Li Punit</li>
+                    <li class="noShow">=</li>
+                    <div class = "price"> 
+                       Total: $56
+                    </div> 
+                    <li class="tourDropdownContent">
+                            Book Now
+                    </li>
+                </ul>
+            </a> 
+            </div>
+
+           
+                <div class = "textGridItem">
+                        <a href="purchaseForm.html" class="purchaseButton">
+                        <ul class="tourText">
+                            <li>Lubaantun</li>
+                            <li class="noShow">+</li>
+                            <li>Nim Li Punit</li>
+                            <li class="noShow">+</li>
+                            <li>Spice Farm</li>
+                            <li class="noShow">=</li>
+                            <div class = "price"> 
+                            Total: $56
+                            </div>
+                            <li class="tourDropdownContent">
+                                    Book Now
+                            </li>
+                        </ul>
+                        </a>
                 </div>
 
-
- 
+                <div class = "textGridSmallTitle">Other Popular Tours</div>
  
 </div>
 
-<a href="purchaseForm.html"><button class="bookThisButton">Book This</button></a>
-
-You might also be interested in: 
 <div class="grid-container">
     <div class="grid-item">
             <a href="nimLi.html">
                     <img class="grid-image" height="210" width="210" src = "images/nimLiSquare.png">
-                    <br> 
                     Nim Li Punit
             </a>
     </div>
     
     <div class="grid-item">
-        <img class="grid-image" height="210" width="210" src = "images/spiceFarmSquare.png">
-        <br> 
+        <img class="grid-image" height="210" width="210" src = "images/spiceFarmSquare.png"> 
         <a href="#">Tropical Spice Farm</a>
     </div>
     <div class="grid-item">
         <img class="grid-image" height="210" width="210" src = "images/southStaanSquare.png">
-        <br> 
         <a href="#">Jungle River Tubing </a>
     </div>
     <div class="grid-item">
-        <img class="grid-image" height="210" width="210" src = "images/waterfallsSquare.png">
-        <br> 
+        <img class="grid-image" height="210" width="210" src = "images/waterfallsSquare.png"> 
         <a href="#">Waterfalls</a>
     </div>
     <div class="grid-item">
         <img class="grid-image" height="210" width="210" src = "images/inlandBlueHoleSquare.png">
-        <br> 
         <a href="#">Inland Blue Hole</a>
     </div>
   </div>
