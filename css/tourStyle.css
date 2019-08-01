@@ -293,7 +293,8 @@ p
 .dropdown:hover .dropbtn {background-color: rgb(16, 154, 43); color:rgb(225, 225, 116);}
 
 .textGridContainer{
-	margin: 70px; 
+    margin: 70px; 
+    margin-top: 2rem; 
 	grid-template-columns: repeat(4, 1fr);
 	display: grid;
 	grid-gap: 2rem; 
@@ -301,25 +302,50 @@ p
 }
 
 .textGridItem, .textGridItemThicc, .textGridItemThicccc {
-	background-color: rgb(200,200,200); 
 	justify-content: center; 
 	align-items: center; 
-	border: 3px solid rgba(0, 0, 0, 0.8);
-	border-radius: 3px; 
-	font-size: 2em; 
-
-
-	/*padding: 20px;  
-	font-size: 20;*/ 
+    font-size: 18;
   }
+
+  .textGridItemTitle{
+    color:rgb(23, 123, 211); 
+    font-size:40;
+    text-align:center; 
+}
+
+.textGridSmallTitle{
+    color: rgb(16, 154, 43); 
+    text-align:center; 
+    font-size: 27; 
+}
 
   .textGridItemThicc{
 	  grid-column: span 2; 
   }
 
-  .textGridItemThicccc {
+  .textGridItemThicccc, .textGridItemTitle {
     grid-column: span 4;
   }
+
+  .tourText{
+      list-style:none; 
+      text-align: center; 
+      font-size: 35; 
+  }
+
+  .tourText li, .price{
+    padding: 10px; 
+    margin-bottom: 10px; 
+    background-color: rgb(225, 225, 116); 
+    text-align: center; 
+    font-size: 27; 
+  }
+
+  .price{
+    background-color: rgb(227, 159, 42);
+}
+
+  
 
 .grid-container {
 	display: grid;
@@ -529,7 +555,12 @@ p
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
+
+  
 }
+
+
+
 
 /*anything in here must be under 600 px*/ 
 @media(max-width: 600px) 
