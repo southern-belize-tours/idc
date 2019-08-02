@@ -1,0 +1,302 @@
+<!doctype html/> 
+
+<head>
+        <title> Spice Farm Tour </title>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css"> 
+        <link rel="stylesheet" type="text/css" href="css/tourStyle.css">
+</head>
+
+<nav id="navbar"> 
+        <div class = "container"> 
+            <ul>
+                <li> 
+                    <button class="blueButton">
+                        <a href="index.html">Home</a>
+                    </button>
+                </li>
+                <li>
+                    <button class="redButton">
+                        <a href="#">About </a>
+                    </button>
+                </li> 
+                    
+                    <div class="dropdown">
+                        <button class="dropbtn">Tours</button>
+                        <div class="dropdown-content">
+                          <a href="allTours.html">All Tours</a>
+                          <a href="nimLi.html">Nim Li Punit Mayan Ruins</a>
+                          <a href="lubaantun.html">Lubaantun Mayan Ruins</a>
+                          <a href="spiceFarm.html">Spice Farm</a>
+                          <a href="#">River Tubing</a>
+                          <a href="#">Waterfall Sightseeing</a>
+                          <a href="#">Inland Blue Hole & Cave</a>
+                        </div>
+                    </div>
+                <li>
+                        <button class="orangeButton">
+                                <a href="#">Contact </a>
+                        </button>
+            </ul>
+        </div>
+    </nav>
+
+<nav id="navBorder">
+    a
+</nav>
+
+<body> 
+
+
+<div class="slideshow-container"> 
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 6</div>
+          <img class="slideImage" src="images/spiceFarm/spiceFarm1.png"> <!-- you could do "style=width:100% if you want"--> 
+          <div class="text">Stroll amongst the birds of paradise</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 6</div>
+          <img class="slideImage" src="images/spiceFarm/spiceFarm2.png" >
+          <div class="text">The Mayans used cocoa beans as currency. Imagine how much money you can consume</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 6</div>
+          <img class="slideImage" src="images/spiceFarm/spiceFarm3.png"  >
+          <div class="text">Authentic Belizian dishes made with the natural tropical spices</div>
+        </div>
+
+        <div class="mySlides fade">
+                <div class="numbertext">4 / 6</div>
+                <img class="slideImage" src="images/spiceFarm/spiceFarm4.png"  >
+                <div class="text">Stroll among the tropical foliage or ride in style. It's your choice</div>
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">5 / 6</div>
+                    <img class="slideImage" src="images/spiceFarm/spiceFarm5.png"  >
+                <div class="text">You can still enjoy the view and smell the flowers from inside</div>
+              </div>
+    
+              <div class="mySlides fade">
+                    <div class="numbertext">6 / 6</div>
+                        <img class="slideImage" src="images/spiceFarm/spiceFarm6.png"  >
+                    <div class="text">Belize initially became a colony through logging. The ceiling features Mahogany, Sapodilla, Belizian Rosewood, and others </div>
+                  </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<div style="display:inline-block;justify-content: center;display:flex;margin-top:10px;">
+    <span class="dot" onclick="currentSlide(1)">
+        <image src="images/spiceFarm/spiceFarm1Square.png" height=50px width=50px></image>
+    </span> 
+    <span class="dot" onclick="currentSlide(2)">
+        <image src="images/spiceFarm/spiceFarm2Square.png" height=50px width=50px></image>
+    </span> 
+    <span class="dot" onclick="currentSlide(3)">
+         <image src="images/spiceFarm/spiceFarm3Square.png" height=50px width=50px></image>
+    </span> 
+    <span class="dot" onclick="currentSlide(4)">
+            <image src="images/spiceFarm/spiceFarm4Square.png" height=50px width=50px></image>
+       </span> 
+       <span class="dot" onclick="currentSlide(5)">
+            <image src="images/spiceFarm/spiceFarm5Square.png" height=50px width=50px></image>
+       </span> 
+       <span class="dot" onclick="currentSlide(6)">
+            <image src="images/spiceFarm/spiceFarm6Square.png" height=50px width=50px></image>
+       </span> 
+      
+</div>
+
+<br>
+      
+<script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+</script>
+
+
+<div class="textGridContainer">
+        <div class="textGridItemTitle">
+                Spice Farm Tropical Botanical Garden
+        </div>
+        
+
+        <div class="textGridItemThicccc">
+                Visit the beautiful spice farm of southern Belize. Where you will get to go on a botanical tour and get a chance to see, touch, smell and taste a variety of tropical plants,fruits and herbs. This is topped off with an authentic Belizean meal at the beautiful spice farm dining room.    
+        </div>
+
+        <div class="textGridItemThicc">
+           <label class = "textGridSmallTitle">This Includes</label>
+           <ul style="list-style:none;"> 
+               <li> Food </li> 
+               <li> Transport </li>
+               <li> Water </li>
+           </ul>
+        </div>
+
+        <div class="textGridItemThicc">   
+            <label class = "textGridSmallTitle">What to Bring </label>
+            <ul style="list-style:none;"> 
+                <li> Skin </li>
+                <li> Sunscreen </li>
+                <li> A hat </li>
+                <li> A wallet </li>
+            </ul>
+        </div>
+
+        <div class="textGridItemThicccc">
+            <label class="textGridSmallTitle">Pricing & Frequently-Paired-Tours</label>
+        </div>
+
+       
+            <div class = "textGridItem">
+                <a href="purchaseForm.html" class="purchaseButton">
+                    <ul class="tourText">
+                        <li>Lubaantun</li>
+                        <li class="noShow">=</li>
+                        <div class = "price"> 
+                        Total: $56
+                        </div>
+
+                        <li class="tourDropdownContent">
+                                Book Now
+                        </li>
+                    </ul>
+                    
+                </a> 
+            </div>
+
+       
+            <div class = "textGridItem">
+                    <a href="purchaseForm.html" class="purchaseButton">
+                    <ul class="tourText">
+                        <li>Lubaantun</li>
+                        <li class="noShow">+</li>
+                        <li>Nim Li Punit</li>
+                        <li class="noShow">=</li>
+                        <div class = "price"> 
+                        Total: $56
+                        </div> 
+                        <li class="tourDropdownContent">
+                                Book Now
+                        </li>
+                    </ul>
+                    </a> 
+            </div>
+
+        
+            <div class = "textGridItem">
+                <a href="purchaseForm.html" class="purchaseButton">
+                <ul class="tourText">
+                    <li>Lubaantun</li>
+                    <li class="noShow">+</li>
+                    <li>Waterfalls</li>
+                    <li class="noShow">+</li>
+                    <li>Nim Li Punit</li>
+                    <li class="noShow">=</li>
+                    <div class = "price"> 
+                       Total: $56
+                    </div> 
+                    <li class="tourDropdownContent">
+                            Book Now
+                    </li>
+                </ul>
+            </a> 
+            </div>
+
+           
+                <div class = "textGridItem">
+                        <a href="purchaseForm.html" class="purchaseButton">
+                        <ul class="tourText">
+                            <li>Lubaantun</li>
+                            <li class="noShow">+</li>
+                            <li>Nim Li Punit</li>
+                            <li class="noShow">+</li>
+                            <li>Spice Farm</li>
+                            <li class="noShow">=</li>
+                            <div class = "price"> 
+                            Total: $56
+                            </div>
+                            <li class="tourDropdownContent">
+                                    Book Now
+                            </li>
+                        </ul>
+                        </a>
+                </div>
+
+                <div class = "textGridSmallTitle">Other Popular Tours</div>
+ 
+</div>
+
+<div class="grid-container">
+    <div class="grid-item">
+            <a href="lubaantun.html">
+                    <img class="grid-image" height="210" width="210" src = "images/lubaantunSquare.png">
+                    Lubaantun 
+            </a>
+    </div>
+    
+    <div class="grid-item">
+        <a href="nimLi.html">
+            <img class="grid-image" height="210" width="210" src = "images/nimLiSquare.png">
+            Nim Li Punit
+        </a>
+    </div>
+    <div class="grid-item">
+        <img class="grid-image" height="210" width="210" src = "images/southStaanSquare.png">
+        <a href="#">Jungle River Tubing </a>
+    </div>
+    <div class="grid-item">
+        <img class="grid-image" height="210" width="210" src = "images/waterfallsSquare.png"> 
+        <a href="#">Waterfalls</a>
+    </div>
+    <div class="grid-item">
+        <img class="grid-image" height="210" width="210" src = "images/inlandBlueHoleSquare.png">
+        <a href="#">Inland Blue Hole</a>
+    </div>
+  </div>
+
+</body>
+
+<nav id="navBorderTop">
+        a
+    </nav>
+
+<nav id="navbar"> 
+        <div class = "container"> 
+            <ol> 
+                <li style="color:rgb(23, 123, 211)"> <a href="https://www.linkedin.com/in/ianfeekes/" target = "_blank"><img src="images/insta.png" width="50" height="50"/> </a></li>
+                <li style="color:rgb(16, 154, 43)"> <a href="https://www.facebook.com/pages/category/Tour-Agency/Placencia-Action-Tours-537314880112426/" target="_blank"> <img src="images/facebook.png" width="50" height="50"/> </a></li>
+                <li style="color:rgb(16, 154, 43)"> <a href="https://www.facebook.com/pages/category/Tour-Agency/Placencia-Action-Tours-537314880112426/" target="_blank"> <img src="images/whatsapp.png" width="50" height="50"/> </a></li>
+                <li style="color:rgb(16, 154, 43)"> <a href="https://www.facebook.com/pages/category/Tour-Agency/Placencia-Action-Tours-537314880112426/" target="_blank"> <img src="images/viber.png" width="50" height="50"/> </a></li>
+            </ol>
+        </div>
+</nav>
+

@@ -2,7 +2,8 @@
 
 <head>
         <title> Nim Li Punit Mayan Ruins Tour </title>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css"> 
+        <link rel="stylesheet" type="text/css" href="css/tourStyle.css">
 </head>
 
 <nav id="navbar"> 
@@ -18,7 +19,6 @@
                         <a href="#">About </a>
                     </button>
                 </li> 
-                <li style="color:rgb(16, 154, 43)"> 
                     
                     <div class="dropdown">
                         <button class="dropbtn">Tours</button>
@@ -26,14 +26,12 @@
                           <a href="allTours.html">All Tours</a>
                           <a href="nimLi.html">Nim Li Punit Mayan Ruins</a>
                           <a href="lubaantun.html">Lubaantun Mayan Ruins</a>
-                          <a href="#">Spice Farm</a>
+                          <a href="spiceFarm.html">Spice Farm</a>
                           <a href="#">River Tubing</a>
                           <a href="#">Waterfall Sightseeing</a>
                           <a href="#">Inland Blue Hole & Cave</a>
                         </div>
                     </div>
-                
-                </li>
                 <li>
                         <button class="orangeButton">
                                 <a href="#">Contact </a>
@@ -51,22 +49,34 @@
 
 <div class="slideshow-container"> 
         <div class="mySlides fade">
-          <div class="numbertext">1 / 3</div>
-          <img class="slideImage" src="images/kat1.jpg"> <!-- you could do "style=width:100% if you want"--> 
-          <div class="text">Caption Text</div>
+          <div class="numbertext">1 / 5</div>
+          <img class="slideImage" src="images/nimLi/nimLi1.png"> <!-- you could do "style=width:100% if you want"--> 
+          <div class="text">Perhaps a pick up game at the sacrificial basketball court?</div>
         </div>
         
         <div class="mySlides fade">
-          <div class="numbertext">2 / 3</div>
-          <img class="slideImage" src="images/kat2.jpg" >
-          <div class="text">Caption Two</div>
+          <div class="numbertext">2 / 5</div>
+          <img class="slideImage" src="images/nimLi/nimLi2.png" >
+          <div class="text">The famous "big head" stone tablet. Now you know where Chipotle gets it</div>
         </div>
         
         <div class="mySlides fade">
-          <div class="numbertext">3 / 3</div>
-          <img class="slideImage" src="images/kat3.jpg"  >
-          <div class="text">Caption Three</div>
+          <div class="numbertext">3 / 5</div>
+          <img class="slideImage" src="images/nimLi/nimLi3.png"  >
+          <div class="text">Stairs leading into the plaza</div>
         </div>
+
+        <div class="mySlides fade">
+                <div class="numbertext">4 / 5</div>
+                <img class="slideImage" src="images/nimLi/nimLi4.png"  >
+                <div class="text">The ballcourt is so well preserved that you could start a game</div>
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">5 / 5</div>
+                    <img class="slideImage" src="images/nimLi/nimLi5.png"  >
+                <div class="text">The same jungle view that the ancient Mayans shared</div>
+              </div>
 
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -74,14 +84,21 @@
 
 <div style="display:inline-block;justify-content: center;display:flex;margin-top:10px;">
     <span class="dot" onclick="currentSlide(1)">
-        <image src="images/kat1.jpg" height=50px width=50px></image>
+        <image src="images/nimLi/nimLi1Square.png" height=50px width=50px></image>
     </span> 
     <span class="dot" onclick="currentSlide(2)">
-        <image src="images/kat2.jpg" height=50px width=50px></image>
+        <image src="images/nimLi/nimLi2Square.png" height=50px width=50px></image>
     </span> 
     <span class="dot" onclick="currentSlide(3)">
-         <image src="images/kat3.jpg" height=50px width=50px></image>
+         <image src="images/nimLi/nimLi3Square.png" height=50px width=50px></image>
     </span> 
+    <span class="dot" onclick="currentSlide(4)">
+            <image src="images/nimLi/nimLi4Square.png" height=50px width=50px></image>
+       </span> 
+       <span class="dot" onclick="currentSlide(5)">
+            <image src="images/nimLi/nimLi5Square.png" height=50px width=50px></image>
+       </span> 
+      
 </div>
 
 <br>
@@ -115,16 +132,20 @@
         }
 </script>
 
-<span style="color:rgb(23, 123, 211);font-size:40px;padding-left:20px;padding-top:30px;margin-left:70px;padding-bottom:100px;">Nim Li Punit Mayan Ruins</span>
 
 <div class="textGridContainer">
+        <div class="textGridItemTitle">
+                Nim Li Punit Mayan Ruins 
+        </div>
+        
+
         <div class="textGridItemThicccc">
-                Well known for the large amount of stelae found at this site. When visiting you can expect to see remnants of the ancient mayan culture that is depicted on the 20+ stele found at this particular site. These stelae commemorate the ancient royalty, culture and general records of the site.    
+            Well known for the large amount of stelae found at this site. When visiting you can expect to see remnants of the ancient mayan culture that is depicted on the 20+ stele found at this particular site. These stelae commemorate the ancient royalty, culture and general records of the site
         </div>
 
         <div class="textGridItemThicc">
-           This includes:
-           <ul> 
+           <label class = "textGridSmallTitle">This Includes</label>
+           <ul style="list-style:none;"> 
                <li> Food </li> 
                <li> Transport </li>
                <li> Water </li>
@@ -132,8 +153,8 @@
         </div>
 
         <div class="textGridItemThicc">   
-            You should bring: 
-            <ul> 
+            <label class = "textGridSmallTitle">What to Bring </label>
+            <ul style="list-style:none;"> 
                 <li> Skin </li>
                 <li> Sunscreen </li>
                 <li> A hat </li>
@@ -142,45 +163,116 @@
         </div>
 
         <div class="textGridItemThicccc">
-            Pricing: 
+            <label class="textGridSmallTitle">Pricing & Frequently-Paired-Tours</label>
         </div>
 
-        <div class=textGridItem>
-            This
-        </div>
+       
+            <div class = "textGridItem">
+                <a href="purchaseForm.html" class="purchaseButton">
+                    <ul class="tourText">
+                        <li>Lubaantun</li>
+                        <li class="noShow">=</li>
+                        <div class = "price"> 
+                        Total: $56
+                        </div>
 
-        <div class=textGridItem> 
-            This
-        </div>
+                        <li class="tourDropdownContent">
+                                Book Now
+                        </li>
+                    </ul>
+                    
+                </a> 
+            </div>
 
-        <div class=textGridItem>
-            This
-        </div>
+       
+            <div class = "textGridItem">
+                    <a href="purchaseForm.html" class="purchaseButton">
+                    <ul class="tourText">
+                        <li>Lubaantun</li>
+                        <li class="noShow">+</li>
+                        <li>Nim Li Punit</li>
+                        <li class="noShow">=</li>
+                        <div class = "price"> 
+                        Total: $56
+                        </div> 
+                        <li class="tourDropdownContent">
+                                Book Now
+                        </li>
+                    </ul>
+                    </a> 
+            </div>
 
-        <br> 
-        <div class="textGridItem">
-            +
-        </div>
+        
+            <div class = "textGridItem">
+                <a href="purchaseForm.html" class="purchaseButton">
+                <ul class="tourText">
+                    <li>Lubaantun</li>
+                    <li class="noShow">+</li>
+                    <li>Waterfalls</li>
+                    <li class="noShow">+</li>
+                    <li>Nim Li Punit</li>
+                    <li class="noShow">=</li>
+                    <div class = "price"> 
+                       Total: $56
+                    </div> 
+                    <li class="tourDropdownContent">
+                            Book Now
+                    </li>
+                </ul>
+            </a> 
+            </div>
 
-        <div class=textGridItem>
-            +
-        </div>
+           
+                <div class = "textGridItem">
+                        <a href="purchaseForm.html" class="purchaseButton">
+                        <ul class="tourText">
+                            <li>Lubaantun</li>
+                            <li class="noShow">+</li>
+                            <li>Nim Li Punit</li>
+                            <li class="noShow">+</li>
+                            <li>Spice Farm</li>
+                            <li class="noShow">=</li>
+                            <div class = "price"> 
+                            Total: $56
+                            </div>
+                            <li class="tourDropdownContent">
+                                    Book Now
+                            </li>
+                        </ul>
+                        </a>
+                </div>
 
-        <br>
-
-        <div class=textGridItem>That</div>
-
-        <div class=textGridItem>That</div>
-
-        <div class=textGridItem></div>
-
-        <br> 
+                <div class = "textGridSmallTitle">Other Popular Tours</div>
  
 </div>
 
-<a href="purchaseForm.html"><button class="bookThisButton">Book This</button></a>
-
-
+<div class="grid-container">
+    <div class="grid-item">
+            <a href="lubaantun.html">
+                    <img class="grid-image" height="210" width="210" src = "images/lubaantunSquare.png">
+                    Lubaantun 
+            </a>
+    </div>
+    
+    <div class="grid-item"> 
+        <a href="spiceFarm.html">
+                <img class="grid-image" height="210" width="210" src = "images/spiceFarmSquare.png">
+                Tropical Spice Farm
+        </a>
+    </div>
+    <div class="grid-item">
+        <img class="grid-image" height="210" width="210" src = "images/southStaanSquare.png">
+        <a href="#">Jungle River Tubing </a>
+    </div>
+    <div class="grid-item">
+        <img class="grid-image" height="210" width="210" src = "images/waterfallsSquare.png"> 
+        <a href="#">Waterfalls</a>
+    </div>
+    <div class="grid-item">
+        <img class="grid-image" height="210" width="210" src = "images/inlandBlueHoleSquare.png">
+        <a href="#">Inland Blue Hole</a>
+    </div>
+  </div>
 
 </body>
 
@@ -190,13 +282,12 @@
 
 <nav id="navbar"> 
         <div class = "container"> 
-            <ol>
-                
+            <ol> 
                 <li style="color:rgb(23, 123, 211)"> <a href="https://www.linkedin.com/in/ianfeekes/" target = "_blank"><img src="images/insta.png" width="50" height="50"/> </a></li>
                 <li style="color:rgb(16, 154, 43)"> <a href="https://www.facebook.com/pages/category/Tour-Agency/Placencia-Action-Tours-537314880112426/" target="_blank"> <img src="images/facebook.png" width="50" height="50"/> </a></li>
                 <li style="color:rgb(16, 154, 43)"> <a href="https://www.facebook.com/pages/category/Tour-Agency/Placencia-Action-Tours-537314880112426/" target="_blank"> <img src="images/whatsapp.png" width="50" height="50"/> </a></li>
                 <li style="color:rgb(16, 154, 43)"> <a href="https://www.facebook.com/pages/category/Tour-Agency/Placencia-Action-Tours-537314880112426/" target="_blank"> <img src="images/viber.png" width="50" height="50"/> </a></li>
             </ol>
         </div>
-    </nav>
+</nav>
 
