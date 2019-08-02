@@ -56,6 +56,8 @@ p
 	padding-top: none;
 }
 
+
+
 .container
 {
     width:80%;
@@ -306,13 +308,24 @@ p
     margin-bottom: 20px;  
     max-width:1300px; 
     max-height:975px; 
+
+    background: url(../images/kat3.jpg) no-repeat scroll center top transparent;
+}
+
+.slideImage{
+    background: url(../images/kat3.jpg) no-repeat scroll center top transparent;
 }
 
   .slideImage{ 
 	  height:80%; 
       width:100%; 
+
+
       max-width:1300px; 
       max-height:975px; 
+
+      min-width: 800px; 
+      min-height: 500px; 
   }
   
   /* Next & previous buttons */
