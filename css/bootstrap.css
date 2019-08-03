@@ -330,6 +330,7 @@ p
 
       /*min-width: 800px; 
       min-height: 500px; */ 
+      overflow:hidden; 
   }
   
   /* Next & previous buttons */
