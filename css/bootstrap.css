@@ -331,6 +331,8 @@ p
       /*min-width: 800px; 
       min-height: 500px; */ 
       overflow:hidden; 
+      min-width:700px; 
+      max-width:100%;
   }
   
   /* Next & previous buttons */
