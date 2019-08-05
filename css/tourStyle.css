@@ -226,7 +226,7 @@
 
 
 /*anything in here must be under 800 px*/ 
-@media(max-width: 800px) 
+@media(max-width: 1050px ) 
 {
 	#main
 	{
@@ -235,18 +235,13 @@
   }
   
   .grid-container{
-    /*grid-template-columns: auto auto auto; */
-  }
-}
-
-@media(max-width: 8in)
-{
-  .grid-container{
     grid-template-columns: auto auto auto auto; 
   }
 }
 
-@media(max-width: 2in)
+@media(max-width: 3in){.grid-container{grid-template-columns:auto auto auto;}}
+
+@media(max-width: 620px)
 {
   .grid-container{
     grid-template-columns: auto auto auto; 
