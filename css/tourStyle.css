@@ -227,11 +227,15 @@
 
 
 /*anything in here must be under 600 px*/ 
-@media(max-width: 600px) 
+@media(max-width: 800px) 
 {
 	#main
 	{
 		/*width: 100%;*/ /* makes it so that shit goes on top of eachother if the width is super restricted */ 
 		/*float: none; */
-	}
+  }
+  
+  .grid-container{
+    grid-template-columns: auto auto auto; 
+  }
 }
