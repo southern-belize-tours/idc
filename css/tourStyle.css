@@ -135,7 +135,6 @@
 
   .grid-item:hover a{
       color: rgb(23, 123, 211);
-      font-size: 19;
   }
 
   
@@ -226,7 +225,7 @@
 
 
 
-/*anything in here must be under 600 px*/ 
+/*anything in here must be under 800 px*/ 
 @media(max-width: 800px) 
 {
 	#main
@@ -235,6 +234,20 @@
 		/*float: none; */
   }
   
+  .grid-container{
+    /*grid-template-columns: auto auto auto; */
+  }
+}
+
+@media(max-width: 8in)
+{
+  .grid-container{
+    grid-template-columns: auto auto auto auto; 
+  }
+}
+
+@media(max-width: 2in)
+{
   .grid-container{
     grid-template-columns: auto auto auto; 
   }
