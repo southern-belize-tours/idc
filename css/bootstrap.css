@@ -307,7 +307,7 @@ p
     /*margin: auto; */ 
     margin-left: none; 
     margin-right: none; 
-    width: 100%; 
+    /*width: 100%; */ 
 
 	margin-top: -25px; 		/*The navbar has a 25px margin we don't want*/ 
     margin-bottom: 20px;  
@@ -327,10 +327,12 @@ p
       height: 80%; 
 
       /*max-width:1300px; */ 
-      max-height:643px; 
+	  max-height:643px; 
 
-      /*min-width: 800px; 
-      min-height: 500px; */ 
+	  /*min-width: 800px; 
+	
+	  min-height: 500px; */ 
+	  
       overflow:hidden; 
       /*min-width:700px; */ 
       max-width:100%;
@@ -424,3 +426,24 @@ p
 		top:25%; 
 	}
   } */ 
+
+  @media(max-width: 700px)
+  {
+	  .slideImage{
+		  height: 60%; 
+	  }
+  }
+
+  @media(max-width: 500px)
+  {
+	  .slideImage{ 
+		height: 40%; 
+	  }
+  }
+
+  @media(max-width: 300px)
+  {
+	  .slideImage{
+		  height: 20%; 
+	  }
+  }
