@@ -96,7 +96,7 @@
     padding: 10px;   
     margin-left: 20px; 
     margin-right: 20px;
-    grid-template-columns: auto auto auto auto auto ; 
+    grid-template-columns: auto auto auto auto; 
 	grid-column-gap: 10px; 
 	grid-row-gap: 10px; 
 
@@ -106,7 +106,7 @@
 .grid-item {
 	background-color: none; 
 	/*border: 1px solid rgba(0, 0, 0, 0.8);*/ 
-	max-width:250px; 
+	max-width:300px; 
 
 	border: none; 
 	/*padding: 20px;  
@@ -234,21 +234,16 @@
 		/*float: none; */
   }
   
-  .grid-container{
-    grid-template-columns: auto auto auto auto; 
-  }
 }
 
-@media(max-width: 3in){.grid-container{grid-template-columns:auto auto auto;}}
-
-@media(max-width: 1075px)
+@media(max-width: 1175px)
 {
   .grid-container{
     grid-template-columns: auto auto auto; 
   }
 }
 
-@media(max-width: 750px)
+@media(max-width: 900px)
 {
   .grid-container{grid-template-columns:auto auto;}
 }
