@@ -37,6 +37,10 @@
 	  grid-column: span 2; 
   }
 
+  .textGridItemThicc ul{
+    padding-left:5%; 
+  }
+
   .textGridItemThicccc, .textGridItemTitle {
     grid-column: span 4;
   }
@@ -64,6 +68,8 @@
     text-align: center;  
     font-size: 27; 
     margin-left:-40px; 
+
+    font-size:15px; 
   }
 
   .tourDropdownContent{
@@ -81,7 +87,7 @@
 
   .tourText .noShow{
     background:none; 
-    font-size:35; 
+    font-size:35px; 
   }
 
   .price{
@@ -246,4 +252,15 @@
 @media(max-width: 900px)
 {
   .grid-container{grid-template-columns:auto auto;}
+  .tourText li, .price, .tourDropdownContent{
+    font-size: 12px;
+    overflow:hidden; 
+  }
+}
+
+@media(max-width:515px)
+{
+  .tourText li, .price, .tourDropdownContent{
+    font-size: 8px; 
+  }
 }
