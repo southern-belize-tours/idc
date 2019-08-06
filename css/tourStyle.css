@@ -106,7 +106,7 @@
 .grid-item {
 	background-color: none; 
 	/*border: 1px solid rgba(0, 0, 0, 0.8);*/ 
-	max-width:200px; 
+	max-width:250px; 
 
 	border: none; 
 	/*padding: 20px;  
@@ -226,7 +226,7 @@
 
 
 /*anything in here must be under 800 px*/ 
-@media(max-width: 1050px ) 
+@media(max-width: 1300px ) 
 {
 	#main
 	{
@@ -241,9 +241,14 @@
 
 @media(max-width: 3in){.grid-container{grid-template-columns:auto auto auto;}}
 
-@media(max-width: 620px)
+@media(max-width: 1075px)
 {
   .grid-container{
     grid-template-columns: auto auto auto; 
   }
+}
+
+@media(max-width: 750px)
+{
+  .grid-container{grid-template-columns:auto auto;}
 }
