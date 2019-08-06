@@ -340,8 +340,15 @@ p
 	  padding-left: 2%; 
 	  padding-right: 2%; 
 	cursor: pointer;
+	
+	
 	position: absolute;
-	top: 50%;
+
+	top: 250px;
+	
+	
+	max-height: 0px; 
+
 	width: auto;
 	color: white;
 	font-weight: bold;
@@ -408,3 +415,11 @@ p
 	animation-name: fade;
 	animation-duration: 1.5s;
   }
+
+  /*
+  @media(min-height:750px)
+  {
+	.prev, .next {
+		top:25%; 
+	}
+  } */ 
