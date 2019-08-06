@@ -58,30 +58,42 @@
 
 
   .tourText:hover .tourDropdownContent{
-      display:block;
+    color: rgb(46, 44, 44);
+    background-color: rgb(23, 123, 211); 
+  }
+
+  .tourDropdownContent{  
+    display:block; 
+    position:sticky;
+    padding-left: 100px; 
+    padding-right:100px; 
+    z-index: 1;
+
+    color: rgb(238, 219, 238);
+    background-color:rgb(238, 219, 238);
+
   }
 
   .tourText li, .price, .tourDropdownContent{
     padding: 10px; 
     padding-left:none; 
     /*margin-bottom: .5rem;*/ 
-    background-color: rgb(23, 123, 211); 
     text-align: center;  
     margin-left:-40px; 
     font-size: 2vw;
   }
 
-  .tourDropdownContent{
-    display: none;  
-    position:sticky;
-    padding-left: 100px; 
-    padding-right:100px; 
-	  background-color:rgb(225, 225, 116); 
-    z-index: 1;
+  .tourText li, .price{
+    background-color: rgb(23, 123, 211); 
   }
 
+  .tourDropdownContent{
+    background-color:rgb(238, 219, 238);
+  }
+
+
   .tourDropDownContent:hover{
-      -webkit-transform: scale(1.03,1.03); 
+      -webkit-transform: scale(1.03,1.03);
   }
 
   /*The + and = signs*/ 
