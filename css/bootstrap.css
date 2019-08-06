@@ -292,7 +292,8 @@ p
 
 .dropdown-content a:hover {
 	background-color: rgb(16, 154, 43);
-	color: rgb(225, 225, 116);}
+	color: rgb(225, 225, 116);
+}
 
 .dropdown:hover .dropdown-content {display: block;}
 
