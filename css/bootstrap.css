@@ -218,7 +218,7 @@ p
   .dropdown-content .orangeBtn{
 	  color: rgb(227, 159, 42);
   }
-  .dropdown-content .redBtn:hover{
+  .dropdown-content .orangeBtn:hover{
 	background-color:rgb(227,159,42); 
 	color: rgb(225, 225, 116); 
  }
@@ -526,3 +526,5 @@ p
 		  height: 20%; 
 	  }
   }
+
+  

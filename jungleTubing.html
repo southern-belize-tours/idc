@@ -1,40 +1,100 @@
 <!doctype html/> 
 
 <head>
-        <title> Jungle River Tubing Tour </title>
+        <title> Jungle Tubing Tour </title>
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css"> 
         <link rel="stylesheet" type="text/css" href="css/tourStyle.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script>
+                function myFunction() {
+document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function dropFunction() {
+    document.getElementById("mainDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+    var openDropdown = dropdowns[i];
+    if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+    }
+    }
+}
+}
+
+</script>
+
 </head>
 
 <nav id="navbar"> 
         <div class = "container"> 
             <ul>
                 <li> 
-                    <button class="blueButton">
-                        <a href="index.html">Home</a>
-                    </button>
-                </li>
+                    <div class="dropdown" id="ignore">
+                            <button class="dropbtn" id="dropbtnMobile" onclick=dropFunction()>Menu</button>
+                            <div id="mainDropdown" class="dropdown-content">
+                                    <a href="index.html" class="blueBtn">
+                                        Home
+                                    </a>
+                                    <a href="#" class="redBtn">
+                                                    About 
+                                    </a>
+                                    <div class="dropdown">
+                                            <button class="dropbtn" onclick=myFunction()>Tours</button>
+                                            <div id="myDropdown" class="dropdown-content">
+                                              <a href="allTours.html">All Tours</a>
+                                              <a href="nimLi.html">Nim Li Punit Mayan Ruins</a>
+                                              <a href="lubaantun.html">Lubaantun Mayan Ruins</a>
+                                              <a href="spiceFarm.html">Spice Farm</a>
+                                              <a href="waterfalls.html">Waterfall Sightseeing</a>
+                                              <a href="cave.html">Inland Blue Hole & Cave</a>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="orangeBtn">
+                                            Contact
+                                        </a>
+                            </div>
+                        </div>
+                    </li>
+
+                <a href="index.html" class="blueBtn" id="homeLaptop">
+                    <li> 
+                            Home
+                    </li>
+                </a>
+                <a href="#" class="redBtn" id="aboutLaptop">
                 <li>
-                    <button class="redButton">
-                        <a href="#">About </a>
-                    </button>
+                        About 
                 </li> 
-                    
-                    <div class="dropdown">
-                        <button class="dropbtn">Tours</button>
-                        <div class="dropdown-content">
+                </a>
+                   
+                <li> 
+                    <div class="dropdown" id="laptopDropdown">
+                        <a class="dropbtn">Tours</a>
+                        <div id="myDropdown" class="dropdown-content">
                           <a href="allTours.html">All Tours</a>
-                          <a href="nimLi.html">Nim Li Punit Mayan Ruins</a>
+                          <a href="nimLi.html">River Tubing</a>
                           <a href="lubaantun.html">Lubaantun Mayan Ruins</a>
                           <a href="spiceFarm.html">Spice Farm</a>
                           <a href="waterfalls.html">Waterfall Sightseeing</a>
                           <a href="cave.html">Inland Blue Hole & Cave</a>
                         </div>
                     </div>
-                <li>
-                        <button class="orangeButton">
-                                <a href="#">Contact </a>
-                        </button>
+                </li>
+
+
+                <a href="#" class="orangeBtn" id="contactLaptop">
+                    <li>
+                                    Contact
+                   </li>
+                </a>
             </ul>
         </div>
     </nav>
@@ -48,35 +108,34 @@
 
 <div class="slideshow-container"> 
         <div class="mySlides fade">
-          <div class="numbertext">1 / 5</div>
-          <img class="slideImage" src="images/riverTubing/riverTubing1.png"> <!-- you could do "style=width:100% if you want"--> 
-          <div class="text">Tube accross miles of beautiful tropical jungle river</div>
-        </div>
-        
-        <div class="mySlides fade">
-          <div class="numbertext">2 / 5</div>
-          <img class="slideImage" src="images/riverTubing/riverTubing2.png" >
-          <div class="text">Discover a secret cove</div>
-        </div>
-        
-        <div class="mySlides fade">
-          <div class="numbertext">3 / 5</div>
-          <img class="slideImage" src="images/riverTubing/riverTubing3.png"  >
-          <div class="text">Drift along or maybe do some cliff jumping</div>
-        </div>
-
-        <div class="mySlides fade">
-                <div class="numbertext">4 / 5</div>
-                <img class="slideImage" src="images/riverTubing/riverTubing4.png"  >
-                <div class="text">Passage through the mayan underworld Xibalba (pronounced she-ball-ba)</div>
+                <div class="numbertext">1 / 5</div>
+                <img class="slideImage" src="images/riverTubing/riverTubing1.png"> <!-- you could do "style=width:100% if you want"--> 
+                <div class="text">Tube accross miles of beautiful tropical jungle river</div>
               </div>
-
+              
               <div class="mySlides fade">
-                <div class="numbertext">5 / 5</div>
-                    <img class="slideImage" src="images/riverTubing/riverTubing5.png"  >
-                <div class="text">The best way to experience the beauty of the jungle is from these tropical creeks</div>
+                <div class="numbertext">2 / 5</div>
+                <img class="slideImage" src="images/riverTubing/riverTubing2.png" >
+                <div class="text">Discover a secret cove</div>
               </div>
-    
+              
+              <div class="mySlides fade">
+                <div class="numbertext">3 / 5</div>
+                <img class="slideImage" src="images/riverTubing/riverTubing3.png"  >
+                <div class="text">Drift along or maybe do some cliff jumping</div>
+              </div>
+              
+              <div class="mySlides fade">
+                      <div class="numbertext">4 / 5</div>
+                      <img class="slideImage" src="images/riverTubing/riverTubing4.png"  >
+                      <div class="text">Passage through the mayan underworld Xibalba (pronounced she-ball-ba)</div>
+                    </div>
+              
+                    <div class="mySlides fade">
+                      <div class="numbertext">5 / 5</div>
+                          <img class="slideImage" src="images/riverTubing/riverTubing5.png"  >
+                      <div class="text">The best way to experience the beauty of the jungle is from these tropical creeks</div>
+                    </div>
 
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -84,10 +143,10 @@
 
 <div style="display:inline-block;justify-content: center;display:flex;margin-top:10px;">
     <span class="dot" onclick="currentSlide(1)">
-        <image src="images/riverTubing/riverTubing1Square.png" height=50px width=50px></image>
+        <image src="images/riverTubing/riverTubing1Square.png"></image>
     </span> 
     <span class="dot" onclick="currentSlide(2)">
-        <image src="images/riverTubing/riverTubing2Square.png" height=50px width=50px></image>
+        <image src="images/riverTubing/riverTubing2Square.png" ></image>
     </span> 
     <span class="dot" onclick="currentSlide(3)">
          <image src="images/riverTubing/riverTubing3Square.png" height=50px width=50px></image>
@@ -135,17 +194,17 @@
 
 <div class="textGridContainer">
         <div class="textGridItemTitle">
-                Jungle River Tubing 
+                South Staan Creek River Tubing
         </div>
         
 
         <div class="textGridItemThicccc">
-                River rafting on inner tubes through the foothills of beautiful southern Belize on a crystal clear riverine system through dense, tropical, broadleaf rainforest followed by an authentic delicious Belizean coconut rice & beans meal.   
+                River rafting on inner tubes through the foothills of beautiful southern Belize on a crystal clear riverine system through dense, tropical, broadleaf rainforest followed by an authentic delicious Belizean coconut rice & beans meal.
         </div>
 
         <div class="textGridItemThicc">
            <label class = "textGridSmallTitle">This Includes</label>
-           <ul style="list-style:none;"> 
+           <ul> 
                <li> Food </li> 
                <li> Transport </li>
                <li> Water </li>
@@ -154,7 +213,7 @@
 
         <div class="textGridItemThicc">   
             <label class = "textGridSmallTitle">What to Bring </label>
-            <ul style="list-style:none;"> 
+            <ul> 
                 <li> Skin </li>
                 <li> Sunscreen </li>
                 <li> A hat </li>
@@ -176,9 +235,9 @@
                         Total: $56
                         </div>
 
-                        <li class="tourDropdownContent">
+                        <label class="tourDropdownContent">
                                 Book Now
-                        </li>
+                        </label>
                     </ul>
                     
                 </a> 
@@ -195,9 +254,9 @@
                         <div class = "price"> 
                         Total: $56
                         </div> 
-                        <li class="tourDropdownContent">
+                        <label class="tourDropdownContent">
                                 Book Now
-                        </li>
+                        </label>
                     </ul>
                     </a> 
             </div>
@@ -215,9 +274,9 @@
                     <div class = "price"> 
                        Total: $56
                     </div> 
-                    <li class="tourDropdownContent">
+                    <label class="tourDropdownContent">
                             Book Now
-                    </li>
+                    </label>
                 </ul>
             </a> 
             </div>
@@ -235,49 +294,47 @@
                             <div class = "price"> 
                             Total: $56
                             </div>
-                            <li class="tourDropdownContent">
+                            <label class="tourDropdownContent">
                                     Book Now
-                            </li>
+                            </label>
                         </ul>
                         </a>
                 </div>
 
-               
                 <div class=textGridItemThicccc>
                         <label class = "textGridSmallTitle">Other Popular Tours</label>
                 </div>
  
- 
 </div>
 
 <div class="grid-container">
+        <div class="grid-item"> 
+                <a href="nimLihtml">
+                        <img class="grid-image"   src = "images/nimLiSquare.png">
+                        Nim Li Punit
+                </a>
+            </div>
     <div class="grid-item">
             <a href="lubaantun.html">
-                    <img class="grid-image" height="300" width="300" src = "images/lubaantunSquare.png">
+                    <img class="grid-image"  src = "images/lubaantunSquare.png">
                     Lubaantun 
             </a>
     </div>
     
+
     <div class="grid-item">
-        <a href="nimLi.html">
-            <img class="grid-image" height="300" width="300" src = "images/nimLiSquare.png">
-            Nim Li Punit
-        </a>
+        <a href="jungleTubing.html">
+                <img class="grid-image" src = "images/southStaanSquare.png">
+                Jungle River Tubing </a>
     </div>
-    <div class="grid-item">
-        <a href="spiceFarm.html">
-                <img class="grid-image" height="300" width="300" src = "images/spiceFarmSquare.png">
-                Spice Farm </a>
-    </div>
-    <div class="grid-item">
+    <div class="grid-item"> 
         <a href="waterfalls.html">
-                <img class="grid-image" height="300" width="300" src = "images/waterfallsSquare.png"> 
-                Waterfalls
-        </a>
+                <img class="grid-image" src = "images/waterfallsSquare.png">
+                Waterfalls</a>
     </div>
     <div class="grid-item">
         <a href="cave.html">
-                <img class="grid-image" height="300" width="300" src = "images/inlandBlueHoleSquare.png">
+                <img class="grid-image"  src = "images/inlandBlueHoleSquare.png">
                 Inland Blue Hole</a>
     </div>
   </div>

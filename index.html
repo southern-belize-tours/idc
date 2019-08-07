@@ -4,48 +4,108 @@
         <title> Placencia Action Tours </title>
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css"> 
         <link rel="stylesheet" type="text/css" href="css/homeStyle.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<script>
+        function myFunction() {
+document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function dropFunction() {
+document.getElementById("mainDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+if (!event.target.matches('.dropbtn')) {
+var dropdowns = document.getElementsByClassName("dropdown-content");
+var i;
+for (i = 0; i < dropdowns.length; i++) {
+var openDropdown = dropdowns[i];
+if (openDropdown.classList.contains('show')) {
+openDropdown.classList.remove('show');
+}
+}
+}
+}
+
+</script>
+
 </head>
 
 <nav id="navbar"> 
-	<div class = "container"> 
-		<ul>
-            <li> 
-                <button class="blueButton">
-                    <a href="index.html">Home</a>
-                </button>
-            </li>
-			<li>
-                <button class="redButton">
-                    <a href="#">About </a>
-                </button>
-            </li> 
-                
-                <div class="dropdown" href="allTours.html">
-                    <button class="dropbtn"> Tours </button>
-                    <div class="dropdown-content">
-                      <a href="allTours.html">All Tours</a>
-                      <a href="nimLi.html">Nim Li Punit Mayan Ruins</a>
-                      <a href="lubaantun.html">Lubaantun Mayan Ruins</a>
-                      <a href="spiceFarm.html">Spice Farm</a>
-                      <a href="jungleTubing.html">River Tubing</a>
-                      <a href="waterfalls.html">Waterfall Sightseeing</a>
-                      <a href="cave.html">Inland Blue Hole & Cave</a>
+<div class = "container"> 
+    <ul>
+        <li> 
+            <div class="dropdown" id="ignore">
+                    <button class="dropbtn" id="dropbtnMobile" onclick=dropFunction()>Menu</button>
+                    <div id="mainDropdown" class="dropdown-content">
+                            <a href="index.html" class="blueBtn">
+                                Home
+                            </a>
+                            <a href="#" class="redBtn">
+                                            About 
+                            </a>
+                            <div class="dropdown">
+                                    <button class="dropbtn" onclick=myFunction()>Tours</button>
+                                    <div id="myDropdown" class="dropdown-content">
+                                      <a href="allTours.html">All Tours</a>
+                                      <a href="nimLi.html">Nim Li Punit Mayan Ruins</a>
+                                      <a href="lubaantun.html">Lubaantun Mayan Ruins</a>
+                                      <a href="spiceFarm.html">Spice Farm</a>
+                                      <a href="jungleTubing.html">River Tubing</a>
+                                      <a href="waterfalls.html">Waterfall Sightseeing</a>
+                                      <a href="cave.html">Inland Blue Hole & Cave</a>
+                                    </div>
+                                </div>
+                                <a href="#" class="orangeBtn">
+                                    Contact
+                                </a>
                     </div>
-                </div>            
+                </div>
+            </li>
 
+        <a href="index.html" class="blueBtn" id="homeLaptop">
+            <li> 
+                    Home
+            </li>
+        </a>
+        <a href="#" class="redBtn" id="aboutLaptop">
+        <li>
+                About 
+        </li> 
+        </a>
+           
+        <li> 
+            <div class="dropdown" id="laptopDropdown">
+                <a class="dropbtn">Tours</a>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="allTours.html">All Tours</a>
+                  <a href="nimLi.html">Nim Li Punit Mayan Ruins</a>
+                  <a href="lubaantun.html">Lubaantun Mayan Ruins</a>
+                  <a href="spiceFarm.html">Spice Farm</a>
+                  <a href="jungleTubing.html">River Tubing</a>
+                  <a href="waterfalls.html">Waterfall Sightseeing</a>
+                  <a href="cave.html">Inland Blue Hole & Cave</a>
+                </div>
+            </div>
+        </li>
+
+
+        <a href="#" class="orangeBtn" id="contactLaptop">
             <li>
-                    <button class="orangeButton">
-                            <a href="#">Contact </a>
-                    </button>
-                </li>
-        </ul>
-	</div>
+                            Contact
+           </li>
+        </a>
+    </ul>
+</div>
 </nav>
-
 
 <nav id="navBorder">
-    a
+a
 </nav>
+
 
 <body> 
 
