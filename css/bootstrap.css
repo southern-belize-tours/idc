@@ -411,7 +411,7 @@ p
 	}
 
 	  .slideImage{
-		  height: 50%; 
+		  height: 65%; 
 	  }
 
 	  .text{
@@ -422,7 +422,7 @@ p
   @media(max-width: 650px)
   {
 	  .slideImage{
-		  height: 40%; 
+		  height: 50%; 
 	  }
   }
 
@@ -445,7 +445,7 @@ p
 	#laptopDropdown{display:none;}
 
 	  .slideImage{ 
-		height: 30%; 
+		height: 45%; 
 	  }
 
 	  .prev,.next{
@@ -505,7 +505,7 @@ p
   @media(max-width: 375px)
   {
 	  .slideImage{
-		  height: 25%; 
+		  height: 35%; 
 	  }
 
 	  .text{
@@ -516,13 +516,13 @@ p
   @media(max-width: 300px)
   {
 	  .slideImage{
-		  height: 20%; 
+		  height: 25%; 
 	  }
   }
 
   @media(max-width:240px)
   {
 	  .sideImage{
-		  height: 15%; 
+		  height: 20%; 
 	  }
   }
