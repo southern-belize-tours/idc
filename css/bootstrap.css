@@ -156,7 +156,7 @@ p
 	color:rgb(225, 225, 116); 
 }
 
-.dropbtn {
+.dropbtn, .dropbtnMobile {
 	background-color: rgb(225, 225, 116); 
 	color: rgb(16, 154, 43);
 	font-size:18px;  
@@ -169,7 +169,7 @@ p
 
   /*With chrome the button gets an annoying orange border when you 
      click it. This resolves the issue */ 
-  .dropbtn:focus {outline:0;}
+  .dropbtn:focus{outline:0;}
   
   .dropdown { 
 	margin:0px; 
@@ -195,16 +195,59 @@ p
 	z-index: 1; 
   }
 
-.dropdown-content a:hover {
+  .dropdown-content .blueBtn{
+	  color:rgb(23,123,211);
+  }
+
+  .dropdown-content .blueBtn:hover{
+	background-color:rgb(23,123,211); 
+	color: rgb(225, 225, 116); 
+ }
+
+  .dropdown-content .redBtn{
+	  color: rgb(222, 60, 71); 
+  }
+  .dropdown-content .redBtn:hover{
+	background-color:rgb(222, 60, 71); 
+	color: rgb(225, 225, 116); 
+ }
+
+  .dropdown-content .orangeBtn{
+	  color: rgb(227, 159, 42);
+  }
+  .dropdown-content .redBtn:hover{
+	background-color:rgb(227,159,42); 
+	color: rgb(225, 225, 116); 
+ }
+
+
+  .dropdown-content a:hover {
 	background-color: rgb(16, 154, 43);
 	color: rgb(225, 225, 116);
-}
+  }
 
+  .dropdown-content .dropdown{width:100%; }
+
+  .dropdown-content .dropbtn{
+	color: rgb(27, 59, 187); 
+  }
+
+  .dropdown-content .dropdown-content a{
+	  color: rgb(27, 59, 187); 
+  }
+
+  .dropdown-content .dropbtn:hover{
+	  color:rgb(225, 225, 116); 
+	  background-color:rgb(27, 59, 187);
+  }
 
 
 .show{display: block;}
 
-.dropdown:hover .dropbtn {background-color: rgb(16, 154, 43); color:rgb(225, 225, 116);border-width:0px; }
+.changeBackground{
+	background-color: rgb(16, 154, 43);
+	color: rgb(225, 225, 116);
+}
 
 .mySlides {display: grid;}
   
@@ -375,10 +418,17 @@ p
   @media(min-width:427px)
   {
 	.dropdown:hover .dropdown-content {display:block;}
+
+	#dropbtnMobile {display:none;}
+
+	.dropdown:hover .dropbtn {background-color: rgb(16, 154, 43); color:rgb(225, 225, 116);border-width:0px; }
+
   }
 
   @media(max-width: 426px)
   {
+	#laptopDropdown{display:none;}
+
 	  .slideImage{ 
 		height: 30%; 
 	  }
@@ -402,11 +452,15 @@ p
 		text-align:center; 
 	}
 
+	#navbar #aboutLaptop, #navbar #homeLaptop, #navbar #contactLaptop{
+		display:none; 
+	}
+
 	#navbar a {
 		padding-inline-start:0px;
 		display:block; 
-		padding-top: 10px; 
-		padding-bottom: 10px; 
+		padding-top: 5px; 
+		padding-bottom: 5px; 
 		width: 100%;
 		text-align:center; 
 	}
@@ -426,6 +480,7 @@ p
 		margin-top:0px; 
 	}
 	
+
 
   }
 
