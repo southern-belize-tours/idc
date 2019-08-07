@@ -167,6 +167,9 @@ p
 	border-width:0px; 
   } 
 
+  /*With chrome the button gets an annoying orange border when you 
+     click it. This resolves the issue */ 
+  .dropbtn:focus {outline:0;}
   
   .dropdown { 
 	margin:0px; 
@@ -197,8 +200,9 @@ p
 	color: rgb(225, 225, 116);
 }
 
-/*Makes the stuff display when you hover*/ 
-.dropdown:hover .dropdown-content {display: block;}
+
+
+.show{display: block;}
 
 .dropdown:hover .dropbtn {background-color: rgb(16, 154, 43); color:rgb(225, 225, 116);border-width:0px; }
 
@@ -368,6 +372,11 @@ p
 	  }
   }
 
+  @media(min-width:427px)
+  {
+	.dropdown:hover .dropdown-content {display:block;}
+  }
+
   @media(max-width: 426px)
   {
 	  .slideImage{ 
@@ -406,11 +415,16 @@ p
 		width:100%; 
 	}
 
+	.dropbtn{
+		width:100%; 
+		padding-top: 10px; 
+		padding-bottom:10px; 
+	}
+
 	.dropdown-content {
 		position: relative; 
 		margin-top:0px; 
 	}
-
 	
 
   }
