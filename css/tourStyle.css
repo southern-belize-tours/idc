@@ -10,6 +10,7 @@
 .grid-image
 {
   width: 100%; 
+  height: 300px; 
 }
 
 .textGridItem, .textGridItemThicc, .textGridItemThicccc {
@@ -24,6 +25,7 @@
   .textGridItemTitle{
     color:rgb(23, 123, 211); 
     font-size:40;
+    font-size:5vw; 
     text-align:center; 
 }
 
@@ -65,12 +67,10 @@
   .tourDropdownContent{  
     display:block; 
     position:sticky;
-    padding-left: 100px; 
-    padding-right:100px; 
     z-index: 1;
 
-    color: rgb(238, 219, 238);
-    background-color:rgb(238, 219, 238);
+
+    color: rgb(219, 228, 235);
 
   }
 
@@ -89,6 +89,7 @@
 
   .tourDropdownContent{
     background-color:rgb(238, 219, 238);
+    background-color: rgb(219, 228, 235);
   }
 
 
@@ -244,31 +245,151 @@
 
 
 
-/*anything in here must be under 800 px*/ 
-@media(max-width: 1300px ) 
+
+
+/*For very large screens/monitors we can hold 5 images in a single row*/ 
+@media(min-width: 1700px)
 {
-	#main
-	{
-		/*width: 100%;*/ /* makes it so that shit goes on top of eachother if the width is super restricted */ 
-		/*float: none; */
+  .grid-container{
+    grid-template-columns: auto auto auto auto auto; 
+  }
+}
+
+@media(min-width: 1100px)
+{
+  .textGridItemTitle{
+    font-size: 54; 
   }
 
+  .tourText > li, .price, .tourDropdownContent{
+    padding-top: 15px; 
+    padding-bottom: 15px; 
+  }
+}
+
+/*Smaller laptops and tablets look nice with 3 images per row*/ 
+@media(max-width: 1200px)
+{
+  .grid-container{
+    grid-template-columns: auto auto auto; 
+  }
+
+}
+
+/*Tablets should still have 3 images per row, but we downsize them
+  so that they can fit nicely on the screen still*/ 
+@media(max-width: 900px)
+{
+  .grid-item{
+    max-width: 220px; 
+  }
+
+  .grid-image{
+    height: 220px; 
+  }
+}
+
+/*Remove the margins from our text grid when we are using anything smaller than
+  a conventional tablet*/ 
+@media(max-width:786px)
+{
   .textGridContainer
   {
     margin-left:20px;
     margin-right:20px; 
   }
-  
 }
 
-@media(max-width: 1175px)
+/*When we start getting to small tablets and phones it's best to display at most 2 images
+  and to downsize the images a bit*/ 
+@media(max-width: 670px)
 {
   .grid-container{
-    grid-template-columns: auto auto auto; 
+    grid-template-columns: auto auto;
+  }
+
+  .grid-item{
+    max-width: 220px; 
+  }
+
+  .grid-image{
+    height: 220px;
+  }
+
+  .textGridContainer{
+    grid-gap:1rem; 
+  }
+
+  .textGridItemTitle{
+    font-size: 7vw; 
+  }
+
+  .textGridItemThicccc{
+    text-align:center; 
+  }
+
+  .textGridItemThicc{
+    grid-column: span 4;
+    text-align: center; 
+  } 
+
+  .textGridItemThicc > ul{
+    text-align:left; 
+  }
+
+  .tourText >li, .price, .tourDropdownContent{
+    padding: 5px; 
+    font-size: 3vw; 
   }
 }
 
-@media(max-width: 900px)
+@media(max-width:440px)
 {
-  .grid-container{grid-template-columns:auto auto;}
+  .grid-container{
+    margin-left: 5px; 
+    margin-right: 5px; 
+  }
+
+  .grid-item{
+    max-width: 170px; 
+  }
+
+  .grid-image{
+    height: 170px; 
+  }
+
+  .textGridSmallTitle{
+    font-size: 5.7vw; 
+  }
+}
+
+@media(max-width:375px)
+{
+  .grid-item{
+    max-width:150px; 
+  }
+
+  .grid-image{
+    height:150px; 
+  }
+}
+
+@media(max-width:320px)
+{
+  .grid-container{
+    grid-template-columns:auto; 
+  }
+
+  .grid-item{
+    max-width:250px; 
+  }
+
+  .grid-image{
+    height: 250px; 
+  }
+
+  .tourText >li, .price, .tourDropdownContent{
+    padding: 3px; 
+    font-size: 3.2vw; 
+  }
 }

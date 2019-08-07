@@ -8,7 +8,8 @@ body
     /*background-repeat:   no-repeat;*/
     background-size: auto;
 
-    background-color: rgb(238, 219, 238); 
+	background-color: rgb(238, 219, 238); 
+	background-color: rgb(219, 228, 235);
 
 
 	/*background-color: black;*/ /*I want this to be a cool image*/ 
@@ -60,7 +61,7 @@ p
 
 .container
 {
-    width:80%;
+    width:100%;
     padding-left: 0px; 
     padding-right: 0px; 
     margin-left: 0px; 
@@ -72,11 +73,6 @@ p
 .container h2
 {
 	float: left;
-}
-
-#mainHeader
-{
-	color: white;
 }
 
 #icons ul
@@ -98,23 +94,6 @@ p
 	padding-right: 15px;
 }
 
-#contactList
-{
-    padding-left: 10px;
-}
-
-#contactList span
-{
-	font-size: 20; 
-	font-weight: bold; 
-}
-
-#contactList li
-{
-    margin-right: 10px; 
-    padding-left: 20px; 
-}
-
 #navbar
 {
 	background-color: rgb(225, 225, 116);
@@ -122,10 +101,9 @@ p
 
 #navbar ul
 {
-	padding: 0;
-	margin-top: -3px; 
-	margin-bottom: -3px; 
 	list-style: none; 
+	padding-inline-start: 0px;  
+
 }
 
 #navbar ol 
@@ -140,140 +118,64 @@ p
 #navbar li
 { 
 	display: inline; /*this is cool it displays the list items on the same line*/
-    padding-top: none; 
-	padding-bottom: none; 
-	margin-left: -4px; 
-	margin-right: -4px; 
 }
 
-.blueButton
-{
-	background-color: rgb(225, 225, 116);
-	padding: 20px;  
-	padding-bottom: 25px;
-	border: none;
-}
-
-.blueButton a
-{
-	color:rgb(23, 123, 211); 
-	font-size: 16px;
-}
-
-.blueButton:hover
-{
-	background-color: rgb(23, 123, 211); 
-}
-
-.blueButton:hover a
-{
-	color: rgb(225, 225, 116);
-}
-
-.redButton
-{
-	background-color: rgb(225, 225, 116);
-	padding: 20px;  
-	padding-bottom: 25px;
-	border: none;
-}
-
-.redButton a
-{
-	color:rgb(222, 60, 71); 
-	font-size: 16px;
-}
-
-.redButton:hover
-{
-	background-color: rgb(222,60,71); 
-}
-
-.redButton:hover a
-{
-	color: rgb(225, 225, 116);
-}
-
-.orangeButton
-{
-	background-color: rgb(225, 225, 116);
-	padding: 20px;  
-	padding-bottom: 25px;
-	border: none;
-}
-
-.orangeButton a
-{
-	color:rgb(227, 159, 42); 
-	font-size: 16px;
-}
-
-.orangeButton:hover
-{
-	background-color: rgb(227, 159, 42); 
-}
-
-.orangeButton:hover a
-{
-	color: rgb(225, 225, 116);
-}
 
 #navbar a
 {
+	padding: 20px 20px 25px; 
 	/*color: white; */ 
 	text-decoration: none;
     font-size: 18px;
-	padding-right: 15px; /*this will separate them when the list items are displayed net to eachother so that they are not so close together PRO COMMMENT */ 
 }
 
-#main
-{
-
-	padding: 2%; 
-	background-color: #f4f4f4;
-	float: left;
-	width: 70%;
-
-
-	/*padding: 0 30px; */
-	/*box-sizing: border-box;*/
-
+.blueBtn{
+	color: rgb(23,123,211); 
 }
 
-#sidebar
-{
-	float: right;
-	width: 30%;
-	background: #333;
-	color: white;
-	padding: 10px;
-	box-sizing: border-box;
+.blueBtn:hover{
+	background-color: rgb(23,123,211); 
+	color:rgb(225, 225, 116); 
 }
 
+.redBtn{
+	color:rgb(222, 60, 71); 
+}
+
+.redBtn:hover{
+	background-color: rgb(222, 60, 71); 
+	color:rgb(225, 225, 116); 
+}
+
+.orangeBtn{
+	color:rgb(227, 159, 42); 
+}
+
+.orangeBtn:hover{
+	background-color: rgb(227, 159, 42); 
+	color:rgb(225, 225, 116); 
+}
 
 .dropbtn {
 	background-color: rgb(225, 225, 116); 
 	color: rgb(16, 154, 43);
-	font-size:18;  
+	font-size:18px;  
 	padding: 20px;  
 	padding-bottom: 25px;
-	padding-top: 21px; 
-	border: none;
-	margin-left: none; 
+	padding-top: 20px; 
+	font-family:Arial, Helvetica, sans-serif;
+	border-width:0px; 
   } 
 
   
   .dropdown { 
+	margin:0px; 
+	padding: 0px; 
 	display: inline-block;
-	/*position: static; */ 
-	margin-right: -4px; 
   }
   
   .dropdown-content {
-	margin-top: -3px;  
-	/*margin-left: -2px; */
-	margin-left: 1px;   
-
+	margin-top: 16px; 
 	display: none;  
 	position: absolute; 
 	background-color:rgb(225, 225, 116); 
@@ -295,26 +197,20 @@ p
 	color: rgb(225, 225, 116);
 }
 
+/*Makes the stuff display when you hover*/ 
 .dropdown:hover .dropdown-content {display: block;}
 
-.dropdown:hover .dropbtn {background-color: rgb(16, 154, 43); color:rgb(225, 225, 116);}
+.dropdown:hover .dropbtn {background-color: rgb(16, 154, 43); color:rgb(225, 225, 116);border-width:0px; }
 
 .mySlides {display: grid;}
   
   /* Slideshow container */
-  .slideshow-container {
-
-    /*margin: auto; */ 
+  .slideshow-container { 
     margin-left: none; 
     margin-right: none; 
-    /*width: 100%; */ 
-
 	margin-top: -25px; 		/*The navbar has a 25px margin we don't want*/ 
     margin-bottom: 20px;  
-    /*max-width:1300px; 
-    max-height:975px; */ 
-
-    background: url(../images/backgroundImg.png) scroll center top transparent;
+	background: url(../images/backgroundImg-2.png) scroll center top transparent;
     /*TOOK OUT 'repeat' */ 
 }
 
@@ -324,17 +220,9 @@ p
       margin-left: auto; 
       margin-right: auto; 
       display:block; 
-      height: 80%; 
-
-      /*max-width:1300px; */ 
+      height: 80%;  
 	  max-height:643px; 
-
-	  /*min-width: 800px; 
-	
-	  min-height: 500px; */ 
-	  
       overflow:hidden; 
-      /*min-width:700px; */ 
       max-width:100%;
   }
   
@@ -348,6 +236,7 @@ p
 	position: absolute;
 
 	top: 320px;
+	top: 30%; 
 	
 	
 	max-height: 0px; 
@@ -376,6 +265,7 @@ p
   .text {
     color:white;
 	font-size: 19px;
+
 	width: 100%; 
 	/*padding: 8px 12px;*/ 
 	margin-top: -2em; 
@@ -400,11 +290,14 @@ p
 	height: 50px;
 	width: 50px;
 	margin: 0 10px;
-	background-color: #bbb;
 	border-radius: 50%;
     /*display: inline-block; */
-    display:hidden; 
 	transition: background-color 0.6s ease;
+  }
+
+  .dot > img{
+	  height: 50px; 
+	  width: 50px;  
   }
   
   .active, .dot:hover {
@@ -427,17 +320,104 @@ p
 	}
   } */ 
 
-  @media(max-width: 700px)
+
+  @media(min-width:1024px)
   {
-	  .slideImage{
-		  height: 60%; 
+	  .dot{
+		  margin: 0 15px; 
+	  }
+
+	  .dot > img{
+		  width:60px; 
+		  height:60px; 
 	  }
   }
 
-  @media(max-width: 500px)
+  @media(min-width:770px)
+  {
+	  .prev, .next{
+		  top:40%; 
+	  }
+  }
+
+  @media(max-width: 769px)
+  {
+	.dot
+	{
+		margin: 0 5px; 
+	}
+
+	.dot > img{
+		width: 40px; 
+		height: 40px; 
+	}
+
+	  .slideImage{
+		  height: 50%; 
+	  }
+
+	  .text{
+		  font-size: 2.3vw; 
+	  }
+  }
+
+  @media(max-width: 650px)
+  {
+	  .slideImage{
+		  height: 40%; 
+	  }
+  }
+
+  @media(max-width: 426px)
   {
 	  .slideImage{ 
-		height: 40%; 
+		height: 30%; 
+	  }
+
+	  .prev,.next{
+		  top:25%; 
+	  }
+
+	  .text{
+		  font-size: 3vw; 
+	  }
+
+	/*EDIT THE NAVBAR HERE*/ 
+	#navbar ul{
+		margin: 0px; 
+		width:100%; 
+
+	}
+
+	#navbar li{
+		text-align:center; 
+	}
+
+	#navbar a {
+		padding-inline-start:0px;
+		display:block; 
+		padding-top: 10px; 
+		padding-bottom: 10px; 
+		width: 100%;
+		text-align:center; 
+	}
+
+	#navbar li > .dropdown{
+		width:100%; 
+	}
+
+	
+
+  }
+
+  @media(max-width: 375px)
+  {
+	  .slideImage{
+		  height: 25%; 
+	  }
+
+	  .text{
+		  margin-top: -2.5em; 
 	  }
   }
 
@@ -445,5 +425,12 @@ p
   {
 	  .slideImage{
 		  height: 20%; 
+	  }
+  }
+
+  @media(max-width:240px)
+  {
+	  .sideImage{
+		  height: 15%; 
 	  }
   }
