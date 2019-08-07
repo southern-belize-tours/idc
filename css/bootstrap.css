@@ -103,7 +103,8 @@ p
 {
 	list-style: none; 
 	padding-inline-start: 0px;  
-
+	margin: 0px; 
+	padding: 20px 0px; 
 }
 
 #navbar ol 
@@ -117,6 +118,7 @@ p
 
 #navbar li
 { 
+	margin:0px; 
 	display: inline; /*this is cool it displays the list items on the same line*/
 }
 
@@ -124,9 +126,10 @@ p
 #navbar a
 {
 	padding: 20px 20px 25px; 
+	padding-top: 25px; 
 	/*color: white; */ 
 	text-decoration: none;
-    font-size: 18px;
+	font-size: 18px;
 }
 
 .blueBtn{
@@ -233,8 +236,16 @@ p
   }
 
   .dropdown-content .dropdown-content a{
-	  color: rgb(27, 59, 187); 
+	  background-color:rgb(27, 59, 187); 
+	  color: rgb(225, 225, 116); 
   }
+
+  .dropdown-content .dropdown-content a:hover{
+	  color: rgb(27, 59, 187); 
+	  background-color:rgb(225, 225, 116);
+  }
+
+
 
   .dropdown-content .dropbtn:hover{
 	  color:rgb(225, 225, 116); 
@@ -417,9 +428,13 @@ p
 
   @media(min-width:427px)
   {
+	#navbar .container ul li .dropdown {display:none; margin:0px; }
+
+	#navbar .container ul li #laptopDropdown {display:inline-block;}
+
 	.dropdown:hover .dropdown-content {display:block;}
 
-	#dropbtnMobile {display:none;}
+	#dropbtnMobile {display:none;margin:0px; }
 
 	.dropdown:hover .dropbtn {background-color: rgb(16, 154, 43); color:rgb(225, 225, 116);border-width:0px; }
 
@@ -445,10 +460,13 @@ p
 	#navbar ul{
 		margin: 0px; 
 		width:100%; 
+		padding: 0px;
 
 	}
 
 	#navbar li{
+		margin-top:0px; 
+		padding-top:0px; 
 		text-align:center; 
 	}
 

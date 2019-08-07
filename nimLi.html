@@ -36,7 +36,7 @@ if (!event.target.matches('.dropbtn')) {
 <nav id="navbar"> 
         <div class = "container"> 
             <ul>
-                <li> 
+                <li id="ignore"> 
                     <div class="dropdown">
                             <button class="dropbtn" id="dropbtnMobile" onclick=dropFunction()>Menu</button>
                             <div id="mainDropdown" class="dropdown-content">
@@ -77,7 +77,7 @@ if (!event.target.matches('.dropbtn')) {
                    
                 <li> 
                     <div class="dropdown" id="laptopDropdown">
-                        <button class="dropbtn" onclick=myFunction()>Tours</button>
+                        <a class="dropbtn">Tours</a>
                         <div id="myDropdown" class="dropdown-content">
                           <a href="allTours.html">All Tours</a>
                           <a href="lubaantun.html">Lubaantun Mayan Ruins</a>
