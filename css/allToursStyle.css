@@ -7,6 +7,11 @@
 
 }
 
+.grid-image{
+  width:100%; 
+  height: 290px; 
+}
+
 .textGridItem, .textGridItemThicc, .textGridItemThicccc {
 	background-color: rgb(200,200,200); 
 	justify-content: center; 
@@ -40,8 +45,7 @@
 
 .grid-item {
 	background-color: none; 
-	/*border: 1px solid rgba(0, 0, 0, 0.8);*/ 
-	max-width:300px; 
+	/*border: 1px solid rgba(0, 0, 0, 0.8);*/  
 
 	border: none; 
 	/*padding: 20px;  
@@ -50,7 +54,7 @@
   }
 
   .grid-item a{
-	  font-size: 20; 
+	  font-size: 2vw; 
 	  text-decoration: none; 
 	  /*background-color: rgba(255, 255, 255, 0.8);
 	  border: 1px solid rgba(0, 0, 0, 0.8);*/
@@ -151,12 +155,65 @@
   transform: rotate(45deg);
 }
 
-/*anything in here must be under 600 px*/ 
-@media(max-width: 600px) 
+@media(min-width:1440px)
 {
-	#main
-	{
-		width: 100%; /* makes it so that shit goes on top of eachother if the width is super restricted */ 
-		float: none; 
-	}
+  .grid-container{
+    grid-template-columns: auto auto auto auto; 
+  }
+}
+
+@media(min-width: 1900px)
+{
+  .grid-container{
+    grid-template-columns: auto auto auto auto auto; 
+  }
+
+  .grid-image{
+    height: 370px; 
+  }
+}
+
+@media(max-width:768px)
+{
+  .grid-container{
+    padding: 25px; 
+    grid-column-gap: 20px;
+    grid-row-gap: 20px; 
+  }
+
+  .grid-image{
+    height: 200px; 
+  }
+}
+
+@media(max-width:425px)
+{
+  .grid-container {
+    padding: 15px; 
+    grid-column-gap: 15px; 
+    grid-row-gap: 15px; 
+    grid-template-columns: auto auto; 
+    }
+
+  .grid-image{
+    height: 180px; 
+  }
+
+  .grid-item a{
+    font-size: 3vw; 
+  }
+}
+
+@media(max-width:375px)
+{
+  .grid-image{
+    height: 160px; 
+  }
+}
+
+@media(max-width:320px)
+{
+  .grid-image{
+    height: 130px; 
+  }
 }

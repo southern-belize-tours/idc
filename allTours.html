@@ -4,6 +4,32 @@
         <title> Find Your Adventure</title>
         <link rel="stylesheet" type="text/css" href="css/allToursStyle.css">
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script>
+                function myFunction() {
+document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function dropFunction() {
+    document.getElementById("mainDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+    var openDropdown = dropdowns[i];
+    if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+    }
+    }
+}
+}
+
+</script>
 </head>
 
 <nav id="navbar"> 
@@ -78,11 +104,11 @@
 
 <body> 
 
-<span style="color:rgb(23, 123, 211);font-size:40px;padding-left:20px;padding-top:30px">Tours</span>
+<div style="color:rgb(23, 123, 211);font-size:40px;text-align:center;">Tours</div>
 <p>
 There favorited tours that one can choose from, and many of the tours can be bundled together. 
 Click on the title for details on the tour,prices and bundled prices. 
-To reserve a tour, only a small downpayment is required and the rest of the pyment can be made in cash or card on the day of the tour.
+To reserve a tour, only a small downpayment is required and the rest of the payment can be made in cash or card on the day of the tour.
 Pick up locations can be from just about anywhere, but are most often from......... 
 Note if there s a tour not isted, feel free to contact us and we will try to accomodate. 
 </p>
@@ -90,36 +116,36 @@ Note if there s a tour not isted, feel free to contact us and we will try to acc
 <div class="grid-container">
     <div class="grid-item">
             <a href="nimLi.html">
-                    <img class="grid-image" height="320" width="320" src = "images/nimLiSquare.png">
+                    <img class="grid-image"  src = "images/nimLiSquare.png">
                     <br> 
                     Nim Li Punit Mayan Ruins
             </a>
     </div>
     <div class="grid-item">
         <a href="lubaantun.html">
-        <img class="grid-image" height="320" width="320" src = "images/lubaantunSquare.png">
+        <img class="grid-image" src = "images/lubaantunSquare.png">
         <br> 
         Lubaantun Mayan Ruins</a>
     </div>
     <div class="grid-item">
-        <img class="grid-image" height="320" width="320" src = "images/spiceFarmSquare.png">
+        <img class="grid-image"  src = "images/spiceFarmSquare.png">
         <br> 
-        <a href="spiceFarm.html">Spice Farm Tropical Botanical Garden</a>
+        <a href="spiceFarm.html">Spice Farm Tropical Garden</a>
     </div>
     <div class="grid-item">
-        <img class="grid-image" height="320" width="320" src = "images/southStaanSquare.png">
+        <img class="grid-image"  src = "images/southStaanSquare.png">
         <br> 
-        <a href="jungleTubing.html">South Stann Creek River Tubing Excursion</a>
+        <a href="jungleTubing.html">River Tubing Excursion</a>
     </div>
     <div class="grid-item">
-        <img class="grid-image" height="320" width="320" src = "images/waterfallsSquare.png">
+        <img class="grid-image"  src = "images/waterfallsSquare.png">
         <br> 
         <a href="waterfalls.html">Waterfalls</a>
     </div>
     <div class="grid-item">
-        <img class="grid-image" height="320" width="320" src = "images/inlandBlueHoleSquare.png">
+        <img class="grid-image"  src = "images/inlandBlueHoleSquare.png">
         <br> 
-        <a href="cave.html">Inland Blue Hole & Cave Exploration</a>
+        <a href="cave.html">Inland Blue Hole & Cave</a>
     </div>
   </div>
 
