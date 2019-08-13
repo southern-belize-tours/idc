@@ -22,6 +22,7 @@ body
 
 p
 {
+	text-indent: 20px; 
     margin-top: 20px; 
 	margin-bottom: 20px; 
 	margin-left:70px; 
@@ -424,6 +425,15 @@ p
 	  .slideImage{
 		  height: 50%; 
 	  }
+
+	  p
+	{
+		margin-top: 10px; 
+		margin-bottom: 10px; 
+		margin-left:30px; 
+		margin-right: 30px; 
+	}
+
   }
 
   @media(min-width:427px)
@@ -499,7 +509,10 @@ p
 		margin-top:0px; 
 	}
 	
-
+	p{
+		font-size: 10;
+		line-height: 15px; 
+	}
 
   }
 
@@ -511,6 +524,11 @@ p
 
 	  .text{
 		  margin-top: -2.5em; 
+	  }
+
+	  .p{
+		  margin-left:10px; 
+		  margin-right: 10px; 
 	  }
   }
 

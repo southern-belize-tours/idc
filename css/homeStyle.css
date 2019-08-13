@@ -158,3 +158,19 @@
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+
+@media(max-width:1024px)
+{
+  .title{
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+  }
+}
+
+@media(max-width:425px)
+{
+  .title{
+    margin-top:0px;
+    margin-bottom: 10px; 
+  }
+}
