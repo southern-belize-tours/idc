@@ -10,20 +10,48 @@
         <div class = "container"> 
             <ul>
                 <li> 
-                    <button class="blueButton">
-                        <a href="index.html">Home</a>
-                    </button>
-                </li>
+                    <div class="dropdown" id="ignore">
+                            <button class="dropbtn" id="dropbtnMobile" onclick=dropFunction()>Menu</button>
+                            <div id="mainDropdown" class="dropdown-content">
+                                    <a href="index.html" class="blueBtn">
+                                        Home
+                                    </a>
+                                    <a href="about.html" class="redBtn">
+                                                    About 
+                                    </a>
+                                    <div class="dropdown">
+                                            <button class="dropbtn" onclick=myFunction()>Tours</button>
+                                            <div id="myDropdown" class="dropdown-content">
+                                              <a href="nimLi.html">Nim Li Punit Mayan Ruins</a>
+                                              <a href="lubaantun.html">Lubaantun Mayan Ruins</a>
+                                              <a href="spiceFarm.html">Spice Farm</a>
+                                              <a href="jungleTubing.html">River Tubing</a>
+                                              <a href="waterfalls.html">Waterfall Sightseeing</a>
+                                              <a href="cave.html">Inland Blue Hole & Cave</a>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="orangeBtn">
+                                            Contact
+                                        </a>
+                            </div>
+                        </div>
+                    </li>
+
+                <a href="index.html" class="blueBtn" id="homeLaptop">
+                    <li> 
+                            Home
+                    </li>
+                </a>
+                <a href="about.html" class="redBtn" id="aboutLaptop">
                 <li>
-                    <button class="redButton">
-                        <a href="#">About </a>
-                    </button>
+                        About 
                 </li> 
-                    
-                    <div class="dropdown">
-                        <button class="dropbtn">Tours</button>
-                        <div class="dropdown-content">
-                          <a href="allTours.html">All Tours</a>
+                </a>
+                   
+                <li> 
+                    <div class="dropdown" id="laptopDropdown">
+                        <a class="dropbtn">Tours</a>
+                        <div id="myDropdown" class="dropdown-content">
                           <a href="nimLi.html">Nim Li Punit Mayan Ruins</a>
                           <a href="lubaantun.html">Lubaantun Mayan Ruins</a>
                           <a href="spiceFarm.html">Spice Farm</a>
@@ -32,12 +60,14 @@
                           <a href="cave.html">Inland Blue Hole & Cave</a>
                         </div>
                     </div>
-                
-                <li>
-                        <button class="orangeButton">
-                                <a href="#">Contact </a>
-                        </button>
                 </li>
+
+
+                <a href="#" class="orangeBtn" id="contactLaptop">
+                    <li>
+                                    Contact
+                   </li>
+                </a>
             </ul>
         </div>
     </nav>

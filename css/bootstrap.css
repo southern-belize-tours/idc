@@ -438,7 +438,8 @@ p
 
 	.dropdown:hover .dropbtn {background-color: rgb(16, 154, 43); color:rgb(225, 225, 116);border-width:0px; }
 
-  }
+	.dropdown-content{margin-top:20px;}
+}
 
   @media(max-width: 426px)
   {
@@ -526,5 +527,4 @@ p
 		  height: 20%; 
 	  }
   }
-
   
