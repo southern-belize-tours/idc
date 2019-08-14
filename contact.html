@@ -241,7 +241,7 @@ If you have any questions, need any special accomodations, or are interested in 
             <h1>Send us a Message</h1>
         </div>
         <div class="payment">
-            <form>
+            <form method="post" action="contact.php">
                 <div class="form-group owner">
                     <label for="owner">First Name</label>
                     <input type="text" class="form-control" id="owner" placeholder="Eiluv">
@@ -358,7 +358,7 @@ If you have any questions, need any special accomodations, or are interested in 
                         <textarea class= "form-control" rows=8 name="special Requests" style="width:100%;resize:none;line-height: 25px; " placeholder="We have a school trip of 50+ students coming for the first week of July and were wondering if you could accomodate us for the week. Please email me at jdoe@example.com to discuss prices and logistics."></textarea>
                 </div>
                 <div class="form-group" id="pay-now">
-                    <button type="submit" class="btn btn-default" id="confirm-purchase">Confirm</button>
+                    <button type="submit" name="submit" class="btn btn-default" id="confirm-purchase">Confirm</button>
                 </div>
 
             </form>
