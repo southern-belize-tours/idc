@@ -689,9 +689,7 @@ p
     -webkit-filter: brightness(50%); 
   }
 
-  input:checked + text {
-    color: red; 
-  }
+  
 
 
 

@@ -1,0 +1,428 @@
+<!doctype html/> 
+
+<head>
+        <title> South Water Caye Fishing </title>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css"> 
+        <link rel="stylesheet" type="text/css" href="css/tourStyle.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script>
+                function myFunction() {
+document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function dropFunction() {
+    document.getElementById("mainDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+    var openDropdown = dropdowns[i];
+    if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+    }
+    }
+}
+}
+
+</script>
+
+</head>
+
+<nav id="navbar"> 
+        <div class = "container"> 
+            <ul>
+                <li> 
+                    <div class="dropdown" id="ignore">
+                            <button class="dropbtn" id="dropbtnMobile" onclick=dropFunction()>Menu</button>
+                            <div id="mainDropdown" class="dropdown-content">
+                                    <a href="index.html" class="blueBtn">
+                                        Home
+                                    </a>
+                                    <a href="about.html" class="redBtn">
+                                                    About 
+                                    </a>
+                                    <div class="dropdown">
+                                            <button class="dropbtn" onclick=myFunction()>Tours</button>
+                                            <div id="myDropdown" class="dropdown-content">
+                                              <a href="allTours.html">All Tours</a>
+                                              <a href="nimLi.html">Nim Li Punit Mayan Ruins</a>
+                                              <a href="lubaantun.html">Lubaantun Mayan Ruins</a>
+                                              <a href="spiceFarm.html">Spice Farm</a>
+                                              <a href="jungleTubing.html">River Tubing</a>
+                                              <a href="waterfalls.html">Waterfall Sightseeing</a>
+                                              <a href="cave.html">Inland Blue Hole & Cave</a>
+                                              <a href="blueHole.html">Blue Hole Flyover</a>
+                                              <a href="southWaterSnorkel.html">South Water Caye Snorkeling</a>
+                                            </div>
+                                        </div>
+                                        <a href="contact.html" class="orangeBtn">
+                                            Contact
+                                        </a>
+                            </div>
+                        </div>
+                    </li>
+
+                <a href="index.html" class="blueBtn" id="homeLaptop">
+                    <li> 
+                            Home
+                    </li>
+                </a>
+                <a href="about.html" class="redBtn" id="aboutLaptop">
+                <li>
+                        About 
+                </li> 
+                </a>
+                   
+                <li> 
+                    <div class="dropdown" id="laptopDropdown">
+                        <a class="dropbtn">Tours</a>
+                        <div id="myDropdown" class="dropdown-content">
+                          <a href="allTours.html">All Tours</a>
+                          <a href="nimLi.html">Nim Li Punit Mayan Ruins</a>
+                          <a href="lubaantun.html">Lubaantun Mayan Ruins</a>
+                          <a href="spiceFarm.html">Spice Farm</a>
+                          <a href="jungleTubing.html">River Tubing</a>
+                          <a href="waterfalls.html">Waterfall Sightseeing</a>
+                          <a href="cave.html">Inland Blue Hole & Cave</a>
+                          <a href="blueHole.html">Blue Hole Flyover</a>
+                          <a href="southWaterSnorkel.html">South Water Caye Snorkeling</a>
+                        </div>
+                    </div>
+                </li>
+
+
+                <a href="contact.html" class="orangeBtn" id="contactLaptop">
+                    <li>
+                                    Contact
+                   </li>
+                </a>
+            </ul>
+        </div>
+    </nav>
+
+<nav id="navBorder">
+    a
+</nav>
+
+<body> 
+
+
+<div class="slideshow-container"> 
+
+        <div class="mySlides fade">
+                <div class="numbertext">1 / 6</div>
+                <img class="slideImage" src="images/southwaterSnorkel/southwater3.png" >
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 6</div>
+          <img class="slideImage" src="images/southwaterSnorkel/southwater1.png"> <!-- you could do "style=width:100% if you want"--> 
+        </div>
+    
+        <div class="mySlides fade">
+                <div class="numbertext">3 / 6</div>
+                <img class="slideImage" src="images/southwaterSnorkel/southwater5.png" >
+        </div>
+
+        <div class="mySlides fade">
+                <div class="numbertext">4 / 6</div>
+                <img class="slideImage" src="images/southwaterSnorkel/southwater6.png" >
+        </div>
+
+        <div class="mySlides fade">
+                <div class="numbertext">5 / 6</div>
+                <img class="slideImage" src="images/southwaterSnorkel/southwater7.png" >
+        </div>
+
+        <div class="mySlides fade">
+                <div class="numbertext">6 / 6</div>
+                <img class="slideImage" src="images/southwaterSnorkel/southwater8.png" >
+        </div>
+        
+      
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<div style="display:inline-block;justify-content: center;display:flex;margin-top:10px;">
+        <span class="dot" onclick="currentSlide(1)">
+                <image src="images/southwaterSnorkel/southwater3Square.png" ></image>
+        </span> 
+    <span class="dot" onclick="currentSlide(2)">
+        <image src="images/southwaterSnorkel/southwater1Square.png"></image>
+    </span> 
+
+
+    <span class="dot" onclick="currentSlide(3)">
+            <image src="images/southwaterSnorkel/southwater5Square.png" ></image>
+    </span> 
+
+    <span class="dot" onclick="currentSlide(4)">
+            <image src="images/southwaterSnorkel/southwater6Square.png" ></image>
+    </span> 
+
+    <span class="dot" onclick="currentSlide(5)">
+            <image src="images/southwaterSnorkel/southwater7Square.png" ></image>
+    </span> 
+
+    <span class="dot" onclick="currentSlide(5)">
+            <image src="images/southwaterSnorkel/southwater8Square.png" ></image>
+    </span> 
+       
+   
+
+      
+</div>
+
+<br>
+      
+<script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+</script>
+
+
+<div class="textGridContainer">
+        <div class="textGridItemTitle">
+               Southwater Caye Fishing
+        </div>
+        
+
+        <div class="textGridItemThicccc">
+                Nestled in the tropical islands with turqoise blue water lapping the white sandy beaches and the cool Caribbean
+                breeze rustling the palm trees, lies South Water Caye. The island crowns an expansive coral reef within its very own South Water 
+                Marine Reserve, it is one of Belize's most stunning destinations. 
+        </div>
+
+        <div class="textGridItemThicccc">
+                Passengers taking this excursion will be picked up from wherever they are staying in the Placencia area
+                and transferred to the charming beach town of Dangriga via tour vehicle. Once you reach the town,
+                you will transfer to a boat and be taken on a fishing excursion throughout the incredible South Water 
+                Marine Reserve. You can choose between whether you would to spend a half-day or a full-day on your fishing 
+                excursion.  
+                
+        </div>
+
+        <div class="textGridItemThicccc">
+            Note that all fishing equipment will be provided, however we encourage you to bring your own rig if you are interested!  
+        </div>
+
+        <div class="textGridItemThicccc">
+            South Water Caye fishing is unique in that you will have the opportunity to do shallow reef water fishing along with deeper blue sea fishing.
+            You will be able to do troll fishing, bait casting, deep sea fishing, and even Belizian-style line fishing! 
+            The local waters are teeming with varieties of snapper, tarpon, snook, and many other varieties of fish. Seasonally, there may also be 
+            lobster, conch, and many other catchable critters.  
+        </div>
+
+        <div class="textGridItemThicccc">
+        When you head back, your fishing captain or tour guide will clean and fillet your fresh catch of the day because it will be 
+        time to start up a celabratory barbeque. For most fishing excursions, this will be an all-you-can-eat endeavor. 
+        After you have eaten, you can lounge at Pelican Beach, ranked by Discovery as 
+        one of the <a style="text-decoration:none; color: rgb(23,123,211)"target="_blank" href="https://www.nationalgeographic.com/travel/top-10/top-beaches-world/#/pelican-beach-south-water-caye-belize.jpg">
+        top 21 best beaches in the world</a>. When you are finished lounging, you will take the boat back to Dangriga docks, where your
+        guide will transport you back to where you are staying.   
+        </div> 
+        
+
+        <div class="textGridItemThicc">
+           <label class = "textGridSmallTitle">This Includes</label>
+           <ul> 
+               <li> Air-conditioned transport from wherever you are staying in Placencia to Dangriga </li> 
+               <li> A boat ride to optimal fishing locations throughout the South Water Marine Reserve </li>
+               <li> Fishing equipment & tackle  </li> 
+               <li> A fresh fish barbeque of the catch of the day </li>
+           </ul>
+        </div>
+
+        <div class="textGridItemThicc">   
+            <label class = "textGridSmallTitle">What to Bring </label>
+            <ul> 
+                <li> Sunscreen </li>
+                <li> A hat </li>
+                <li> Sunglasses </li>
+                <li> Swim Suit or waterproof clothes </li>
+                <li> A GoPro or waterproof camera</li>
+                <li> Strong wrists and forearms!</li>
+            </ul>
+        </div>
+
+        <div class="textGridItemThicccc">
+            <label class="textGridSmallTitle">Pricing & Frequently-Paired-Tours</label>
+        </div>
+
+       
+            <div class = "textGridItem">
+                <a href="purchaseForm.html" class="purchaseButton">
+                    <ul class="tourText">
+                        <li>Lubaantun</li>
+                        <li class="noShow">=</li>
+                        <div class = "price"> 
+                        Total: $56
+                        </div>
+
+                        <label class="tourDropdownContent">
+                                Book Now
+                        </label>
+                    </ul>
+                    
+                </a> 
+            </div>
+
+       
+            <div class = "textGridItem">
+                    <a href="purchaseForm.html" class="purchaseButton">
+                    <ul class="tourText">
+                        <li>Lubaantun</li>
+                        <li class="noShow">+</li>
+                        <li>Nim Li Punit</li>
+                        <li class="noShow">=</li>
+                        <div class = "price"> 
+                        Total: $56
+                        </div> 
+                        <label class="tourDropdownContent">
+                                Book Now
+                        </label>
+                    </ul>
+                    </a> 
+            </div>
+
+        
+            <div class = "textGridItem">
+                <a href="purchaseForm.html" class="purchaseButton">
+                <ul class="tourText">
+                    <li>Lubaantun</li>
+                    <li class="noShow">+</li>
+                    <li>Waterfalls</li>
+                    <li class="noShow">+</li>
+                    <li>Nim Li Punit</li>
+                    <li class="noShow">=</li>
+                    <div class = "price"> 
+                       Total: $56
+                    </div> 
+                    <label class="tourDropdownContent">
+                            Book Now
+                    </label>
+                </ul>
+            </a> 
+            </div>
+
+           
+                <div class = "textGridItem">
+                        <a href="purchaseForm.html" class="purchaseButton">
+                        <ul class="tourText">
+                            <li>Lubaantun</li>
+                            <li class="noShow">+</li>
+                            <li>Nim Li Punit</li>
+                            <li class="noShow">+</li>
+                            <li>Spice Farm</li>
+                            <li class="noShow">=</li>
+                            <div class = "price"> 
+                            Total: $56
+                            </div>
+                            <label class="tourDropdownContent">
+                                    Book Now
+                            </label>
+                        </ul>
+                        </a>
+                </div>
+
+                <div class=textGridItemThicccc>
+                        <label class = "textGridSmallTitle">Other Popular Tours</label>
+                </div>
+ 
+</div>
+
+<div class="grid-container">
+    <div class="grid-item">
+            <a href="nimLi.html">
+                    <img class="grid-image"  src = "images/nimLiSquare.png">
+                    Nim Li
+            </a>
+    </div>
+
+    <div class="grid-item">
+            <a href="lubaantun.html">
+                    <img class="grid-image"  src = "images/lubaantunSquare.png">
+                    Lubaantun 
+            </a>
+    </div>
+    
+    <div class="grid-item"> 
+        <a href="spiceFarm.html">
+                <img class="grid-image"   src = "images/spiceFarmSquare.png">
+                Tropical Spice Farm
+        </a>
+    </div>
+    <div class="grid-item">
+        <a href="jungleTubing.html">
+                <img class="grid-image" src = "images/southStaanSquare.png">
+                Jungle River Tubing </a>
+    </div>
+    <div class="grid-item"> 
+        <a href="waterfalls.html">
+                <img class="grid-image" src = "images/waterfallsSquare.png">
+                Waterfalls</a>
+    </div>
+    <div class="grid-item">
+        <a href="cave.html">
+                <img class="grid-image"  src = "images/inlandBlueHoleSquare.png">
+                Inland Blue Hole</a>
+    </div>
+    <div class="grid-item">
+            <a href="blueHole.html">
+                    <img class="grid-image"  src = "images/blueHoleSquare.png">
+                    Blue Hole Flyover</a>
+        </div>
+        <div class="grid-item">
+                <a href="southWaterFishing.html">
+                        <img class="grid-image"  src = "images/southSnorkelSquare.png">
+                        South Water Caye Snorkeling</a>
+        </div>
+  </div>
+
+</body>
+
+<nav id="navBorderTop">
+        a
+    </nav>
+
+<nav id="navbar"> 
+        <div class = "container"> 
+            <ol> 
+                <li style="color:rgb(23, 123, 211)"> <a href="https://www.linkedin.com/in/ianfeekes/" target = "_blank"><img src="images/insta.png" width="50" height="50"/> </a></li>
+                <li style="color:rgb(16, 154, 43)"> <a href="https://www.facebook.com/pages/category/Tour-Agency/Placencia-Action-Tours-537314880112426/" target="_blank"> <img src="images/facebook.png" width="50" height="50"/> </a></li>
+                <li style="color:rgb(16, 154, 43)"> <a href="https://www.facebook.com/pages/category/Tour-Agency/Placencia-Action-Tours-537314880112426/" target="_blank"> <img src="images/whatsapp.png" width="50" height="50"/> </a></li>
+                <li style="color:rgb(16, 154, 43)"> <a href="https://www.facebook.com/pages/category/Tour-Agency/Placencia-Action-Tours-537314880112426/" target="_blank"> <img src="images/viber.png" width="50" height="50"/> </a></li>
+            </ol>
+        </div>
+</nav>
+
