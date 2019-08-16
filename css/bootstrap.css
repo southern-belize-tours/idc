@@ -461,7 +461,7 @@ p
 	#laptopDropdown{display:none;}
 
 	  .slideImage{ 
-		height: 45%; 
+		height: 50%; 
 	  }
 
 	  .prev,.next{
@@ -524,7 +524,8 @@ p
   @media(max-width: 375px)
   {
 	  .slideImage{
-		  height: 35%; 
+		  height: 35%;
+		  height: 50%; 
 	  }
 
 	  .text{
