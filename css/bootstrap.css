@@ -499,14 +499,19 @@ p
 		text-align:center; 
 	}
 
+
 	#navbar li > .dropdown{
 		width:100%; 
 	}
 
-	.dropbtn{
+	.dropbtn, .dropbtnMobile{
 		width:100%; 
 		padding-top: 10px; 
 		padding-bottom:10px; 
+		/*Since the images are to be displayed inline and they will technically add to the button
+		  we add some left padding to move it over to the right a little more so the text still appears
+		  centered on mobile devices while still displaying the dropdown toggle image*/ 
+		padding-left:35px;
 	}
 
 	.dropdown-content {
@@ -518,6 +523,13 @@ p
 		font-size: 10;
 		line-height: 15px; 
 	}
+
+	/*Take away the colour changing for mobile features*/
+	.dropdown .dropdown .dropbtn:hover{
+		color: rgb(27, 59, 187);
+		background-color:rgb(225, 225, 116); 
+	}
+
 
   }
 
