@@ -13,6 +13,12 @@ document.getElementById("myDropdown").classList.toggle("show");
 
 function dropFunction() {
     document.getElementById("mainDropdown").classList.toggle("show");
+    let img = document.getElementById("dropIndicator"); 
+if(img.src=="http://southern-belize-tours.com/images/icon1.png")
+{
+    img.src="images/icon2.png"; 
+}
+else img.src="images/icon1.png"; 
 }
 
 // Close the dropdown if the user clicks outside of it
