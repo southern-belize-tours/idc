@@ -14,6 +14,14 @@ document.getElementById("myDropdown").classList.toggle("show");
 
 function dropFunction() {
 document.getElementById("mainDropdown").classList.toggle("show");
+let img = document.getElementById("dropIndicator"); 
+console.log(img.src); 
+if(img.src=="images/icon1.png")
+{
+    console.log("suck me"); 
+    img.src="images/icon2.png"; 
+}
+else img.src="images/icon1.png"; 
 }
 
 // Close the dropdown if the user clicks outside of it
@@ -39,7 +47,11 @@ openDropdown.classList.remove('show');
     <ul>
         <li> 
             <div class="dropdown" id="ignore">
-                    <button class="dropbtn" id="dropbtnMobile" onclick=dropFunction()>Menu</button>
+                    <button class="dropbtn" id="dropbtnMobile" onclick=dropFunction()>Menu
+
+                        <img height=15px width=15px src="images/icon1.png" id="dropIndicator">
+
+                    </button>
                     <div id="mainDropdown" class="dropdown-content">
                             <a href="index.html" class="blueBtn">
                                 Home
