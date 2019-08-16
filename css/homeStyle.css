@@ -75,8 +75,15 @@
   margin-top: 40px; 
   margin-bottom: 40px; 
   color:rgb(23, 123, 211); 
-    font-size:40;
     font-size:5vw; 
+    text-align:center; 
+}
+
+.homeTitle{
+  margin-top: 40px; 
+  margin-bottom: 40px; 
+  color:rgb(23, 123, 211); 
+    font-size:4vw; 
     text-align:center; 
 }
   

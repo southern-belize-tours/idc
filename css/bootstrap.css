@@ -451,6 +451,8 @@ p
 	.dropdown-content{margin-top:20px;}
 }
 
+/*At this point we want to begin displaying our mobile dropdown navbar menu and hiding our laptop
+  dropdown menu*/ 
   @media(max-width: 426px)
   {
 	#laptopDropdown{display:none;}
