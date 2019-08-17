@@ -350,7 +350,7 @@ p
 	text-align: center;
 	padding-top:0px; 
 	padding-bottom:0px; 
-	line-height:3vw; 
+	line-height:4vw; 
 	z-index:1; 
   }
   
@@ -474,7 +474,10 @@ p
 }
 
 /*At this point we want to begin displaying our mobile dropdown navbar menu and hiding our laptop
-  dropdown menu*/ 
+  dropdown menu
+  
+  This style basically applies to phones of any size 
+  */ 
   @media(max-width: 426px)
   {
 	#laptopDropdown{display:none;}
