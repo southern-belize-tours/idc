@@ -37,11 +37,7 @@
 	justify-content: space-evenly; 
   }
 
-  .smolTitle{
-    color:rgb(16, 133, 39); 
-    font-size: 3vw; 
-    padding-bottom:10px; 
-  }
+ 
 
   .grid-two{
     padding: 70px;
@@ -55,6 +51,8 @@
 
 .logoImg{
   max-width:80%; 
+  margin-bottom: 10px; 
+  margin-top:10px; 
 }
 
 .grid-item {
@@ -239,6 +237,21 @@
 .heading{
   color: rgb(23, 123, 211);
 }
+
+.introParagraph{
+  text-indent:0px; 
+  font-size:1.8vw;
+  line-height: 2.2vw;
+  text-indent:0px;
+}
+
+.slideshowReel{
+  display:inline-block;
+  justify-content: center;
+  display:flex;
+  margin-top:10px;
+  margin-bottom:30px;
+}
 .creditCardForm .payment {
   float: left;
   font-size: 18px;
@@ -345,9 +358,56 @@
 
 @media(max-width:425px)
 {
+
+  
+
+  .grid-two{
+    padding-top: 20px; 
+    padding-left: 10px; 
+    padding-right: 10px; 
+    grid-column-gap: 20px;
+    font-size: 2.9vw; 
+    line-height: 3.6vw;  
+  }
+
+  p{
+    margin-left: 10px; 
+    margin-right: 10px;  
+  }
+
+  .introParagraph{
+    font-size: 3vw; 
+    line-height: 3.5vw; 
+  }
+
   .title{
     margin-top:0px;
     margin-bottom: 10px; 
+  }
+  .slideshowReel{
+    margin-bottom:0px; 
+  }
+
+  .homeTitle{
+    margin-top:10px; 
+    margin-bottom:10px; 
+    font-size: 5vw; 
+  }
+  .grid-container {
+    padding: 15px; 
+    grid-column-gap: 15px; 
+    grid-row-gap: 15px; 
+    grid-template-columns: auto auto; 
+    }
+
+  .grid-image{
+    height: 180px; 
+  }
+  
+
+  .grid-item-pic a, .grid-item a{
+    font-size: 3vw; 
+    text-decoration:none; 
   }
 }
 
@@ -385,25 +445,6 @@
   }
 }
 
-@media(max-width:425px)
-{
-  .grid-container {
-    padding: 15px; 
-    grid-column-gap: 15px; 
-    grid-row-gap: 15px; 
-    grid-template-columns: auto auto; 
-    }
-
-  .grid-image{
-    height: 180px; 
-  }
-  
-
-  .grid-item-pic a, .grid-item a{
-    font-size: 3vw; 
-    text-decoration:none; 
-  }
-}
 
 @media(max-width:375px)
 {

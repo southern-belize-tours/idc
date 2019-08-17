@@ -7,6 +7,12 @@
 
 }
 
+.cruiseTitle{
+  color:rgb(23, 123, 211);
+  font-size:6vw;
+  text-align:center;
+}
+
 .grid-image{
   width:100%; 
   height: 290px; 
@@ -54,21 +60,25 @@
   }
 
   .grid-item a{
+    color: rgb(23, 123, 211); 
 	  font-size: 2vw; 
 	  text-decoration: none; 
 	  /*background-color: rgba(255, 255, 255, 0.8);
 	  border: 1px solid rgba(0, 0, 0, 0.8);*/
   }
 
+  .grid-item:hover a{
+    color:rgb(27, 59, 187);   }
+
   .grid-item p
   {
 	  font-size: 16; 
   }
 
-  .grid-item:hover 
+  .grid-item:hover
   {
 	-webkit-filter: brightness(70%);
-	color: rgb(23, 123, 211)
+
 	/*-webkit-transition: all 1s ease;
 	-moz-transition: all 1s ease;
 	-o-transition: all 1s ease;
@@ -188,6 +198,14 @@
 
 @media(max-width:425px)
 {
+
+  p{
+    margin-top:0px; 
+    margin-bottom:0px; 
+    padding:0px; 
+    margin-left: 10px; 
+    margin-right: 10px; 
+  }
   .grid-container {
     padding: 15px; 
     grid-column-gap: 15px; 

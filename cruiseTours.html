@@ -1,0 +1,199 @@
+<!doctype html/> 
+
+<head>
+        <title> Set Anchor</title>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/allToursStyle.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script>
+                function myFunction() {
+document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function dropFunction() {
+    let img = document.getElementById("dropIndicator"); 
+    if(img.src=="http://southern-belize-tours.com/images/icon1.png")
+    {
+        img.src="images/icon2.png"; 
+    }
+    else img.src="images/icon1.png"; 
+    document.getElementById("mainDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+    var openDropdown = dropdowns[i];
+    if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+    }
+    }
+}
+}
+
+</script>
+</head>
+
+<nav id="navbar"> 
+        <div class = "container"> 
+            <ul>
+                <li> 
+                    <div class="dropdown" id="ignore">
+                            <button class="dropbtn" id="dropbtnMobile" onclick=dropFunction()>Menu</button>
+                            <div id="mainDropdown" class="dropdown-content">
+                                    <a href="index.html" class="blueBtn">
+                                        Home
+                                    </a>
+                                    <a href="about.html" class="redBtn">
+                                                    About 
+                                    </a>
+                                    <div class="dropdown">
+                                            <button class="dropbtn" onclick=myFunction()>Tours</button>
+                                            <div id="myDropdown" class="dropdown-content">
+                                              <a href="allTours.html">All Tours</a> 
+                                              <a href="nimLi.html">Nim Li Punit Mayan Ruins</a>
+                                              <a href="lubaantun.html">Lubaantun Mayan Ruins</a>
+                                              <a href="spiceFarm.html">Spice Farm</a>
+                                              <a href="jungleTubing.html">River Tubing</a>
+                                              <a href="waterfalls.html">Waterfall Sightseeing</a>
+                                              <a href="cave.html">Inland Blue Hole & Cave</a>
+                                              <a href="blueHole.html">Blue Hole Flyover</a>
+                                              <a href="southWaterSnorkel.html">South Water Caye Snorkelimng</a>
+                                              <a href="southWaterFishing">South Water Caye Fishing</a>
+                                            </div>
+                                        </div>
+                                        <a href="contact.html" class="orangeBtn">
+                                            Contact
+                                        </a>
+                            </div>
+                        </div>
+                    </li>
+
+                <a href="index.html" class="blueBtn" id="homeLaptop">
+                    <li> 
+                            Home
+                    </li>
+                </a>
+                <a href="about.html" class="redBtn" id="aboutLaptop">
+                <li>
+                        About 
+                </li> 
+                </a>
+                   
+                <li> 
+                    <div class="dropdown" id="laptopDropdown">
+                        <a class="dropbtn">Tours</a>
+                        <div id="myDropdown" class="dropdown-content">
+                          <a href="allTours.html">All Tours</a> 
+                          <a href="nimLi.html">Nim Li Punit Mayan Ruins</a>
+                          <a href="lubaantun.html">Lubaantun Mayan Ruins</a>
+                          <a href="spiceFarm.html">Spice Farm</a>
+                          <a href="jungleTubing.html">River Tubing</a>
+                          <a href="waterfalls.html">Waterfall Sightseeing</a>
+                          <a href="cave.html">Inland Blue Hole & Cave</a>
+                          <a href="blueHole.html">Blue Hole Flyover</a>
+                          <a href="southWaterSnorkel.html">South Water Caye Snorkelimng</a>
+                          <a href="southWaterFishing">South Water Caye Fishing</a>
+                        </div>
+                    </div>
+                </li>
+
+
+                <a href="contact.html" class="orangeBtn" id="contactLaptop">
+                    <li>
+                                    Contact
+                   </li>
+                </a>
+            </ul>
+        </div>
+    </nav>
+
+<nav id="navBorder">
+    a
+</nav>
+
+<body> 
+
+<div class = "cruiseTitle" >Set Anchor and Discover</div>
+<p style="text-indent:0px; ">
+
+Looking to start an adventure in Placencia for a day while your cruise ship sets anchor? 
+We will have our experienced tour guides pick you up from the Placencia docks, the direct 
+destination of the Harvest Caye express, to start your comfortable, safe, and timely excursion. 
+</p> 
+<div class = "smolTitle" >See Belize's Untouched Wonders</div>
+<p style="text-indent:0px; ">
+The most popular way to experience the full beauty of Belize's untouched broadleaf rainforest is through
+our waterfalls tour. You will see some of the most breath-taking natural wonders on the planet and will be 
+treated to an authentic, fresh Belizian barbeque.
+</p>  
+<div class = "smolTitle" >Taste the Spices of Belize</div>
+<p style="text-indent:0px; ">
+Looking to see and taste the tropical botanics? The spice farm is a great way to spend your time 
+on the main land. You can try the freshest of tropical spices while strolling through groves of Birds of Paradise. 
+The compound features beautiful architecture, hallmarked by the ceiling, featuring the varieties of native Belizian
+Woods.
+</p> 
+<div class = "smolTitle" >Discover the Ancient History of Belize </div>
+<p style="text-indent:0px; ">
+Or perhaps you are looking to see into ancient Mayan history? We will whisk you away to the fortress 
+and fabled Crystal Skull of Lubaantun, or show you the history of the perfectly preserved ball court
+of Nim Li Punit. If you are looking for a full day of adventure, these tours can be bundled for a discount! 
+
+</p>
+
+<div class="grid-container">
+        <div class="grid-item">
+                <a href="spiceFarm.html"> 
+                    <img class="grid-image"  src = "images/spiceFarmSquare.png">
+                    Spice Farm Tropical Garden
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="waterfalls.html">
+                    <img class="grid-image"  src = "images/waterfallsSquare.png">
+                    Waterfall Sightseeing
+                </a>
+            </div>
+    <div class="grid-item">
+            <a href="nimLi.html">
+                    <img class="grid-image"  src = "images/nimLiSquare.png">
+                    Nim Li Punit Mayan Ruins
+            </a>
+    </div>
+    <div class="grid-item">
+        <a href="lubaantun.html">
+            <img class="grid-image" src = "images/lubaantunSquare.png"> 
+            Lubaantun Mayan Ruins
+        </a>
+    </div>
+  </div>
+
+
+
+
+
+
+
+</body>
+
+<nav id="navBorderTop">
+        a
+    </nav>
+
+<nav id="navbar"> 
+        <div class = "container"> 
+            <ol>
+                
+                <li style="color:rgb(23, 123, 211)"> <a href="https://www.linkedin.com/in/ianfeekes/" target = "_blank"><img src="images/insta.png" width="50" height="50"/> </a></li>
+                <li style="color:rgb(16, 154, 43)"> <a href="https://www.facebook.com/pages/category/Tour-Agency/Placencia-Action-Tours-537314880112426/" target="_blank"> <img src="images/facebook.png" width="50" height="50"/> </a></li>
+                <li style="color:rgb(16, 154, 43)"> <a href="https://www.facebook.com/pages/category/Tour-Agency/Placencia-Action-Tours-537314880112426/" target="_blank"> <img src="images/whatsapp.png" width="50" height="50"/> </a></li>
+                <li style="color:rgb(16, 154, 43)"> <a href="https://www.facebook.com/pages/category/Tour-Agency/Placencia-Action-Tours-537314880112426/" target="_blank"> <img src="images/viber.png" width="50" height="50"/> </a></li>
+            </ol>
+        </div>
+    </nav>
+
