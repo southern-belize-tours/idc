@@ -49,6 +49,14 @@
     justify-content: center; 
   }
 
+  .grid-two a {
+    cursor: pointer; 
+ }
+
+ .grid-item-pic:hover {
+   -webkit-filter: brightness(70%); 
+ }
+
 .logoImg{
   max-width:80%; 
   margin-bottom: 10px; 
@@ -78,6 +86,10 @@
     /*padding: 20px;  
     font-size: 20;*/ 
     text-align: center; 
+    }
+
+    .grid-item-pic div{
+      color: rgb(46, 44, 44); 
     }
 
     .grid-image{
