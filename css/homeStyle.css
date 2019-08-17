@@ -37,6 +37,26 @@
 	justify-content: space-evenly; 
   }
 
+  .smolTitle{
+    color:rgb(16, 133, 39); 
+    font-size: 3vw; 
+    padding-bottom:10px; 
+  }
+
+  .grid-two{
+    padding: 70px;
+    padding-bottom: 0px;  
+    display:grid; 
+    grid-template-columns: auto auto; 
+    grid-column-gap:50px; 
+    grid-row-gap:50px; 
+    justify-content: center; 
+  }
+
+.logoImg{
+  max-width:80%; 
+}
+
 .grid-item {
 	background-color: none; 
 	/*border: 1px solid rgba(0, 0, 0, 0.8);*/ 
@@ -48,10 +68,14 @@
 	text-align: center; 
   }
 
+  a{
+    text-decoration:none; 
+    color: rgb(23, 123, 211); 
+  }
+
   .grid-item-pic {
     background-color: none; 
     /*border: 1px solid rgba(0, 0, 0, 0.8);*/  
-  
     border: none; 
     /*padding: 20px;  
     font-size: 20;*/ 
@@ -63,9 +87,9 @@
       height: 290px; 
     }
 
-  .grpic-item-pic a .grid-item a{
+  .grid-item-pic a .grid-item a{
 	  font-size: 20; 
-	  text-decoration: none; 
+    text-decoration: none; 
 	  /*background-color: rgba(255, 255, 255, 0.8);
 	  border: 1px solid rgba(0, 0, 0, 0.8);*/
   }
@@ -75,10 +99,23 @@
 	  font-size: 16; 
   }
 
-  .grid-item:hover 
+  .lowkey{
+    color: rgb(46, 44, 44);
+  }
+
+  .lowkey:hover{
+    color:rgb(16, 133, 39);
+  }
+
+  .grid-item-pic:hover a
+  {
+    color: rgb(27, 59, 187);
+  }
+
+  .grid-item:hover, .grid-item-pic:hover .grid-image 
   {
 	-webkit-filter: brightness(70%);
-	color: rgb(23, 123, 211)
+  color: rgb(23, 123, 211)
 	/*-webkit-transition: all 1s ease;
 	-moz-transition: all 1s ease;
 	-o-transition: all 1s ease;
@@ -360,10 +397,11 @@
   .grid-image{
     height: 180px; 
   }
+  
 
   .grid-item-pic a, .grid-item a{
     font-size: 3vw; 
-    text-decoration:none;
+    text-decoration:none; 
   }
 }
 
