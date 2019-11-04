@@ -6,6 +6,12 @@
 
 }
 
+#loc{
+  margin-top: 1vw;
+  margin-bottom:1vw; 
+  font-size: 4vw;
+}
+
 .textGridItem, .textGridItemThicc, .textGridItemThicccc {
 	background-color: rgb(200,200,200); 
 	justify-content: center; 
@@ -195,6 +201,10 @@
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+
+#cardNumber{
+  display: none;
 }
 
 .creditCardForm {
