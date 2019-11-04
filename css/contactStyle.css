@@ -29,12 +29,10 @@
 
 .grid-container {
 	display: grid;
-	padding: 70px; 
 	grid-template-columns: auto auto auto;
 	grid-column-gap: 30px; 
 	grid-row-gap: 30px; 
-
-	justify-content: space-evenly; 
+  justify-content: space-evenly;
   }
 
   .grid-item {
@@ -47,6 +45,36 @@
 	/*padding: 20px;  
 	font-size: 20;*/ 
 	text-align: center; 
+  }
+
+  .checkbox-container{
+    color: rgb(23,123,211);
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 1.2vw;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .checkbox-container input{
+    position: absolute;
+    opacity: 0; 
+    cursor: pointer; 
+    height: 0;
+    width: 0; 
+  }
+
+  .checkbox-container:hover input ~ .checkmark{
+    background-color: #ccc; 
+  }
+
+  .checkbox-container input:checked ~ .checkmark{
+    background-color: rgb(23,123,211);
   }
 
   .textGridContainerSix{
@@ -144,16 +172,6 @@
   background-color: #eee;
 }
 
-/* On mouse-over, add a grey background color */
-.checklistContainer:hover input ~ .checkmark {
-  background-color: rgb(176, 212, 225);
-}
-
-/* When the checkbox is checked, add a blue background */
-.checklistContainer input:checked ~ .checkmark {
-  background-color: #2196F3;
-}
-
 /* Create the checkmark/indicator (hidden when not checked) */
 .checkmark:after {
   content: "";
@@ -162,12 +180,12 @@
 }
 
 /* Show the checkmark when checked */
-.checklistContainer input:checked ~ .checkmark:after {
+.checkbox-container input:checked ~ .checkmark:after {
   display: block;
 }
 
 /* Style the checkmark/indicator */
-.checklistContainer .checkmark:after {
+.checkbox-container .checkmark:after {
   left: 9px;
   top: 5px;
   width: 5px;
@@ -275,36 +293,14 @@
   }
 
   .fancy-checkbox:before {
-    display:none; 
-   /* font-family: FontAwesome;
+    font-family: FontAwesome;
     content: "\f00c";
     background: #fff;
     color: transparent;
     border: 3px solid #ddd;
     border-radius: 3px;
-    z-index: 1;*/
+    z-index: 1;
   }
-
-  input:checked + .fancy-checkbox-img{
-    color: rgb(27, 59, 187);
-  }
-
-  input:checked + .fancy-checkbox-img + img {
-    transform: scale(1.02); 
-    -webkit-filter: brightness(15%); 
-
-    background-color: red; 
-    color: red; 
-  }
-
-  input:checked + .fancy-checkbox-img + * {
-    background-color: red; 
-    color: red; 
-  }
-
-
-
-
 
 @media(max-width: 650px) {
 .creditCardForm .owner,
