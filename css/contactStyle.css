@@ -9,7 +9,7 @@
 #loc{
   margin-top: 1vw;
   margin-bottom:1vw; 
-  font-size: 4vw;
+  font-size: 1.5vw;
 }
 
 .textGridItem, .textGridItemThicc, .textGridItemThicccc {
@@ -203,8 +203,12 @@
   transform: rotate(45deg);
 }
 
-#cardNumber{
-  display: none;
+.locationHotel{
+  display:none; 
+}
+
+.showLocHotel{
+  display:block;
 }
 
 .creditCardForm {

@@ -1,5 +1,3 @@
-var slideIndex = 1;
-    showSlides(slideIndex);
     
     function plusSlides(n) {
       showSlides(slideIndex += n);
@@ -13,6 +11,10 @@ var slideIndex = 1;
       var i;
       var slides = document.getElementsByClassName("mySlides");
       var dots = document.getElementsByClassName("dot");
+      if(slides==null || dots==null || slides.length==0 || dots.length==0)
+      {
+          return; 
+      }
       if (n > slides.length) {slideIndex = 1}    
       if (n < 1) {slideIndex = slides.length}
       for (i = 0; i < slides.length; i++) {
@@ -25,6 +27,9 @@ var slideIndex = 1;
       dots[slideIndex-1].className += " active";
     }
 
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
 
 document.addEventListener('keyup', (e) => {
     if(e.code=="ArrowRight")//right 
@@ -36,3 +41,4 @@ document.addEventListener('keyup', (e) => {
         plusSlides(-1);
     }
 });
+
