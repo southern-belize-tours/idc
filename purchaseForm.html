@@ -182,59 +182,61 @@ a
                         <input type="text" class="form-control" id="cardNumber" placeholder="13">
                 </div>
                 <div class="form-group" id="card-number-field">
+                    <label for="location">Pick up Location</label>
+                    <select id="loc" onchange='checkLocSelect()'>
+                        <option value="1">Placencia Docks (Norweigan Cruise Passenger Pickup from Harvest Caye Ferry)</option>
+                        <option value="2">Hotel/Lodging</option>
+                    </select>
+                    <div class="locationHotel" id="locToggle"> 
+                        Please specify your desired pickup location 
+                        <input type="text" class="form-control" id="location" placeholder="1234 Main St., Placencia">
+                    </div>
+                </div>
+                <div class="form-group" id="card-number-field">
                     <label for="cardNumber">Tours</label>
                     <div style="margin-top:2vw;margin-left:2vw;">
                         <label class=checkbox-container>
-                            <input type="checkbox"> Nim Li Punit Mayan Ruins 
+                            <input type="checkbox" class="tourOption" name="nimLi"> Nim Li Punit Mayan Ruins 
                             <span class="checkmark"></span>
                         </label>
                         <label class=checkbox-container>
-                            <input type="checkbox"> Lubantuun Mayan Ruins
+                            <input type="checkbox" class="tourOption" name="lubaantun"> Lubantuun Mayan Ruins
                             <span class="checkmark"></span>
                         </label>
                         <label class=checkbox-container>
-                            <input type="checkbox"> Spice Farm Tropical Botanical Garden
+                            <input type="checkbox" class="tourOption" name = "spiceFarm"> Spice Farm Tropical Botanical Garden
                             <span class="checkmark"></span>
                         </label>
                         <label class=checkbox-container>
-                            <input type="checkbox"> Jungle River Tubing 
+                            <input type="checkbox" class="tourOption" name = "jungleTube"> Jungle River Tubing 
                             <span class="checkmark"></span>
                         </label>
-                        <label class=checkbox-container>
-                            <input type="checkbox"> Waterfall Sightseeing 
-                            <span class="checkmark"></span>
-                        </label>
-                        <label class=checkbox-container>
-                            <input type="checkbox"> Inland Blue Hole and Cave
-                            <span class="checkmark"></span>
-                        </label>
-                        <label class=checkbox-container>
-                            <input type="checkbox"> Blue Hole Flyover
-                            <span class="checkmark"></span>
-                        </label>
-                        <label class=checkbox-container>
-                            <input type="checkbox"> Southwater Caye Snorkeling
-                            <span class="checkmark"></span>
-                        </label>
-                        <label class=checkbox-container>
-                            <input type="checkbox"> Southwater Caye Fishing 
-                            <span class="checkmark"></span>
-                        </label>
+                        <span class="nonCruiseOptions" id="nonCruise">
+                            <label class=checkbox-container>
+                                <input type="checkbox" class="tourOption" name = "waterfallSightseeing"> Waterfall Sightseeing 
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class=checkbox-container>
+                                <input type="checkbox" class="tourOption" name = "inlandBlueHole"> Inland Blue Hole and Cave
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class=checkbox-container>
+                                <input type="checkbox"> Blue Hole Flyover
+                                <span class="checkmark" class="tourOption" name = "blueHoleFlyover"></span>
+                            </label>
+                            <label class=checkbox-container>
+                                <input type="checkbox"> Southwater Caye Snorkeling
+                                <span class="checkmark" class="tourOption" name = "southwaterSnorkeling"></span>
+                            </label>
+                            <label class=checkbox-container>
+                                <input type="checkbox"> Southwater Caye Fishing 
+                                <span class="checkmark" class="tourOption" name = "southwaterFishing"></span>
+                            </label>
+                        </span>
                     </div>
                     
                     
 
-                </div>
-                <div class="form-group" id="card-number-field">
-                        <label for="location">Pick up Location</label>
-                        <select id="loc" onchange='checkLocSelect()'>
-                            <option value="1">Placencia Docks (Cruise Passengers coming from Harvest Caye)</option>
-                            <option value="2">Hotel/Lodging</option>
-                        </select>
-                        <div class="locationHotel" id="locToggle"> 
-                            Please specify your desired pickup location 
-                            <input type="text" class="form-control" id="location" placeholder="1234 Main St., Placencia">
-                        </div>
                 </div>
                 <div class="form-group" id="expiration-date">
                     <label>Desired Tour Date</label>
@@ -269,6 +271,12 @@ a
                         <label for="cardNumber">Message for us</label>
                         <textarea class= "form-control" rows=2 name="txt" style="width:100%;resize:none;line-height: 25px; " placeholder="We have a school trip of 50+ students coming for the first week of July and were wondering if you could accomodate us for the week. Please email me at jdoe@example.com to discuss prices and logistics."></textarea>
                 </div>
+                <div class="form-group" id="card-number-field">
+                    <label for="cardNumber">Total</label>
+                    <span id="totalField">
+                        US: 0$        Belize: 0$
+                    </span>
+            </div>
                 <div class="form-group" id="pay-now">
                     <button type="submit" name="submit" class="btn btn-default" id="confirm-purchase">Confirm</button>
                 </div>
@@ -285,6 +293,17 @@ a
     <script src="assets/js/genericScript.js"></script>
     <script>
 
+        function computePrice(a)
+        {
+            console.log(a); 
+        }
+        
+        checkboxes = document.getElementsByClassName("tourOption");
+        for(let i=0;i<checkboxes.length;++i)
+        {
+            checkboxes[i].addEventListener('change', (event)=>computePrice(event.target));
+        }
+
         /*
         Toggles showing the field prompting the user to enter their address if they are not arriving
         at the Placencia docks. 
@@ -293,12 +312,19 @@ a
         function checkLocSelect()
         {
             let select=document.getElementById("loc"); 
-            console.log( select.options[ select.selectedIndex ].value )
             if(select.options[select.selectedIndex].value=="2")
             {
-                if(!document.getElementById("locToggle").classList.contains("showLocHotel"))document.getElementById("locToggle").classList.toggle("showLocHotel"); 
+                if(!document.getElementById("locToggle").classList.contains("showLocHotel"))
+                {
+                    document.getElementById("nonCruise").classList.toggle("showLocHotel");
+                    document.getElementById("locToggle").classList.toggle("showLocHotel"); 
+                }
             }
-            else if(document.getElementById("locToggle").classList.contains("showLocHotel"))document.getElementById("locToggle").classList.toggle("showLocHotel"); 
+            else if(document.getElementById("locToggle").classList.contains("showLocHotel"))
+            {
+                document.getElementById("nonCruise").classList.toggle("showLocHotel");
+                document.getElementById("locToggle").classList.toggle("showLocHotel"); 
+            }
             if(document.getElementById("locToggle").classList.contains("showLocHotel"))
             {
                 document.getElementById("location").required=true; 

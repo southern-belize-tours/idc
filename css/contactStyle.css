@@ -6,6 +6,10 @@
 
 }
 
+.nonCruiseOptions{
+  display:none; 
+}
+
 #loc{
   margin-top: 1vw;
   margin-bottom:1vw; 
