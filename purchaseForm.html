@@ -179,7 +179,23 @@ a
                 </div>
                 <div class="form-group" id="card-number-field">
                         <label for="cardNumber">Size of Party (minimum 2)</label>
-                        <input type="text" class="form-control" id="cardNumber" placeholder="13">
+                        <select id =numPeople>
+                                <option value="2">2 </option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16+">16+</option>
+                            </select>
                 </div>
                 <div class="form-group" id="card-number-field">
                     <label for="location">Pick up Location</label>
@@ -194,7 +210,7 @@ a
                 </div>
                 <div class="form-group" id="card-number-field">
                     <label for="cardNumber">Tours</label>
-                    <div style="margin-top:2vw;margin-left:2vw;">
+                    <div id="tourDiv" style="margin-top:2vw;margin-left:2vw;">
                         <label class=checkbox-container>
                             <input type="checkbox" class="tourOption" name="nimLi"> Nim Li Punit Mayan Ruins 
                             <span class="checkmark"></span>
@@ -211,26 +227,30 @@ a
                             <input type="checkbox" class="tourOption" name = "jungleTube"> Jungle River Tubing 
                             <span class="checkmark"></span>
                         </label>
-                        <span class="nonCruiseOptions" id="nonCruise">
-                            <label class=checkbox-container>
+                        <label class=checkbox-container>
                                 <input type="checkbox" class="tourOption" name = "waterfallSightseeing"> Waterfall Sightseeing 
                                 <span class="checkmark"></span>
                             </label>
+                        <span class="nonCruiseOptions" id="nonCruise">
                             <label class=checkbox-container>
                                 <input type="checkbox" class="tourOption" name = "inlandBlueHole"> Inland Blue Hole and Cave
                                 <span class="checkmark"></span>
                             </label>
                             <label class=checkbox-container>
-                                <input type="checkbox"> Blue Hole Flyover
-                                <span class="checkmark" class="tourOption" name = "blueHoleFlyover"></span>
+                                <input type="checkbox" class="tourOption" name="blueHoleFlyover"> Blue Hole Flyover
+                                <span class="checkmark"></span>
                             </label>
                             <label class=checkbox-container>
-                                <input type="checkbox"> Southwater Caye Snorkeling
-                                <span class="checkmark" class="tourOption" name = "southwaterSnorkeling"></span>
+                                <input type="checkbox" class="tourOption" name="southwaterSnorkelHalf"> Southwater Caye Snorkeling (Half Day) 
+                                <span class="checkmark"></span>
                             </label>
                             <label class=checkbox-container>
-                                <input type="checkbox"> Southwater Caye Fishing 
-                                <span class="checkmark" class="tourOption" name = "southwaterFishing"></span>
+                                    <input type="checkbox" class="tourOption" name="southwaterSnorkelFull"> Southwater Caye Snorkeling (Full Day)
+                                    <span class="checkmark"></span>
+                                </label>
+                            <label class=checkbox-container>
+                                <input type="checkbox" class="tourOption" name="southwaterFishing"> Southwater Caye Fishing 
+                                <span class="checkmark"></span>
                             </label>
                         </span>
                     </div>
@@ -257,7 +277,6 @@ a
                         <option value="12">December</option>
                     </select>
                     <select id="years" onchange="showDays()">
-                        <option value="19"> 2019</option>
                         <option value="20"> 2020</option>
                         <option value="21"> 2021</option>
                         <option value="22"> 2022</option>
@@ -268,8 +287,8 @@ a
                 </div>
                 
                 <div class="form-group" id="card-number-field">
-                        <label for="cardNumber">Message for us</label>
-                        <textarea class= "form-control" rows=2 name="txt" style="width:100%;resize:none;line-height: 25px; " placeholder="We have a school trip of 50+ students coming for the first week of July and were wondering if you could accomodate us for the week. Please email me at jdoe@example.com to discuss prices and logistics."></textarea>
+                        <label for="cardNumber">Message for Us <span style="color: rgb(180,180,180)">(optional)</span></label>
+                        <textarea class= "form-control" rows=2 name="txt" style="width:100%;resize:none;line-height: 25px; " placeholder="We are interested in trying some authentic Belizian cuisine. Could you take us to some places?"></textarea>
                 </div>
                 <div class="form-group" id="card-number-field">
                     <label for="cardNumber">Total</label>
@@ -293,9 +312,79 @@ a
     <script src="assets/js/genericScript.js"></script>
     <script>
 
+        var tourPrices = {
+            "nimLi": 95,
+            "lubaantun": 95, 
+            "spiceFarm": 85,
+            "jungleTube": 85, 
+            "waterfallSightseeing": 75, 
+            "inlandBlueHole": 95, 
+            "blueHoleFlyover": 1850, 
+            "southwaterSnorkelHalf": 500,
+            "southwaterSnorkelFull": 650, 
+            "southwaterFishing": 600, 
+        }  
+
         function computePrice(a)
         {
-            console.log(a); 
+            //First index is 2, and so on
+            let numPeople=document.getElementById("numPeople").selectedIndex+2; 
+            let totalPrice=0; 
+            //TO DO: If numPeople is max value, account for this, or just return possibly
+            let tourCheckboxes = document.getElementById("tourDiv").getElementsByTagName("input"); 
+            for(let i=0;i<tourCheckboxes.length;++i)
+            {
+                if(tourCheckboxes[i].checked)
+                {
+                    let tourName =tourCheckboxes[i].getAttribute("name"); 
+                    //console.log(tourCheckboxes[i]);
+                    let tourCost = tourPrices[tourName];
+                    if(tourName==="blueHoleFlyover")
+                    {
+                        if(numPeople<5)
+                        {
+                            //alert that they can add people
+                        }
+                        else if(numPeople>5)
+                        {
+                            //prevent this from happening
+                            alert("The Blue Hole Flyover can only accomodate up to 5 people")
+                            tourCheckboxes[i].checked=false; 
+                        }
+                    }
+                    else if(tourName==="southwaterSnorkelHalf")
+                    {
+                        if(numPeople>2)
+                        {
+                            tourCost+=(numPeople-2)*25;
+                        }
+                    }                  
+                    else if(tourName==="southwaterSnorkelFull")
+                    {
+                        if(numPeople>2)
+                        {
+                            tourCost+=(numPeople-2)*40; 
+                        }
+                    }
+                    else if(tourName==="southwaterFishing")
+                    {
+                        if(numPeople==2)
+                        {
+                            //TO DO: Figure out where to send alert text for user to add 3 people
+                        }
+                        else if(numPeople>6)
+                        {
+                            //TO DO: Figure out where to send alert text for user to see they can't do this 
+                        }
+                        else if(numPeople>3)
+                        {
+                            tourCost+=(numPeople-3)*50;
+                        }
+                    }
+                    else tourCost*=numPeople;
+                }
+            }
+            console.log(totalPrice); 
         }
         
         checkboxes = document.getElementsByClassName("tourOption");

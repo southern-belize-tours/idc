@@ -274,7 +274,7 @@
   width: 100%;
   margin-top: 25px;
 }
-.creditCardForm .payment .btn {
+.creditCardForm .payment .btn{
   width:100%; 
   margin-top: 3px;
   font-size: 24px;
@@ -285,6 +285,14 @@
   border-style: solid; 
   border-color: rgb(23, 123, 211);  
 }
+
+.form-group select{
+  border-radius:5px;
+  border-width:2px;
+  border-style: solid;
+  border-color: rgb(23, 123, 211)
+}
+
 .creditCardForm .payment .btn:hover{
   /*color: rgb(27, 59, 187); 
   background-color:white; */ 
@@ -295,6 +303,8 @@
   padding: 10px;
   margin-right: 15px;
 }
+
+
 .transparent {
   opacity: 0.2;
 }
