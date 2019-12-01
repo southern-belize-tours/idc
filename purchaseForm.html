@@ -178,8 +178,10 @@ a
                     <input type="text" class="form-control" name = "senderEmail" id="cardNumber" placeholder="jdoe@example.com" required>
                 </div>
                 <div class="form-group" id="card-number-field">
-                        <label for="cardNumber">Size of Party (minimum 2)</label>
-                        <select id =numPeople>
+                        <label for="cardNumber">Size of Party (minimum 2)
+                             <span id="alertBox"></span>
+                        </label>
+                        <select id ="numPeople" onchange="computePrice()">
                                 <option value="2">2 </option>
                                 <option value="3">3</option>
                                 <option value="4">4</option>
@@ -208,7 +210,7 @@ a
                         <input type="text" class="form-control" id="location" placeholder="1234 Main St., Placencia">
                     </div>
                 </div>
-                <div class="form-group" id="card-number-field">
+                <div class="form-group tours" id="card-number-field">
                     <label for="cardNumber">Tours</label>
                     <div id="tourDiv" style="margin-top:2vw;margin-left:2vw;">
                         <label class=checkbox-container>
@@ -231,7 +233,7 @@ a
                                 <input type="checkbox" class="tourOption" name = "waterfallSightseeing"> Waterfall Sightseeing 
                                 <span class="checkmark"></span>
                             </label>
-                        <span class="nonCruiseOptions" id="nonCruise">
+                        <span class="nonCruiseOptions" name="nonCruise">
                             <label class=checkbox-container>
                                 <input type="checkbox" class="tourOption" name = "inlandBlueHole"> Inland Blue Hole and Cave
                                 <span class="checkmark"></span>
@@ -254,9 +256,23 @@ a
                             </label>
                         </span>
                     </div>
-                    
-                    
-
+                </div>
+                <div class="form-group prices">
+                        <label for="cardNumber">Pricing</label>
+                        <div id="tourDiv" style="margin-top: 2vw;">
+                            <label class="priceLabel">$95 US/person</label>
+                            <label class="priceLabel">$95 US/person</label>
+                            <label class="priceLabel">$85 US/person</label>
+                            <label class="priceLabel">$85 US/person</label>
+                            <label class="priceLabel">$75 US/person</label>
+                        </div>
+                        <span class="nonCruiseOptions" name="nonCruise">
+                                <label class="priceLabel">$95 US/person</label>
+                                <label class="priceLabel">$1850</label>
+                                <label class="priceLabel">$500</label>
+                                <label class="priceLabel">$650</label>
+                                <label class="priceLabel">$600</label>
+                        </span>
                 </div>
                 <div class="form-group" id="expiration-date">
                     <label>Desired Tour Date</label>
@@ -325,7 +341,13 @@ a
             "southwaterFishing": 600, 
         }  
 
-        function computePrice(a)
+        function sendTextToHTML(elementId, textString)
+        {
+            let el = document.getElementById(elementId); 
+            el.innerHTML = textString; 
+        }
+
+        function computePrice()
         {
             //First index is 2, and so on
             let numPeople=document.getElementById("numPeople").selectedIndex+2; 
@@ -341,15 +363,12 @@ a
                     let tourCost = tourPrices[tourName];
                     if(tourName==="blueHoleFlyover")
                     {
-                        if(numPeople<5)
-                        {
-                            //alert that they can add people
-                        }
+                        if(numPeople<5)sendTextToHTML("alertBox","*The Blue Hole Flyover can accomodate up to 5 people. Your party size is currently "+numPeople)
                         else if(numPeople>5)
                         {
-                            //prevent this from happening
                             alert("The Blue Hole Flyover can only accomodate up to 5 people")
                             tourCheckboxes[i].checked=false; 
+                            tourCost=0; 
                         }
                     }
                     else if(tourName==="southwaterSnorkelHalf")
@@ -368,13 +387,12 @@ a
                     }
                     else if(tourName==="southwaterFishing")
                     {
-                        if(numPeople==2)
-                        {
-                            //TO DO: Figure out where to send alert text for user to add 3 people
-                        }
+                        if(numPeople==2)sendTextToHTML("alertBox","*The Southwater Fishing accomodates up to 3 people at fixed price. Your party size is currently "+numPeople);
                         else if(numPeople>6)
                         {
-                            //TO DO: Figure out where to send alert text for user to see they can't do this 
+                            alert("The Southwater Fishing excursion can acccomodate at most 6 people")
+                            tourCheckboxes[i].checked=false;
+                            tourCost=0; 
                         }
                         else if(numPeople>3)
                         {
@@ -382,6 +400,7 @@ a
                         }
                     }
                     else tourCost*=numPeople;
+                    totalPrice+=tourCost; 
                 }
             }
             console.log(totalPrice); 
@@ -405,13 +424,22 @@ a
             {
                 if(!document.getElementById("locToggle").classList.contains("showLocHotel"))
                 {
-                    document.getElementById("nonCruise").classList.toggle("showLocHotel");
+                    let nonCruise = document.getElementsByName("nonCruise");
+                    for(let i=0;i<nonCruise.length;++i)
+                    {
+                        nonCruise[i].classList.toggle("showLocHotel"); 
+                    }
+                    //document.getElementById("nonCruise").classList.toggle("showLocHotel");
                     document.getElementById("locToggle").classList.toggle("showLocHotel"); 
                 }
             }
             else if(document.getElementById("locToggle").classList.contains("showLocHotel"))
             {
-                document.getElementById("nonCruise").classList.toggle("showLocHotel");
+                let nonCruise = document.getElementsByName("nonCruise");
+                    for(let i=0;i<nonCruise.length;++i)
+                    {
+                        nonCruise[i].classList.toggle("showLocHotel"); 
+                    }
                 document.getElementById("locToggle").classList.toggle("showLocHotel"); 
             }
             if(document.getElementById("locToggle").classList.contains("showLocHotel"))

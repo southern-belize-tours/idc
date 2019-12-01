@@ -57,6 +57,11 @@
 	text-align: center; 
   }
 
+  .priceLabel{
+    color: rgb(23,123,211);
+    font-size: 1.2vw; 
+  }
+
   .checkbox-container{
     color: rgb(23,123,211);
     display: block;
@@ -254,14 +259,19 @@
 }
 .creditCardForm .owner {
   width: 63%;
-  margin-right: 10px;
+  margin-right: 2%;
+  /*margin-right: 10px;*/ 
+}
+
+.creditCardForm .tours, .creditCardForm .prices{
+  width: 50%;
 }
 .creditCardForm .CVV {
   width: 35%;
 }
-.creditCardForm #card-number-field {
+/*.creditCardForm #card-number-field {
   width: 100%;
-}
+} */ 
 .creditCardForm #expiration-date {
   width: 49%;
 }
@@ -284,6 +294,11 @@
   border-width:2px; 
   border-style: solid; 
   border-color: rgb(23, 123, 211);  
+}
+
+#alertBox{
+  color: rgb(200,200,200);
+  font-size: 1vw;
 }
 
 .form-group select{
