@@ -166,22 +166,22 @@ a
    enctype="multipart/form-data"
    method="POST">
                 <div class="form-group owner">
-                    <label for="first_name">First Name</label>
+                    <label for="first_name">First Name*</label>
                     <input type="text" class="form-control" name = "sender" id="owner" placeholder="Eiluv" required>
                 </div>
                 <div class="form-group CVV">
-                    <label for="last_name">Last Name</label>
+                    <label for="last_name">Last Name*</label>
                     <input type="text" class="form-control" id="cvv" placeholder="Belize" required>
                 </div>
-                <div class="form-group" id="email">
+                <div class="form-group owner" id="credit-number-field" style="display:inline-block;">
                     <label for="cardNumber">Email Address</label>
                     <input type="text" class="form-control" name = "senderEmail" id="cardNumber" placeholder="jdoe@example.com" required>
                 </div>
-                <div class="form-group" id="card-number-field">
+                <div class="form-group CVV" id="card-number-field">
                         <label for="cardNumber">Size of Party (minimum 2)
-                             <span id="alertBox"></span>
+                             <span class="alertBox" id="alertBox1"></span>
                         </label>
-                        <select id ="numPeople" onchange="computePrice()">
+                        <select id ="numPeople" class="form-control" onchange="computePrice()">
                                 <option value="2">2 </option>
                                 <option value="3">3</option>
                                 <option value="4">4</option>
@@ -199,9 +199,9 @@ a
                                 <option value="16+">16+</option>
                             </select>
                 </div>
-                <div class="form-group" id="card-number-field">
+                <div class="form-group full-width" id="card-number-field">
                     <label for="location">Pick up Location</label>
-                    <select id="loc" onchange='checkLocSelect()'>
+                    <select id="loc"  onchange='checkLocSelect()'>
                         <option value="1">Placencia Docks (Norweigan Cruise Passenger Pickup from Harvest Caye Ferry)</option>
                         <option value="2">Hotel/Lodging</option>
                     </select>
@@ -212,7 +212,7 @@ a
                 </div>
                 <div class="form-group tours" id="card-number-field">
                     <label for="cardNumber">Tours</label>
-                    <div id="tourDiv" style="margin-top:2vw;margin-left:2vw;">
+                    <div id="tourDiv">
                         <label class=checkbox-container>
                             <input type="checkbox" class="tourOption" name="nimLi"> Nim Li Punit Mayan Ruins 
                             <span class="checkmark"></span>
@@ -222,7 +222,7 @@ a
                             <span class="checkmark"></span>
                         </label>
                         <label class=checkbox-container>
-                            <input type="checkbox" class="tourOption" name = "spiceFarm"> Spice Farm Tropical Botanical Garden
+                            <input type="checkbox" class="tourOption" name = "spiceFarm"> Spice Farm
                             <span class="checkmark"></span>
                         </label>
                         <label class=checkbox-container>
@@ -258,20 +258,20 @@ a
                     </div>
                 </div>
                 <div class="form-group prices">
-                        <label for="cardNumber">Pricing</label>
-                        <div id="tourDiv" style="margin-top: 2vw;">
-                            <label class="priceLabel">$95 US/person</label>
-                            <label class="priceLabel">$95 US/person</label>
-                            <label class="priceLabel">$85 US/person</label>
-                            <label class="priceLabel">$85 US/person</label>
-                            <label class="priceLabel">$75 US/person</label>
+                        <label for="cardNumber">Pricing (USD)</label>
+                        <div id="tourDiv">
+                            <label class="priceLabel">$95/person</label>
+                            <label class="priceLabel">$95/person</label>
+                            <label class="priceLabel">$85/person</label>
+                            <label class="priceLabel">$85/person</label>
+                            <label class="priceLabel">$75/person</label>
                         </div>
                         <span class="nonCruiseOptions" name="nonCruise">
-                                <label class="priceLabel">$95 US/person</label>
-                                <label class="priceLabel">$1850</label>
-                                <label class="priceLabel">$500</label>
-                                <label class="priceLabel">$650</label>
-                                <label class="priceLabel">$600</label>
+                                <label class="priceLabel">$95/person</label>
+                                <label class="priceLabel">$1850 private plane up to 5 people</label>
+                                <label class="priceLabel">$500 for 2 people plus $25 for each additional</label>
+                                <label class="priceLabel">$650 for 2 people plus $50 for each additional</label>
+                                <label class="priceLabel">$600 for 3 people plus $50 for each additional up to 6</label>
                         </span>
                 </div>
                 <div class="form-group" id="expiration-date">
@@ -302,16 +302,23 @@ a
                     </select>
                 </div>
                 
-                <div class="form-group" id="card-number-field">
+                <div class="form-group full-width" id="card-number-field">
                         <label for="cardNumber">Message for Us <span style="color: rgb(180,180,180)">(optional)</span></label>
                         <textarea class= "form-control" rows=2 name="txt" style="width:100%;resize:none;line-height: 25px; " placeholder="We are interested in trying some authentic Belizian cuisine. Could you take us to some places?"></textarea>
                 </div>
-                <div class="form-group" id="card-number-field">
-                    <label for="cardNumber">Total</label>
-                    <span id="totalField">
-                        US: 0$        Belize: 0$
-                    </span>
-            </div>
+                <div class="form-group full-width" id="card-number-field">
+                    <label for="cardNumber">Total 
+                        <div class="alertBox" id="alertBox2"></div>
+                    </label>
+                    <div class="form-group prices blue">
+                        <span id="indent">
+                            USD: $<span id="totalField">0</span>
+                        </span> 
+                    </div> 
+                    <div class="form-group prices blue">
+                        BZE: $<span id="totalFieldBze">0</span>
+                    </div>
+                </div>
                 <div class="form-group" id="pay-now">
                     <button type="submit" name="submit" class="btn btn-default" id="confirm-purchase">Confirm</button>
                 </div>
@@ -354,6 +361,8 @@ a
             let totalPrice=0; 
             //TO DO: If numPeople is max value, account for this, or just return possibly
             let tourCheckboxes = document.getElementById("tourDiv").getElementsByTagName("input"); 
+            //Used to notify user if they can add more people to their cart 
+            let alertString=""; 
             for(let i=0;i<tourCheckboxes.length;++i)
             {
                 if(tourCheckboxes[i].checked)
@@ -363,7 +372,11 @@ a
                     let tourCost = tourPrices[tourName];
                     if(tourName==="blueHoleFlyover")
                     {
-                        if(numPeople<5)sendTextToHTML("alertBox","*The Blue Hole Flyover can accomodate up to 5 people. Your party size is currently "+numPeople)
+                        if(numPeople<5)
+                        {
+                            let alertBoxes = document.getElementsByClassName("alertBox"); 
+                            alertString+="*The Blue Hole Flyover can accomodate up to 5 people at a fixed price.\<br\>";
+                        }
                         else if(numPeople>5)
                         {
                             alert("The Blue Hole Flyover can only accomodate up to 5 people")
@@ -387,7 +400,10 @@ a
                     }
                     else if(tourName==="southwaterFishing")
                     {
-                        if(numPeople==2)sendTextToHTML("alertBox","*The Southwater Fishing accomodates up to 3 people at fixed price. Your party size is currently "+numPeople);
+                        if(numPeople==2)
+                        {
+                            alertString+="*The Southwater Fishing accomodates up to 3 people at fixed price.";
+                        }
                         else if(numPeople>6)
                         {
                             alert("The Southwater Fishing excursion can acccomodate at most 6 people")
@@ -403,7 +419,14 @@ a
                     totalPrice+=tourCost; 
                 }
             }
+            let alertBoxes = document.getElementsByClassName("alertBox"); 
+            for(let i=0;i<alertBoxes.length;++i)
+            {
+                sendTextToHTML(alertBoxes[i].getAttribute("id"),alertString); 
+            }
             console.log(totalPrice); 
+            sendTextToHTML("totalField", totalPrice); 
+            sendTextToHTML("totalFieldBze", totalPrice*2);
         }
         
         checkboxes = document.getElementsByClassName("tourOption");

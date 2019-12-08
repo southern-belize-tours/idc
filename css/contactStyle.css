@@ -10,10 +10,20 @@
   display:none; 
 }
 
-#loc{
+#indent{
+  padding-left: 16px; 
+}
+
+.blue{
+  font-size: 1.4vw; 
+  color: rgb(23, 123, 211);
+}
+
+#loc, #location, #tourDiv{
   margin-top: 1vw;
   margin-bottom:1vw; 
   font-size: 1.5vw;
+  width: 100%;
 }
 
 .textGridItem, .textGridItemThicc, .textGridItemThicccc {
@@ -244,6 +254,7 @@
 .creditCardForm .payment {
   float: left;
   font-size: 18px;
+  font-size: 1.8vw;
   padding: 10px 25px;
   margin-top: 20px;
   position: relative;
@@ -252,11 +263,26 @@
   float: left;
   margin-bottom: 15px;
 }
+
 .creditCardForm .payment .form-control {
   line-height: 40px;
   height: auto;
   padding: 0 16px;
 }
+
+.full-width{
+  width:100%;
+}
+
+/*Since the numPeople is a select, it doesn't get accounted for like the inputs, so we gotta
+deal with it explicitly
+*/
+#numPeople.form-control{
+  margin: 0px;
+  height: 45px; 
+  font-size: 2vw; 
+}
+
 .creditCardForm .owner {
   width: 63%;
   margin-right: 2%;
@@ -296,9 +322,11 @@
   border-color: rgb(23, 123, 211);  
 }
 
-#alertBox{
+.alertBox{
   color: rgb(200,200,200);
   font-size: 1vw;
+  
+  line-height: 1.2vw; 
 }
 
 .form-group select{
@@ -395,9 +423,35 @@
     margin-right: 10px; 
     margin-top:50px;
     padding:0px;
+    max-width: 100%;
   }
+
+  .creditCardForm .payment{
+    margin:0px; 
+    padding: 5px;
+  }
+
+  .creditCardForm .payment .form-group{
+    margin: 0px; 
+  }
+
   .title{
     margin-top:0px;
     margin-bottom: 10px; 
+  }
+
+  #loc{
+    font-size: 2vw;
+    margin:0px;
+    width: 100%;
+  }
+
+  #card-number-field{
+    margin:0px;
+    padding: 0px;
+  }
+
+  .checkbox-container, .priceLabel{
+    font-size: 2.5vw;
   }
 } 
