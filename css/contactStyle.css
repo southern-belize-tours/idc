@@ -308,7 +308,7 @@ deal with it explicitly
 }
 .creditCardForm #pay-now {
   width: 100%;
-  margin-top: 25px;
+  /*margin-top: 25px; */ 
 }
 .creditCardForm .payment .btn{
   width:100%; 
@@ -402,6 +402,10 @@ deal with it explicitly
   width:100%;
   margin-right: 0px;  
   font-size: 16px; 
+}
+
+.paypal-button-container{
+  justify-items: center;
 }
 
 
