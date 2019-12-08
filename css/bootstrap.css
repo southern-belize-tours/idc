@@ -467,6 +467,7 @@ p
 
   @media(min-width:427px)
   {
+
 	#navbar .container ul li .dropdown {display:none; margin:0px; }
 
 	#navbar .container ul li #laptopDropdown {display:inline-block;}
@@ -487,6 +488,17 @@ p
   */ 
   @media(max-width: 426px)
   {
+
+	#navbar ol{display:inline;}
+
+	#bottomBar.container ol li a img{
+		margin-top:5px; 
+	}
+
+	#bottomBar.container ol li a{
+		display:inline;
+	}
+
 	.smolTitle{
 		margin-top:10px; 
 		margin-bottom:0px; 
