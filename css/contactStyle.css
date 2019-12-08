@@ -6,6 +6,10 @@
 
 }
 
+select{
+  background:white;
+}
+
 .nonCruiseOptions{
   display:none; 
 }
@@ -235,6 +239,7 @@
   max-width: 70%; 
   background-color: #fff;
   margin: 100px auto;
+  margin-top: 50px;
   overflow: hidden;
   padding: 25px;
   color: rgb(16, 133, 39);
@@ -299,7 +304,7 @@ deal with it explicitly
   width: 100%;
 } */ 
 .creditCardForm #expiration-date {
-  width: 49%;
+  /*width: 49%; */
 }
 .creditCardForm #credit_cards {
   width: 50%;
@@ -442,14 +447,31 @@ deal with it explicitly
   .creditCardForm{
     margin-left: 10px; 
     margin-right: 10px; 
-    margin-top:50px;
+    margin-top:20px;
     padding:0px;
     max-width: 100%;
   }
 
   .creditCardForm .payment{
     margin:0px; 
-    padding: 5px;
+    padding: 8px;
+    font-size: 3.5vw; 
+  }
+
+  .creditCardForm .payment .form-control,#numPeople.form-control,#loc, #days,#months,#years{
+    height: 30px;
+    margin-bottom: 7px;
+  }
+
+  #numPeople.form-control{
+    font-size: 16px; 
+
+  }
+
+ 
+
+  .creditCardForm label{
+    margin-bottom: 0px;
   }
 
   .creditCardForm .payment .form-group{
@@ -457,12 +479,14 @@ deal with it explicitly
   }
 
   .title{
+    font-size: 7vw; 
     margin-top:0px;
     margin-bottom: 10px; 
   }
 
   #loc{
-    font-size: 2vw;
+    font-size: 2.4vw;
+    padding: 0px;
     margin:0px;
     width: 100%;
   }
@@ -472,7 +496,54 @@ deal with it explicitly
     padding: 0px;
   }
 
-  .checkbox-container, .priceLabel{
-    font-size: 2.5vw;
+  label.checkbox-container, label.priceLabel{
+    margin-bottom: 15px;
   }
+
+  .checkbox-container, .priceLabel{
+    font-size: 2vw;
+  }
+
+  .alertBox{
+    font-size: 2vw;
+  }
+
+  #days, #months, #years{
+    width: 30%;
+    margin:auto;
+    margin-right: 8px;
+    padding:0px;
+    font-size: 3vw;
+  }
+
+  #expiration-date.form-group{
+    margin-bottom: 7px;
+  }
+
+ #message{
+  padding: 0px;
+    padding-right: 3px;
+    padding-left: 3px;
+    font-size: 2.8vw;
+    height: 50px;
+ }
+
+ #message.form-control{
+   line-height: 10px;
+ }
+
+ .form-group.prices{
+   font-size: 3vw;
+ }
+
+ #location{
+   font-size: 3vw;
+   padding-left: 3px;
+   padding-right: 3px;
+ }
+
+ #confirm-purchase{
+   margin-bottom: 5px;
+ }
+
 } 
