@@ -135,6 +135,9 @@ select{
   {
 	  font-size: 16; 
   }
+ #message{
+  width:100%;resize:none;line-height: 25px;
+ }
 
   .grid-item:hover 
   {
@@ -329,9 +332,9 @@ deal with it explicitly
 
 .alertBox{
   color: rgb(200,200,200);
-  font-size: 1vw;
-  
-  line-height: 1.2vw; 
+  font-size: 1.6vw;
+  line-height: 2vw;
+
 }
 
 .form-group select{
@@ -510,7 +513,8 @@ deal with it explicitly
   }
 
   .alertBox{
-    font-size: 2vw;
+    font-size: 2.4vw;
+    line-height: 12px;
   }
 
   #days, #months, #years{
@@ -530,11 +534,11 @@ deal with it explicitly
     padding-right: 3px;
     padding-left: 3px;
     font-size: 2.8vw;
-    height: 50px;
+    height: 45px;
  }
 
- #message.form-control{
-   line-height: 10px;
+ textarea#message.form-control{
+   line-height: 15px;
  }
 
  .form-group.prices{

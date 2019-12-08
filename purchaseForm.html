@@ -192,7 +192,6 @@ a
                 </div>
                 <div class="form-group CVV" id="card-number-field">
                         <label for="cardNumber">Size of Party (minimum 2)
-                             <span class="alertBox" id="alertBox1"></span>
                         </label>
                         <select id ="numPeople" class="form-control" onchange="computePrice()">
                                 <option value="2">2 </option>
@@ -317,7 +316,7 @@ a
                 
                 <div class="form-group full-width" id="card-number-field">
                         <label for="cardNumber">Message for Us <span style="color: rgb(180,180,180)">(optional)</span></label>
-                        <textarea id="message" class= "form-control" rows=2 name="txt" style="width:100%;resize:none;line-height: 25px; " placeholder="We are interested in trying some authentic Belizian cuisine. Could you take us to some places?"></textarea>
+                        <textarea id="message" class= "form-control" rows=2 name="txt" placeholder="We are interested in trying some authentic Belizian cuisine. Could you take us to some places?"></textarea>
                 </div>
                 <div class="form-group full-width" id="card-number-field">
                     <label for="cardNumber">Total 
@@ -420,7 +419,7 @@ a
                     {
                         if(numPeople==2)
                         {
-                            alertString+="*The Southwater Fishing accomodates up to 3 people at fixed price.";
+                            alertString+="*The Southwater Fishing can accomodate 3 people at fixed price.";
                         }
                         else if(numPeople>6)
                         {
