@@ -446,7 +446,30 @@ deal with it explicitly
 
 @media(max-width:426px)
 {
+  div.form-group.prices.blue{
+    width:50%;
+  }
 
+  .nonCruiseOptions{
+    margin-top: 0px;
+  }
+
+  .checkmark{
+    top:5px;
+    height: 15px;
+    width: 15px;
+  }
+
+  .checkbox-container{
+    padding-left: 20px;
+  }
+
+  .checkbox-container .checkmark:after{
+    left: 4px;
+    top: 2px;
+    width: 4px;
+    height: 8px;
+  }
   .form-control, #numPeople.form-control, #loc, #days,#months,#years{
     border-width: 1px;
   }
@@ -475,9 +498,6 @@ deal with it explicitly
     font-size: 16px; 
 
   }
-
- 
-
   .creditCardForm label{
     margin-bottom: 0px;
   }
@@ -505,9 +525,16 @@ deal with it explicitly
   }
 
   label.checkbox-container, label.priceLabel{
-    margin-bottom: 15px;
+    margin-bottom: 0px;
   }
 
+  .creditCardForm .prices {
+    width: 53%;
+}
+
+ .creditCardForm .tours{
+   width: 47%;
+ }
   .checkbox-container, .priceLabel{
     font-size: 2vw;
   }

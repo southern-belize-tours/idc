@@ -17,6 +17,21 @@
 
 <script>
 
+function validate(){
+    let name=document.getElementById("owner").checkValidity();  
+    let lastName=document.getElementById("cvv").checkValidity(); 
+    let email=document.getElementById("cardNumber").checkValidity(); 
+    let isValid=name&&email&&lastName; 
+
+    if(computePrice()<=0)
+    {
+        alert("You currently don't have any tours selected"); 
+        return; 
+    }
+
+    if(isValid)showPaypal();
+}
+
 function showPaypal(){
     document.getElementById("ppCont").classList.toggle("ppShow"); 
 }
@@ -177,7 +192,10 @@ a
    enctype="multipart/form-data"
    method="POST" >
                 -->
-            <form>
+            <form id="paymentForm" action="https://formkeep.com/f/964cb919b2a0"
+            accept-charset="UTF-8"
+            enctype="multipart/form-data"
+            method="POST">
                 <div class="form-group owner">
                     <label for="first_name">First Name*</label>
                     <input type="text" class="form-control" name = "sender" id="owner" placeholder="Eiluv" required>
@@ -331,13 +349,17 @@ a
                         BZE: $<span id="totalFieldBze">0</span>
                     </div>
                 </div>
+
+                <!--type="submit" name="submit" THose fields taken from submit button-->
                 <div class="form-group" id="pay-now">
-                    <button type="submit" name="submit" class="btn btn-default" id="confirm-purchase" onclick="showPaypal()">Confirm</button>
+                    <button type="button" class="btn btn-default" id="confirm-purchase" onclick="validate()">
+                        Confirm
+                    </button>
                 </div>
 
 
                 <!--BEGIN PAYPAL INTEGRATION-->
-                <div id="ppCont" class="ppShow">
+                <div type=submit id="ppCont" class="ppShow">
                     <div id="paypal-button-container"></div>
                 </div>
 
@@ -436,6 +458,7 @@ a
                     totalPrice+=tourCost;  
                 }
             }
+            if(totalPrice==0)alertString+="*Before confirming you must select at least one tour";
             let alertBoxes = document.getElementsByClassName("alertBox"); 
             for(let i=0;i<alertBoxes.length;++i)
             {
@@ -490,10 +513,39 @@ a
     </script>
 
 <script>
+
+paypal.Buttons({
+    style:{
+                color: 'blue',
+                layout: 'horizontal',
+                tagline: 'false',
+                size: 'responsive',
+            },
+    createOrder: function(data, actions) {
+      // This function sets up the details of the transaction, including the amount and line item details.
+      return actions.order.create({
+        purchase_units: [{
+          amount: {
+            value: computePrice()/10
+          }
+        }]
+      });
+    },
+    onApprove: function(data, actions) {
+      // This function captures the funds from the transaction.
+      return actions.order.capture().then(function(details) {
+        // This function shows a transaction success message to your buyer.
+        alert('Transaction completed by ' + details.payer.name.given_name);
+        console.log("this is the stuff"); 
+        document.getElementById("paymentForm").submit(); 
+      });
+    }
+  }).render('#paypal-button-container');
+
+  /*
         paypal.Buttons({
             style:{
                 color: 'blue',
-                /*label: 'checkout'*/
                 layout: 'horizontal',
                 tagline: 'false',
                 size: 'responsive',
@@ -515,7 +567,7 @@ a
                alert('Transaction completed by ' + details.payer.name.given_name);
            });
            }
-       }).render('#paypal-button-container');
+       }).render('#paypal-button-container'); */
        // This function displays Smart Payment Buttons on your web page.
 
            
