@@ -1,10 +1,10 @@
-<!DOCTYPE html/> 
+<!DOCTYPE html/>
 
 <head>
         <title> Reserve Your Adventure </title>
        <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
        -->
-        <link rel="stylesheet" type="text/css" href="css/bootstrap.css"> 
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
         <link rel="stylesheet" type="text/css" href="css/contactStyle.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Internet Explorer Optimal Compatibility -->
@@ -17,23 +17,59 @@
 
 <script>
 
-function validate(){
-    let name=document.getElementById("owner").checkValidity();  
-    let lastName=document.getElementById("cvv").checkValidity(); 
-    let email=document.getElementById("cardNumber").checkValidity(); 
-    let isValid=name&&email&&lastName; 
+//TODO: implement so that this accepts typical email regexes
+function checkEmailValidity(elem)
+{
 
-    if(computePrice()<=0)
+  return true;
+}
+
+function showAlert(alertString)
+{
+  let alertBoxes = document.getElementsByClassName("alertBox");
+  for(let i=0;i<alertBoxes.length;++i)
+  {
+      sendTextToHTML(alertBoxes[i].getAttribute("id"),alertString);
+  }
+}
+
+function validate(){
+    let name=document.getElementById("owner").checkValidity();
+    if(!name)
     {
-        alert("You currently don't have any tours selected"); 
-        return; 
+      alert("You need to specify a first name");
+      showAlert("You need to specify a first name");
+      return;
+    }
+    let lastName=document.getElementById("cvv").checkValidity();
+    if(!lastName)
+    {
+      alert("You need to specify a last name");
+      showAlert("You need to specify a last name");
+      return
+    }
+    let email=document.getElementById("cardNumber").checkValidity();
+    if(email)
+    {
+      email=checkEmailValidity(document.getElementById("cardNumber"));
+    }
+    if(!email)
+    {
+      alert("You need to specify a valid email");
+      showAlert("You need to specify a valid email");
+      return;
+    }
+    if(computePrice()<=0)//Compute price already invokes showAlert
+    {
+        alert("You currently don't have any tours selected");
+        return;
     }
 
-    if(isValid)showPaypal();
+    showPaypal();
 }
 
 function showPaypal(){
-    document.getElementById("ppCont").classList.toggle("ppShow"); 
+    document.getElementById("ppCont").classList.toggle("ppShow");
 }
 
         function myFunction() {
@@ -42,12 +78,12 @@ document.getElementById("myDropdown").classList.toggle("show");
 
 function dropFunction() {
 document.getElementById("mainDropdown").classList.toggle("show");
-let img = document.getElementById("dropIndicator"); 
+let img = document.getElementById("dropIndicator");
 if(img.src=="http://southern-belize-tours.com/images/icon1.png")
 {
-    img.src="images/icon2.png"; 
+    img.src="images/icon2.png";
 }
-else img.src="images/icon1.png"; 
+else img.src="images/icon1.png";
 }
 
 // Close the dropdown if the user clicks outside of it
@@ -68,10 +104,10 @@ openDropdown.classList.remove('show');
 
 </head>
 
-<nav id="navbar"> 
-<div class = "container"> 
+<nav id="navbar">
+<div class = "container">
     <ul>
-        <li> 
+        <li>
             <div class="dropdown" id="ignore">
                     <button class="dropbtn" id="dropbtnMobile" onclick=dropFunction()>
                             Menu
@@ -82,7 +118,7 @@ openDropdown.classList.remove('show');
                                 Home
                             </a>
                             <a href="about.html" class="redBtn">
-                                            About 
+                                            About
                             </a>
                             <div class="dropdown">
                                     <button class="dropbtn" onclick=myFunction()>Tours
@@ -109,17 +145,17 @@ openDropdown.classList.remove('show');
             </li>
 
         <a href="index.html" class="blueBtn" id="homeLaptop">
-            <li> 
+            <li>
                     Home
             </li>
         </a>
         <a href="about.html" class="redBtn" id="aboutLaptop">
         <li>
-                About 
-        </li> 
+                About
+        </li>
         </a>
-           
-        <li> 
+
+        <li>
             <div class="dropdown" id="laptopDropdown">
                 <a class="dropbtn">Tours</a>
                 <div id="myDropdown" class="dropdown-content">
@@ -152,31 +188,31 @@ a
 </nav>
 
 
-<body> 
-<script> 
+<body>
+<script>
     function showDays()
         {
-            let numDays = 30; 
-            let daySelect = document.getElementById("days"); 
+            let numDays = 30;
+            let daySelect = document.getElementById("days");
             while(daySelect.hasChildNodes())
             {
-                daySelect.removeChild(daySelect.firstChild); 
+                daySelect.removeChild(daySelect.firstChild);
             }
-            let month = document.getElementById("months").value; 
+            let month = document.getElementById("months").value;
             if(month==="01" || month==="03" || month==="05"
             || month==="07" || month==="08" || month==="10"
-            || month==="12") numDays=31; 
+            || month==="12") numDays=31;
             else if(month==="02")
             {
                 if(document.getElementById("years").value==="20") numDays=29;
-                else numDays=28; 
+                else numDays=28;
             }
             for(let i=1; i<=numDays;++i)
             {
                 let currDay = document.createElement("OPTION");
                 currDay.value=i;
-                currDay.text=i.toString();  
-                daySelect.add(currDay); 
+                currDay.text=i.toString();
+                daySelect.add(currDay);
             }
         }
 </script>
@@ -235,8 +271,8 @@ a
                         <option value="1">Placencia Docks (Norweigan Cruise Passenger Pickup from Harvest Caye Ferry)</option>
                         <option value="2">Hotel/Lodging</option>
                     </select>
-                    <div class="locationHotel" id="locToggle"> 
-                        Please specify your desired pickup location 
+                    <div class="locationHotel" id="locToggle">
+                        Please specify your desired pickup location
                         <input type="text" class="form-control" id="location" placeholder="1234 Main St., Placencia">
                     </div>
                 </div>
@@ -244,7 +280,7 @@ a
                     <label for="cardNumber">Tours</label>
                     <div id="tourDiv">
                         <label class=checkbox-container>
-                            <input type="checkbox" class="tourOption" name="nimLi"> Nim Li Punit Mayan Ruins 
+                            <input type="checkbox" class="tourOption" name="nimLi"> Nim Li Punit Mayan Ruins
                             <span class="checkmark"></span>
                         </label>
                         <label class=checkbox-container>
@@ -256,11 +292,11 @@ a
                             <span class="checkmark"></span>
                         </label>
                         <label class=checkbox-container>
-                            <input type="checkbox" class="tourOption" name = "jungleTube"> Jungle River Tubing 
+                            <input type="checkbox" class="tourOption" name = "jungleTube"> Jungle River Tubing
                             <span class="checkmark"></span>
                         </label>
                         <label class=checkbox-container>
-                                <input type="checkbox" class="tourOption" name = "waterfallSightseeing"> Waterfall Sightseeing 
+                                <input type="checkbox" class="tourOption" name = "waterfallSightseeing"> Waterfall Sightseeing
                                 <span class="checkmark"></span>
                         </label>
                         <span class="nonCruiseOptions" name="nonCruise">
@@ -273,7 +309,7 @@ a
                                 <span class="checkmark"></span>
                             </label>
                             <label class=checkbox-container>
-                                <input type="checkbox" class="tourOption" name="southwaterSnorkelHalf"> Southwater Caye Snorkeling (Half Day) 
+                                <input type="checkbox" class="tourOption" name="southwaterSnorkelHalf"> Southwater Caye Snorkeling (Half Day)
                                 <span class="checkmark"></span>
                             </label>
                             <label class=checkbox-container>
@@ -281,7 +317,7 @@ a
                                     <span class="checkmark"></span>
                                 </label>
                             <label class=checkbox-container>
-                                <input type="checkbox" class="tourOption" name="southwaterFishing"> Southwater Caye Fishing 
+                                <input type="checkbox" class="tourOption" name="southwaterFishing"> Southwater Caye Fishing
                                 <span class="checkmark"></span>
                             </label>
                         </span>
@@ -307,7 +343,7 @@ a
                 <div class="form-group" id="expiration-date">
                     <label>Desired Tour Date</label>
                     <select id="days">
-                    </select> 
+                    </select>
                     <select id="months" onchange = "showDays()">
                         <option value="01">January</option>
                         <option value="02">February </option>
@@ -331,20 +367,20 @@ a
                         <option value="25"> 2025</option>
                     </select>
                 </div>
-                
+
                 <div class="form-group full-width" id="card-number-field">
                         <label for="cardNumber">Message for Us <span style="color: rgb(180,180,180)">(optional)</span></label>
                         <textarea id="message" class= "form-control" rows=2 name="txt" placeholder="We are interested in trying some authentic Belizian cuisine. Could you take us to some places?"></textarea>
                 </div>
                 <div class="form-group full-width" id="card-number-field">
-                    <label for="cardNumber">Total 
+                    <label for="cardNumber">Total
                         <div class="alertBox" id="alertBox2"></div>
                     </label>
                     <div class="form-group prices blue">
                         <span id="indent">
                             USD: $<span id="totalField">0</span>
-                        </span> 
-                    </div> 
+                        </span>
+                    </div>
                     <div class="form-group prices blue">
                         BZE: $<span id="totalFieldBze">0</span>
                     </div>
@@ -368,59 +404,59 @@ a
     </div>
 
     <script>
-    
+
         showDays()
-    
+
     </script>
     <script src="assets/js/genericScript.js"></script>
     <script>
 
         var tourPrices = {
             "nimLi": 95,
-            "lubaantun": 95, 
+            "lubaantun": 95,
             "spiceFarm": 85,
-            "jungleTube": 85, 
-            "waterfallSightseeing": 75, 
-            "inlandBlueHole": 95, 
-            "blueHoleFlyover": 1850, 
+            "jungleTube": 85,
+            "waterfallSightseeing": 75,
+            "inlandBlueHole": 95,
+            "blueHoleFlyover": 1850,
             "southwaterSnorkelHalf": 500,
-            "southwaterSnorkelFull": 650, 
-            "southwaterFishing": 600, 
-        }  
+            "southwaterSnorkelFull": 650,
+            "southwaterFishing": 600,
+        }
 
         function sendTextToHTML(elementId, textString)
         {
-            let el = document.getElementById(elementId); 
-            el.innerHTML = textString; 
+            let el = document.getElementById(elementId);
+            el.innerHTML = textString;
         }
 
         function computePrice()
         {
             //First index is 2, and so on
-            let numPeople=document.getElementById("numPeople").selectedIndex+2; 
-            let totalPrice=0; 
+            let numPeople=document.getElementById("numPeople").selectedIndex+2;
+            let totalPrice=0;
             //TO DO: If numPeople is max value, account for this, or just return possibly
-            let tourCheckboxes = document.getElementById("tourDiv").getElementsByTagName("input"); 
-            //Used to notify user if they can add more people to their cart 
-            let alertString=""; 
+            let tourCheckboxes = document.getElementById("tourDiv").getElementsByTagName("input");
+            //Used to notify user if they can add more people to their cart
+            let alertString="";
             for(let i=0;i<tourCheckboxes.length;++i)
             {
                 if(tourCheckboxes[i].checked)
                 {
-                    let tourName =tourCheckboxes[i].getAttribute("name"); 
+                    let tourName =tourCheckboxes[i].getAttribute("name");
                     let tourCost = tourPrices[tourName];
                     if(tourName==="blueHoleFlyover")
                     {
                         if(numPeople<5)
                         {
-                            let alertBoxes = document.getElementsByClassName("alertBox"); 
+                            let alertBoxes = document.getElementsByClassName("alertBox");
                             alertString+="*The Blue Hole Flyover can accomodate up to 5 people at a fixed price.\<br\>";
                         }
                         else if(numPeople>5)
                         {
                             alert("The Blue Hole Flyover can only accomodate up to 5 people")
-                            tourCheckboxes[i].checked=false; 
-                            tourCost=0; 
+                            tourCheckboxes[i].checked=false;
+                            tourCost=0;
                         }
                     }
                     else if(tourName==="southwaterSnorkelHalf")
@@ -429,12 +465,12 @@ a
                         {
                             tourCost+=(numPeople-2)*25;
                         }
-                    }                  
+                    }
                     else if(tourName==="southwaterSnorkelFull")
                     {
                         if(numPeople>2)
                         {
-                            tourCost+=(numPeople-2)*40; 
+                            tourCost+=(numPeople-2)*40;
                         }
                     }
                     else if(tourName==="southwaterFishing")
@@ -447,7 +483,7 @@ a
                         {
                             alert("The Southwater Fishing excursion can acccomodate at most 6 people")
                             tourCheckboxes[i].checked=false;
-                            tourCost=0; 
+                            tourCost=0;
                         }
                         else if(numPeople>3)
                         {
@@ -455,20 +491,20 @@ a
                         }
                     }
                     else tourCost*=numPeople;
-                    totalPrice+=tourCost;  
+                    totalPrice+=tourCost;
                 }
             }
             if(totalPrice==0)alertString+="*Before confirming you must select at least one tour";
-            let alertBoxes = document.getElementsByClassName("alertBox"); 
+            let alertBoxes = document.getElementsByClassName("alertBox");
             for(let i=0;i<alertBoxes.length;++i)
             {
-                sendTextToHTML(alertBoxes[i].getAttribute("id"),alertString); 
+                sendTextToHTML(alertBoxes[i].getAttribute("id"),alertString);
             }
-            sendTextToHTML("totalField", totalPrice); 
+            sendTextToHTML("totalField", totalPrice);
             sendTextToHTML("totalFieldBze", totalPrice*2);
-            return totalPrice; 
+            return totalPrice;
         }
-        
+
         checkboxes = document.getElementsByClassName("tourOption");
         for(let i=0;i<checkboxes.length;++i)
         {
@@ -477,12 +513,12 @@ a
 
         /*
         Toggles showing the field prompting the user to enter their address if they are not arriving
-        at the Placencia docks. 
+        at the Placencia docks.
         Also forces this prompt to be required if the case is such
-        */ 
+        */
         function checkLocSelect()
         {
-            let select=document.getElementById("loc"); 
+            let select=document.getElementById("loc");
             if(select.options[select.selectedIndex].value=="2")
             {
                 if(!document.getElementById("locToggle").classList.contains("showLocHotel"))
@@ -490,10 +526,10 @@ a
                     let nonCruise = document.getElementsByName("nonCruise");
                     for(let i=0;i<nonCruise.length;++i)
                     {
-                        nonCruise[i].classList.toggle("showLocHotel"); 
+                        nonCruise[i].classList.toggle("showLocHotel");
                     }
                     //document.getElementById("nonCruise").classList.toggle("showLocHotel");
-                    document.getElementById("locToggle").classList.toggle("showLocHotel"); 
+                    document.getElementById("locToggle").classList.toggle("showLocHotel");
                 }
             }
             else if(document.getElementById("locToggle").classList.contains("showLocHotel"))
@@ -501,13 +537,13 @@ a
                 let nonCruise = document.getElementsByName("nonCruise");
                     for(let i=0;i<nonCruise.length;++i)
                     {
-                        nonCruise[i].classList.toggle("showLocHotel"); 
+                        nonCruise[i].classList.toggle("showLocHotel");
                     }
-                document.getElementById("locToggle").classList.toggle("showLocHotel"); 
+                document.getElementById("locToggle").classList.toggle("showLocHotel");
             }
             if(document.getElementById("locToggle").classList.contains("showLocHotel"))
             {
-                document.getElementById("location").required=true; 
+                document.getElementById("location").required=true;
             }
         }
     </script>
@@ -536,8 +572,8 @@ paypal.Buttons({
       return actions.order.capture().then(function(details) {
         // This function shows a transaction success message to your buyer.
         alert('Transaction completed by ' + details.payer.name.given_name);
-        console.log("this is the stuff"); 
-        document.getElementById("paymentForm").submit(); 
+        console.log("this is the stuff");
+        document.getElementById("paymentForm").submit();
       });
     }
   }).render('#paypal-button-container');
@@ -570,7 +606,7 @@ paypal.Buttons({
        }).render('#paypal-button-container'); */
        // This function displays Smart Payment Buttons on your web page.
 
-           
+
    </script>
 
    <!--END PAYPAL INTEGRATION-->
@@ -581,13 +617,12 @@ paypal.Buttons({
         a
     </nav>
 
-<nav id="navbar"> 
-        <div class = "container" id="bottomBar"> 
-            <ol>   
+<nav id="navbar">
+        <div class = "container" id="bottomBar">
+            <ol>
                 <li style="color:rgb(23, 123, 211)"> <a href="https://www.linkedin.com/in/ianfeekes/" target = "_blank"><img src="images/insta.png" width="50" height="50"/> </a></li>
                 <li style="color:rgb(16, 154, 43)"> <a href="https://www.facebook.com/pages/category/Tour-Agency/Placencia-Action-Tours-537314880112426/" target="_blank"> <img src="images/facebook.png" width="50" height="50"/> </a></li>
                 <li style="color:rgb(16, 154, 43)"> <a href="https://www.facebook.com/pages/category/Tour-Agency/Placencia-Action-Tours-537314880112426/" target="_blank"> <img src="images/whatsapp.png" width="50" height="50"/> </a></li>
             </ol>
         </div>
     </nav>
-

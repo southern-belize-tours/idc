@@ -1,26 +1,26 @@
 .textGridContainer{
-	margin: 70px; 
+	margin: 70px;
 	grid-template-columns: repeat(4, 1fr);
 	display: grid;
-	grid-gap: 2rem; 
+	grid-gap: 2rem;
 
 }
 
 .textGridItem, .textGridItemThicc, .textGridItemThicccc {
-	background-color: rgb(200,200,200); 
-	justify-content: center; 
-	align-items: center; 
+	background-color: rgb(200,200,200);
+	justify-content: center;
+	align-items: center;
 	border: 3px solid rgba(0, 0, 0, 0.8);
-	border-radius: 3px; 
-	font-size: 2em; 
+	border-radius: 3px;
+	font-size: 2em;
 
 
-	/*padding: 20px;  
-	font-size: 20;*/ 
+	/*padding: 20px;
+	font-size: 20;*/
   }
 
   .textGridItemThicc{
-	  grid-column: span 2; 
+	  grid-column: span 2;
   }
 
   .textGridItemThicccc {
@@ -29,84 +29,84 @@
 
 .grid-container {
 	display: grid;
-	padding: 70px; 
+	padding: 70px;
 	grid-template-columns: auto auto auto;
-	grid-column-gap: 30px; 
-	grid-row-gap: 30px; 
+	grid-column-gap: 30px;
+	grid-row-gap: 30px;
 
-	justify-content: space-evenly; 
+	justify-content: space-evenly;
   }
 
- 
+
 
   .grid-two{
     padding: 70px;
-    padding-bottom: 0px;  
-    display:grid; 
-    grid-template-columns: auto auto; 
-    grid-column-gap:50px; 
-    grid-row-gap:50px; 
-    justify-content: center; 
+    padding-bottom: 0px;
+    display:grid;
+    grid-template-columns: auto auto;
+    grid-column-gap:50px;
+    grid-row-gap:50px;
+    justify-content: center;
   }
 
   .grid-two a {
-    cursor: pointer; 
+    cursor: pointer;
  }
 
  .grid-item-pic:hover {
-   -webkit-filter: brightness(70%); 
+   -webkit-filter: brightness(70%);
  }
 
 .logoImg{
-  max-width:80%; 
-  margin-bottom: 10px; 
-  margin-top:10px; 
+  max-width:80%;
+  margin-bottom: 10px;
+  margin-top:10px;
 }
 
 .grid-item {
-	background-color: none; 
-	/*border: 1px solid rgba(0, 0, 0, 0.8);*/ 
-	max-width:300px; 
+	background-color: none;
+	/*border: 1px solid rgba(0, 0, 0, 0.8);*/
+	max-width:300px;
 
-	border: none; 
-	/*padding: 20px;  
-	font-size: 20;*/ 
-	text-align: center; 
+	border: none;
+	/*padding: 20px;
+	font-size: 20;*/
+	text-align: center;
   }
 
   a{
-    text-decoration:none; 
-    color: rgb(23, 123, 211); 
+    text-decoration:none;
+    color: rgb(23, 123, 211);
   }
 
   .grid-item-pic {
-    background-color: none; 
-    /*border: 1px solid rgba(0, 0, 0, 0.8);*/  
-    border: none; 
-    /*padding: 20px;  
-    font-size: 20;*/ 
-    text-align: center; 
+    background-color: none;
+    /*border: 1px solid rgba(0, 0, 0, 0.8);*/
+    border: none;
+    /*padding: 20px;
+    font-size: 20;*/
+    text-align: center;
     }
 
     .grid-item-pic div{
-      color: rgb(46, 44, 44); 
+      color: rgb(46, 44, 44);
     }
 
     .grid-image{
-      width:100%; 
-      height: 290px; 
+      width:100%;
+      height: 290px;
     }
 
   .grid-item-pic a .grid-item a{
-	  font-size: 20; 
-    text-decoration: none; 
+	  font-size: 20;
+    text-decoration: none;
 	  /*background-color: rgba(255, 255, 255, 0.8);
 	  border: 1px solid rgba(0, 0, 0, 0.8);*/
   }
 
   .grid-item p
   {
-	  font-size: 16; 
+	  font-size: 16;
   }
 
   .lowkey{
@@ -122,7 +122,7 @@
     color: rgb(27, 59, 187);
   }
 
-  .grid-item:hover, .grid-item-pic:hover .grid-image 
+  .grid-item:hover, .grid-item-pic:hover .grid-image
   {
 	-webkit-filter: brightness(70%);
   color: rgb(23, 123, 211)
@@ -134,31 +134,31 @@
   }
 
 .title{
-  margin-top: 40px; 
-  margin-bottom: 40px; 
-  color:rgb(23, 123, 211); 
-    font-size:5vw; 
-    text-align:center; 
+  margin-top: 40px;
+  margin-bottom: 40px;
+  color:rgb(23, 123, 211);
+    font-size:5vw;
+    text-align:center;
 }
 
 .homeTitle{
-  margin-top: 40px; 
-  margin-bottom: 40px; 
-  color:rgb(23, 123, 211); 
-    font-size:4vw; 
-    text-align:center; 
+  margin-top: 40px;
+  margin-bottom: 40px;
+  color:rgb(23, 123, 211);
+    font-size:4vw;
+    text-align:center;
 }
-  
-  
+
+
 .bookThisButton{
-	margin-left: 70px; 
+	margin-left: 70px;
 }
 
 .reservationForms
 {
-	margin-left: 70px; 
-	margin-right: 70px; 
-	margin-top: 30px; 
+	margin-left: 70px;
+	margin-right: 70px;
+	margin-top: 30px;
 }
 
 .checklistContainer {
@@ -230,7 +230,7 @@
 
 .creditCardForm {
   max-width: 700px;
-  max-width: 70%; 
+  max-width: 70%;
   background-color: #fff;
   margin: 100px auto;
   overflow: hidden;
@@ -244,14 +244,14 @@
 .creditCardForm .heading h1 {
   text-align: center;
   font-family: 'Open Sans', sans-serif;
- /* color: #4c4e56; */ 
+ /* color: #4c4e56; */
 }
 .heading{
   color: rgb(23, 123, 211);
 }
 
 .introParagraph{
-  text-indent:0px; 
+  text-indent:0px;
   font-size:1.8vw;
   line-height: 2.2vw;
   text-indent:0px;
@@ -309,15 +309,15 @@
   background-color: #2ec4a5;
   background-color: rgb(23, 123, 211);
   color: white;
-  border-radius:5px; 
-  border-width:2px; 
-  border-style: solid; 
-  border-color: rgb(23, 123, 211);  
+  border-radius:5px;
+  border-width:2px;
+  border-style: solid;
+  border-color: rgb(23, 123, 211);
 }
 .creditCardForm .payment .btn:hover{
-  /*color: rgb(27, 59, 187); 
-  background-color:white; */ 
-  border-color: rgb(27, 59, 187); 
+  /*color: rgb(27, 59, 187);
+  background-color:white; */
+  border-color: rgb(27, 59, 187);
   background-color: rgb(27, 59, 187);
 }
 .creditCardForm .payment select {
@@ -340,22 +340,22 @@
 }
 
 .form-group label {
-  display:block; 
+  display:block;
   margin-left: 5px;
 }
 
 ::placeholder{
-  color: rgb(176, 212, 225); 
+  color: rgb(176, 212, 225);
 }
 
 .form-control {
   border-width:2px;
-  border-style:solid;  
+  border-style:solid;
   border-color: rgb(23, 123, 211);
-  border-radius:5px; 
+  border-radius:5px;
   width:100%;
-  margin-right: 0px;  
-  font-size: 16px; 
+  margin-right: 0px;
+  font-size: 16px;
 }
 
 
@@ -363,63 +363,87 @@
 @media(max-width:1024px)
 {
   .title{
-    margin-top: 20px; 
-    margin-bottom: 20px; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media(max-width:768px)
+{
+  .grid-container{
+    padding: 25px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
+
+  .grid-image{
+    height: 200px;
   }
 }
 
 @media(max-width:425px)
 {
 
-  
+
 
   .grid-two{
-    padding-top: 20px; 
-    padding-left: 10px; 
-    padding-right: 10px; 
+		grid-template-columns: auto;
+    padding-top: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+		padding-bottom: 25px;
     grid-column-gap: 20px;
-    font-size: 2.9vw; 
-    line-height: 3.6vw;  
+    font-size: 2.9vw;
+    line-height: 3.6vw;
   }
 
+	.logoImg{
+		max-width: 60%;
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+
   p{
-    margin-left: 10px; 
-    margin-right: 10px;  
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   .introParagraph{
-    font-size: 3vw; 
-    line-height: 3.5vw; 
+    font-size: 3vw;
+    line-height: 3.5vw;
+		margin-left: 25px;
+		margin-right: 25px;
+		text-align:center; 
   }
 
   .title{
     margin-top:0px;
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
   }
   .slideshowReel{
-    margin-bottom:0px; 
+    margin-bottom:0px;
   }
 
   .homeTitle{
-    margin-top:10px; 
-    margin-bottom:10px; 
-    font-size: 5vw; 
+    margin-top:10px;
+    margin-bottom:10px;
+    font-size: 5vw;
   }
   .grid-container {
-    padding: 15px; 
-    grid-column-gap: 15px; 
-    grid-row-gap: 15px; 
-    grid-template-columns: auto auto; 
+    padding: 15px;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    grid-template-columns: auto auto;
     }
 
   .grid-image{
-    height: 180px; 
+    height: 180px;
   }
-  
+
 
   .grid-item-pic a, .grid-item a{
-    font-size: 3vw; 
-    text-decoration:none; 
+    font-size: 3vw;
+    text-decoration:none;
   }
 }
 
@@ -429,45 +453,31 @@
 @media(min-width:1440px)
 {
   .grid-container{
-    grid-template-columns: auto auto auto auto; 
+    grid-template-columns: auto auto auto auto;
   }
 }
 
 @media(min-width: 1900px)
 {
   .grid-container{
-    grid-template-columns: auto auto auto auto auto; 
+    grid-template-columns: auto auto auto auto auto;
   }
 
   .grid-image{
-    height: 370px; 
+    height: 370px;
   }
 }
-
-@media(max-width:768px)
-{
-  .grid-container{
-    padding: 25px; 
-    grid-column-gap: 20px;
-    grid-row-gap: 20px; 
-  }
-
-  .grid-image{
-    height: 200px; 
-  }
-}
-
 
 @media(max-width:375px)
 {
   .grid-image{
-    height: 160px; 
+    height: 160px;
   }
 }
 
 @media(max-width:320px)
 {
   .grid-image{
-    height: 130px; 
+    height: 130px;
   }
 }

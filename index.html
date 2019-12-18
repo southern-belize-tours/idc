@@ -1,8 +1,8 @@
-<!DOCTYPE html/> 
+<!DOCTYPE html/>
 
 <head>
         <title> Placencia Action Tours </title>
-        <link rel="stylesheet" type="text/css" href="css/bootstrap.css"> 
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
         <link rel="stylesheet" type="text/css" href="css/homeStyle.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -10,22 +10,22 @@
 <script>
         function myFunction() {
 document.getElementById("myDropdown").classList.toggle("show");
-let img = document.getElementById("dropIndicatorTour"); 
+let img = document.getElementById("dropIndicatorTour");
 if(img.src=="http://southern-belize-tours.com/images/icon3.png")
 {
-    img.src="images/icon4.png"; 
+    img.src="images/icon4.png";
 }
-else img.src="images/icon3.png"; 
+else img.src="images/icon3.png";
 }
 
 function dropFunction() {
 document.getElementById("mainDropdown").classList.toggle("show");
-let img = document.getElementById("dropIndicator"); 
+let img = document.getElementById("dropIndicator");
 if(img.src=="http://southern-belize-tours.com/images/icon1.png")
 {
-    img.src="images/icon2.png"; 
+    img.src="images/icon2.png";
 }
-else img.src="images/icon1.png"; 
+else img.src="images/icon1.png";
 }
 
 // Close the dropdown if the user clicks outside of it
@@ -46,10 +46,10 @@ openDropdown.classList.remove('show');
 
 </head>
 
-<nav id="navbar"> 
-<div class = "container"> 
+<nav id="navbar">
+<div class = "container">
     <ul>
-        <li> 
+        <li>
             <div class="dropdown" id="ignore">
                     <button class="dropbtn" id="dropbtnMobile" onclick=dropFunction()>Menu
 
@@ -61,7 +61,7 @@ openDropdown.classList.remove('show');
                                 Home
                             </a>
                             <a href="about.html" class="redBtn">
-                                            About 
+                                            About
                             </a>
                             <div class="dropdown">
                                     <button class="dropbtn" onclick=myFunction()>Tours
@@ -89,17 +89,17 @@ openDropdown.classList.remove('show');
             </li>
 
         <a href="index.html" class="blueBtn" id="homeLaptop">
-            <li> 
+            <li>
                     Home
             </li>
         </a>
         <a href="about.html" class="redBtn" id="aboutLaptop">
         <li>
-                About 
-        </li> 
+                About
+        </li>
         </a>
-           
-        <li> 
+
+        <li>
             <div class="dropdown" id="laptopDropdown">
                 <a class="dropbtn">Tours</a>
                 <div id="myDropdown" class="dropdown-content">
@@ -133,19 +133,19 @@ a
 </nav>
 
 
-<body> 
+<body>
 
-<div class="slideshow-container"> 
+<div class="slideshow-container">
     <div class="mySlides fade">
       <div class="numbertext">1 / 7</div>
-      <img class="slideImage" src="images/q.png"> <!-- you could do "style=width:100% if you want"--> 
+      <img class="slideImage" src="images/q.png"> <!-- you could do "style=width:100% if you want"-->
       <div class="text">
           <label class="back">
                 Effigy of the god "Quetzcoatl," our mascott. He was depicted as the bringer of knowledge into the Mayan world
           </label>
         </div>
     </div>
-    
+
     <div class="mySlides fade">
       <div class="numbertext">2 / 7</div>
       <img class="slideImage" src="images/h.png">
@@ -153,7 +153,7 @@ a
           <label class="back">Find the perfect beach</label>
         </div>
     </div>
-    
+
     <div class="mySlides fade">
       <div class="numbertext">3 / 7</div>
       <img class="slideImage" src="images/turtle.png">
@@ -195,7 +195,7 @@ a
             </label>
         </div>
     </div>
-  
+
 
 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -204,19 +204,19 @@ a
 <div class=slideshowReel>
 <span class="dot" onclick="currentSlide(1)">
     <image src="images/quetz1Mini.png" height=50px width=50px></image>
-</span> 
+</span>
 <span class="dot" onclick="currentSlide(2)">
     <image src="images/hammockMini.png" height=50px width=50px></image>
-</span> 
+</span>
 <span class="dot" onclick="currentSlide(3)">
      <image src="images/babyTurtleCropped.png" height=50px width=50px></image>
-</span> 
+</span>
 <span class="dot" onclick="currentSlide(4)">
     <image src="images/palmMini.png" height=50px width=50px></image>
-</span> 
+</span>
 <span class="dot" onclick="currentSlide(5)">
     <image src="images/turtleMini.png" height=50px width=50px></image>
-</span> 
+</span>
 <span class="dot" onclick="currentSlide(6)">
     <image src="images/coatimundiMini.png" height=50px width=50px></image>
 </span>
@@ -228,28 +228,28 @@ a
 <script>
     var slideIndex = 1;
     showSlides(slideIndex);
-    
+
     function plusSlides(n) {
       showSlides(slideIndex += n);
     }
-    
+
     function currentSlide(n) {
       showSlides(slideIndex = n);
     }
-    
+
     function showSlides(n) {
       var i;
       var slides = document.getElementsByClassName("mySlides");
       var dots = document.getElementsByClassName("dot");
-      if (n > slides.length) {slideIndex = 1}    
+      if (n > slides.length) {slideIndex = 1}
       if (n < 1) {slideIndex = slides.length}
       for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";  
+          slides[i].style.display = "none";
       }
       for (i = 0; i < dots.length; i++) {
           dots[i].className = dots[i].className.replace(" active", "");
       }
-      slides[slideIndex-1].style.display = "block";  
+      slides[slideIndex-1].style.display = "block";
       dots[slideIndex-1].className += " active";
     }
 </script>
@@ -271,9 +271,9 @@ a
         <div class="grid-item-pic">
                 <div class="smolTitle" style="color:rgb(16, 154, 43); ">Cruise Excursions </div>
                 <img class="logoImg" src="images/cruiseLogo.png">
-                <div> 
-                    Guests arriving from Norweigan Cruise Lines will be docking at the private island harvest Caye 
-                    just a 20 minute boat ride offshore from the Placencia Peninsula. Catch one of the three morning 
+                <div>
+                    Guests arriving from Norweigan Cruise Lines will be docking at the private island harvest Caye
+                    just a 20 minute boat ride offshore from the Placencia Peninsula. Catch one of the three morning
                     ferries to Placencia Docks, where your guides will be waiting for a sign to take you to your adventure!
                     You will have plenty of time to see the sites before we get you back to the Placencia Docks to make the ferry back to Harvest Caye
                 </div>
@@ -282,11 +282,11 @@ a
     <a href="allTours.html">
         <div class="grid-item-pic">
                 <div class="smolTitle" style="color:rgb(16, 154, 43);">Hotel Excursions </div>
-            <img class="logoimg" src="images/hotelLogo.png"> 
-            <div> 
+            <img class="logoimg" src="images/hotelLogo.png">
+            <div>
                 Staying in Placencia? Let us know where, and we can come and get you for a day filled with as many adventures
                 as you could possibly want. There will be as much time as you need to relax, and stop at whatever sites and attractions
-                take your fancy along the journey! We will take you to anything that crosses your mind, and drive you back to where you are 
+                take your fancy along the journey! We will take you to anything that crosses your mind, and drive you back to where you are
                 staying when your journey is over.
             </div>
         </div>
@@ -302,12 +302,12 @@ a
         </div>
         <div class="grid-item-pic">
             <a href="lubaantun.html">
-                <img class="grid-image" src = "images/lubaantunSquare.png"> 
+                <img class="grid-image" src = "images/lubaantunSquare.png">
                 Lubaantun Mayan Ruins
             </a>
         </div>
         <div class="grid-item-pic">
-            <a href="spiceFarm.html"> 
+            <a href="spiceFarm.html">
                 <img class="grid-image"  src = "images/spiceFarmSquare.png">
                 Spice Farm Tropical Garden
             </a>
@@ -315,7 +315,7 @@ a
         <div class="grid-item-pic">
             <a href="jungleTubing.html">
                 <img class="grid-image"  src = "images/southStaanSquare.png">
-                Jungle River Tubing 
+                Jungle River Tubing
             </a>
         </div>
         <div class="grid-item-pic">
@@ -345,7 +345,7 @@ a
                 <div class="grid-item-pic">
                         <a href="southWaterFishing.html">
                             <img class="grid-image"  src = "images/southFishSquare.png">
-                            South Water Caye Fishing 
+                            South Water Caye Fishing
                         </a>
                     </div>
       </div>
@@ -358,14 +358,12 @@ a
         a
     </nav>
 
-<nav id="navbar"> 
-        <div class = "container"> 
-            <ol>   
+<nav id="navbar">
+        <div class = "container" id="bottomBar">
+            <ol>
                 <li style="color:rgb(23, 123, 211)"> <a href="https://www.linkedin.com/in/ianfeekes/" target = "_blank"><img src="images/insta.png" width="50" height="50"/> </a></li>
                 <li style="color:rgb(16, 154, 43)"> <a href="https://www.facebook.com/pages/category/Tour-Agency/Placencia-Action-Tours-537314880112426/" target="_blank"> <img src="images/facebook.png" width="50" height="50"/> </a></li>
                 <li style="color:rgb(16, 154, 43)"> <a href="https://www.facebook.com/pages/category/Tour-Agency/Placencia-Action-Tours-537314880112426/" target="_blank"> <img src="images/whatsapp.png" width="50" height="50"/> </a></li>
-                <li style="color:rgb(16, 154, 43)"> <a href="https://www.facebook.com/pages/category/Tour-Agency/Placencia-Action-Tours-537314880112426/" target="_blank"> <img src="images/viber.png" width="50" height="50"/> </a></li>
             </ol>
         </div>
     </nav>
-
