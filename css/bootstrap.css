@@ -301,6 +301,9 @@ p
 	  max-height:643px;
       overflow:hidden;
       max-width:100%;
+
+      /*This might be the holy grail*/ 
+      object-fit: cover;
   }
 
   /* Next & previous buttons */
