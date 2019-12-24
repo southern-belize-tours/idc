@@ -160,6 +160,11 @@ p
 	color:rgb(225, 225, 116);
 }
 
+.dot > img{
+  height: 12px;
+  width: 12px;
+}
+
 .dropbtn, .dropbtnMobile {
 	background-color: rgb(225, 225, 116);
 	color: rgb(16, 154, 43);
@@ -292,7 +297,7 @@ p
       margin-left: auto;
       margin-right: auto;
       display:block;
-      height: 80%;
+      height: 60%;
 	  max-height:643px;
       overflow:hidden;
       max-width:100%;
@@ -302,22 +307,15 @@ p
   .prev, .next {
 	  padding-left: 2%;
 	  padding-right: 2%;
-	cursor: pointer;
-
-
-	position: absolute;
-
-	top: 320px;
-	top: 30%;
-
-
+	 cursor: pointer;
+	 position: absolute;
+	 top: 320px;
+	 top: 30%;
 	max-height: 0px;
-
 	width: auto;
 	color: white;
 	font-weight: bold;
 	font-size: 18px;
-
 	font-size: 30px;
 	transition: 0.6s ease;
 	border-radius: 0 3px 3px 0;
@@ -374,18 +372,14 @@ p
   .dot {
 
 	/*cursor: pointer;*/
-	height: 50px;
-	width: 50px;
+	height: 25px;
+	width: 25px;
 	margin: 0 10px;
 	border-radius: 50%;
     /*display: inline-block; */
 	transition: background-color 0.6s ease;
 	cursor: pointer;
-  }
-
-  .dot > img{
-	  height: 50px;
-	  width: 50px;
+  /*background-image:  url("../images/imageBullet.png")*/
   }
 
   .active, .dot:hover {
@@ -396,28 +390,24 @@ p
   .fade {
 	-webkit-animation-name: fade;
 	-webkit-animation-duration: 1.5s;
-	animation-name: fade;
-	animation-duration: 1.5s;
+	 animation-name: fade;
+	 animation-duration: 1.5s;
+   transition: 1.6s ease;
+
+   animation: fading 1.3s;
   }
 
-  /*
-  @media(min-height:750px)
-  {
-	.prev, .next {
-		top:25%;
-	}
-  } */
-
+  @keyframes fading{0%{opacity:0}100%{opacity:1}}
 
   @media(min-width:1024px)
   {
 	  .dot{
-		  margin: 0 15px;
+		  margin: 0 2px;
 	  }
 
 	  .dot > img{
-		  width:60px;
-		  height:60px;
+		  width:12px;
+		  height:12px;
 	  }
   }
 
@@ -432,12 +422,7 @@ p
   {
 	.dot
 	{
-		margin: 0 5px;
-	}
-
-	.dot > img{
-		width: 40px;
-		height: 40px;
+		margin: 0 0px;
 	}
 
 	  .slideImage{

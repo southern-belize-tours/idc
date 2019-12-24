@@ -1,11 +1,11 @@
-<!DOCTYPE html/> 
+<!DOCTYPE html/>
 
 <head>
         <title> Contact Us </title>
        <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
        -->
-        <link rel="stylesheet" type="text/css" href="css/bootstrap.css"> 
-        <link rel="stylesheet" type="text/css" href="css/contactStyle.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/newContactStyle.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -17,12 +17,12 @@ document.getElementById("myDropdown").classList.toggle("show");
 
 function dropFunction() {
 document.getElementById("mainDropdown").classList.toggle("show");
-let img = document.getElementById("dropIndicator"); 
+let img = document.getElementById("dropIndicator");
 if(img.src=="http://southern-belize-tours.com/images/icon1.png")
 {
-    img.src="images/icon2.png"; 
+    img.src="images/icon2.png";
 }
-else img.src="images/icon1.png"; 
+else img.src="images/icon1.png";
 }
 
 // Close the dropdown if the user clicks outside of it
@@ -43,10 +43,10 @@ openDropdown.classList.remove('show');
 
 </head>
 
-<nav id="navbar"> 
-<div class = "container"> 
+<nav id="navbar">
+<div class = "container">
     <ul>
-        <li> 
+        <li>
             <div class="dropdown" id="ignore">
                     <button class="dropbtn" id="dropbtnMobile" onclick=dropFunction()>
                             Menu
@@ -57,7 +57,7 @@ openDropdown.classList.remove('show');
                                 Home
                             </a>
                             <a href="about.html" class="redBtn">
-                                            About 
+                                            About
                             </a>
                             <div class="dropdown">
                                     <button class="dropbtn" onclick=myFunction()>Tours
@@ -84,17 +84,17 @@ openDropdown.classList.remove('show');
             </li>
 
         <a href="index.html" class="blueBtn" id="homeLaptop">
-            <li> 
+            <li>
                     Home
             </li>
         </a>
         <a href="about.html" class="redBtn" id="aboutLaptop">
         <li>
-                About 
-        </li> 
+                About
+        </li>
         </a>
-           
-        <li> 
+
+        <li>
             <div class="dropdown" id="laptopDropdown">
                 <a class="dropbtn">Tours</a>
                 <div id="myDropdown" class="dropdown-content">
@@ -127,21 +127,21 @@ a
 </nav>
 
 
-<body> 
+<body>
 
-<div class="slideshow-container"> 
+<div class="slideshow-container">
     <div class="mySlides fade">
       <div class="numbertext">1 / 5</div>
-      <img class="slideImage" src="images/about/about1.png"> <!-- you could do "style=width:100% if you want"--> 
+      <img class="slideImage" src="images/about/about1.png"> <!-- you could do "style=width:100% if you want"-->
       <div class="text">Find your own private creek in the jungle</div>
     </div>
-    
+
     <div class="mySlides fade">
       <div class="numbertext">2 / 5</div>
       <img class="slideImage" src="images/about/about2.png">
       <div class="text">If you're looking to rent a boat, you can park it here</div>
     </div>
-    
+
     <div class="mySlides fade">
       <div class="numbertext">3 / 5</div>
       <img class="slideImage" src="images/about/about3.png">
@@ -160,8 +160,8 @@ a
     </div>
 
 
-    
-  
+
+
 
 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -169,47 +169,47 @@ a
 
 <div style="display:inline-block;justify-content: center;display:flex;margin-top:10px;margin-bottom:30px;">
 <span class="dot" onclick="currentSlide(1)">
-    <image src="images/about/about1Square.png" height=50px width=50px></image>
-</span> 
+    <image src="images/imageBullet.png" height=50px width=50px></image>
+</span>
 <span class="dot" onclick="currentSlide(2)">
-    <image src="images/about/about2Square.png" height=50px width=50px></image>
-</span> 
+    <image src="images/imageBullet.png" height=50px width=50px></image>
+</span>
 <span class="dot" onclick="currentSlide(3)">
-     <image src="images/about/about3Square.png" height=50px width=50px></image>
-</span> 
+     <image src="images/imageBullet.png" height=50px width=50px></image>
+</span>
 <span class="dot" onclick="currentSlide(4)">
-    <image src="images/about/about4Square.png" height=50px width=50px></image>
-</span> 
+    <image src="images/imageBullet.png" height=50px width=50px></image>
+</span>
 <span class="dot" onclick="currentSlide(5)">
-    <image src="images/about/about5Square.png" height=50px width=50px></image>
-</span> 
+    <image src="images/imageBullet.png" height=50px width=50px></image>
+</span>
 </div>
 
 <script>
-    
+
     function showDays()
         {
-            let numDays = 30; 
-            let daySelect = document.getElementById("days"); 
+            let numDays = 30;
+            let daySelect = document.getElementById("days");
             while(daySelect.hasChildNodes())
             {
-                daySelect.removeChild(daySelect.firstChild); 
+                daySelect.removeChild(daySelect.firstChild);
             }
-            let month = document.getElementById("months").value; 
+            let month = document.getElementById("months").value;
             if(month==="01" || month==="03" || month==="05"
             || month==="07" || month==="08" || month==="10"
-            || month==="12") numDays=31; 
+            || month==="12") numDays=31;
             else if(month==="02")
             {
                 if(document.getElementById("years").value==="20") numDays=29;
-                else numDays=28; 
+                else numDays=28;
             }
             for(let i=1; i<=numDays;++i)
             {
                 let currDay = document.createElement("OPTION");
                 currDay.value=i;
-                currDay.text=i.toString();  
-                daySelect.add(currDay); 
+                currDay.text=i.toString();
+                daySelect.add(currDay);
             }
         }
 </script>
@@ -217,7 +217,7 @@ a
 
 <div class = "title">Contact Us</div>
 
-<p style="text-indent:0px;"> 
+<p style="text-indent:0px;">
 If you have any questions, need any special accomodations, or are interested in any tours not listed on the site, please fill out this form or contact us by email at  <a onclick="ga('send','event','ontact', 'email', 'info', 1);" href="mailto:placencia.action.tours@outlook.com">placencia.action.tours@outlook.com</a>
 </p>
 
@@ -242,7 +242,7 @@ If you have any questions, need any special accomodations, or are interested in 
                     <label for="cardNumber">Email Address</label>
                     <input type="text" class="form-control" name = "senderEmail" id="cardNumber" placeholder="jdoe@example.com" required>
                 </div>
-                <div class="form-group" id="card-number-field">
+                <div class="form-group CVV">
                         <label for="cardNumber">Size of Party (minimum 2)</label>
                         <input type="text" class="form-control" id="cardNumber" placeholder="13">
                 </div>
@@ -250,7 +250,7 @@ If you have any questions, need any special accomodations, or are interested in 
                     <label for="cardNumber">Tours (Check All Items of Interest)</label>
                     <div style="margin-top:2vw;margin-left:2vw;">
                         <label class=checkbox-container>
-                            <input type="checkbox"> Nim Li Punit Mayan Ruins 
+                            <input type="checkbox"> Nim Li Punit Mayan Ruins
                             <span class="checkmark"></span>
                         </label>
                         <label class=checkbox-container>
@@ -262,11 +262,11 @@ If you have any questions, need any special accomodations, or are interested in 
                             <span class="checkmark"></span>
                         </label>
                         <label class=checkbox-container>
-                            <input type="checkbox"> Jungle River Tubing 
+                            <input type="checkbox"> Jungle River Tubing
                             <span class="checkmark"></span>
                         </label>
                         <label class=checkbox-container>
-                            <input type="checkbox"> Waterfall Sightseeing 
+                            <input type="checkbox"> Waterfall Sightseeing
                             <span class="checkmark"></span>
                         </label>
                         <label class=checkbox-container>
@@ -282,12 +282,12 @@ If you have any questions, need any special accomodations, or are interested in 
                             <span class="checkmark"></span>
                         </label>
                         <label class=checkbox-container>
-                            <input type="checkbox"> Southwater Caye Fishing 
+                            <input type="checkbox"> Southwater Caye Fishing
                             <span class="checkmark"></span>
                         </label>
                     </div>
-                    
-                    
+
+
 
                 </div>
                 <div class="form-group" id="card-number-field">
@@ -297,7 +297,7 @@ If you have any questions, need any special accomodations, or are interested in 
                 <div class="form-group" id="expiration-date">
                     <label>Desired Tour Date</label>
                     <select id="days">
-                    </select> 
+                    </select>
                     <select id="months" onchange = "showDays()">
                         <option value="01">January</option>
                         <option value="02">February </option>
@@ -322,7 +322,7 @@ If you have any questions, need any special accomodations, or are interested in 
                         <option value="25"> 2025</option>
                     </select>
                 </div>
-                
+
                 <div class="form-group" id="card-number-field">
                         <label for="cardNumber">Message for us</label>
                         <textarea class= "form-control" required rows=8 name="txt" style="width:100%;resize:none;line-height: 25px; " placeholder="We have a school trip of 50+ students coming for the first week of July and were wondering if you could accomodate us for the week. Please email me at jdoe@example.com to discuss prices and logistics."></textarea>
@@ -336,11 +336,11 @@ If you have any questions, need any special accomodations, or are interested in 
     </div>
 
     <script>
-    
+
         showDays()
-    
+
     </script>
-    <script src="assets/js/genericScript.js"></script>"
+    <script src="assets/js/genericScript.js"></script>
 
 </body>
 
@@ -348,14 +348,12 @@ If you have any questions, need any special accomodations, or are interested in 
         a
     </nav>
 
-<nav id="navbar"> 
-        <div class = "container"> 
-            <ol>   
+<nav id="navbar">
+        <div class = "container" id="bottomBar">
+            <ol>
                 <li style="color:rgb(23, 123, 211)"> <a href="https://www.linkedin.com/in/ianfeekes/" target = "_blank"><img src="images/insta.png" width="50" height="50"/> </a></li>
                 <li style="color:rgb(16, 154, 43)"> <a href="https://www.facebook.com/pages/category/Tour-Agency/Placencia-Action-Tours-537314880112426/" target="_blank"> <img src="images/facebook.png" width="50" height="50"/> </a></li>
                 <li style="color:rgb(16, 154, 43)"> <a href="https://www.facebook.com/pages/category/Tour-Agency/Placencia-Action-Tours-537314880112426/" target="_blank"> <img src="images/whatsapp.png" width="50" height="50"/> </a></li>
-                <li style="color:rgb(16, 154, 43)"> <a href="https://www.facebook.com/pages/category/Tour-Agency/Placencia-Action-Tours-537314880112426/" target="_blank"> <img src="images/viber.png" width="50" height="50"/> </a></li>
             </ol>
         </div>
     </nav>
-

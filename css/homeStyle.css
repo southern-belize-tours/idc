@@ -29,7 +29,10 @@
 
 .grid-container {
 	display: grid;
-	padding: 70px;
+	padding-top: 15px;
+	padding-right: 70px;
+	padding-left: 70px;
+	padding-bottom: 70px;
 	grid-template-columns: auto auto auto;
 	grid-column-gap: 30px;
 	grid-row-gap: 30px;
@@ -142,8 +145,8 @@
 }
 
 .homeTitle{
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   color:rgb(23, 123, 211);
     font-size:4vw;
     text-align:center;
@@ -262,7 +265,7 @@
   justify-content: center;
   display:flex;
   margin-top:10px;
-  margin-bottom:30px;
+  margin-bottom:10px;
 }
 .creditCardForm .payment {
   float: left;
@@ -413,7 +416,7 @@
     line-height: 3.5vw;
 		margin-left: 25px;
 		margin-right: 25px;
-		text-align:center; 
+		text-align:center;
   }
 
   .title{
