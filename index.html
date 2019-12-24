@@ -7,43 +7,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<script>
-        function myFunction() {
-document.getElementById("myDropdown").classList.toggle("show");
-let img = document.getElementById("dropIndicatorTour");
-if(img.src=="http://southern-belize-tours.com/images/icon3.png")
-{
-    img.src="images/icon4.png";
-}
-else img.src="images/icon3.png";
-}
-
-function dropFunction() {
-document.getElementById("mainDropdown").classList.toggle("show");
-let img = document.getElementById("dropIndicator");
-if(img.src=="http://southern-belize-tours.com/images/icon1.png")
-{
-    img.src="images/icon2.png";
-}
-else img.src="images/icon1.png";
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-if (!event.target.matches('.dropbtn')) {
-var dropdowns = document.getElementsByClassName("dropdown-content");
-var i;
-for (i = 0; i < dropdowns.length; i++) {
-var openDropdown = dropdowns[i];
-if (openDropdown.classList.contains('show')) {
-openDropdown.classList.remove('show');
-}
-}
-}
-}
-
-</script>
-
 </head>
 
 <nav id="navbar">
@@ -68,7 +31,7 @@ openDropdown.classList.remove('show');
                                             <img height=15px width=15px src="images/icon3.png" id="dropIndicatorTour">
                                     </button>
                                     <div id="myDropdown" class="dropdown-content">
-                                      <a href="allTours.html">All Tours</a>
+                                      <a href="allTours.html">Land Tours</a>
                                       <a href="cruiseTours.htlm">Cruise Tours</a>
                                       <a href="nimLi.html">Nim Li Punit Mayan Ruins</a>
                                       <a href="lubaantun.html">Lubaantun Mayan Ruins</a>
@@ -103,7 +66,7 @@ openDropdown.classList.remove('show');
             <div class="dropdown" id="laptopDropdown">
                 <a class="dropbtn">Tours</a>
                 <div id="myDropdown" class="dropdown-content">
-                  <a href="allTours.html">All Tours</a>
+                  <a href="allTours.html">Land Tours</a>
                   <a href="cruiseTours.html">Cruise Tours</a>
                   <a href="nimLi.html">Nim Li Punit Mayan Ruins</a>
                   <a href="lubaantun.html">Lubaantun Mayan Ruins</a>
@@ -224,44 +187,7 @@ a
   <image src="images/imageBullet.png"></image>
 </span>
 </div>
-
-<script>
-    var slideIndex = 1;
-    showSlides(slideIndex);
-
-    function incrSlides(){
-      plusSlides(1);
-    }
-
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("dot");
-      if (n > slides.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-          slides[i].style.animation = "fadeout";
-          let thisSlide = slides[i];
-          slides[i].style.display = "none";
-      }
-      for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex-1].style.display = "block";
-      dots[slideIndex-1].className += " active";
-    }
-
-
-</script>
-
+<script src="assets/js/genericScript.js"></script>
 <div class="homeTitle">
     <span style="color:rgb(23, 123, 211)">Dream.</span>
     <span style="color:rgb(222, 60, 71);">Explore.</span>
@@ -301,7 +227,7 @@ a
     </a>
 </div>
 
-<div class="smolTitle" style="color:rgb(16, 154, 43);">Explore Belize </div>
+<div class="smolTitle" id="exploreBelize" style="color:rgb(16, 154, 43);padding-top: 70px; ;">Explore Belize </div>
 <div class="grid-container">
         <div class="grid-item-pic">
                 <a href="nimLi.html">
