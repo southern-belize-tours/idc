@@ -310,7 +310,7 @@ deal with it explicitly
 }
 
 .creditCardForm #card-number-field {
-  width: 100%; 
+  width: 100%;
 }
 
 .creditCardForm #expiration-date {
@@ -453,6 +453,11 @@ deal with it explicitly
 
 @media(max-width:426px)
 {
+
+	#email.form-group{
+		width:100%;
+	}
+
   div.form-group.prices.blue{
     width:50%;
   }
