@@ -228,10 +228,12 @@ a
    enctype="multipart/form-data"
    method="POST" >
                 -->
-            <form id="paymentForm" action="https://formkeep.com/f/964cb919b2a0"
+            <form id="paymentForm" action="https://formkeep.com/f/aa6a028686ff"
             accept-charset="UTF-8"
             enctype="multipart/form-data"
             method="POST">
+            <input type="hidden" name="utf8" value="✓">
+
                 <div class="form-group owner">
                     <label for="first_name">First Name*</label>
                     <input type="text" class="form-control" name = "sender" id="owner" placeholder="Eiluv" required>
@@ -241,13 +243,12 @@ a
                     <input type="text" class="form-control" id="cvv" placeholder="Belize" required>
                 </div>
                 <div class="form-group owner" id="credit-number-field" style="display:inline-block;">
-                    <label for="cardNumber">Email Address*</label>
-                    <input type="text" class="form-control" name = "senderEmail" id="cardNumber" placeholder="jdoe@example.com" required>
+                    <label for="email">Email Address*</label>
+                    <input type="text" class="form-control" name = "email" id="cardNumber" placeholder="jdoe@example.com" required>
                 </div>
                 <div class="form-group CVV" id="card-number-field">
-                        <label for="cardNumber">Size of Party (minimum 2)
-                        </label>
-                        <select id ="numPeople" class="form-control" onchange="computePrice()">
+                        <label for="partySize">Size of Party (minimum 2)</label>
+                        <select id ="numPeople" class="form-control" onchange="computePrice()" name="partySize">
                                 <option value="2">2 </option>
                                 <option value="3">3</option>
                                 <option value="4">4</option>
@@ -267,13 +268,13 @@ a
                 </div>
                 <div class="form-group full-width" id="card-number-field">
                     <label for="location">Pick up Location</label>
-                    <select id="loc"  onchange='checkLocSelect()'>
+                    <select id="loc"  onchange='checkLocSelect()' name = "location">
                         <option value="1">Placencia Docks (Norweigan Cruise Passenger Pickup from Harvest Caye Ferry)</option>
                         <option value="2">Hotel/Lodging</option>
                     </select>
                     <div class="locationHotel" id="locToggle">
-                        Please specify your desired pickup location
-                        <input type="text" class="form-control" id="location" placeholder="1234 Main St., Placencia">
+                        <label for="hotelAddress">Please specify your desired pickup location</label>
+                        <input type="text" class="form-control" id="location" name = "hotelAddress" value="" placeholder="1234 Main St., Placencia">
                     </div>
                 </div>
                 <div class="form-group tours" id="card-number-field">
@@ -296,8 +297,8 @@ a
                             <span class="checkmark"></span>
                         </label>
                         <label class=checkbox-container>
-                                <input type="checkbox" class="tourOption" name = "waterfallSightseeing"> Waterfall Sightseeing
-                                <span class="checkmark"></span>
+                            <input type="checkbox" class="tourOption" name = "waterfallSightseeing"> Waterfall Sightseeing
+                            <span class="checkmark"></span>
                         </label>
                         <span class="nonCruiseOptions" name="nonCruise">
                             <label class=checkbox-container>
@@ -342,9 +343,11 @@ a
                 </div>
                 <div class="form-group" id="expiration-date">
                     <label>Desired Tour Date</label>
-                    <select id="days">
+                    <label for="day"></label>
+                    <select id="days" name="day">
                     </select>
-                    <select id="months" onchange = "showDays()">
+                    <label for="month"></label>
+                    <select id="months" name = "month" onchange = "showDays()">
                         <option value="01">January</option>
                         <option value="02">February </option>
                         <option value="03">March</option>
@@ -358,7 +361,8 @@ a
                         <option value="11">November</option>
                         <option value="12">December</option>
                     </select>
-                    <select id="years" onchange="showDays()">
+                    <label for="year"></label>
+                    <select id="years" name="year" onchange="showDays()">
                         <option value="20"> 2020</option>
                         <option value="21"> 2021</option>
                         <option value="22"> 2022</option>
@@ -571,7 +575,9 @@ paypal.Buttons({
       // This function captures the funds from the transaction.
       return actions.order.capture().then(function(details) {
         // This function shows a transaction success message to your buyer.
-        alert('Transaction completed by ' + details.payer.name.given_name);
+
+
+        //alert('Transaction completed by ' + details.payer.name.given_name);
         console.log("this is the stuff");
         document.getElementById("paymentForm").submit();
       });
