@@ -236,11 +236,11 @@ a
 
                 <div class="form-group owner">
                     <label for="first_name">First Name*</label>
-                    <input type="text" class="form-control" name = "sender" id="owner" placeholder="Eiluv" required>
+                    <input type="text" class="form-control" name = "first_name" id="owner" placeholder="Eiluv" required>
                 </div>
                 <div class="form-group CVV">
                     <label for="last_name">Last Name*</label>
-                    <input type="text" class="form-control" id="cvv" placeholder="Belize" required>
+                    <input type="text" class="form-control" name="last_name" id="cvv" placeholder="Belize" required>
                 </div>
                 <div class="form-group owner" id="credit-number-field" style="display:inline-block;">
                     <label for="email">Email Address*</label>
@@ -269,8 +269,8 @@ a
                 <div class="form-group full-width" id="card-number-field">
                     <label for="location">Pick up Location</label>
                     <select id="loc"  onchange='checkLocSelect()' name = "location">
-                        <option value="1">Placencia Docks (Norweigan Cruise Passenger Pickup from Harvest Caye Ferry)</option>
-                        <option value="2">Hotel/Lodging</option>
+                        <option value="Docks">Placencia Docks (Norweigan Cruise Passenger Pickup from Harvest Caye Ferry)</option>
+                        <option value="Hotel">Hotel/Lodging</option>
                     </select>
                     <div class="locationHotel" id="locToggle">
                         <label for="hotelAddress">Please specify your desired pickup location</label>
@@ -343,10 +343,10 @@ a
                 </div>
                 <div class="form-group" id="expiration-date">
                     <label>Desired Tour Date</label>
-                    <label for="day"></label>
+                    <label for="day" style="display:none;"></label>
                     <select id="days" name="day">
                     </select>
-                    <label for="month"></label>
+                    <label for="month" style="display:none;"></label>
                     <select id="months" name = "month" onchange = "showDays()">
                         <option value="01">January</option>
                         <option value="02">February </option>
@@ -361,7 +361,7 @@ a
                         <option value="11">November</option>
                         <option value="12">December</option>
                     </select>
-                    <label for="year"></label>
+                    <label for="year" style="display:none;"></label>
                     <select id="years" name="year" onchange="showDays()">
                         <option value="20"> 2020</option>
                         <option value="21"> 2021</option>
@@ -523,7 +523,7 @@ a
         function checkLocSelect()
         {
             let select=document.getElementById("loc");
-            if(select.options[select.selectedIndex].value=="2")
+            if(select.options[select.selectedIndex].value=="Hotel")
             {
                 if(!document.getElementById("locToggle").classList.contains("showLocHotel"))
                 {
@@ -539,10 +539,12 @@ a
             else if(document.getElementById("locToggle").classList.contains("showLocHotel"))
             {
                 let nonCruise = document.getElementsByName("nonCruise");
-                    for(let i=0;i<nonCruise.length;++i)
-                    {
-                        nonCruise[i].classList.toggle("showLocHotel");
-                    }
+                for(let i=0;i<nonCruise.length;++i)
+                {
+                  nonCruise[i].classList.toggle("showLocHotel");
+                }
+                //We want it to take away the text for address for cruise passengers. 
+                document.getElementById("location").value="";
                 document.getElementById("locToggle").classList.toggle("showLocHotel");
             }
             if(document.getElementById("locToggle").classList.contains("showLocHotel"))
