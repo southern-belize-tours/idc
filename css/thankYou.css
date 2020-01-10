@@ -8,7 +8,7 @@
 
 .thankYouContainer{
 	margin: 40px;
-	grid-template-columns: 40% auto;
+	grid-template-columns: 33% auto;
 	display: grid;
 	grid-column-gap: 2rem;
 }
@@ -228,6 +228,6 @@ select{
 	}
 
 	#bottomBar{
-		height: 100px; 
+		height: 100px;
 	}
 }
