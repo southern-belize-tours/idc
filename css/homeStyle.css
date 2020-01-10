@@ -1,3 +1,8 @@
+#exploreBelize{
+	color:rgb(16, 154, 43);
+	padding-top: 70px;
+}
+
 .textGridContainer{
 	margin: 70px;
 	grid-template-columns: repeat(4, 1fr);
@@ -82,13 +87,14 @@
     color: rgb(23, 123, 211);
   }
 
+	.tourTypeText{
+		text-align: justify;
+	}
+
   .grid-item-pic {
     background-color: none;
-    /*border: 1px solid rgba(0, 0, 0, 0.8);*/
+		text-align: center;
     border: none;
-    /*padding: 20px;
-    font-size: 20;*/
-    text-align: center;
     }
 
     .grid-item-pic div{
@@ -373,6 +379,29 @@
 
 @media(max-width:768px)
 {
+
+	#exploreBelize{
+		padding-top: 25px; 
+	}
+
+	.homeTitle{
+		margin-bottom: 0px;
+	}
+
+	.introParagraph{
+		font-size: 2.2vw;
+		margin-left: 25px;
+		margin-right: 25px;
+		line-height: 2.6vw;
+	}
+
+	.grid-two{
+		padding: 25px;
+		grid-column-gap: 40px;
+		line-height: 2.5vw;
+		font-size: 2vw;
+	}
+
   .grid-container{
     padding: 25px;
     grid-column-gap: 20px;
@@ -386,6 +415,11 @@
 
 @media(max-width:425px)
 {
+
+	#exploreBelize{
+		margin-top: 0px;
+		padding-top: 25px;
+	}
 
 
 
@@ -404,6 +438,7 @@
 		max-width: 60%;
 		margin-top: 15px;
 		margin-bottom: 15px;
+		align-self: center;
 	}
 
   p{
@@ -416,7 +451,7 @@
     line-height: 3.5vw;
 		margin-left: 25px;
 		margin-right: 25px;
-		text-align:center;
+		text-align:justify;
   }
 
   .title{
