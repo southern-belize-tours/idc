@@ -52,9 +52,10 @@
     padding-bottom: 0px;
     display:grid;
     grid-template-columns: auto auto;
-    grid-column-gap:50px;
+    grid-column-gap:60px;
     grid-row-gap:50px;
     justify-content: center;
+		line-height: 2.3vw;
   }
 
   .grid-two a {
@@ -262,7 +263,7 @@
 .introParagraph{
   text-indent:0px;
   font-size:1.8vw;
-  line-height: 2.2vw;
+  line-height: 2.4vw;
   text-indent:0px;
 }
 
@@ -490,9 +491,18 @@
 
 @media(min-width:1440px)
 {
+	introParagraph{
+		font-size: 2.5vw; 
+	}
+
   .grid-container{
     grid-template-columns: auto auto auto auto;
   }
+
+	.grid-two{
+		font-size: 2vw;
+		line-height: 2.4vw;
+	}
 }
 
 @media(min-width: 1900px)
