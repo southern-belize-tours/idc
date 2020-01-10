@@ -302,7 +302,7 @@ p
       overflow:hidden;
       max-width:100%;
 
-      /*This might be the holy grail*/ 
+      /*This might be the holy grail*/
       object-fit: cover;
   }
 
