@@ -17,13 +17,11 @@ function setSizedSources(names){
   else if(x>=375)imageSrcEndString="150";
   else if(x>=320)imageSrcEndString="130";
   else imageSrcEndString="200";
+  imageSrcEndString = imageSrcEndString+".jpg";
   for(let i=0;i<imageElements.length;++i)
   {
-    console.log("images/squares/"+names[i]+imageSrcEndString);
-    imageElements[i].src="images/square/"+names[i]+imageSrcEndString;
-
+    imageElements[i].src="images/square/"+names[i]+"/"+names[i]+imageSrcEndString;
   }
-
 }
 
 window.onload=function(){
