@@ -1,8 +1,8 @@
-<!DOCTYPE html/> 
+<!DOCTYPE html/>
 
 <head>
         <title> About Us </title>
-        <link rel="stylesheet" type="text/css" href="css/bootstrap.css"> 
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
         <link rel="stylesheet" type="text/css" href="css/homeStyle.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -14,12 +14,12 @@ document.getElementById("myDropdown").classList.toggle("show");
 
 function dropFunction() {
 document.getElementById("mainDropdown").classList.toggle("show");
-let img = document.getElementById("dropIndicator"); 
+let img = document.getElementById("dropIndicator");
 if(img.src=="http://southern-belize-tours.com/images/icon1.png")
 {
-    img.src="images/icon2.png"; 
+    img.src="images/icon2.png";
 }
-else img.src="images/icon1.png"; 
+else img.src="images/icon1.png";
 }
 
 // Close the dropdown if the user clicks outside of it
@@ -40,18 +40,18 @@ openDropdown.classList.remove('show');
 
 </head>
 
-<nav id="navbar"> 
-<div class = "container"> 
+<nav id="navbar">
+<div class = "container">
     <ul>
-        <li> 
+        <li>
             <div class="dropdown" id="ignore">
                     <button class="dropbtn" id="dropbtnMobile" onclick=dropFunction()>Menu</button>
                     <div id="mainDropdown" class="dropdown-content">
                             <a href="index.html" class="blueBtn">
                                 Home
                             </a>
-                            <a href="#" class="redBtn">
-                                            About 
+                            <a href="about.html" class="redBtn">
+                                            About
                             </a>
                             <div class="dropdown">
                                     <button class="dropbtn" onclick=myFunction()>Tours</button>
@@ -71,22 +71,25 @@ openDropdown.classList.remove('show');
                                 <a href="contact.html" class="orangeBtn">
                                     Contact
                                 </a>
+                                <a href="purchaseForm.html" class="dBlueBtn">
+                                    Book Now 
+                                </a>
                     </div>
                 </div>
             </li>
 
         <a href="index.html" class="blueBtn" id="homeLaptop">
-            <li> 
+            <li>
                     Home
             </li>
         </a>
         <a href="about.html" class="redBtn" id="aboutLaptop">
         <li>
-                About 
-        </li> 
+                About
+        </li>
         </a>
-           
-        <li> 
+
+        <li>
             <div class="dropdown" id="laptopDropdown">
                 <a class="dropbtn">Tours</a>
                 <div id="myDropdown" class="dropdown-content">
@@ -103,12 +106,15 @@ openDropdown.classList.remove('show');
                 </div>
             </div>
         </li>
-
-
         <a href="contact.html" class="orangeBtn" id="contactLaptop">
             <li>
                             Contact
            </li>
+        </a>
+        <a href="purchaseForm.html" class="dBlueBtn" id="bookLaptop">
+          <li>
+            Book Now
+          </li>
         </a>
     </ul>
 </div>
@@ -119,21 +125,21 @@ a
 </nav>
 
 
-<body> 
+<body>
 
-<div class="slideshow-container"> 
+<div class="slideshow-container">
     <div class="mySlides fade">
       <div class="numbertext">1 / 5</div>
-      <img class="slideImage" src="images/about/about1.png"> <!-- you could do "style=width:100% if you want"--> 
+      <img class="slideImage" src="images/about/about1.png"> <!-- you could do "style=width:100% if you want"-->
       <div class="text">Find your own private creek in the jungle</div>
     </div>
-    
+
     <div class="mySlides fade">
       <div class="numbertext">2 / 5</div>
       <img class="slideImage" src="images/about/about2.png">
       <div class="text">If you're looking to rent a boat, you can park it here</div>
     </div>
-    
+
     <div class="mySlides fade">
       <div class="numbertext">3 / 5</div>
       <img class="slideImage" src="images/about/about3.png">
@@ -152,8 +158,8 @@ a
     </div>
 
 
-    
-  
+
+
 
 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -162,46 +168,46 @@ a
 <div style="display:inline-block;justify-content: center;display:flex;margin-top:10px;margin-bottom:30px;">
 <span class="dot" onclick="currentSlide(1)">
     <image src="images/about/about1Square.png" height=50px width=50px></image>
-</span> 
+</span>
 <span class="dot" onclick="currentSlide(2)">
     <image src="images/about/about2Square.png" height=50px width=50px></image>
-</span> 
+</span>
 <span class="dot" onclick="currentSlide(3)">
      <image src="images/about/about3Square.png" height=50px width=50px></image>
-</span> 
+</span>
 <span class="dot" onclick="currentSlide(4)">
     <image src="images/about/about4Square.png" height=50px width=50px></image>
-</span> 
+</span>
 <span class="dot" onclick="currentSlide(5)">
     <image src="images/about/about5Square.png" height=50px width=50px></image>
-</span> 
+</span>
 </div>
 
 <script>
     var slideIndex = 1;
     showSlides(slideIndex);
-    
+
     function plusSlides(n) {
       showSlides(slideIndex += n);
     }
-    
+
     function currentSlide(n) {
       showSlides(slideIndex = n);
     }
-    
+
     function showSlides(n) {
       var i;
       var slides = document.getElementsByClassName("mySlides");
       var dots = document.getElementsByClassName("dot");
-      if (n > slides.length) {slideIndex = 1}    
+      if (n > slides.length) {slideIndex = 1}
       if (n < 1) {slideIndex = slides.length}
       for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";  
+          slides[i].style.display = "none";
       }
       for (i = 0; i < dots.length; i++) {
           dots[i].className = dots[i].className.replace(" active", "");
       }
-      slides[slideIndex-1].style.display = "block";  
+      slides[slideIndex-1].style.display = "block";
       dots[slideIndex-1].className += " active";
     }
 </script>
@@ -210,19 +216,19 @@ a
 <div class = "title">About Us</div>
 
 <p>
-    Placencia Action Tours is your number one choice in tour operations when visiting the Placencia peninsula. We offer tours in the southern region of Belize and with sister companies all across the country we are the most viable choice for reaching any and all of your vacation goals while visiting Beautiful Belize. 
-</p>  
+    Placencia Action Tours is your number one choice in tour operations when visiting the Placencia peninsula. We offer tours in the southern region of Belize and with sister companies all across the country we are the most viable choice for reaching any and all of your vacation goals while visiting Beautiful Belize.
+</p>
 <p>
-    We were founded as a family business from some of the first guides who offered their services throughout all regions in Belize. All of our guides are friendly, experienced and licensed professionals who are very knowledgable of the country and its history. We love showing people the beauty that Belize has to offer, and teaching people the rich heritage of the sites. 
-</p> 
-<p> 
-    We offer a variety of inland, sea and air tours and with our courteous and professional guides at your full disposal. 
-    Our guides have experience touring both small and large groups with sites all throughout the country: if you are looking for a particular experience that is not listed on the site, or have a larger group, please do not hesitate to <a href="contact.html" style="text-decoration:none;"> contact us.</a> 
-</p> 
-<p> 
-    All of our tours will be comfortable, fun, and relaxing. Our guides will pick you up from Placencia Dock if you are coming from a cruise, or from your hotel if you are staying in Placencia. Rides will be smooth, safe and air-conditioned. 
-</p> 
-<p> 
+    We were founded as a family business from some of the first guides who offered their services throughout all regions in Belize. All of our guides are friendly, experienced and licensed professionals who are very knowledgable of the country and its history. We love showing people the beauty that Belize has to offer, and teaching people the rich heritage of the sites.
+</p>
+<p>
+    We offer a variety of inland, sea and air tours and with our courteous and professional guides at your full disposal.
+    Our guides have experience touring both small and large groups with sites all throughout the country: if you are looking for a particular experience that is not listed on the site, or have a larger group, please do not hesitate to <a href="contact.html" style="text-decoration:none;"> contact us.</a>
+</p>
+<p>
+    All of our tours will be comfortable, fun, and relaxing. Our guides will pick you up from Placencia Dock if you are coming from a cruise, or from your hotel if you are staying in Placencia. Rides will be smooth, safe and air-conditioned.
+</p>
+<p>
     We cater to all niches of what Belize has to offer. Whether you are interested in unraveling the history of ancient Mayan ruins, seeing Belize's beautiful natural wonders, falling in love with exotic dishes, or boating in the Caribbean for a few days, we have it all.
 
 
@@ -235,9 +241,9 @@ a
         a
     </nav>
 
-<nav id="navbar"> 
-        <div class = "container"> 
-            <ol>   
+<nav id="navbar">
+        <div class = "container">
+            <ol>
                 <li style="color:rgb(23, 123, 211)"> <a href="https://www.linkedin.com/in/ianfeekes/" target = "_blank"><img src="images/insta.png" width="50" height="50"/> </a></li>
                 <li style="color:rgb(16, 154, 43)"> <a href="https://www.facebook.com/pages/category/Tour-Agency/Placencia-Action-Tours-537314880112426/" target="_blank"> <img src="images/facebook.png" width="50" height="50"/> </a></li>
                 <li style="color:rgb(16, 154, 43)"> <a href="https://www.facebook.com/pages/category/Tour-Agency/Placencia-Action-Tours-537314880112426/" target="_blank"> <img src="images/whatsapp.png" width="50" height="50"/> </a></li>
@@ -245,4 +251,3 @@ a
             </ol>
         </div>
     </nav>
-

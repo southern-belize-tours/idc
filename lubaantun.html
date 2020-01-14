@@ -1,8 +1,8 @@
-<!doctype html/> 
+<!doctype html/>
 
 <head>
         <title> Lubaantun Mayan Ruins Tour </title>
-        <link rel="stylesheet" type="text/css" href="css/bootstrap.css"> 
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
         <link rel="stylesheet" type="text/css" href="css/tourStyle.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -13,12 +13,12 @@ document.getElementById("myDropdown").classList.toggle("show");
 
 function dropFunction() {
     document.getElementById("mainDropdown").classList.toggle("show");
-    let img = document.getElementById("dropIndicator"); 
+    let img = document.getElementById("dropIndicator");
     if(img.src=="http://southern-belize-tours.com/images/icon1.png")
     {
-        img.src="images/icon2.png"; 
+        img.src="images/icon2.png";
     }
-    else img.src="images/icon1.png"; 
+    else img.src="images/icon1.png";
 }
 
 // Close the dropdown if the user clicks outside of it
@@ -39,10 +39,10 @@ if (!event.target.matches('.dropbtn')) {
 
 </head>
 
-<nav id="navbar"> 
-        <div class = "container"> 
+<nav id="navbar">
+        <div class = "container">
             <ul>
-                <li> 
+                <li>
                     <div class="dropdown" id="ignore">
                             <button class="dropbtn" id="dropbtnMobile" onclick=dropFunction()>Menu</button>
                             <div id="mainDropdown" class="dropdown-content">
@@ -50,7 +50,7 @@ if (!event.target.matches('.dropbtn')) {
                                         Home
                                     </a>
                                     <a href="about.html" class="redBtn">
-                                                    About 
+                                                    About
                                     </a>
                                     <div class="dropdown">
                                             <button class="dropbtn" onclick=myFunction()>Tours</button>
@@ -69,22 +69,25 @@ if (!event.target.matches('.dropbtn')) {
                                         <a href="contact.html" class="orangeBtn">
                                             Contact
                                         </a>
+                                        <a href="purchaseForm.html" class="dBlueBtn">
+                                          Book Now
+                                        </a>
                             </div>
                         </div>
                     </li>
 
                 <a href="index.html" class="blueBtn" id="homeLaptop">
-                    <li> 
+                    <li>
                             Home
                     </li>
                 </a>
                 <a href="about.html" class="redBtn" id="aboutLaptop">
                 <li>
-                        About 
-                </li> 
+                        About
+                </li>
                 </a>
-                   
-                <li> 
+
+                <li>
                     <div class="dropdown" id="laptopDropdown">
                         <a class="dropbtn">Tours</a>
                         <div id="myDropdown" class="dropdown-content">
@@ -100,12 +103,15 @@ if (!event.target.matches('.dropbtn')) {
                         </div>
                     </div>
                 </li>
-
-
                 <a href="contact.html" class="orangeBtn" id="contactLaptop">
                     <li>
                                     Contact
                    </li>
+                </a>
+                <a href="purchaseForm.html" class="dBlueBtn" id="bookLaptop">
+                  <li>
+                    Book Now
+                  </li>
                 </a>
             </ul>
         </div>
@@ -115,46 +121,46 @@ if (!event.target.matches('.dropbtn')) {
     a
 </nav>
 
-<body> 
+<body>
 
 
-<div class="slideshow-container"> 
+<div class="slideshow-container">
         <div class="mySlides fade">
                 <div class="numbertext">1 / 7</div>
-                <img class="slideImage" src="images/lubaantun/lubaantun1.png"> <!-- you could do "style=width:100% if you want"--> 
+                <img class="slideImage" src="images/lubaantun/lubaantun1.png"> <!-- you could do "style=width:100% if you want"-->
                 <div class="text">The large stone structures are well suited for military defense</div>
               </div>
-              
+
               <div class="mySlides fade">
                 <div class="numbertext">2 / 7</div>
                 <img class="slideImage" src="images/lubaantun/lubaantun2.png" >
                 <div class="text" style="color:rgb(23, 123, 211)">The famous crystal skull</div>
               </div>
-              
+
               <div class="mySlides fade">
                 <div class="numbertext">3 / 7</div>
                 <img class="slideImage" src="images/lubaantun/lubaantun3.png" >
                 <div class="text">Lubaantun's architecture is unique in that very little mortar was used in construction</div>
               </div>
-      
+
               <div class="mySlides fade">
                       <div class="numbertext">4 / 7</div>
                       <img class="slideImage" src="images/lubaantun/lubaantun4.png"  >
                       <div class="text">The jungle path into Lubaantun</div>
                     </div>
-      
+
                     <div class="mySlides fade">
                       <div class="numbertext">5 / 7</div>
                           <img class="slideImage" src="images/lubaantun/lubaantun5.png" >
                       <div class="text">Ancient Mayan architects favored black slate without mortar rather than limestone for the site's construction</div>
                     </div>
-      
+
                     <div class="mySlides fade">
                       <div class="numbertext">6 / 7</div>
                           <img class="slideImage" src="images/lubaantun/lubaantun6.png" >
                       <div class="text">Rounded corners rather than the conventional jagged construction of structures</div>
                     </div>
-      
+
                     <div class="mySlides fade">
                       <div class="numbertext">7 / 7</div>
                           <img class="slideImage" src="images/lubaantun/lubaantun7.png">
@@ -168,55 +174,55 @@ if (!event.target.matches('.dropbtn')) {
 <div style="display:inline-block;justify-content: center;display:flex;margin-top:10px;">
     <span class="dot" onclick="currentSlide(1)">
         <image src="images/lubaantun/lubaantun1Square.png"></image>
-    </span> 
+    </span>
     <span class="dot" onclick="currentSlide(2)">
         <image src="images/lubaantun/lubaantun2Square.png" ></image>
-    </span> 
+    </span>
     <span class="dot" onclick="currentSlide(3)">
          <image src="images/lubaantun/lubaantun3Square.png" height=50px width=50px></image>
-    </span> 
+    </span>
     <span class="dot" onclick="currentSlide(4)">
             <image src="images/lubaantun/lubaantun4Square.png" height=50px width=50px></image>
-       </span> 
+       </span>
        <span class="dot" onclick="currentSlide(5)">
             <image src="images/lubaantun/lubaantun5Square.png" height=50px width=50px></image>
-       </span> 
+       </span>
        <span class="dot" onclick="currentSlide(6)">
             <image src="images/lubaantun/lubaantun6Square.png" height=50px width=50px></image>
-       </span> 
+       </span>
        <span class="dot" onclick="currentSlide(7)">
             <image src="images/lubaantun/lubaantun7Square.png" height=50px width=50px></image>
-       </span> 
-      
+       </span>
+
 </div>
 
 <br>
-      
+
 <script>
         var slideIndex = 1;
         showSlides(slideIndex);
-        
+
         function plusSlides(n) {
           showSlides(slideIndex += n);
         }
-        
+
         function currentSlide(n) {
           showSlides(slideIndex = n);
         }
-        
+
         function showSlides(n) {
           var i;
           var slides = document.getElementsByClassName("mySlides");
           var dots = document.getElementsByClassName("dot");
-          if (n > slides.length) {slideIndex = 1}    
+          if (n > slides.length) {slideIndex = 1}
           if (n < 1) {slideIndex = slides.length}
           for (i = 0; i < slides.length; i++) {
-              slides[i].style.display = "none";  
+              slides[i].style.display = "none";
           }
           for (i = 0; i < dots.length; i++) {
               dots[i].className = dots[i].className.replace(" active", "");
           }
-          slides[slideIndex-1].style.display = "block";  
+          slides[slideIndex-1].style.display = "block";
           dots[slideIndex-1].className += " active";
         }
 </script>
@@ -224,9 +230,9 @@ if (!event.target.matches('.dropbtn')) {
 
 <div class="textGridContainer">
         <div class="textGridItemTitle">
-                Lubaantun Mayan Ruins 
+                Lubaantun Mayan Ruins
         </div>
-        
+
 
         <div class="textGridItemThicccc">
                 Also known as The place of the fallen stones it is well known for the huge difference in architectural design as in comparison to the other sites found in the rest of Belize. It is also known as the site where the young british explorer Anna Mitchell Hedges allegedly discovered a crystal skull. Of all these skulls found in different ancient cultures scattered all across the world this is the most well known in the international community . The skull is rumored in the pseudo-science community to have ancient mayan mystical powers and is a bringer of both doom and enlightenment. No matter the case it is an excellent subject matter for us to explore and discover.
@@ -234,16 +240,16 @@ if (!event.target.matches('.dropbtn')) {
 
         <div class="textGridItemThicc">
            <label class = "textGridSmallTitle">This Includes</label>
-           <ul> 
-               <li> Food </li> 
+           <ul>
+               <li> Food </li>
                <li> Transport </li>
                <li> Water </li>
            </ul>
         </div>
 
-        <div class="textGridItemThicc">   
+        <div class="textGridItemThicc">
             <label class = "textGridSmallTitle">What to Bring </label>
-            <ul> 
+            <ul>
                 <li> Skin </li>
                 <li> Sunscreen </li>
                 <li> A hat </li>
@@ -255,13 +261,13 @@ if (!event.target.matches('.dropbtn')) {
             <label class="textGridSmallTitle">Pricing & Frequently-Paired-Tours</label>
         </div>
 
-       
+
             <div class = "textGridItem">
                 <a href="purchaseForm.html" class="purchaseButton">
                     <ul class="tourText">
                         <li>Lubaantun</li>
                         <li class="noShow">=</li>
-                        <div class = "price"> 
+                        <div class = "price">
                         Total: $56
                         </div>
 
@@ -269,11 +275,11 @@ if (!event.target.matches('.dropbtn')) {
                                 Book Now
                         </label>
                     </ul>
-                    
-                </a> 
+
+                </a>
             </div>
 
-       
+
             <div class = "textGridItem">
                     <a href="purchaseForm.html" class="purchaseButton">
                     <ul class="tourText">
@@ -281,17 +287,17 @@ if (!event.target.matches('.dropbtn')) {
                         <li class="noShow">+</li>
                         <li>Nim Li Punit</li>
                         <li class="noShow">=</li>
-                        <div class = "price"> 
+                        <div class = "price">
                         Total: $56
-                        </div> 
+                        </div>
                         <label class="tourDropdownContent">
                                 Book Now
                         </label>
                     </ul>
-                    </a> 
+                    </a>
             </div>
 
-        
+
             <div class = "textGridItem">
                 <a href="purchaseForm.html" class="purchaseButton">
                 <ul class="tourText">
@@ -301,17 +307,17 @@ if (!event.target.matches('.dropbtn')) {
                     <li class="noShow">+</li>
                     <li>Nim Li Punit</li>
                     <li class="noShow">=</li>
-                    <div class = "price"> 
+                    <div class = "price">
                        Total: $56
-                    </div> 
+                    </div>
                     <label class="tourDropdownContent">
                             Book Now
                     </label>
                 </ul>
-            </a> 
+            </a>
             </div>
 
-           
+
                 <div class = "textGridItem">
                         <a href="purchaseForm.html" class="purchaseButton">
                         <ul class="tourText">
@@ -321,7 +327,7 @@ if (!event.target.matches('.dropbtn')) {
                             <li class="noShow">+</li>
                             <li>Spice Farm</li>
                             <li class="noShow">=</li>
-                            <div class = "price"> 
+                            <div class = "price">
                             Total: $56
                             </div>
                             <label class="tourDropdownContent">
@@ -334,18 +340,18 @@ if (!event.target.matches('.dropbtn')) {
                 <div class=textGridItemThicccc>
                         <label class = "textGridSmallTitle">Other Popular Tours</label>
                 </div>
- 
+
 </div>
 
 <div class="grid-container">
     <div class="grid-item">
             <a href="nimLi.html">
                     <img class="grid-image"  src = "images/nimLiSquare.png">
-                    Nim Li Punit 
+                    Nim Li Punit
             </a>
     </div>
-    
-    <div class="grid-item"> 
+
+    <div class="grid-item">
         <a href="spiceFarm.html">
                 <img class="grid-image"   src = "images/spiceFarmSquare.png">
                 Tropical Spice Farm
@@ -356,7 +362,7 @@ if (!event.target.matches('.dropbtn')) {
                 <img class="grid-image" src = "images/southStaanSquare.png">
                 Jungle River Tubing </a>
     </div>
-    <div class="grid-item"> 
+    <div class="grid-item">
         <a href="waterfalls.html">
                 <img class="grid-image" src = "images/waterfallsSquare.png">
                 Waterfalls</a>
@@ -390,9 +396,9 @@ if (!event.target.matches('.dropbtn')) {
         a
     </nav>
 
-<nav id="navbar"> 
-        <div class = "container"> 
-            <ol> 
+<nav id="navbar">
+        <div class = "container">
+            <ol>
                 <li style="color:rgb(23, 123, 211)"> <a href="https://www.linkedin.com/in/ianfeekes/" target = "_blank"><img src="images/insta.png" width="50" height="50"/> </a></li>
                 <li style="color:rgb(16, 154, 43)"> <a href="https://www.facebook.com/pages/category/Tour-Agency/Placencia-Action-Tours-537314880112426/" target="_blank"> <img src="images/facebook.png" width="50" height="50"/> </a></li>
                 <li style="color:rgb(16, 154, 43)"> <a href="https://www.facebook.com/pages/category/Tour-Agency/Placencia-Action-Tours-537314880112426/" target="_blank"> <img src="images/whatsapp.png" width="50" height="50"/> </a></li>
@@ -400,4 +406,3 @@ if (!event.target.matches('.dropbtn')) {
             </ol>
         </div>
 </nav>
-

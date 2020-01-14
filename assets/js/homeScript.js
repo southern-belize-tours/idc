@@ -25,18 +25,8 @@ function setSizedSources(names){
 }
 
 window.onload=function(){
-  if (x<568)
-  {
-
-  }
-  else
-  {
-
-  }
-
   //This image names list will expand as we add more tour content
   let imageNames = ["nimLiSquare","lubaantunSquare","spiceFarmSquare","southStaanSquare",
     "waterfallsSquare","inlandBlueHoleSquare","blueHoleSquare","southSnorkelSquare","southFishSquare"];
   setSizedSources(imageNames);
-  console.log("fuck");
 };

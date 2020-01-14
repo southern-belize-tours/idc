@@ -1,8 +1,8 @@
-<!doctype html/> 
+<!doctype html/>
 
 <head>
         <title> South Water Caye Snorkeling </title>
-        <link rel="stylesheet" type="text/css" href="css/bootstrap.css"> 
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
         <link rel="stylesheet" type="text/css" href="css/tourStyle.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -13,12 +13,12 @@ document.getElementById("myDropdown").classList.toggle("show");
 
 function dropFunction() {
     document.getElementById("mainDropdown").classList.toggle("show");
-    let img = document.getElementById("dropIndicator"); 
+    let img = document.getElementById("dropIndicator");
 if(img.src=="http://southern-belize-tours.com/images/icon1.png")
 {
-    img.src="images/icon2.png"; 
+    img.src="images/icon2.png";
 }
-else img.src="images/icon1.png"; 
+else img.src="images/icon1.png";
 }
 
 // Close the dropdown if the user clicks outside of it
@@ -39,10 +39,10 @@ if (!event.target.matches('.dropbtn')) {
 
 </head>
 
-<nav id="navbar"> 
-        <div class = "container"> 
+<nav id="navbar">
+        <div class = "container">
             <ul>
-                <li> 
+                <li>
                     <div class="dropdown" id="ignore">
                             <button class="dropbtn" id="dropbtnMobile" onclick=dropFunction()>Menu</button>
                             <div id="mainDropdown" class="dropdown-content">
@@ -50,7 +50,7 @@ if (!event.target.matches('.dropbtn')) {
                                         Home
                                     </a>
                                     <a href="about.html" class="redBtn">
-                                                    About 
+                                                    About
                                     </a>
                                     <div class="dropdown">
                                             <button class="dropbtn" onclick=myFunction()>Tours</button>
@@ -69,22 +69,25 @@ if (!event.target.matches('.dropbtn')) {
                                         <a href="contact.html" class="orangeBtn">
                                             Contact
                                         </a>
+                                        <a href="purchaseForm.html" class="dBlueBtn">
+                                          Book Now
+                                        </a>
                             </div>
                         </div>
                     </li>
 
                 <a href="index.html" class="blueBtn" id="homeLaptop">
-                    <li> 
+                    <li>
                             Home
                     </li>
                 </a>
                 <a href="about.html" class="redBtn" id="aboutLaptop">
                 <li>
-                        About 
-                </li> 
+                        About
+                </li>
                 </a>
-                   
-                <li> 
+
+                <li>
                     <div class="dropdown" id="laptopDropdown">
                         <a class="dropbtn">Tours</a>
                         <div id="myDropdown" class="dropdown-content">
@@ -100,12 +103,15 @@ if (!event.target.matches('.dropbtn')) {
                         </div>
                     </div>
                 </li>
-
-
                 <a href="contact.html" class="orangeBtn" id="contactLaptop">
                     <li>
                                     Contact
                    </li>
+                </a>
+                <a href="purchaseForm.html" class="dBlueBtn" id="bookLaptop">
+                  <li>
+                    Book Now
+                  </li>
                 </a>
             </ul>
         </div>
@@ -115,15 +121,15 @@ if (!event.target.matches('.dropbtn')) {
     a
 </nav>
 
-<body> 
+<body>
 
 
-<div class="slideshow-container"> 
+<div class="slideshow-container">
         <div class="mySlides fade">
           <div class="numbertext">1 / 5</div>
-          <img class="slideImage" src="images/southwaterSnorkel/southwater1.png"> <!-- you could do "style=width:100% if you want"--> 
+          <img class="slideImage" src="images/southwaterSnorkel/southwater1.png"> <!-- you could do "style=width:100% if you want"-->
         </div>
-        
+
         <div class="mySlides fade">
           <div class="numbertext">2 / 5</div>
           <img class="slideImage" src="images/southwaterSnorkel/southwater2.png" >
@@ -143,8 +149,8 @@ if (!event.target.matches('.dropbtn')) {
                 <div class="numbertext">5 / 5</div>
                 <img class="slideImage" src="images/southwaterSnorkel/southwater5.png" >
         </div>
-        
-      
+
+
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
 </div>
@@ -152,52 +158,52 @@ if (!event.target.matches('.dropbtn')) {
 <div style="display:inline-block;justify-content: center;display:flex;margin-top:10px;">
     <span class="dot" onclick="currentSlide(1)">
         <image src="images/southwaterSnorkel/southwater1Square.png"></image>
-    </span> 
+    </span>
     <span class="dot" onclick="currentSlide(2)">
         <image src="images/southwaterSnorkel/southwater2Square.png" ></image>
-    </span> 
+    </span>
     <span class="dot" onclick="currentSlide(3)">
             <image src="images/southwaterSnorkel/southwater3Square.png" ></image>
-    </span> 
+    </span>
     <span class="dot" onclick="currentSlide(4)">
             <image src="images/southwaterSnorkel/southwater4Square.png" ></image>
-    </span> 
+    </span>
     <span class="dot" onclick="currentSlide(5)">
             <image src="images/southwaterSnorkel/southwater5Square.png" ></image>
-    </span> 
-       
-   
+    </span>
 
-      
+
+
+
 </div>
 
 <br>
-      
+
 <script>
         var slideIndex = 1;
         showSlides(slideIndex);
-        
+
         function plusSlides(n) {
           showSlides(slideIndex += n);
         }
-        
+
         function currentSlide(n) {
           showSlides(slideIndex = n);
         }
-        
+
         function showSlides(n) {
           var i;
           var slides = document.getElementsByClassName("mySlides");
           var dots = document.getElementsByClassName("dot");
-          if (n > slides.length) {slideIndex = 1}    
+          if (n > slides.length) {slideIndex = 1}
           if (n < 1) {slideIndex = slides.length}
           for (i = 0; i < slides.length; i++) {
-              slides[i].style.display = "none";  
+              slides[i].style.display = "none";
           }
           for (i = 0; i < dots.length; i++) {
               dots[i].className = dots[i].className.replace(" active", "");
           }
-          slides[slideIndex-1].style.display = "block";  
+          slides[slideIndex-1].style.display = "block";
           dots[slideIndex-1].className += " active";
         }
 </script>
@@ -207,44 +213,44 @@ if (!event.target.matches('.dropbtn')) {
         <div class="textGridItemTitle">
                Southwater Caye Snorkeling
         </div>
-        
+
 
         <div class="textGridItemThicccc">
                 Nestled in the tropical islands with turqoise blue water lapping the white sandy beaches and the cool Caribbean
-                breeze rustling the palm trees, lies South Water Caye. The island crowns an expansive coral reef within its very own South Water 
-                Marine Reserve, it is one of Belize's most stunning destinations. 
+                breeze rustling the palm trees, lies South Water Caye. The island crowns an expansive coral reef within its very own South Water
+                Marine Reserve, it is one of Belize's most stunning destinations.
         </div>
 
         <div class="textGridItemThicccc">
                 Passengers taking this excursion will be picked up from wherever they are staying in the Placencia area
                 and transferred to the charming beach town of Dangriga via tour vehicle. Once you reach the town,
-                you will transfer to a boat and be taken on a snorkeling excursion throughout the incredible South Water 
-                Marine Reserve. You can expect to see some of the most beautiful tropical reef that the world has to offer. 
+                you will transfer to a boat and be taken on a snorkeling excursion throughout the incredible South Water
+                Marine Reserve. You can expect to see some of the most beautiful tropical reef that the world has to offer.
                 Your breath will be taken away by the colorful coral, wide variants of tropical fish, conch, lobsters, eels, and even sea turtles or manatees.
         </div>
 
         <div class="textGridItemThicccc">
         A delicious authentic Belizian Barbeque Lunch will be provided.
-        After you have eaten, you have the choice to either stay and Lounge at Pelican Beach, ranked by Discovery as 
+        After you have eaten, you have the choice to either stay and Lounge at Pelican Beach, ranked by Discovery as
         one of the <a style="text-decoration:none; color: rgb(23,123,211)"target="_blank" href="https://www.nationalgeographic.com/travel/top-10/top-beaches-world/#/pelican-beach-south-water-caye-belize.jpg">
         top 21 best beaches in the world</a>, or to join the captain to explore more of the reef. If you change your
-        mind while lounging, note that the coral reef is an easy, safe swim from Pelican Beach.  
-        </div> 
-        
+        mind while lounging, note that the coral reef is an easy, safe swim from Pelican Beach.
+        </div>
+
 
         <div class="textGridItemThicc">
            <label class = "textGridSmallTitle">This Includes</label>
-           <ul> 
-               <li> Air-conditioned transport from wherever you are staying in Placencia to Dangriga </li> 
+           <ul>
+               <li> Air-conditioned transport from wherever you are staying in Placencia to Dangriga </li>
                <li> A boat ride to optimal snorkel locations throughout the South Water Marine Reserve </li>
-               <li> Snorkel masks and fins. </li> 
+               <li> Snorkel masks and fins. </li>
                <li> A delicious Belizian barbeque at one of the most beautiful beaches in the world </li>
            </ul>
         </div>
 
-        <div class="textGridItemThicc">   
+        <div class="textGridItemThicc">
             <label class = "textGridSmallTitle">What to Bring </label>
-            <ul> 
+            <ul>
                 <li> Sunscreen </li>
                 <li> A hat </li>
                 <li> A wallet </li>
@@ -256,13 +262,13 @@ if (!event.target.matches('.dropbtn')) {
             <label class="textGridSmallTitle">Pricing & Frequently-Paired-Tours</label>
         </div>
 
-       
+
             <div class = "textGridItem">
                 <a href="purchaseForm.html" class="purchaseButton">
                     <ul class="tourText">
                         <li>Lubaantun</li>
                         <li class="noShow">=</li>
-                        <div class = "price"> 
+                        <div class = "price">
                         Total: $56
                         </div>
 
@@ -270,11 +276,11 @@ if (!event.target.matches('.dropbtn')) {
                                 Book Now
                         </label>
                     </ul>
-                    
-                </a> 
+
+                </a>
             </div>
 
-       
+
             <div class = "textGridItem">
                     <a href="purchaseForm.html" class="purchaseButton">
                     <ul class="tourText">
@@ -282,17 +288,17 @@ if (!event.target.matches('.dropbtn')) {
                         <li class="noShow">+</li>
                         <li>Nim Li Punit</li>
                         <li class="noShow">=</li>
-                        <div class = "price"> 
+                        <div class = "price">
                         Total: $56
-                        </div> 
+                        </div>
                         <label class="tourDropdownContent">
                                 Book Now
                         </label>
                     </ul>
-                    </a> 
+                    </a>
             </div>
 
-        
+
             <div class = "textGridItem">
                 <a href="purchaseForm.html" class="purchaseButton">
                 <ul class="tourText">
@@ -302,17 +308,17 @@ if (!event.target.matches('.dropbtn')) {
                     <li class="noShow">+</li>
                     <li>Nim Li Punit</li>
                     <li class="noShow">=</li>
-                    <div class = "price"> 
+                    <div class = "price">
                        Total: $56
-                    </div> 
+                    </div>
                     <label class="tourDropdownContent">
                             Book Now
                     </label>
                 </ul>
-            </a> 
+            </a>
             </div>
 
-           
+
                 <div class = "textGridItem">
                         <a href="purchaseForm.html" class="purchaseButton">
                         <ul class="tourText">
@@ -322,7 +328,7 @@ if (!event.target.matches('.dropbtn')) {
                             <li class="noShow">+</li>
                             <li>Spice Farm</li>
                             <li class="noShow">=</li>
-                            <div class = "price"> 
+                            <div class = "price">
                             Total: $56
                             </div>
                             <label class="tourDropdownContent">
@@ -335,7 +341,7 @@ if (!event.target.matches('.dropbtn')) {
                 <div class=textGridItemThicccc>
                         <label class = "textGridSmallTitle">Other Popular Tours</label>
                 </div>
- 
+
 </div>
 
 <div class="grid-container">
@@ -349,11 +355,11 @@ if (!event.target.matches('.dropbtn')) {
     <div class="grid-item">
             <a href="lubaantun.html">
                     <img class="grid-image"  src = "images/lubaantunSquare.png">
-                    Lubaantun 
+                    Lubaantun
             </a>
     </div>
-    
-    <div class="grid-item"> 
+
+    <div class="grid-item">
         <a href="spiceFarm.html">
                 <img class="grid-image"   src = "images/spiceFarmSquare.png">
                 Tropical Spice Farm
@@ -364,7 +370,7 @@ if (!event.target.matches('.dropbtn')) {
                 <img class="grid-image" src = "images/southStaanSquare.png">
                 Jungle River Tubing </a>
     </div>
-    <div class="grid-item"> 
+    <div class="grid-item">
         <a href="waterfalls.html">
                 <img class="grid-image" src = "images/waterfallsSquare.png">
                 Waterfalls</a>
@@ -392,9 +398,9 @@ if (!event.target.matches('.dropbtn')) {
         a
     </nav>
 
-<nav id="navbar"> 
-        <div class = "container"> 
-            <ol> 
+<nav id="navbar">
+        <div class = "container">
+            <ol>
                 <li style="color:rgb(23, 123, 211)"> <a href="https://www.linkedin.com/in/ianfeekes/" target = "_blank"><img src="images/insta.png" width="50" height="50"/> </a></li>
                 <li style="color:rgb(16, 154, 43)"> <a href="https://www.facebook.com/pages/category/Tour-Agency/Placencia-Action-Tours-537314880112426/" target="_blank"> <img src="images/facebook.png" width="50" height="50"/> </a></li>
                 <li style="color:rgb(16, 154, 43)"> <a href="https://www.facebook.com/pages/category/Tour-Agency/Placencia-Action-Tours-537314880112426/" target="_blank"> <img src="images/whatsapp.png" width="50" height="50"/> </a></li>
@@ -402,4 +408,3 @@ if (!event.target.matches('.dropbtn')) {
             </ol>
         </div>
 </nav>
-
