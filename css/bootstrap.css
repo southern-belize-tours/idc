@@ -488,7 +488,7 @@ p
   @media(max-width: 650px)
   {
 	  .slideImage{
-		  height: 28%;
+		  height: 35%;
 	  }
 
     #navbar a{
@@ -646,7 +646,6 @@ p
   {
 	  .slideImage{
 		  height: 35%;
-		  height: 50%;
 	  }
 
 	  .text{
