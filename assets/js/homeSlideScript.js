@@ -37,7 +37,10 @@ function setSlideImages(){
   else t.src="images/home/quetz/quetz700.jpeg";
   t=document.getElementById("ruins");
   if(x>450)t.src="images/home/ruins/ruins1024.jpeg";
-  else t.src="images/home/ruins/ruins450.jpeg"; 
+  else t.src="images/home/ruins/ruins450.jpeg";
+  t=document.getElementById("coatimundi");
+  if(x>800)t.src="images/home/coatimundi/coatimundi1024.jpeg";
+  else t.src="images/home/coatimundi/coatimundi450.jpeg"; 
 }
 
 window.onload=function(){
