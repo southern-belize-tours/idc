@@ -328,7 +328,7 @@ p
       margin-left: auto;
       margin-right: auto;
       display:block;
-      height: 65%;
+      height: 350px;
 	  max-height:643px;
       overflow:hidden;
       max-width:100%;
@@ -476,7 +476,6 @@ p
 	}
 
 	  .slideImage{
-		  height: 65%;
       height: 330px;
 	  }
 
@@ -487,9 +486,6 @@ p
 
   @media(max-width: 650px)
   {
-	  .slideImage{
-		  height: 35%;
-	  }
 
     #navbar a{
       padding-left: 15px;
@@ -568,7 +564,7 @@ p
 	#laptopDropdown{display:none;}
 
 	  .slideImage{
-		height: 25%;
+		height: 200px;
 	  }
 
 	  .prev,.next{
@@ -645,7 +641,7 @@ p
   @media(max-width: 375px)
   {
 	  .slideImage{
-		  height: 35%;
+		  height: 200px;
 	  }
 
 	  .text{
@@ -661,7 +657,7 @@ p
   @media(max-width: 300px)
   {
 	  .slideImage{
-		  height: 25%;
+		  height: 200px;
 	  }
   }
 
