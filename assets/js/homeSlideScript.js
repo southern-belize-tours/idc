@@ -7,7 +7,6 @@ y = w.innerHeight|| e.clientHeight|| g.clientHeight;
 
 function setSizedSources(names){
   let mainDiv = document.getElementById("gridImages");
-  console.log(mainDiv);
   let imageElements = mainDiv.getElementsByClassName("grid-image");
   let imageSrcEndString = "";
   if(x>=768)imageSrcEndString="300";
@@ -40,7 +39,7 @@ function setSlideImages(){
   else t.src="images/home/ruins/ruins450.jpeg";
   t=document.getElementById("coatimundi");
   if(x>800)t.src="images/home/coatimundi/coatimundi1024.jpeg";
-  else t.src="images/home/coatimundi/coatimundi450.jpeg"; 
+  else t.src="images/home/coatimundi/coatimundi450.jpeg";
 }
 
 window.onload=function(){
