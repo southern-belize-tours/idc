@@ -29,6 +29,15 @@ function setSlideImages(){
   let t = document.getElementById("turtle");
   if(x>375)t.src="images/home/turtle/turtle1024.jpeg";
   else t.src="images/home/turtle/turtle600.jpeg";
+  t = document.getElementById("beach2");
+  if(x>375)t.src="images/home/beach2/beach21024.jpeg";
+  else t.src="images/home/beach2/beach2900.jpeg";
+  t = document.getElementById("quetz");
+  if(x>700)t.src="images/home/quetz/quetz1024.jpeg";
+  else t.src="images/home/quetz/quetz700.jpeg";
+  t=document.getElementById("ruins");
+  if(x>450)t.src="images/home/ruins/ruins1024.jpeg";
+  else t.src="images/home/ruins/ruins450.jpeg"; 
 }
 
 window.onload=function(){
