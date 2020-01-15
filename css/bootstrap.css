@@ -490,7 +490,7 @@ p
   @media(max-width: 650px)
   {
 	  .slideImage{
-		  height: 50%;
+		  height: 35%;
 	  }
 
     #navbar a{
@@ -570,7 +570,7 @@ p
 	#laptopDropdown{display:none;}
 
 	  .slideImage{
-		height: 50%;
+		height: 25%;
 	  }
 
 	  .prev,.next{

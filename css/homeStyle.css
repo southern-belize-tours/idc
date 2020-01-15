@@ -1,10 +1,6 @@
-
-.bigTitle{
-		color: rgb(23, 123, 211);
-    font-size: 4vw;
-    text-align: center;
-    margin-bottom: 30px;
-	}
+#exploreBelize{
+	margin-top: 20px;
+}
 
 .textGridContainer{
 	margin: 70px;
@@ -112,7 +108,6 @@
     .grid-image{
       width:100%;
       height: 290px;
-
 			height: 300px;
 			width: 300px;
     }
@@ -270,14 +265,6 @@
   color: rgb(23, 123, 211);
 }
 
-.introParagraph{
-	margin-top: 0px;
-  text-indent:0px;
-  font-size:1.8vw;
-  line-height: 2.4vw;
-  text-indent:0px;
-}
-
 .slideshowReel{
   display:inline-block;
   justify-content: center;
@@ -389,7 +376,7 @@
   }
 
 	.homeTitle{
-		margin-top: 20px; 
+		margin-top: 20px;
 		margin-bottom: 10px;
 	}
 }
@@ -404,14 +391,6 @@
 	.homeTitle{
 		margin-bottom: 0px;
 		margin-top: 15px;
-	}
-
-	.introParagraph{
-		font-size: 2.2vw;
-		margin-top: 10px;
-		margin-left: 25px;
-		margin-right: 25px;
-		line-height: 2.6vw;
 	}
 
 	.grid-two{
@@ -456,11 +435,6 @@
 @media(max-width:425px)
 {
 
-	.bigTitle{
-		font-size: 6.5vw;
-    margin-bottom: 10px;
-	}
-
 	#exploreBelize{
 		margin-top: 0px;
 		padding-top: 25px;
@@ -487,14 +461,6 @@
   p{
     margin-left: 10px;
     margin-right: 10px;
-  }
-
-  .introParagraph{
-    font-size: 3vw;
-    line-height: 3.5vw;
-		margin-left: 25px;
-		margin-right: 25px;
-		text-align:justify;
   }
 
   .title{
@@ -532,9 +498,6 @@
 
 @media(min-width:1440px)
 {
-	introParagraph{
-		font-size: 2.5vw;
-	}
 
   .grid-container{
     grid-template-columns: auto auto auto auto;
