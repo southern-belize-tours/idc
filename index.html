@@ -106,10 +106,15 @@ a
 <div class="slideshow-container">
     <div class="mySlides fade">
       <div class="numbertext">1 / 7</div>
-       <img class="slideImage fade" srcset= "images/home/turtle/turtle600.jpeg,
-                                             images/home/turtle/turtle1024.jpeg"
-                                    sizes="(max-width:600px)"
-                                    src = "images/home/turtle/turtle1024.jpeg">
+       <img class="slideImage fade" srcset= "images/home/turtle/turtle1024.jpeg,
+                                             images/home/turtle/turtle600.jpeg"
+                                    
+                                    src = "images/home/turtle/turtle1024.jpeg"> <!--
+          <picture>
+            <source media="(max-width: 600px)" srcset="images/home/turtle/turtle600.jpeg">
+            <source media="(min-width: 800px)" srcset="images/home/turtle/turtle1024.jpeg">
+            <img src="images/home/turtle/turtle1024.jpeg">
+          </picture> -->
       <div class="text"></div>
     </div>
 
