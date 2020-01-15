@@ -305,7 +305,7 @@ p
 .smolTitle{
 	text-align:center;
     color:rgb(16, 133, 39);
-    font-size: 3vw;
+    font-size: 2.8vw;
     padding-bottom:10px;
   }
 
@@ -466,7 +466,7 @@ p
     #navbar a{
       padding-left: 15px;
       padding-right: 15px;
-      font-size: 16px; 
+      font-size: 16px;
     }
 
 	  p

@@ -7,45 +7,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<script>
-        function myFunction() {
-document.getElementById("myDropdown").classList.toggle("show");
-}
-
-function dropFunction() {
-document.getElementById("mainDropdown").classList.toggle("show");
-let img = document.getElementById("dropIndicator");
-if(img.src=="http://southern-belize-tours.com/images/icon1.png")
-{
-    img.src="images/icon2.png";
-}
-else img.src="images/icon1.png";
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-if (!event.target.matches('.dropbtn')) {
-var dropdowns = document.getElementsByClassName("dropdown-content");
-var i;
-for (i = 0; i < dropdowns.length; i++) {
-var openDropdown = dropdowns[i];
-if (openDropdown.classList.contains('show')) {
-openDropdown.classList.remove('show');
-}
-}
-}
-}
-
-</script>
-
-</head>
-
 <nav id="navbar">
 <div class = "container">
     <ul>
         <li>
             <div class="dropdown" id="ignore">
-                    <button class="dropbtn" id="dropbtnMobile" onclick=dropFunction()>Menu</button>
+                    <button class="dropbtn" id="dropbtnMobile" onclick=dropFunction()>
+                      Menu
+                      <img height=15px width=15px src="images/icon1.png" id="dropIndicator">
+                    </button>
                     <div id="mainDropdown" class="dropdown-content">
                             <a href="index.html" class="blueBtn">
                                 Home
@@ -54,7 +24,10 @@ openDropdown.classList.remove('show');
                                             About
                             </a>
                             <div class="dropdown">
-                                    <button class="dropbtn" onclick=myFunction()>Tours</button>
+                                    <button class="dropbtn" onclick=myFunction()>
+                                      Tours
+                                      <img height=15px width=15px src="images/icon3.png" id="dropIndicatorTour">
+                                    </button>
                                     <div id="myDropdown" class="dropdown-content">
                                       <a href="allTours.html">All Tours</a>
                                       <a href="nimLi.html">Nim Li Punit Mayan Ruins</a>
@@ -64,7 +37,7 @@ openDropdown.classList.remove('show');
                                       <a href="waterfalls.html">Waterfall Sightseeing</a>
                                       <a href="cave.html">Inland Blue Hole & Cave</a>
                                       <a href="blueHole.html">Blue Hole Flyover</a>
-                                      <a href="southWaterSnorkel.html">South Water Caye Snorkelimng</a>
+                                      <a href="southWaterSnorkel.html">South Water Caye Snorkeling</a>
                                       <a href="southWaterFishing">South Water Caye Fishing</a>
                                     </div>
                                 </div>
@@ -72,7 +45,7 @@ openDropdown.classList.remove('show');
                                     Contact
                                 </a>
                                 <a href="purchaseForm.html" class="dBlueBtn">
-                                    Book Now 
+                                    Book Now
                                 </a>
                     </div>
                 </div>
@@ -131,25 +104,25 @@ a
     <div class="mySlides fade">
       <div class="numbertext">1 / 5</div>
       <img class="slideImage" src="images/about/about1.png"> <!-- you could do "style=width:100% if you want"-->
-      <div class="text">Find your own private creek in the jungle</div>
+      <div class="text"></div>
     </div>
 
     <div class="mySlides fade">
       <div class="numbertext">2 / 5</div>
       <img class="slideImage" src="images/about/about2.png">
-      <div class="text">If you're looking to rent a boat, you can park it here</div>
+      <div class="text"></div>
     </div>
 
     <div class="mySlides fade">
       <div class="numbertext">3 / 5</div>
       <img class="slideImage" src="images/about/about3.png">
-      <div class="text">We can take you to your own private beach paradise</div>
+      <div class="text"></div>
     </div>
 
     <div class="mySlides fade">
         <div class="numbertext">4 / 5</div>
         <img class="slideImage" src="images/about/about4.png">
-        <div class="text">The howler monkeys love snacks, if you're interested in feeding them</div>
+        <div class="text"></div>
     </div>
 
     <div class="mySlides fade">
@@ -167,71 +140,53 @@ a
 
 <div style="display:inline-block;justify-content: center;display:flex;margin-top:10px;margin-bottom:30px;">
 <span class="dot" onclick="currentSlide(1)">
-    <image src="images/about/about1Square.png" height=50px width=50px></image>
+  <image src="images/imageBullet.png"></image>
 </span>
 <span class="dot" onclick="currentSlide(2)">
-    <image src="images/about/about2Square.png" height=50px width=50px></image>
+  <image src="images/imageBullet.png"></image>
 </span>
 <span class="dot" onclick="currentSlide(3)">
-     <image src="images/about/about3Square.png" height=50px width=50px></image>
+  <image src="images/imageBullet.png"></image>
 </span>
 <span class="dot" onclick="currentSlide(4)">
-    <image src="images/about/about4Square.png" height=50px width=50px></image>
+  <image src="images/imageBullet.png"></image>
 </span>
 <span class="dot" onclick="currentSlide(5)">
-    <image src="images/about/about5Square.png" height=50px width=50px></image>
+  <image src="images/imageBullet.png"></image>
 </span>
 </div>
 
-<script>
-    var slideIndex = 1;
-    showSlides(slideIndex);
+<script src="assets/js/genericScript.js"></script>
 
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
+<div class = "bigTitle">About Us</div>
 
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("dot");
-      if (n > slides.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-      }
-      for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex-1].style.display = "block";
-      dots[slideIndex-1].className += " active";
-    }
-</script>
-
-
-<div class = "title">About Us</div>
-
-<p>
+<p class="introParagraph">
     Placencia Action Tours is your number one choice in tour operations when visiting the Placencia peninsula. We offer tours in the southern region of Belize and with sister companies all across the country we are the most viable choice for reaching any and all of your vacation goals while visiting Beautiful Belize.
 </p>
-<p>
+<div class="smolTitle">
+The Best Guides Belize Offers
+</div>
+<p class="introParagraph">
     We were founded as a family business from some of the first guides who offered their services throughout all regions in Belize. All of our guides are friendly, experienced and licensed professionals who are very knowledgable of the country and its history. We love showing people the beauty that Belize has to offer, and teaching people the rich heritage of the sites.
 </p>
-<p>
+<div class="smolTitle">
+  Bring the Whole family
+</div>
+<p class="introParagraph">
     We offer a variety of inland, sea and air tours and with our courteous and professional guides at your full disposal.
     Our guides have experience touring both small and large groups with sites all throughout the country: if you are looking for a particular experience that is not listed on the site, or have a larger group, please do not hesitate to <a href="contact.html" style="text-decoration:none;"> contact us.</a>
 </p>
-<p>
+<div class="smolTitle">
+Kick Back and Enjoy the Ride
+</div>
+<p class="introParagraph">
     All of our tours will be comfortable, fun, and relaxing. Our guides will pick you up from Placencia Dock if you are coming from a cruise, or from your hotel if you are staying in Placencia. Rides will be smooth, safe and air-conditioned.
 </p>
-<p>
+<div class="smolTitle">
+Premier Tours
+</div>
+<p class="introParagraph">
     We cater to all niches of what Belize has to offer. Whether you are interested in unraveling the history of ancient Mayan ruins, seeing Belize's beautiful natural wonders, falling in love with exotic dishes, or boating in the Caribbean for a few days, we have it all.
-
-
     We are dedicated to making sure to have a wonderful time while visiting ancient Mayan ruins, beautiful nature parks and mystical cave systems.
 </p>
 
@@ -242,12 +197,11 @@ a
     </nav>
 
 <nav id="navbar">
-        <div class = "container">
+        <div class = "container" id="bottomBar">
             <ol>
                 <li style="color:rgb(23, 123, 211)"> <a href="https://www.linkedin.com/in/ianfeekes/" target = "_blank"><img src="images/insta.png" width="50" height="50"/> </a></li>
                 <li style="color:rgb(16, 154, 43)"> <a href="https://www.facebook.com/pages/category/Tour-Agency/Placencia-Action-Tours-537314880112426/" target="_blank"> <img src="images/facebook.png" width="50" height="50"/> </a></li>
                 <li style="color:rgb(16, 154, 43)"> <a href="https://www.facebook.com/pages/category/Tour-Agency/Placencia-Action-Tours-537314880112426/" target="_blank"> <img src="images/whatsapp.png" width="50" height="50"/> </a></li>
-                <li style="color:rgb(16, 154, 43)"> <a href="https://www.facebook.com/pages/category/Tour-Agency/Placencia-Action-Tours-537314880112426/" target="_blank"> <img src="images/viber.png" width="50" height="50"/> </a></li>
             </ol>
         </div>
     </nav>

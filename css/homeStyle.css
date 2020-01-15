@@ -1,7 +1,10 @@
-#exploreBelize{
-	color:rgb(16, 154, 43);
-	padding-top: 70px;
-}
+
+.bigTitle{
+		color: rgb(23, 123, 211);
+    font-size: 4vw;
+    text-align: center;
+    margin-bottom: 30px;
+	}
 
 .textGridContainer{
 	margin: 70px;
@@ -160,10 +163,10 @@
 
 .homeTitle{
   margin-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   color:rgb(23, 123, 211);
-    font-size:4vw;
-    text-align:center;
+  font-size:4vw;
+  text-align:center;
 }
 
 
@@ -268,6 +271,7 @@
 }
 
 .introParagraph{
+	margin-top: 0px;
   text-indent:0px;
   font-size:1.8vw;
   line-height: 2.4vw;
@@ -383,6 +387,11 @@
     margin-top: 20px;
     margin-bottom: 20px;
   }
+
+	.homeTitle{
+		margin-top: 20px; 
+		margin-bottom: 10px;
+	}
 }
 
 @media(max-width:768px)
@@ -394,10 +403,12 @@
 
 	.homeTitle{
 		margin-bottom: 0px;
+		margin-top: 15px;
 	}
 
 	.introParagraph{
 		font-size: 2.2vw;
+		margin-top: 10px;
 		margin-left: 25px;
 		margin-right: 25px;
 		line-height: 2.6vw;
@@ -444,6 +455,11 @@
 
 @media(max-width:425px)
 {
+
+	.bigTitle{
+		font-size: 6.5vw;
+    margin-bottom: 10px;
+	}
 
 	#exploreBelize{
 		margin-top: 0px;

@@ -16,7 +16,7 @@
       var i;
       var slides = document.getElementsByClassName("mySlides");
       var dots = document.getElementsByClassName("dot");
-      if(slides.length==0 || dots.length==0)return; 
+      if(slides.length==0 || dots.length==0)return;
       if (n > slides.length) {slideIndex = 1}
       if (n < 1) {slideIndex = slides.length}
       for (i = 0; i < slides.length; i++) {
@@ -63,16 +63,22 @@
       if(src=="icon1.png")
       {
         img.src="images/icon2.png";
-      }
-      else img.src="images/icon1.png";
+      }//We want both of our dropdown arrows toggled down if we click out of the main dropdown
+      else reduceMenu();
+    }
+
+    //Should reduce both the dropdown arrows. Called when the user clicks outside of the mobile menu
+    function reduceMenu()
+    {
+      document.getElementById("dropIndicator").src="images/icon1.png";
+      document.getElementById("myDropdown").src="images/icon3.png";
     }
 
     // Close the dropdown if the user clicks outside of it
     window.onclick = function(event) {
       if (!event.target.matches('.dropbtn'))
       {
-        dropFunction();
-        myFunction();
+        reduceMenu();
         var dropdowns = document.getElementsByClassName("dropdown-content");
         var i;
         for (i = 0; i < dropdowns.length; i++)
