@@ -8,7 +8,7 @@ y = w.innerHeight|| e.clientHeight|| g.clientHeight;
 function setSlideImages(){
   x=w.innerWidth || e.clientWidth || g.clientWidth;
   let t = document.getElementById("turtle");
-  if(x>370)t.src="images/home/turtle/turtle1024.jpeg";
+  if(x>375)t.src="images/home/turtle/turtle1024.jpeg";
   else t.src="images/home/turtle/turtle600.jpeg";
 }
 
