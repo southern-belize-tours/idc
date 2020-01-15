@@ -1,9 +1,9 @@
 
 .textGridContainer{
-	margin: 70px; 
+	margin: 70px;
 	grid-template-columns: repeat(4, 1fr);
 	display: grid;
-	grid-gap: 2rem; 
+	grid-gap: 2rem;
 
 }
 
@@ -11,29 +11,29 @@
   color:rgb(23, 123, 211);
   font-size:4vw;
   text-align:center;
-  margin-bottom: 30px; 
+  margin-bottom: 30px;
 }
 
 .grid-image{
-  width:100%; 
-  height: 290px; 
+	height: 230px;
+	width: 230px;
 }
 
 .textGridItem, .textGridItemThicc, .textGridItemThicccc {
-	background-color: rgb(200,200,200); 
-	justify-content: center; 
-	align-items: center; 
+	background-color: rgb(200,200,200);
+	justify-content: center;
+	align-items: center;
 	border: 3px solid rgba(0, 0, 0, 0.8);
-	border-radius: 3px; 
-	font-size: 2em; 
+	border-radius: 3px;
+	font-size: 2em;
 
 
-	/*padding: 20px;  
-	font-size: 20;*/ 
+	/*padding: 20px;
+	font-size: 20;*/
   }
 
   .textGridItemThicc{
-	  grid-column: span 2; 
+	  grid-column: span 2;
   }
 
   .textGridItemThicccc {
@@ -42,39 +42,39 @@
 
 .grid-container {
 	display: grid;
-	padding: 70px; 
+	padding: 70px;
 	grid-template-columns: auto auto auto;
-	grid-column-gap: 30px; 
-	grid-row-gap: 30px; 
+	grid-column-gap: 30px;
+	grid-row-gap: 30px;
 
-	justify-content: space-evenly; 
+	justify-content: space-evenly;
   }
 
 .grid-item {
-	background-color: none; 
-	/*border: 1px solid rgba(0, 0, 0, 0.8);*/  
+	background-color: none;
+	/*border: 1px solid rgba(0, 0, 0, 0.8);*/
 
-	border: none; 
-	/*padding: 20px;  
-	font-size: 20;*/ 
-	text-align: center; 
+	border: none;
+	/*padding: 20px;
+	font-size: 20;*/
+	text-align: center;
   }
 
   .grid-item a{
-    color: rgb(23, 123, 211); 
-	  font-size: 2vw; 
-	  text-decoration: none; 
+    color: rgb(23, 123, 211);
+	  font-size: 2vw;
+	  text-decoration: none;
 	  /*background-color: rgba(255, 255, 255, 0.8);
 	  border: 1px solid rgba(0, 0, 0, 0.8);*/
   }
 
   .grid-item:hover a{
-    color:rgb(27, 59, 187);   
+    color:rgb(27, 59, 187);
 }
 
   .grid-item p
   {
-	  font-size: 16; 
+	  font-size: 16;
   }
 
   .grid-item:hover
@@ -88,16 +88,16 @@
 	transition: all 1s ease;*/
   }
 
-  
+
 .bookThisButton{
-	margin-left: 70px; 
+	margin-left: 70px;
 }
 
 .reservationForms
 {
-	margin-left: 70px; 
-	margin-right: 70px; 
-	margin-top: 30px; 
+	margin-left: 70px;
+	margin-right: 70px;
+	margin-top: 30px;
 }
 
 .checklistContainer {
@@ -167,35 +167,81 @@
   transform: rotate(45deg);
 }
 
+.grid-item:hover, .grid-item-pic:hover .grid-image
+{
+-webkit-filter: brightness(70%);
+color: rgb(23, 123, 211)
+/*-webkit-transition: all 1s ease;
+-moz-transition: all 1s ease;
+-o-transition: all 1s ease;
+-ms-transition: all 1s ease;
+transition: all 1s ease;*/
+}
+
+@media(min-width: 1024px)
+{
+	.grid-image{
+		height: 300px;
+		width: 300px;
+	}
+}
+
 @media(min-width:1440px)
 {
   .grid-container{
-    grid-template-columns: auto auto auto auto; 
+    grid-template-columns: auto auto auto auto;
   }
+
+	.grid-image{
+		height:330px;
+		width: 330px;
+	}
 }
 
 @media(min-width: 1900px)
 {
   .grid-container{
-    grid-template-columns: auto auto auto auto auto; 
+    grid-template-columns: auto auto auto auto auto;
   }
 
   .grid-image{
-    height: 370px; 
+    height: 450px;
+		width: 450px;
   }
 }
 
 @media(max-width:768px)
 {
   .grid-container{
-    padding: 25px; 
+    padding: 25px;
     grid-column-gap: 20px;
-    grid-row-gap: 20px; 
+    grid-row-gap: 20px;
   }
 
   .grid-image{
-    height: 200px; 
+		width: 200px;
+    height: 200px;
   }
+}
+
+@media(max-width:680px)
+{
+	.grid-container{
+		grid-template-columns: auto auto;
+	}
+
+	.grid-image{
+		height: 270px;
+		width: 270px;
+	}
+}
+
+@media(max-width: 525px)
+{
+	.grid-image{
+		height: 210px;
+		width: 210px;
+	}
 }
 
 @media(min-width:426px)
@@ -208,42 +254,44 @@
 
   .cruiseTitle{
     font-size:6.5vw;
-    margin-bottom:10px; 
+    margin-bottom:10px;
   }
 
   p{
-    margin-top:0px; 
-    margin-bottom:0px; 
-    padding:0px; 
-    margin-left: 10px; 
-    margin-right: 10px; 
+    margin-top:0px;
+    margin-bottom:0px;
+    padding:0px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
   .grid-container {
-    padding: 15px; 
-    grid-column-gap: 15px; 
-    grid-row-gap: 15px; 
-    grid-template-columns: auto auto; 
+    padding: 15px;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    grid-template-columns: auto auto;
     }
 
   .grid-image{
-    height: 180px; 
+    height: 170px;
+		width: 170px;
   }
 
   .grid-item a{
-    font-size: 3vw; 
+    font-size: 3vw;
   }
 }
 
 @media(max-width:375px)
 {
-  .grid-image{
-    height: 160px; 
-  }
+		.grid-image{
+	    height: 150px;
+			width: 150px;
+		}
 }
 
 @media(max-width:320px)
 {
   .grid-image{
-    height: 130px; 
+    height: 130px;
   }
 }

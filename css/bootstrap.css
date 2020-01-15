@@ -34,6 +34,21 @@ p
     padding-left: 30px;
 }
 
+.bigTitle{
+		color: rgb(23, 123, 211);
+    font-size: 4vw;
+    text-align: center;
+    margin-bottom: 30px;
+	}
+
+  .introParagraph{
+  	margin-top: 0px;
+    text-indent:0px;
+    font-size:1.8vw;
+    line-height: 2.4vw;
+    text-indent:0px;
+  }
+
 #navBorderTop
 {
     height:2px;
@@ -421,6 +436,13 @@ p
   @keyframes fading{0%{opacity:0}100%{opacity:1}}
   @keyframes fadeOut{0%{opacity:0}15%{opacity:1}30%{opacity:0}45%{opacity:1}60%{opacity:0}100%{opacity:1}}
 
+  @media(min-width:1440px)
+  {
+    introParagraph{
+      font-size: 2.5vw;
+    }
+  }
+
   @media(min-width:1024px)
   {
 	  .dot{
@@ -442,6 +464,14 @@ p
 
   @media(max-width: 769px)
   {
+    .introParagraph{
+  		font-size: 2.2vw;
+  		margin-top: 10px;
+  		margin-left: 25px;
+  		margin-right: 25px;
+  		line-height: 2.6vw;
+  	}
+
 	.dot
 	{
 		margin: 0 0px;
@@ -502,6 +532,19 @@ p
   */
   @media(max-width: 426px)
   {
+
+    .introParagraph{
+      font-size: 3vw;
+      line-height: 3.5vw;
+      margin-left: 25px;
+      margin-right: 25px;
+      text-align:justify;
+    }
+
+    .bigTitle{
+  		font-size: 6.5vw;
+      margin-bottom: 10px;
+  	}
 
     .numbertext{
       display:none;
