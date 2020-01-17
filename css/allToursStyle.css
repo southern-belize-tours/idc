@@ -293,5 +293,6 @@ transition: all 1s ease;*/
 {
   .grid-image{
     height: 130px;
+		width:130px;
   }
 }

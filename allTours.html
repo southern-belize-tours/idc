@@ -5,37 +5,7 @@
         <link rel="stylesheet" type="text/css" href="css/allToursStyle.css">
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <script>
-                function myFunction() {
-document.getElementById("myDropdown").classList.toggle("show");
-}
-
-function dropFunction() {
-    let img = document.getElementById("dropIndicator");
-    if(img.src=="http://southern-belize-tours.com/images/icon1.png")
-    {
-        img.src="images/icon2.png";
-    }
-    else img.src="images/icon1.png";
-    document.getElementById("mainDropdown").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-    var openDropdown = dropdowns[i];
-    if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-    }
-    }
-}
-}
-
-</script>
+        <script src="assets/js/genericScript.js"></script>
 </head>
 
 <nav id="navbar">
@@ -131,6 +101,17 @@ Click on the title for details on the tour,prices and bundled prices.
 To reserve a tour, only a small downpayment is required and the rest of the payment can be made in cash or card on the day of the tour.
 Pick up locations can be from just about anywhere, but are most often from.........
 Note if there s a tour not isted, feel free to contact us and we will try to accomodate.
+
+If you are looking to start an adventure while staying in the Placencia area, you will have a
+wide selection of outstanding and unique experiences where you can select your niche. Our professional
+guides will pick you up right from your hotel door, where we will accompany you through the sites,
+and wherever Belize takes you. If you decide that you want to add a stop throughout your journey,
+we will be happy to accomodate and to give you the best experience Belize offers.
+</p>
+<p class="introParagraph">
+Interested in uncovering the mysteries of the ancient Mayans? Visit the stone fortress of Lubantuun, where
+a crystal skull was uncovered. Or perhaps you can stroll through the deadly basketball arena
+and translate the Mayan heiroglyphs in Nim Li Punit.
 </p>
 
 <div class="grid-container" id="gridImages">
@@ -201,15 +182,18 @@ Note if there s a tour not isted, feel free to contact us and we will try to acc
 <nav id="navBorderTop">
         a
     </nav>
+<script>
+  let imageNames = ["nimLiSquare","lubaantunSquare","spiceFarmSquare","southStaanSquare",
+  "waterfallsSquare","inlandBlueHoleSquare","blueHoleSquare","southSnorkelSquare","southFishSquare"];
+</script>
 <script src="assets/js/homeScript.js"></script>
 <nav id="navbar">
-        <div class = "container">
+        <div class = "container" id="bottomBar">
             <ol>
 
                 <li style="color:rgb(23, 123, 211)"> <a href="https://www.linkedin.com/in/ianfeekes/" target = "_blank"><img src="images/insta.png" width="50" height="50"/> </a></li>
                 <li style="color:rgb(16, 154, 43)"> <a href="https://www.facebook.com/pages/category/Tour-Agency/Placencia-Action-Tours-537314880112426/" target="_blank"> <img src="images/facebook.png" width="50" height="50"/> </a></li>
                 <li style="color:rgb(16, 154, 43)"> <a href="https://www.facebook.com/pages/category/Tour-Agency/Placencia-Action-Tours-537314880112426/" target="_blank"> <img src="images/whatsapp.png" width="50" height="50"/> </a></li>
-                <li style="color:rgb(16, 154, 43)"> <a href="https://www.facebook.com/pages/category/Tour-Agency/Placencia-Action-Tours-537314880112426/" target="_blank"> <img src="images/viber.png" width="50" height="50"/> </a></li>
             </ol>
         </div>
     </nav>
