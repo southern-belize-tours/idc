@@ -71,7 +71,11 @@
     function reduceMenu()
     {
       document.getElementById("dropIndicator").src="images/icon1.png";
-      document.getElementById("myDropdown").src="images/icon3.png";
+      document.getElementById("dropIndicatorTour").src="images/icon3.png";
+        if(document.getElementById("myDropdown").classList.contains("show"))
+          document.getElementById("myDropdown").classList.toggle("show");
+        if(document.getElementById("mainDropdown").classList.contains("show"))
+          document.getElementById("myDropdown").classList.toggle("show");
     }
 
     // Close the dropdown if the user clicks outside of it

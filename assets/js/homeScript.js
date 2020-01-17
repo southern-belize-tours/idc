@@ -7,7 +7,6 @@ y = w.innerHeight|| e.clientHeight|| g.clientHeight;
 
 function setSizedSources(names){
   let mainDiv = document.getElementById("gridImages");
-  console.log(mainDiv);
   let imageElements = mainDiv.getElementsByClassName("grid-image");
   let imageSrcEndString = "";
   if(x>=768)imageSrcEndString="300";
@@ -25,8 +24,5 @@ function setSizedSources(names){
 }
 
 window.onload=function(){
-  //This image names list will expand as we add more tour content
-  let imageNames = ["nimLiSquare","lubaantunSquare","spiceFarmSquare","southStaanSquare",
-    "waterfallsSquare","inlandBlueHoleSquare","blueHoleSquare","southSnorkelSquare","southFishSquare"];
   setSizedSources(imageNames);
 };
