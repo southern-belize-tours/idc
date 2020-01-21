@@ -9,40 +9,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<script>
-
-        function myFunction() {
-document.getElementById("myDropdown").classList.toggle("show");
-}
-
-function dropFunction() {
-document.getElementById("mainDropdown").classList.toggle("show");
-let img = document.getElementById("dropIndicator");
-if(img.src=="http://southern-belize-tours.com/images/icon1.png")
-{
-    img.src="images/icon2.png";
-}
-else img.src="images/icon1.png";
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-if (!event.target.matches('.dropbtn')) {
-var dropdowns = document.getElementsByClassName("dropdown-content");
-var i;
-for (i = 0; i < dropdowns.length; i++) {
-var openDropdown = dropdowns[i];
-if (openDropdown.classList.contains('show')) {
-openDropdown.classList.remove('show');
-}
-}
-}
-}
-
-</script>
-
-</head>
-
 <nav id="navbar">
 <div class = "container">
     <ul>
@@ -61,7 +27,7 @@ openDropdown.classList.remove('show');
                             </a>
                             <div class="dropdown">
                                     <button class="dropbtn" onclick=myFunction()>Tours
-                                            <img height=15px width=15px src="images/icon3.png" id="dropIndicator">
+                                            <img height=15px width=15px src="images/icon3.png" id="dropIndicatorTour">
                                     </button>
                                     <div id="myDropdown" class="dropdown-content">
                                       <a href="allTours.html">All Tours</a>
@@ -175,7 +141,7 @@ a
 <a class="next" onclick="plusSlides(1)">&#10095;</a>
 </div>
 
-<div style="display:inline-block;justify-content: center;display:flex;margin-top:10px;margin-bottom:30px;">
+<div style="display:inline-block;justify-content: center;display:flex;margin-top:10px;margin-bottom:10px;">
 <span class="dot" onclick="currentSlide(1)">
     <image src="images/imageBullet.png" height=50px width=50px></image>
 </span>
@@ -193,6 +159,7 @@ a
 </span>
 </div>
 
+<script src="assets/js/genericScript.js"></script>
 <script>
 
     function showDays()
@@ -223,16 +190,13 @@ a
 </script>
 
 
-<div class = "title">Contact Us</div>
+<div class = "bigTitle">Contact Us</div>
 
-<p style="text-indent:0px;">
+<p class="contactParagraph">
 If you have any questions, need any special accomodations, or are interested in any tours not listed on the site, please fill out this form or contact us by email at  <a onclick="ga('send','event','ontact', 'email', 'info', 1);" href="mailto:placencia.action.tours@outlook.com">placencia.action.tours@outlook.com</a>
 </p>
 
 <div class="creditCardForm">
-        <div class="heading">
-            <h1>Send us a Message</h1>
-        </div>
         <div class="payment">
             <form action="https://formkeep.com/f/964cb919b2a0"
    accept-charset="UTF-8"

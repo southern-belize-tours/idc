@@ -1,46 +1,47 @@
 .textGridContainer{
-    margin: 70px;     
-    margin-top: 2rem; 
+    margin: 70px;
+    margin-top: 2rem;
 	  grid-template-columns: repeat(4, 1fr);
 	  display: grid;
-    grid-gap: 2rem; 
+    grid-gap: 2rem;
 
 }
 
 .grid-image
 {
-  width: 100%; 
-  height: 300px; 
+  width: 100%;
+  height: 300px;
 }
 
 .textGridItem, .textGridItemThicc, .textGridItemThicccc {
-	/*justify-content: center; 
-    align-items: center; 
-    align-items: none;  */ 
+	/*justify-content: center;
+    align-items: center;
+    align-items: none;  */
     font-size: 18;
-    padding:none; 
-    margin:none; 
+    padding:none;
+    margin:none;
   }
 
   .textGridItemTitle{
-    color:rgb(23, 123, 211); 
+    color:rgb(23, 123, 211);
     font-size:40;
-    font-size:5vw; 
-    text-align:center; 
+    font-size:5vw;
+    text-align:center;
 }
 
 .textGridSmallTitle{
-    color: rgb(16, 154, 43); 
-    text-align:center; 
-    font-size: 27; 
+    color: rgb(16, 154, 43);
+    color: #3B8AC4;
+    text-align:center;
+    font-size: 27;
 }
 
   .textGridItemThicc{
-	  grid-column: span 2; 
+	  grid-column: span 2;
   }
 
   .textGridItemThicc ul{
-    padding-left:5%; 
+    padding-left:5%;
   }
 
   .textGridItemThicccc, .textGridItemTitle {
@@ -48,24 +49,24 @@
   }
 
   .tourText{
-      margin-top:0px; 
-      list-style:none; 
-      text-align:center;  
+      margin-top:0px;
+      list-style:none;
+      text-align:center;
 
   }
 
   .tourText:hover{
-    -webkit-transform:scale(1.02,1.02); 
+    -webkit-transform:scale(1.02,1.02);
   }
 
 
   .tourText:hover .tourDropdownContent{
     color: rgb(46, 44, 44);
-    background-color: rgb(23, 123, 211); 
+    background-color: rgb(23, 123, 211);
   }
 
-  .tourDropdownContent{  
-    display:block; 
+  .tourDropdownContent{
+    display:block;
     position:sticky;
     z-index: 1;
 
@@ -75,16 +76,16 @@
   }
 
   .tourText li, .price, .tourDropdownContent{
-    padding: 10px; 
-    padding-left:none; 
-    /*margin-bottom: .5rem;*/ 
-    text-align: center;  
-    margin-left:-40px; 
+    padding: 10px;
+    padding-left:none;
+    /*margin-bottom: .5rem;*/
+    text-align: center;
+    margin-left:-40px;
     font-size: 2vw;
   }
 
   .tourText li, .price{
-    background-color: rgb(23, 123, 211); 
+    background-color: rgb(23, 123, 211);
   }
 
   .tourDropdownContent{
@@ -97,52 +98,51 @@
       -webkit-transform: scale(1.03,1.03);
   }
 
-  /*The + and = signs*/ 
+  /*The + and = signs*/
   .tourText .noShow{
-    background:none; 
-    font-size:35px; 
+    background:none;
+    font-size:35px;
   }
 
   .price{
     background-color: rgb(225, 225, 116);
 }
 
-  
+
 
 .grid-container {
-    margin-top: -40px; 
 	display: grid;
-    padding: 10px;   
-    margin-left: 20px; 
+    padding: 10px;
+    margin-left: 20px;
     margin-right: 20px;
-    grid-template-columns: auto auto auto auto; 
-	grid-column-gap: 10px; 
-	grid-row-gap: 10px; 
+    grid-template-columns: auto auto auto auto;
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;
 
-    justify-content: space-evenly;  
+    justify-content: space-evenly;
   }
 
 .grid-item {
-	background-color: none; 
-	/*border: 1px solid rgba(0, 0, 0, 0.8);*/ 
-	max-width:300px; 
+	background-color: none;
+	/*border: 1px solid rgba(0, 0, 0, 0.8);*/
+	max-width:300px;
 
-	border: none; 
-	/*padding: 20px;  
-	font-size: 20;*/ 
-  text-align: center; 
+	border: none;
+	/*padding: 20px;
+	font-size: 20;*/
+  text-align: center;
   }
 
   .grid-item a{
-      margin-top: 5px; 
-	    font-size: 18; 
-      text-decoration: none; 
+      margin-top: 5px;
+	    font-size: 18;
+      text-decoration: none;
       color: rgb(46, 44, 44);
 	  /*background-color: rgba(255, 255, 255, 0.8);
 	  border: 1px solid rgba(0, 0, 0, 0.8);*/
   }
 
-  .grid-item:hover 
+  .grid-item:hover
   {
 	-webkit-filter: brightness(70%);
 	/*-webkit-transition: all 1s ease;
@@ -156,21 +156,39 @@
       color: rgb(23, 123, 211);
   }
 
-  
+.buttonContainer{
+  align-content: center;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.purchaseButton:hover{
+  background-color: #3B8AC4;
+  color: #EFDBCB;
+}
 
 .purchaseButton{
+    background-color: #345DA7;
+    color: #F8E6CB;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    /*background-color: #4BB4DE;*/
+    border-radius: 7px;
     text-decoration:none;
-    color: rgb(46, 44, 44);
-    padding: none; 
-    margin:none; 
+    padding: none;
+    margin:none;
+    font-size: 3vw;
 
 }
 
 .reservationForms
 {
-	margin-left: 70px; 
-	margin-right: 70px; 
-	margin-top: 30px; 
+	margin-left: 70px;
+	margin-right: 70px;
+	margin-top: 30px;
 }
 
 .checklistContainer {
@@ -239,7 +257,7 @@
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 
-  
+
 }
 
 
@@ -247,61 +265,67 @@
 
 
 
-/*For very large screens/monitors we can hold 5 images in a single row*/ 
+/*For very large screens/monitors we can hold 5 images in a single row*/
 @media(min-width: 1700px)
 {
   .grid-container{
-    grid-template-columns: auto auto auto auto auto; 
+    grid-template-columns: auto auto auto auto auto;
   }
 }
 
 @media(min-width: 1100px)
 {
   .textGridItemTitle{
-    font-size: 54; 
+    font-size: 54;
   }
 
   .tourText > li, .price, .tourDropdownContent{
-    padding-top: 15px; 
-    padding-bottom: 15px; 
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 }
 
-/*Smaller laptops and tablets look nice with 3 images per row*/ 
+/*Smaller laptops and tablets look nice with 3 images per row*/
 @media(max-width: 1200px)
 {
   .grid-container{
-    grid-template-columns: auto auto auto; 
+    grid-template-columns: auto auto auto;
   }
 
 }
 
 /*Tablets should still have 3 images per row, but we downsize them
-  so that they can fit nicely on the screen still*/ 
+  so that they can fit nicely on the screen still*/
 @media(max-width: 900px)
 {
   .grid-item{
-    max-width: 220px; 
+    max-width: 220px;
   }
 
   .grid-image{
-    height: 220px; 
+    height: 220px;
   }
 }
 
 /*Remove the margins from our text grid when we are using anything smaller than
-  a conventional tablet*/ 
+  a conventional tablet*/
 @media(max-width:786px)
 {
+  .button-container{
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+
   .textGridContainer
   {
+    margin-bottom: 20px;
     margin-left:20px;
-    margin-right:20px; 
+    margin-right:20px;
   }
 }
 
 /*When we start getting to small tablets and phones it's best to display at most 2 images
-  and to downsize the images a bit*/ 
+  and to downsize the images a bit*/
 @media(max-width: 670px)
 {
 
@@ -310,11 +334,11 @@
   }
 
   .grid-item{
-    max-width: 220px; 
+    max-width: 220px;
   }
 
   .grid-item a{
-    font-size: 3.4vw; 
+    font-size: 3.4vw;
   }
 
   .grid-image{
@@ -322,84 +346,106 @@
   }
 
   .textGridContainer{
-    grid-gap:1rem; 
+    grid-gap:1rem;
   }
 
   .textGridItemTitle{
-    font-size: 7vw; 
+    font-size: 7vw;
   }
 
   .textGridItemThicccc{
-    text-align:center; 
+    text-align:center;
   }
 
   .textGridItemThicc{
     grid-column: span 4;
-    text-align: center; 
-  } 
+    text-align: center;
+  }
 
   .textGridItemThicc > ul{
-    text-align:left; 
+    text-align:left;
 
   }
 
   .tourText >li, .price, .tourDropdownContent{
-    padding: 5px; 
-    font-size: 3vw; 
+    padding: 5px;
+    font-size: 3vw;
   }
 }
 
 @media(max-width:440px)
 {
+  .buttonContainer{
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+
+  .textBlock{
+    margin-bottom: 25px;
+  }
+
+  .purchaseButton{
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
   .grid-container{
-    margin-left: 5px; 
-    margin-right: 5px; 
+    margin-left: 5px;
+    margin-right: 5px;
   }
 
   .grid-item{
-    max-width: 170px; 
+    max-width: 170px;
   }
 
   .grid-image{
-    height: 170px; 
+    height: 170px;
   }
 
   .textGridSmallTitle{
-    font-size: 5.7vw; 
+    font-size: 5.7vw;
   }
 }
 
 @media(max-width:375px)
 {
   .grid-item{
-    max-width:150px; 
+    max-width:150px;
   }
 
   .grid-image{
-    height:150px; 
+    height:150px;
   }
+
+  .textBlock{
+    margin-bottom: 15px;
+  }
+  
 }
 
 @media(max-width:320px)
 {
+
   .grid-container{
-    grid-template-columns:auto; 
+    grid-template-columns:auto;
   }
 
   .grid-item{
-    max-width:250px; 
+    max-width:250px;
   }
 
   .grid-item a{
-    font-size: 5vw; 
+    font-size: 5vw;
   }
 
   .grid-image{
-    height: 250px; 
+    height: 250px;
   }
 
   .tourText >li, .price, .tourDropdownContent{
-    padding: 3px; 
-    font-size: 3.2vw; 
+    padding: 3px;
+    font-size: 3.2vw;
   }
 }

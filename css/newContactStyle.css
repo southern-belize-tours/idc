@@ -6,6 +6,16 @@
 
 }
 
+.contactParagraph{
+	text-align: left;
+	size: 3vw;
+	line-height: 3vw;
+	margin-left: auto;
+	margin-right: auto;
+	text-indent: 0px;
+	max-width: 80%;
+}
+
 select{
   background:white;
 }
@@ -398,6 +408,10 @@ deal with it explicitly
 .creditCardForm #credit_cards {
     text-align: left;
 }
+	.checkbox-container{
+		font-size: 1.8vw;
+	}
+
 }
 
 .form-group label {
@@ -451,8 +465,18 @@ deal with it explicitly
   }
 }
 
+
 @media(max-width:426px)
 {
+	.checkbox-container{
+		font-size: 3vw;
+	}
+
+	.contactParagraph{
+		max-width: 93%;
+		font-size: 3.3vw;
+		line-height: 3.5vw;
+	}
 
 	#email.form-group{
 		width:100%;
@@ -547,7 +571,8 @@ deal with it explicitly
  .creditCardForm .tours{
    width: 47%;
  }
-  .checkbox-container, .priceLabel{
+
+	 .priceLabel{
     font-size: 2vw;
   }
 
