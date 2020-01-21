@@ -318,7 +318,7 @@
 
 /*Remove the margins from our text grid when we are using anything smaller than
   a conventional tablet*/
-@media(max-width:786px)
+@media(max-width:769px)
 {
   .textGridItemThicc ul{
     margin-top: 5px;
