@@ -26,3 +26,8 @@ function setSizedSources(names){
 window.onload=function(){
   setSizedSources(imageNames);
 };
+
+window.onresize=function(){
+  x = w.innerWidth || e.clientWidth || g.clientWidth,
+  setSizedSources(imageNames);
+}
