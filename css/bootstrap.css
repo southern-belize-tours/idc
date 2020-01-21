@@ -326,7 +326,7 @@ p
 	text-align:center;
     color:rgb(16, 133, 39);
     color: #3B8AC4;
-    font-size: 2.8vw;
+    font-size: 3vw;
     padding-bottom:10px;
   }
 
@@ -538,6 +538,7 @@ p
       line-height: 3.5vw;
       margin-left: 25px;
       margin-right: 25px;
+      margin-top: 5px;
       text-align:justify;
     }
 

@@ -34,14 +34,18 @@
     color: #3B8AC4;
     text-align:center;
     font-size: 27;
+    font-size: 2.8vw;
 }
 
   .textGridItemThicc{
 	  grid-column: span 2;
+    font-size: 2.5vw;
+    line-height: 3vw;
   }
 
   .textGridItemThicc ul{
     padding-left:5%;
+    margin-top: 10px;
   }
 
   .textGridItemThicccc, .textGridItemTitle {
@@ -311,6 +315,10 @@
   a conventional tablet*/
 @media(max-width:786px)
 {
+  .textGridItemThicc ul{
+    margin-top: 5px;
+  }
+
   .button-container{
     margin-top: 15px;
     margin-bottom: 20px;
@@ -364,7 +372,8 @@
 
   .textGridItemThicc > ul{
     text-align:left;
-
+    font-size: 3vw;
+    line-height: 3vw;
   }
 
   .tourText >li, .price, .tourDropdownContent{
@@ -375,6 +384,11 @@
 
 @media(max-width:440px)
 {
+
+.textGridItemThicc ul{
+  margin-top: 5px;
+}
+
   .buttonContainer{
     margin-top: 10px;
     margin-bottom: 15px;
@@ -405,7 +419,7 @@
   }
 
   .textGridSmallTitle{
-    font-size: 5.7vw;
+    font-size: 4.3vw;
   }
 }
 
@@ -422,7 +436,7 @@
   .textBlock{
     margin-bottom: 15px;
   }
-  
+
 }
 
 @media(max-width:320px)
