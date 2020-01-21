@@ -1,5 +1,6 @@
 .textGridContainer{
     margin: 70px;
+    margin-bottom: 30px;
     margin-top: 2rem;
 	  grid-template-columns: repeat(4, 1fr);
 	  display: grid;
@@ -308,6 +309,10 @@
 
   .grid-image{
     height: 220px;
+  }
+
+  .textGridContainer{
+    margin-bottom: 20px;
   }
 }
 
