@@ -45,7 +45,7 @@ function setSlideImages(){
 window.onload=function(){
   //This image names list will expand as we add more tour content
   let imageNames = ["nimLiSquare","lubaantunSquare","spiceFarmSquare","southStaanSquare",
-    "waterfallsSquare","inlandBlueHoleSquare","blueHoleSquare","southSnorkelSquare","southFishSquare"];
+    "waterfallsSquare","inlandBlueHoleSquare","blueHoleSquare","southSnorkelSquare","southFishSquare","atmSquare","caveTubingSquare","twinCitiesSquare","zipliningSquare","zooSquare","yachtSquare"];
   setSizedSources(imageNames);
   setSlideImages();
 };
