@@ -41,10 +41,22 @@
       }
     });
 
-    //Toggles the tours, blue arrow
+    //Toggles the all tours, blue arrow
     function myFunction() {
       document.getElementById("myDropdown").classList.toggle("show");
       let img = document.getElementById("dropIndicatorTour");
+      let src = img.src.split("/");
+      src = src[src.length-1];
+      if(src=="icon3.png")
+      {
+        img.src="images/icon4.png";
+      }
+      else img.src="images/icon3.png";
+    }
+
+    function cruiseFunction(){
+      document.getElementById("cruiseDropdown").classList.toggle("show");
+      let img=document.getElementById("dropIndicatorCruise");
       let src = img.src.split("/");
       src = src[src.length-1];
       if(src=="icon3.png")
@@ -80,7 +92,7 @@
 
     // Close the dropdown if the user clicks outside of it
     window.onclick = function(event) {
-      if (!event.target.matches('.dropbtn'))
+      if (!event.target.matches('.dropbtn') && !event.target.id==="dropIndicatorTour")
       {
         reduceMenu();
         var dropdowns = document.getElementsByClassName("dropdown-content");
@@ -95,5 +107,3 @@
         }
       }
     }
-
-  

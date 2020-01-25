@@ -2,6 +2,10 @@
 
 }
 
+.dropbtn img{
+  padding-left: 10px;
+}
+
 body
 {
 	 /* background-size:     cover; */                     /* This and the next line are added code to make the image not repeat */
@@ -199,6 +203,8 @@ p
 	color: rgb(16, 154, 43);
 	font-size:18px;
 	padding: 20px;
+  padding-right: 0px;
+
 	padding-bottom: 25px;
 	padding-top: 20px;
 	font-family:Arial, Helvetica, sans-serif;
@@ -236,8 +242,8 @@ p
 
   #myDropdown a {
     font-size: 14px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 4px;
+    padding-bottom: 4px;
   }
 
   .dropdown-content .blueBtn{
@@ -606,10 +612,13 @@ p
 	#navbar a {
 		padding-inline-start:0px;
 		display:block;
-		padding-top: 5px;
-		padding-bottom: 5px;
-		width: 100%;
-		text-align:center;
+    width: 175px;
+		padding-top: 3px;
+		padding-bottom: 3px;
+		text-align:left;
+    padding-left:5px;
+    padding-right: 5px;
+    font-size: 13px;
 	}
 
 
@@ -618,13 +627,16 @@ p
 	}
 
 	.dropbtn, .dropbtnMobile{
-		width:100%;
-		padding-top: 10px;
-		padding-bottom:10px;
-		/*Since the images are to be displayed inline and they will technically add to the button
-		  we add some left padding to move it over to the right a little more so the text still appears
-		  centered on mobile devices while still displaying the dropdown toggle image*/
-		padding-left:35px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+    /* padding-left: 35px; */
+    padding-left: 5px;
+    font-size: 13px;
+    padding-top: 5px;
+    padding-bottom:5px;
+    padding-right:5px;
 	}
 
 	.dropdown-content {

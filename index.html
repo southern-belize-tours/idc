@@ -15,7 +15,7 @@
                     <button class="dropbtn" id="dropbtnMobile" onclick=dropFunction()>Menu
                       <img height=15px width=15px src="images/icon1.png" id="dropIndicator">
                     </button>
-                    <div id="mainDropdown" class="dropdown-content">
+                    <div id="mainDropdown" class="dropdown-content" style="position:absolute">
                             <a href="index.html" class="blueBtn">
                                 Home
                             </a>
@@ -24,10 +24,10 @@
                             </a>
                             <div class="dropdown">
                                     <button class="dropbtn" onclick=myFunction()>
-                                        Tours
+                                        All Tours
                                         <img height=15px width=15px src="images/icon3.png" id="dropIndicatorTour">
                                     </button>
-                                    <div id="myDropdown" class="dropdown-content">
+                                    <div id="myDropdown" class="dropdown-content" style="position:relative">
                                       <a href="allTours.html">Land Tours</a>
                                       <a href="cruiseTours.html">Cruise Tours</a>
                                       <a href="nimLi.html">Nim Li Punit Mayan Ruins</a>
@@ -46,11 +46,21 @@
                                       <a href="zoo.html">Belize Zoo</a>
                                       <a href="yacht.html">Caribbean Boat Charter</a>
                                     </div>
+                                    <button class="dropbtn" onclick=cruiseFunction()>
+                                        Cruise Tours
+                                        <img height=15px width=15px src="images/icon3.png" id="dropIndicatorCruise">
+                                    </button>
+                                    <div id="cruiseDropdown" class="dropdown-content">
+                                      <a href="cruiseTours.html">Cruise Tours</a>
+                                      <a href="nimLi.html">Nim Li Punit Mayan Ruins</a>
+                                      <a href="waterfalls.html">Waterfall Sightseeing</a>
+                                      <a href="ziplining.html">Rainforest Ziplining</a>
+                                    </div>
                                 </div>
-                                <a href="contact.html" class="orangeBtn">
+                                <a href="contact.html" class="orangeBtn" style="position:relative">
                                     Contact
                                 </a>
-                                <a href="purchaseForm.html" class="dBlueBtn">
+                                <a href="purchaseForm.html" class="dBlueBtn" style="position:relative">
                                     Book Now
                                 </a>
                     </div>
