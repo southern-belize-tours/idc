@@ -4,6 +4,7 @@
 
 .dropbtn img{
   padding-left: 10px;
+  padding: 0px;
 }
 
 body
@@ -240,7 +241,7 @@ p
 	z-index: 1;
   }
 
-  #myDropdown a {
+  #myDropdown a , #cruiseDropdown a{
     font-size: 14px;
     padding-top: 4px;
     padding-bottom: 4px;
@@ -626,7 +627,12 @@ p
 		width:100%;
 	}
 
-	.dropbtn, .dropbtnMobile{
+  #dropbtnMobile{
+    padding-top:10px;
+    padding-bottom: 10px;
+  }
+
+	.dropbtn{
     width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -643,6 +649,10 @@ p
 		position: relative;
 		margin-top:0px;
 	}
+
+  #mainDropdown{
+    position: absolute;
+  }
 
 	p{
 		font-size: 10;

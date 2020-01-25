@@ -84,6 +84,7 @@
     {
       document.getElementById("dropIndicator").src="images/icon1.png";
       document.getElementById("dropIndicatorTour").src="images/icon3.png";
+      document.getElementById("dropIndicatorCruise").src="images/icon3.png";
         if(document.getElementById("myDropdown").classList.contains("show"))
           document.getElementById("myDropdown").classList.toggle("show");
         if(document.getElementById("mainDropdown").classList.contains("show"))
@@ -92,7 +93,7 @@
 
     // Close the dropdown if the user clicks outside of it
     window.onclick = function(event) {
-      if (!event.target.matches('.dropbtn') && !event.target.id==="dropIndicatorTour")
+      if (!event.target.matches('.dropbtn')&& !(event.target.id==="dropIndicatorTour"))
       {
         reduceMenu();
         var dropdowns = document.getElementsByClassName("dropdown-content");
