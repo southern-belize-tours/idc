@@ -522,7 +522,7 @@ p
 
 	#navbar .container ul li .dropdown {display:none; margin:0px; }
 
-	#navbar .container ul li #laptopDropdown {display:inline-block;}
+	#navbar .container ul li #laptopDropdown, #navbar .container ul li #cruiseLaptopDropdown {display:inline-block;padding-right:0px}
 
 	.dropdown:hover .dropdown-content {display:block;}
 
@@ -576,7 +576,7 @@ p
 		font-size: 4.3vw;
 	  }
 
-	#laptopDropdown{display:none;}
+	#laptopDropdown,#cruiseLaptopDropdown{display:none;}
 
 	  .slideImage{
 		height: 200px;
