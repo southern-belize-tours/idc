@@ -15,9 +15,10 @@ body
 
 	background-color: rgb(238, 219, 238);
 	background-color: rgb(219, 228, 235);
+  background-color: rgb(56,54,54);
 
 	/*background-color: black;*/ /*I want this to be a cool image*/
-	color: rgb(46, 44, 44);
+  color: rgb(219, 202, 183);
 	font-family:Arial, Helvetica, sans-serif;
 	font-size: 16;
 	line-height: 1.6em;
@@ -45,6 +46,7 @@ p
 .bigTitle{
 		color: rgb(23, 123, 211);
     color: #345DA7;
+    color: #3b8ac4;
     font-size: 4vw;
     text-align: center;
     margin-bottom: 30px;
@@ -123,6 +125,7 @@ p
 #navbar
 {
 	background-color: rgb(225, 225, 116);
+  background-color: #1d3d75;
 }
 
 #navbar ul
@@ -154,44 +157,13 @@ p
 	padding: 20px 20px 25px;
 	padding-top: 25px;
 	/*color: white; */
+  color: #EFDBCB;
 	text-decoration: none;
 	font-size: 18px;
 }
 
-.blueBtn{
-	color: rgb(23,123,211);
-}
-
-.blueBtn:hover{
-	background-color: rgb(23,123,211);
-	color:rgb(225, 225, 116);
-}
-
-.redBtn{
-	color:rgb(222, 60, 71);
-}
-
-.redBtn:hover{
-	background-color: rgb(222, 60, 71);
-	color:rgb(225, 225, 116);
-}
-
-.orangeBtn{
-	color:rgb(227, 159, 42);
-}
-
-.dBlueBtn{
-  color: #002bff;
-}
-
-.dBlueBtn:hover{
-  background-color: #002bff;
-  color: rgb(225,225,116);
-}
-
-.orangeBtn:hover{
-	background-color: rgb(227, 159, 42);
-	color:rgb(225, 225, 116);
+.redBtn:hover, .orangebtn:hover, .bluebtn:hover, .dBlueBtn:hover{
+  background-color: #3B8AC4;
 }
 
 .dot > img{
@@ -202,6 +174,7 @@ p
 .dropbtn, .dropbtnMobile {
 	background-color: rgb(225, 225, 116);
 	color: rgb(16, 154, 43);
+  background-color: #1d3d75;
 	font-size:18px;
 	padding: 20px;
   padding-right: 0px;
@@ -227,6 +200,7 @@ p
 	display: none;
 	position: absolute;
 	background-color:rgb(225, 225, 116);
+  background-color: #3B8AC4;
 	min-width: 160px;
 	z-index: 10;
 
@@ -308,6 +282,7 @@ p
   .dropdown-content .dropbtn:hover{
 	  color:rgb(225, 225, 116);
 	  background-color:rgb(27, 59, 187);
+    background-color: #3B8AC4;
   }
 
 
@@ -528,7 +503,7 @@ p
 
 	#dropbtnMobile {display:none;margin:0px; }
 
-	.dropdown:hover .dropbtn {background-color: rgb(16, 154, 43); color:rgb(225, 225, 116);border-width:0px; }
+	.dropdown:hover .dropbtn {border-width:0px; background-color: #3B8AC4; }
 
 	.dropdown-content{margin-top:20px;}
 }
@@ -622,6 +597,9 @@ p
     font-size: 13px;
 	}
 
+#navbar a:hover, .dropbtn:hover{
+  background-color: #3B8AC4;
+}
 
 	#navbar li > .dropdown{
 		width:100%;
