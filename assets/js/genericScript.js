@@ -47,11 +47,11 @@
       let img = document.getElementById("dropIndicatorTour");
       let src = img.src.split("/");
       src = src[src.length-1];
-      if(src=="icon3.png")
+      if(src=="icon1.jpg")
       {
-        img.src="images/icon4.png";
+        img.src="images/icon2.jpg";
       }
-      else img.src="images/icon3.png";
+      else img.src="images/icon1.jpg";
     }
 
     function cruiseFunction(){
@@ -59,11 +59,11 @@
       let img=document.getElementById("dropIndicatorCruise");
       let src = img.src.split("/");
       src = src[src.length-1];
-      if(src=="icon3.png")
+      if(src=="icon1.jpg")
       {
-        img.src="images/icon4.png";
+        img.src="images/icon2.jpg";
       }
-      else img.src="images/icon3.png";
+      else img.src="images/icon1.jpg";
     }
 
     //Toggles the menu, green arrow
@@ -72,9 +72,9 @@
       let img = document.getElementById("dropIndicator");
       let src = img.src.split("/");
       src = src[src.length-1];
-      if(src=="icon1.png")
+      if(src=="icon1.jpg")
       {
-        img.src="images/icon2.png";
+        img.src="images/icon2.jpg";
       }//We want both of our dropdown arrows toggled down if we click out of the main dropdown
       else reduceMenu();
     }
@@ -82,13 +82,19 @@
     //Should reduce both the dropdown arrows. Called when the user clicks outside of the mobile menu
     function reduceMenu()
     {
-      document.getElementById("dropIndicator").src="images/icon1.png";
-      document.getElementById("dropIndicatorTour").src="images/icon3.png";
-      document.getElementById("dropIndicatorCruise").src="images/icon3.png";
+      document.getElementById("dropIndicator").src="images/icon1.jpg";
+      document.getElementById("dropIndicatorTour").src="images/icon1.jpg";
+      document.getElementById("dropIndicatorCruise").src="images/icon1.jpg";
         if(document.getElementById("myDropdown").classList.contains("show"))
           document.getElementById("myDropdown").classList.toggle("show");
         if(document.getElementById("mainDropdown").classList.contains("show"))
           document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    function setIconSrc(){
+      document.getElementById("dropIndicator").src="images/icon1.jpg";
+      document.getElementById("dropIndicatorTour").src="images/icon1.jpg";
+      document.getElementById("dropIndicatorCruise").src="images/icon1.jpg";
     }
 
     // Close the dropdown if the user clicks outside of it
@@ -108,3 +114,5 @@
         }
       }
     }
+
+    setIconSrc();
