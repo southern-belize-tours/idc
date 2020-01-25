@@ -21,6 +21,17 @@ function setSizedSources(names){
   {
     imageElements[i].src="images/square/"+names[i]+"/"+names[i]+imageSrcEndString;
   }
+
+  if(x>=425)
+  {
+    document.getElementById("cruiseImage").src="images/home/cruiseLogo200.jpg";
+    document.getElementById("hotelImage").src="images/home/hotelLogo200.png";
+  }
+  else{
+    document.getElementById("cruiseImage").src="images/home/cruiseLogo300.jpg";
+    document.getElementById("hotelImage").src="images/home/hotelLogo300.png";
+  }
+
 }
 
 function setSlideImages(){

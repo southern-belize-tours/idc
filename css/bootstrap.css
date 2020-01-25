@@ -5,6 +5,8 @@
 .dropbtn img{
   padding-left: 10px;
   padding: 0px;
+  position: relative;
+  top: 2px;
 }
 
 body
