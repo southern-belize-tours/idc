@@ -174,8 +174,7 @@ p
 }
 
 .dropbtn, .dropbtnMobile {
-	background-color: rgb(225, 225, 116);
-	color: rgb(16, 154, 43);
+  color: #e3ba30;
   background-color: #1d3d75;
 	font-size:18px;
 	padding: 20px;
@@ -269,11 +268,14 @@ p
 
   .dropdown-content .dropbtn{
 	color: rgb(27, 59, 187);
+  background-color: #3b8ac4;
+  color: #e3ba30;
   }
 
   .dropdown-content .dropdown-content a{
 	  background-color:rgb(27, 59, 187);
 	  color: rgb(225, 225, 116);
+    background-color: #4bb4de;
   }
 
   .dropdown-content .dropdown-content a:hover{
@@ -290,7 +292,8 @@ p
   }
 
 
-.show{display: block;}
+.show{display: block;
+background-color:#3b8ac4;}
 
 .changeBackground{
 	background-color: rgb(16, 154, 43);
@@ -599,10 +602,30 @@ p
     padding-left:5px;
     padding-right: 5px;
     font-size: 13px;
+    background-color: #1d3d75;
 	}
 
-#navbar a:hover, .dropbtn:hover{
+  #myDropdown a, #cruiseDropdown a{
+    color: #e3ba30;
+    color: rgb(247,206,68);
+    color: #f8d49b;
+    background-color: rgb(54,76,142);
+    background-color: #345da7;
+
+  }
+
+/*#navbar a:hover, .dropbtn:hover{
   background-color: #3B8AC4;
+*/
+
+.dbluebtn{
+  border-radius: 0px 0px 15px 0px;
+  border-width:1px;
+}
+
+#mainDropdown{
+  border-radius: 0px 0px 16px 0px;
+  border-width:1px;
 }
 
 	#navbar li > .dropdown{
@@ -610,9 +633,11 @@ p
 	}
 
   #dropbtnMobile{
+    text-align:center;
     padding-top:10px;
     padding-bottom: 10px;
   }
+
 
 	.dropbtn{
     width: 100%;
@@ -632,6 +657,10 @@ p
 		margin-top:0px;
 	}
 
+  .dropdown-content .dropbtn{
+    background-color: #1d3d75;
+  }
+
   #mainDropdown{
     position: absolute;
   }
@@ -643,8 +672,11 @@ p
 
 	/*Take away the colour changing for mobile features*/
 	.dropdown .dropdown .dropbtn:hover{
-		color: rgb(27, 59, 187);
-		background-color:rgb(225, 225, 116);
+    background-color:#3b8acf;
+    color:#efdbdb;
+    color: #e3ba30;
+    background-color:#1d3d75;
+
 	}
 
 
