@@ -61,7 +61,7 @@
     cursor: pointer;
  }
 
- .grid-item-pic:hover {
+ .grid-item-pic:hover >grid-image{
    -webkit-filter: brightness(70%);
  }
 
@@ -90,11 +90,11 @@
 	.grid-item-pic a div{
 		color: rgb(23,123,211);
 		color: #3B8AC4;
+		color: #4bb4de;
 	}
 
 	.grid-item-pic:hover >a div{
-		-webkit-filter: brightness(120%);
-		color: #4bb4de;;
+		color: #fdd036;
 	}
 
 	.tourTypeText{

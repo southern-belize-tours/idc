@@ -143,6 +143,8 @@ p
 	margin-top: 10px;
 	margin-bottom:0px;
 	list-style: none;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 #navbar li
@@ -258,8 +260,10 @@ p
 
   .dropdown-content a:hover {
 	background-color: rgb(16, 154, 43);
-	color: rgb(225, 225, 116);
+  background-color: #4bb4de;
+  color: #fdd036;
   }
+
 
   .dropdown-content .dropdown{width:100%; }
 
@@ -317,7 +321,7 @@ p
       margin-left: auto;
       margin-right: auto;
       display:block;
-      height: 350px;
+      height: 500px;
 	  max-height:643px;
       overflow:hidden;
       max-width:100%;
