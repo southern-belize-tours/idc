@@ -7,7 +7,20 @@ y = w.innerHeight|| e.clientHeight|| g.clientHeight;
 
 function setSizedSources(names){
   let mainDiv = document.getElementById("gridImages");
-  let imageElements = mainDiv.getElementsByClassName("grid-image");
+  let imageElements=[];
+  if(mainDiv==null)
+  {
+    let mainDivs = document.getElementsByClassName("grid-container");
+    for(let i=0;i<mainDivs.length;++i)
+    {
+      //imageElements=imageElements.push(mainDivs[i].getElementsByClassName("grid-image"));
+      Array.prototype.push.apply(imageElements,mainDivs[i].getElementsByClassName("grid-image"));
+    }
+  }
+  else
+  {
+    imageElements = mainDiv.getElementsByClassName("grid-image");
+  }
   let imageSrcEndString = "";
   if(x>=768)imageSrcEndString="300";
   else if(x>=680)imageSrcEndString="200";
@@ -18,7 +31,7 @@ function setSizedSources(names){
   else imageSrcEndString="200";
   imageSrcEndString = imageSrcEndString+".jpg";
   for(let i=0;i<imageElements.length;++i)
-  {
+ {
     imageElements[i].src="images/square/"+names[i]+"/"+names[i]+imageSrcEndString;
   }
 }

@@ -5,7 +5,6 @@
         <link rel="stylesheet" type="text/css" href="css/allToursStyle.css">
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="assets/js/genericScript.js"></script>
 </head>
 
 <nav id="navbar">
@@ -14,7 +13,7 @@
         <li>
             <div class="dropdown" id="ignore">
                     <button class="dropbtn" id="dropbtnMobile" onclick=dropFunction()>Menu
-                      <img height=15px width=15px src="images/icon1.png" id="dropIndicator">
+                      <img height=15px width=15px alt="images/icon1.jpg" id="dropIndicator">
                     </button>
                     <div id="mainDropdown" class="dropdown-content">
                             <a href="index.html" class="blueBtn">
@@ -26,7 +25,7 @@
                             <div class="dropdown">
                                     <button class="dropbtn" onclick=myFunction()>
                                         All Tours
-                                        <img height=15px width=15px src="images/icon3.png" id="dropIndicatorTour">
+                                        <img height=15px width=15px alt="images/icon1.jpg" id="dropIndicatorTour">
                                     </button>
                                     <div id="myDropdown" class="dropdown-content">
                                       <a href="allTours.html">Land Tours</a>
@@ -49,7 +48,7 @@
                                     </div>
                                     <button class="dropbtn" onclick=cruiseFunction()>
                                         Cruise Tours
-                                            <img height=15px width=15px src="images/icon3.png" id="dropIndicatorCruise">
+                                            <img height=15px width=15px alt="images/icon1.jpg" id="dropIndicatorCruise">
                                     </button>
                                     <div id="cruiseDropdown" class="dropdown-content">
                                       <a href="cruiseTours.html">Cruise Tours</a>
@@ -132,7 +131,7 @@
 <nav id="navBorder">
     a
 </nav>
-
+<script src="assets/js/genericScript.js"></script>
 <body>
 
 <div class="bigTitle">Tours</div>
@@ -153,37 +152,10 @@ Interested in uncovering the mysteries of the ancient Mayans? Visit the stone fo
 a crystal skull was found. Or perhaps you can stroll through the deadly basketball arena
 and translate the Mayan heiroglyphs in Nim Li Punit. In the same day you can marvel at the view from the toweringcentral structure in the lost civic center of Xunantunich,
 while learning how the Mayan nobles lived it up in their hilltop home of Cahal Pech.
-If you want passage through the Mayan
-underworld of Xibalba, our guides will be your ferrymen. There, you will hike through some of the most beautiful jungle paths
-and tube through a relaxing, perfectly blue river that stretches underground into a subterranean cave system with
-stalagmites and stalactites that the Mayans believed to be the guardians of the underworld.
+If you are truly adventurous, then the ATM Cave Tour will take you on a truly intense hiking and cave exploring experience through where
+Mayan priests made their sacrifices.
 </p>
-<div class="smolTitle">
-See Belize's Untouched Wonders
-</div>
-<p class="introParagraph">
-If the Mayan underworld is insufficient enough to get your adrenaline pumping, you can book a ziplining tour throughout the
-jungle canopy, and experience breath-taking views of the natural beauty of the rainforest creek.
-Or, if you want to relax with nature, we can show you some beautiful aquatic wonders in the jungle.
-Our guides can whisk you away to the jungle waterfalls, where you will be treated to an authentic Belizian meal, or you can
- cool off in Belize's inland blue hole, and explore the subterranean cave system.
-</p>
-<div class="smolTitle">
-Dip Your Feet into the Caribbean Sand
-</div>
-<p class="introParagraph">
-Perhaps the Caribbean is what you had in mind when you were thinking "cool off."
-We can take you on a boat ride through the turqoise blue water to South Water Caye,
-where you can explore an expansive coral reef with its very own South Water Marine Reserve,
-a must-see snorkeling excursion where you can dry off lounging in Pelican Beach, ranked by
-Discovery as one of the top 21 best beaches in the world.
-For a true premier tour, we can book you a private airplane to fly over the Great Blue Hole,
-where you can marvel at the Caribbean's most beautiful water. If scuba diving thorugh the depths
-of the Great Blue Hole is on your bucket list, you can contact us and we will arrange
-your adventure through the depths of the world's largest oceanic blue hole.
-</p>
-
-<div class="grid-container" id="gridImages">
+<div class="grid-container" name="gridImages">
     <div class="grid-item">
             <a href="nimLi.html">
                     <img class="grid-image">
@@ -197,15 +169,37 @@ your adventure through the depths of the world's largest oceanic blue hole.
         </a>
     </div>
     <div class="grid-item">
-        <a href="spiceFarm.html">
+        <a href="atm.html">
             <img class="grid-image">
-            Spice Farm Tropical Garden
+            ATM Cave
         </a>
     </div>
+</div>
+<div class="smolTitle">
+See Belize's Untouched Wonders
+</div>
+<p class="introParagraph">
+Our scenic cave tubing tour will give you passage through the Mayan underworld of Xibalba, where our guides will be your ferrymen.
+There, you will hike through some of the most beautiful jungle paths
+and tube through a relaxing, perfectly blue river that stretches underground into a subterranean cave system with
+stalagmites and stalactites that the Mayans believed to be the guardians of the underworld.
+If the Mayan underworld is insufficient enough to get your adrenaline pumping, you can book a ziplining tour throughout the
+jungle canopy, and experience breath-taking views of the natural beauty of the rainforest creek.
+Or, if you want to relax with nature, we can show you some beautiful aquatic wonders in the jungle.
+Our guides can whisk you away to the jungle waterfalls, where you will be treated to an authentic Belizian meal, or you can
+ cool off in Belize's inland blue hole, and explore the subterranean cave system.
+</p>
+<div class="grid-container" name="gridImages">
     <div class="grid-item">
-        <a href="jungleTubing.html">
+            <a href="caveTubing.html">
+                    <img class="grid-image">
+                    Cave Tubing
+            </a>
+    </div>
+    <div class="grid-item">
+        <a href="ziplining.html">
             <img class="grid-image">
-            Jungle River Tubing
+            Rainforest Ziplining
         </a>
     </div>
     <div class="grid-item">
@@ -221,23 +215,64 @@ your adventure through the depths of the world's largest oceanic blue hole.
         </a>
     </div>
     <div class="grid-item">
-            <a href="blueHole.html">
-                <img class="grid-image">
-                Blue Hole Flyover
-            </a>
-        </div>
-        <div class="grid-item">
-                <a href="southWaterSnorkel.html">
+        <a href="jungleTubing.html">
+            <img class="grid-image">
+            Jungle River Tubing
+        </a>
+    </div>
+    <div class="grid-item">
+      <a href="zoo.html">
+        <img class="grid-image">
+        Belize Zoo
+      </a>
+    </div>
+    <div class="grid-item">
+      <a href="spiceFarm.html">
+        <img class="grid-image">
+        Spice Farm Tropical Garden
+      </a>
+    </div>
+</div>
+<div class="smolTitle">
+Dip Your Feet into the Caribbean Sand
+</div>
+<p class="introParagraph">
+Perhaps the Caribbean is what you had in mind when you were thinking "cool off."
+We can take you on a boat ride through the turqoise blue water to South Water Caye,
+where you can explore an expansive coral reef with its very own South Water Marine Reserve,
+a must-see snorkeling excursion where you can dry off lounging in Pelican Beach, ranked by
+Discovery as one of the top 21 best beaches in the world.
+For a true premier tour, we can book you a private airplane to fly over the Great Blue Hole,
+where you can marvel at the Caribbean's most beautiful water. If scuba diving thorugh the depths
+of the Great Blue Hole is on your bucket list, you can contact us and we will arrange
+your adventure through the depths of the world's largest oceanic blue hole.
+</p>
+
+<div class="grid-container">
+    <div class="grid-item">
+            <a href="southWaterSnorkel.html">
                     <img class="grid-image">
-                   South Water Caye Snorkeling
-                </a>
-            </div>
-            <div class="grid-item">
-                    <a href="southWaterFishing.html">
-                        <img class="grid-image">
-                        South Water Caye Fishing
-                    </a>
-                </div>
+                    South Water Caye Snorkeling
+            </a>
+    </div>
+    <div class="grid-item">
+        <a href="southWaterFishing.html">
+            <img class="grid-image">
+            South Water Caye Fishing
+        </a>
+    </div>
+    <div class="grid-item">
+        <a href="blueHole.html">
+            <img class="grid-image">
+            Blue Hole Flyover
+        </a>
+    </div>
+    <div class="grid-item">
+        <a href="yacht.html">
+            <img class="grid-image">
+            Caribbean Boat Charter
+        </a>
+    </div>
   </div>
 
 
@@ -252,8 +287,9 @@ your adventure through the depths of the world's largest oceanic blue hole.
         a
     </nav>
 <script>
-  let imageNames = ["nimLiSquare","lubaantunSquare","spiceFarmSquare","southStaanSquare",
-  "waterfallsSquare","inlandBlueHoleSquare","blueHoleSquare","southSnorkelSquare","southFishSquare"];
+  let imageNames = ["nimLiSquare","lubaantunSquare","atmSquare","caveTubingSquare",
+  "zipliningSquare","waterfallsSquare","inlandBlueHoleSquare","southStaanSquare","zooSquare",
+  "spiceFarmSquare","southSnorkelSquare","southFishSquare","blueHoleSquare","yachtSquare"];
 </script>
 <script src="assets/js/homeScript.js"></script>
 <nav id="navbar">

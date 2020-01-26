@@ -90,7 +90,7 @@
         if(document.getElementById("mainDropdown").classList.contains("show"))
           document.getElementById("myDropdown").classList.toggle("show");
         if(document.getElementById("cruiseDropdown").classList.contains("show"))
-          document.getElementById("cruiseDropdown").classList.toggle("show"); 
+          document.getElementById("cruiseDropdown").classList.toggle("show");
     }
 
     function setIconSrc(){
