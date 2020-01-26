@@ -140,9 +140,7 @@ p
 
 #navbar ol
 {
-	margin-left: 20px;
 	padding: 0;
-	margin-top: 10px;
 	margin-bottom:0px;
 	list-style: none;
   padding-top: 30px;
@@ -543,15 +541,23 @@ background-color:#3b8ac4;}
       display:none;
     }
 
-	#navbar ol{display:inline;}
+	#navbar ol{display:inline-block;width:100%;}
 
 	#bottomBar.container ol li a img{
 		margin-top:5px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 	}
 
 	#bottomBar.container ol li a{
-		display:inline;
+		display:inline-block;
+    align-items: center;
 	}
+
+  #bottomBar ol{
+    width:100%;
+    text-align:center;
+  }
 
 	.smolTitle{
 		margin-top:10px;
@@ -564,6 +570,7 @@ background-color:#3b8ac4;}
 
 	  .slideImage{
 		height: 200px;
+    height: 250px;
 	  }
 
 	  .prev,.next{
@@ -606,6 +613,12 @@ background-color:#3b8ac4;}
     font-size: 13px;
     background-color: #1d3d75;
 	}
+
+  #navbar ol li a {
+    width: auto;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
 
   #myDropdown a, #cruiseDropdown a{
     color: #e3ba30;
