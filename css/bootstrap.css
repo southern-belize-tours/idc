@@ -13,6 +13,17 @@
   top: 2px;
 }
 
+.stripe{
+  transition: .5s ease;
+  width: 300px;
+  z-index:1;
+  position: absolute;
+  background-color: #ffde7d;
+  background-color: #00b8a9;
+  opacity: 0;
+  height: 7px;
+}
+
 #myDropdown, #cruiseDropdown {
   border-radius: 0px 0px 10px 10px;
 }
@@ -310,7 +321,9 @@ p
   }
 
 
-.show{display: block;
+.show{
+
+  display: block;
 background-color:#3b8ac4;}
 
 .changeBackground{
@@ -344,6 +357,7 @@ background-color:#3b8ac4;}
     color: #3B8AC4;
     color: #3B8AC4;
     color: #222222;
+    color: #F6416c;
     font-size: 3vw;
     padding-bottom:10px;
   }
