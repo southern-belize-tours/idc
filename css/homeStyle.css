@@ -62,7 +62,8 @@
     cursor: pointer; /*
 		background-color: #eff0f6;
 		background-color: #FFFFC2; */
-		border-color: ffffc2;
+		border-color: #ffffc2;
+		border-color: #ffde7d;
 		border-width: 3px;
 		border-style:solid;
 		padding: 10px;
