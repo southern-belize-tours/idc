@@ -2,11 +2,19 @@
 
 }
 
+.fullContainer{
+  background-color: #c8e7ed;
+}
+
 .dropbtn img{
   padding-left: 10px;
   padding: 0px;
   position: relative;
   top: 2px;
+}
+
+#myDropdown, #cruiseDropdown {
+  border-radius: 0px 0px 10px 10px;
 }
 
 body
@@ -18,9 +26,13 @@ body
 	background-color: rgb(238, 219, 238);
 	background-color: rgb(219, 228, 235);
   background-color: rgb(56,54,54);
+  background-color: #ffffff;
+  background-color: #eff0f6;
+  background-color: #fafafa;
 
 	/*background-color: black;*/ /*I want this to be a cool image*/
   color: rgb(219, 202, 183);
+  color: #222222;
 	font-family:Arial, Helvetica, sans-serif;
 	font-size: 16;
 	line-height: 1.6em;
@@ -264,6 +276,12 @@ p
   }
 
 
+
+  #laptopDropdown div a:hover, #cruiseLaptopDropdown div a:hover{
+    border-radius:10px 10px 10px 10px;
+  }
+
+
   .dropdown-content .dropdown{width:100%; }
 
   .dropdown-content .dropbtn{
@@ -312,10 +330,19 @@ background-color:#3b8ac4;}
     /*TOOK OUT 'repeat' */
 }
 
+.slideshowReel .dot {
+  cursor: pointer;
+  background-color:#ffa5a5;
+  background-color: #bfcfff;
+  background-color: #c8e7ed;
+}
+
 .smolTitle{
 	text-align:center;
     color:rgb(16, 133, 39);
     color: #3B8AC4;
+    color: #3B8AC4;
+    color: #222222;
     font-size: 3vw;
     padding-bottom:10px;
   }
@@ -412,9 +439,12 @@ background-color:#3b8ac4;}
   /*background-image:  url("../images/imageBullet.png")*/
   }
 
-  .active, .dot:hover {
-	-webkit-filter: brightness(70%);
+  .slideshowReel .active, .dot:hover {
+	/*-webkit-filter: brightness(70%);*/
+  background-color: #3B8ac4;
+  background-color: #ffffc2;
   }
+
 
   /* Fading animation */
   .fade {
@@ -435,12 +465,19 @@ background-color:#3b8ac4;}
     introParagraph{
       font-size: 2.5vw;
     }
+
+    .slideshowReel{
+      margin-bottom: 30px;
+    }
   }
 
   @media(min-width:1024px)
   {
+    .slideshowReel{
+      margin-bottom: 20px;
+    }
 	  .dot{
-		  margin: 0 2px;
+      margin: 0 10px;
 	  }
 
 	  .dot > img{

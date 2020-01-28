@@ -24,6 +24,11 @@
       }
       for (i = 0; i < dots.length; i++) {
           dots[i].className = dots[i].className.replace(" active", "");
+          let imgs = dots[i].getElementsByTagName("img");
+          for(j=0;j<imgs.length;++j)
+          {
+            imgs[j].style.display='none';
+          }
       }
       slides[slideIndex-1].style.display = "block";
       dots[slideIndex-1].className += " active";

@@ -1,5 +1,6 @@
 #exploreBelize{
 	margin-top: 20px;
+	padding-top: 20px;
 }
 
 .textGridContainer{
@@ -58,7 +59,15 @@
   }
 
   .grid-two a {
-    cursor: pointer;
+    cursor: pointer; /*
+		background-color: #eff0f6;
+		background-color: #FFFFC2; */
+		border-color: ffffc2;
+		border-width: 3px;
+		border-style:solid;
+		padding: 10px;
+		padding: 15px;
+		border-radius: 15px;
  }
 
  .grid-item-pic:hover >grid-image{
@@ -91,10 +100,12 @@
 		color: rgb(23,123,211);
 		color: #3B8AC4;
 		color: #4bb4de;
+		color: #222222;
 	}
 
 	.grid-item-pic:hover >a div{
 		color: #fdd036;
+		color: #1d3d75;
 	}
 
 	.tourTypeText{
@@ -111,6 +122,7 @@
 			color: #EFDBCB;
 			color: #dbc9ba
 			color: rgb(219, 202, 183);
+			color: #222222;
     }
 
     .grid-image{
