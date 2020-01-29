@@ -1,8 +1,8 @@
 .textGridContainer{
-	margin: 70px; 
+	margin: 70px;
 	grid-template-columns: repeat(4, 1fr);
 	display: grid;
-	grid-gap: 2rem; 
+	grid-gap: 2rem;
 
 }
 
@@ -11,40 +11,40 @@ select{
 }
 
 .nonCruiseOptions{
-  display:none; 
+  display:none;
 }
 
 #indent{
-  padding-left: 16px; 
+  padding-left: 16px;
 }
 
 .blue{
-  font-size: 1.4vw; 
+  font-size: 1.4vw;
   color: rgb(23, 123, 211);
 }
 
 #loc, #location, #tourDiv{
   margin-top: 1vw;
-  margin-bottom:1vw; 
+  margin-bottom:1vw;
   font-size: 1.5vw;
   width: 100%;
 }
 
 .textGridItem, .textGridItemThicc, .textGridItemThicccc {
-	background-color: rgb(200,200,200); 
-	justify-content: center; 
-	align-items: center; 
+	background-color: rgb(200,200,200);
+	justify-content: center;
+	align-items: center;
 	border: 3px solid rgba(0, 0, 0, 0.8);
-	border-radius: 3px; 
-	font-size: 2em; 
+	border-radius: 3px;
+	font-size: 2em;
 
 
-	/*padding: 20px;  
-	font-size: 20;*/ 
+	/*padding: 20px;
+	font-size: 20;*/
   }
 
   .textGridItemThicc{
-	  grid-column: span 2; 
+	  grid-column: span 2;
   }
 
   .textGridItemThicccc {
@@ -54,26 +54,27 @@ select{
 .grid-container {
 	display: grid;
 	grid-template-columns: auto auto auto;
-	grid-column-gap: 30px; 
-	grid-row-gap: 30px; 
+	grid-column-gap: 30px;
+	grid-row-gap: 30px;
   justify-content: space-evenly;
   }
 
   .grid-item {
-	background-color: none; 
-	/*border: 1px solid rgba(0, 0, 0, 0.8);*/ 
-	max-width:200px; 
-    max-height:150px; 
-    font-size:1vw; 
-	border: none; 
-	/*padding: 20px;  
-	font-size: 20;*/ 
-	text-align: center; 
+	background-color: none;
+	/*border: 1px solid rgba(0, 0, 0, 0.8);*/
+	max-width:200px;
+    max-height:150px;
+    font-size:1vw;
+	border: none;
+	/*padding: 20px;
+	font-size: 20;*/
+	text-align: center;
   }
 
   .priceLabel{
     color: rgb(23,123,211);
-    font-size: 1.2vw; 
+		color: #222222;
+    font-size: 1.2vw;
   }
 
   .checkbox-container{
@@ -92,14 +93,14 @@ select{
 
   .checkbox-container input{
     position: absolute;
-    opacity: 0; 
-    cursor: pointer; 
+    opacity: 0;
+    cursor: pointer;
     height: 0;
-    width: 0; 
+    width: 0;
   }
 
   .checkbox-container:hover input ~ .checkmark{
-    background-color: #ccc; 
+    background-color: #ccc;
   }
 
   .checkbox-container input:checked ~ .checkmark{
@@ -107,43 +108,43 @@ select{
   }
 
   .textGridContainerSix{
-    margin-top: 20px; 
-    margin-bottom: 40px; 
+    margin-top: 20px;
+    margin-bottom: 40px;
 	grid-template-columns: repeat(6, 1fr);
     display: grid;
-    grid-column-gap: 1rem; 
-    grid-row-gap: 1rem; 
-	/*grid-gap: 2rem; */ 
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+	/*grid-gap: 2rem; */
 
 }
 
   .grid-image{
 
-      height: 100%; 
-      width: 100%; 
+      height: 100%;
+      width: 100%;
   }
 
 
   .grid-item a{
-	  font-size: 20; 
-	  text-decoration: none; 
+	  font-size: 20;
+	  text-decoration: none;
 	  /*background-color: rgba(255, 255, 255, 0.8);
 	  border: 1px solid rgba(0, 0, 0, 0.8);*/
   }
 
   .grid-item p
   {
-	  font-size: 16; 
+	  font-size: 16;
   }
  #message{
   width:100%;resize:none;line-height: 25px;
  }
 
-  .grid-item:hover 
+  .grid-item:hover
   {
 	-webkit-filter: brightness(70%);
     color: rgb(23, 123, 211);
-    color: rgb(27, 59, 187); 
+    color: rgb(27, 59, 187);
 	/*-webkit-transition: all 1s ease;
 	-moz-transition: all 1s ease;
 	-o-transition: all 1s ease;
@@ -152,24 +153,24 @@ select{
   }
 
 .title{
-  margin-top: 40px; 
-  margin-bottom: 40px; 
-  color:rgb(23, 123, 211); 
+  margin-top: 40px;
+  margin-bottom: 40px;
+  color:rgb(23, 123, 211);
     font-size:40;
-    font-size:5vw; 
-    text-align:center; 
+    font-size:5vw;
+    text-align:center;
 }
-  
-  
+
+
 .bookThisButton{
-	margin-left: 70px; 
+	margin-left: 70px;
 }
 
 .reservationForms
 {
-	margin-left: 70px; 
-	margin-right: 70px; 
-	margin-top: 30px; 
+	margin-left: 70px;
+	margin-right: 70px;
+	margin-top: 30px;
 }
 
 .checklistContainer {
@@ -230,7 +231,7 @@ select{
 }
 
 .locationHotel{
-  display:none; 
+  display:none;
 }
 
 .showLocHotel{
@@ -239,13 +240,19 @@ select{
 
 .creditCardForm {
   max-width: 700px;
-  max-width: 70%; 
+  max-width: 70%;
   background-color: #fff;
   margin: 100px auto;
   margin-top: 50px;
   overflow: hidden;
   padding: 25px;
   color: rgb(16, 133, 39);
+	color: #222222;
+
+	border-style: solid;
+	border-color: #ffde7d;
+	border-radius:10px;
+	border-width:3px;
 }
 .creditCardForm label {
   width: 100%;
@@ -254,7 +261,7 @@ select{
 .creditCardForm .heading h1 {
   text-align: center;
   font-family: 'Open Sans', sans-serif;
- /* color: #4c4e56; */ 
+ /* color: #4c4e56; */
 }
 .heading{
   color: rgb(23, 123, 211);
@@ -287,14 +294,14 @@ deal with it explicitly
 */
 #numPeople.form-control{
   margin: 0px;
-  height: 45px; 
-  font-size: 2vw; 
+  height: 45px;
+  font-size: 2vw;
 }
 
 .creditCardForm .owner {
   width: 63%;
   margin-right: 2%;
-  /*margin-right: 10px;*/ 
+  /*margin-right: 10px;*/
 }
 
 .creditCardForm .tours, .creditCardForm .prices{
@@ -305,7 +312,7 @@ deal with it explicitly
 }
 /*.creditCardForm #card-number-field {
   width: 100%;
-} */ 
+} */
 .creditCardForm #expiration-date {
   /*width: 49%; */
 }
@@ -316,22 +323,23 @@ deal with it explicitly
 }
 .creditCardForm #pay-now {
   width: 100%;
-  /*margin-top: 25px; */ 
+  /*margin-top: 25px; */
 }
 .creditCardForm .payment .btn{
-  width:100%; 
+  width:100%;
   margin-top: 3px;
   font-size: 24px;
-  background-color: rgb(23, 123, 211);
+  background-color: #00b8a9;
   color: white;
-  border-radius:5px; 
-  border-width:2px; 
-  border-style: solid; 
-  border-color: rgb(23, 123, 211);  
+  border-radius:5px;
+  border-width:2px;
+  border-style: solid;
+  border-color: #00b8a9;
 }
 
 .alertBox{
   color: rgb(200,200,200);
+	color: #00b8a9;
   font-size: 1.6vw;
   line-height: 2vw;
 
@@ -341,14 +349,15 @@ deal with it explicitly
   border-radius:5px;
   border-width:2px;
   border-style: solid;
-  border-color: rgb(23, 123, 211)
+  border-color: rgb(23, 123, 211);
+	border-color: #F6416c;
 }
 
 .creditCardForm .payment .btn:hover{
-  /*color: rgb(27, 59, 187); 
-  background-color:white; */ 
-  border-color: rgb(27, 59, 187); 
-  background-color: rgb(27, 59, 187);
+  /*color: rgb(27, 59, 187);
+  background-color:white; */
+	background-color: #1d3d75;
+	border-color: #1d3d75;
 }
 .creditCardForm .payment select {
   padding: 10px;
@@ -394,28 +403,29 @@ deal with it explicitly
 }
 
 .form-group label {
-  display:block; 
+  display:block;
   margin-left: 5px;
 }
 
 ::placeholder{
-  color: rgb(176, 212, 225); 
+  color: rgb(176, 212, 225);
 }
 
 .form-control {
   border-width:2px;
-  border-style:solid;  
+  border-style:solid;
   border-color: rgb(23, 123, 211);
-  border-radius:5px; 
+  border-radius:5px;
   width:100%;
-  margin-right: 0px;  
-  font-size: 16px; 
+  margin-right: 0px;
+  font-size: 16px;
+	border-color: #F6416c;
 }
 
 #ppCont{
   /*max-width: 1100px;
   margin-left: auto;
-  margin-right: auto; 
+  margin-right: auto;
   align-content: center;
   align-items:center; */
 }
@@ -428,9 +438,9 @@ deal with it explicitly
 {
   #ppCont{
     width: 80%;
-    justify-self: center; 
+    justify-self: center;
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
   }
 }
 
@@ -438,9 +448,9 @@ deal with it explicitly
 {
 
   .title{
-    margin-top: 20px; 
-    margin-bottom: 20px; 
-    
+    margin-top: 20px;
+    margin-bottom: 20px;
+
   }
 }
 
@@ -475,8 +485,8 @@ deal with it explicitly
   }
 
   .creditCardForm{
-    margin-left: 10px; 
-    margin-right: 10px; 
+    margin-left: 10px;
+    margin-right: 10px;
     margin-top:20px;
     margin-bottom: 30px;
     padding:0px;
@@ -484,9 +494,9 @@ deal with it explicitly
   }
 
   .creditCardForm .payment{
-    margin:0px; 
+    margin:0px;
     padding: 8px;
-    font-size: 3.5vw; 
+    font-size: 3.5vw;
   }
 
   .creditCardForm .payment .form-control,#numPeople.form-control,#loc, #days,#months,#years{
@@ -495,7 +505,7 @@ deal with it explicitly
   }
 
   #numPeople.form-control{
-    font-size: 16px; 
+    font-size: 16px;
 
   }
   .creditCardForm label{
@@ -503,13 +513,13 @@ deal with it explicitly
   }
 
   .creditCardForm .payment .form-group{
-    margin: 0px; 
+    margin: 0px;
   }
 
   .title{
-    font-size: 7vw; 
+    font-size: 7vw;
     margin-top:0px;
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
   }
 
   #loc{
@@ -582,4 +592,4 @@ deal with it explicitly
    margin-bottom: 5px;
  }
 
-} 
+}

@@ -256,6 +256,13 @@ select{
   overflow: hidden;
   padding: 25px;
   color: rgb(16, 133, 39);
+	color: #3b8ac4;
+	color: #345da7;
+	color: #222222;
+	border-style: solid;
+border-radius: 10px;
+border-width: 3px;
+border-color: #ffde7d
 }
 .creditCardForm label {
   width: 100%;
@@ -276,6 +283,9 @@ select{
   padding: 10px 25px;
   margin-top: 20px;
   position: relative;
+
+
+
 }
 .creditCardForm .payment .form-group {
   float: left;
@@ -358,7 +368,8 @@ deal with it explicitly
   border-radius:5px;
   border-width:2px;
   border-style: solid;
-  border-color: rgb(23, 123, 211)
+  border-color: rgb(23, 123, 211);
+	border-color: #f6416c;
 }
 
 .creditCardForm .payment .btn:hover{
@@ -427,6 +438,7 @@ deal with it explicitly
   border-width:2px;
   border-style:solid;
   border-color: rgb(23, 123, 211);
+	border-color: #F6416c;
   border-radius:5px;
   width:100%;
   margin-right: 0px;
@@ -517,6 +529,10 @@ deal with it explicitly
     margin-bottom: 30px;
     padding:0px;
     max-width: 100%;
+		border-style: solid;
+border-radius: 10px;
+border-width: 2px;
+border-color: #ffde7d;
   }
 
   .creditCardForm .payment{

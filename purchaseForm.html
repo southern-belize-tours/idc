@@ -327,10 +327,6 @@ a
                             <span class="checkmark"></span>
                         </label>
                         <label class=checkbox-container>
-                            <input type="checkbox" class="tourOption" name="lubaantun"> Lubantuun Mayan Ruins
-                            <span class="checkmark"></span>
-                        </label>
-                        <label class=checkbox-container>
                             <input type="checkbox" class="tourOption" name = "spiceFarm"> Spice Farm
                             <span class="checkmark"></span>
                         </label>
@@ -343,6 +339,10 @@ a
                             <span class="checkmark"></span>
                         </label>
                         <span class="nonCruiseOptions" name="nonCruise">
+                          <label class=checkbox-container>
+                              <input type="checkbox" class="tourOption" name="lubaantun"> Lubantuun Mayan Ruins
+                              <span class="checkmark"></span>
+                          </label>
                             <label class=checkbox-container>
                                 <input type="checkbox" class="tourOption" name = "inlandBlueHole"> Inland Blue Hole and Cave
                                 <span class="checkmark"></span>
@@ -363,6 +363,26 @@ a
                                 <input type="checkbox" class="tourOption" name="southwaterFishing"> Southwater Caye Fishing
                                 <span class="checkmark"></span>
                             </label>
+                            <label class=checkbox-container>
+                                <input type="checkbox" class="tourOption" name="atmCave"> ATM Cave
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class=checkbox-container>
+                                <input type="checkbox" class="tourOption" name="caveTubing"> Cave Tubing
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class=checkbox-container>
+                                <input type="checkbox" class="tourOption" name="twinCities"> Twin Cities Mayan Ruins
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class=checkbox-container>
+                                <input type="checkbox" class="tourOption" name="ziplining"> Rainforest Ziplining
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class=checkbox-container>
+                                <input type="checkbox" class="tourOption" name="zoo"> Belize Zoo
+                                <span class="checkmark"></span>
+                            </label>
                         </span>
                     </div>
                 </div>
@@ -370,17 +390,22 @@ a
                         <label for="cardNumber">Pricing (USD)</label>
                         <div id="tourDiv">
                             <label class="priceLabel">$95/person</label>
-                            <label class="priceLabel">$95/person</label>
                             <label class="priceLabel">$85/person</label>
                             <label class="priceLabel">$85/person</label>
                             <label class="priceLabel">$75/person</label>
                         </div>
                         <span class="nonCruiseOptions" name="nonCruise">
                                 <label class="priceLabel">$95/person</label>
+                                <label class="priceLabel">$95/person</label>
                                 <label class="priceLabel">$1850 private plane up to 5 people</label>
                                 <label class="priceLabel">$500 for 2 people plus $25 per additional</label>
                                 <label class="priceLabel">$650 for 2 people plus $50 per additional</label>
                                 <label class="priceLabel">$600 for 3 people plus $50 per additional up to 6</label>
+                                <label class="priceLabel">$340/person</label>
+                                <label class="priceLabel">$150/person</label>
+                                <label class="priceLabel">$150/person</label>
+                                <label class="priceLabel">$105/person</label>
+                                <label class="priceLabel">$145/person</label>
                         </span>
                 </div>
                 <div class="form-group" id="expiration-date">
@@ -468,6 +493,11 @@ a
             "southwaterSnorkelHalf": 500,
             "southwaterSnorkelFull": 650,
             "southwaterFishing": 600,
+            "atmCave" : 340,
+            "caveTubing" : 150,
+            "twinCities" : 150,
+            "ziplining" : 105,
+            "zoo" : 145
         }
 
         function sendTextToHTML(elementId, textString)

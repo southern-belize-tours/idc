@@ -1,6 +1,13 @@
 *{
 
 }
+.slideshowReel{
+  display:inline-block;
+  justify-content: center;
+  display:flex;
+  margin-top:10px;
+  margin-bottom:10px;
+}
 
 .fullContainer{
   background-color: #c8e7ed;
