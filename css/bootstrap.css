@@ -118,7 +118,6 @@ transition: all 1s ease;*/
 
 
 .grid-item-pic a, .grid-item a{
-font-size: 20;
 text-decoration: none;
 /*background-color: rgba(255, 255, 255, 0.8);
 border: 1px solid rgba(0, 0, 0, 0.8);*/
@@ -769,7 +768,9 @@ background-color:#3b8ac4;}
       margin-right: 25px;
       margin-top: 5px;
       text-align:justify;
-    }
+      margin-bottom: 10px;
+ }
+
 
     .bigTitle{
   		font-size: 6.5vw;
