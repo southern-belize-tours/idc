@@ -189,6 +189,19 @@ p
 
 .textBlock{
   margin-bottom: 40px;
+  border-style: solid;
+  padding: 15px;
+  padding-bottom: 0px;
+  margin-left: 70px;
+  margin-right: 70px;
+  border-radius: 15px;
+  border-color: #ffde7d;
+  border-color: #00b8a9;
+}
+
+.textBlock .introParagraph{
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 .homePageInfo
