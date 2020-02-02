@@ -1,4 +1,4 @@
-<!doctype html/>
+<!DOCTYPE html/>
 
 <head>
         <title> Rainforest Ziplining</title>
@@ -161,7 +161,7 @@
       <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </div>
 
-<div style="display:inline-block;justify-content: center;display:flex;margin-top:10px;margin-bottom: 20px;">
+<div class="slideshowReel">
     <span class="dot" onclick="currentSlide(1)">
         <image src="images/imageBullet.png"></image>
     </span>
@@ -176,8 +176,7 @@
     </span>
 </div>
 
-<script src="assets/js/genericScript.js">
-</script>
+
 
 <div class="bigTitle">
        Rainforest Ziplining
@@ -219,11 +218,11 @@ hour through the lush rainforest.
     $105 USD or $210 Belizean Dollars per person. Minimum group size of 2 persons.
   </p>
   <p class="introParagraph">
-    Please do not hesitate to contact us about rates for large groups.
-    Book your spots for this tour now to pay a 10% booking deposit, and pay the rest when the tour begins.
+    This tour can be booked both by guests residing on the mainland and guests docking by cruise
   </p>
   <p class="introParagraph">
-    This tour can be booked by both guests docking by cruise, and guests residing on the mainland.
+    Please do not hesitate to contact us about rates for large groups.
+    Book your spots for this tour now to pay a 10% booking deposit, and pay the rest when the tour begins.
   </p>
   <div class="buttonContainer">
     <a href="purchaseForm.html" class="purchaseButton">
@@ -232,79 +231,105 @@ hour through the lush rainforest.
   </div>
 </div>
 
-
-<div class="smolTitle">Other Popular Tours</div>
-
-<div class="grid-container" id="gridImages">
-    <div class="grid-item">
-            <a href="nimLi.html">
-                    <img class="grid-image">
-                    Nim Li Punit Mayan Ruins
-            </a>
-    </div>
-
-    <div class="grid-item">
-        <a href="lubaantun.html">
-                <img class="grid-image">
-                Lubaantun Mayan Ruins
-        </a>
-    </div>
-    <div class="grid-item">
+<div class="smolTitle">Other Cruise Tours</div>
+<div class="grid-container">
+  <div class="grid-item-pic">
+      <a href="nimLi.html">
+              <img class="grid-image">
+              <div>Nim Li Punit Mayan Ruins</div>
+      </a>
+  </div>
+    <div class="grid-item-pic">
         <a href="spiceFarm.html">
                 <img class="grid-image">
-                Tropical Spice Farm</a>
+                <div>Tropical Spice Farm</div>
+        </a>
     </div>
-    <div class="grid-item">
-      <a href="jungleTubing.html">
-              <img class="grid-image">
-              Jungle River Tubing </a>
-    </div>
-    <div class="grid-item">
+    <div class="grid-item-pic">
         <a href="waterfalls.html">
                 <img class="grid-image">
-                Waterfalls</a>
+                <div>Waterfalls</div>
+        </a>
     </div>
+  </div>
+<div class="smolTitle">Other Popular Tours</div>
 
-    <div class="grid-item">
+<div class="grid-container">
+    <div class="grid-item-pic">
+        <a href="lubaantun.html">
+                <img class="grid-image">
+                <div>Lubaantun Mayan Ruins</div>
+        </a>
+    </div>
+    <div class="grid-item-pic">
+      <a href="jungleTubing.html">
+              <img class="grid-image">
+              <div>Jungle River Tubing</div>
+       </a>
+    </div>
+    <div class="grid-item-pic">
         <a href="cave.html">
                 <img class="grid-image">
-                Inland Blue Hole</a>
+                <div>Inland Blue Hole</div>
+        </a>
     </div>
-    <div class="grid-item">
+    <div class="grid-item-pic">
             <a href="blueHole.html">
                     <img class="grid-image">
-                    Blue Hole Flyover</a>
+                    <div>Blue Hole Flyover</div>
+            </a>
     </div>
-    <div class="grid-item">
+    <div class="grid-item-pic">
             <a href="southWaterSnorkel.html">
                     <img class="grid-image">
-                    South Water Caye Snorkeling</a>
+                    <div>South Water Caye Snorkeling</div>
+            </a>
     </div>
-    <div class="grid-item">
+    <div class="grid-item-pic">
         <a href="southwaterFishing.html">
           <img class="grid-image">
-          South Water Caye Fishing</a>
+          <div>South Water Caye Fishing</div>
+        </a>
     </div>
-    <div class="grid-item">
+    <div class="grid-item-pic">
         <a href="atm.html">
           <img class="grid-image">
-          ATM Cave</a>
+          <div>ATM Cave</div>
+        </a>
     </div>
-    <div class="grid-item">
+    <div class="grid-item-pic">
         <a href="caveTubing.html">
           <img class="grid-image">
-          Cave Tubing</a>
+          <div>Cave Tubing</div>
+        </a>
     </div>
-    <div class="grid-item">
+    <div class="grid-item-pic">
         <a href="twinCities.html">
           <img class="grid-image">
-          Twin Cities Mayan Ruins</a>
+          <div>Twin Cities Mayan Ruins</div>
+        </a>
+    </div>
+    <div class="grid-item-pic">
+        <a href="zoo.html">
+          <img class="grid-image">
+          <div>Belize Zoo</div>
+        </a>
+    </div>
+    <div class="grid-item-pic">
+        <a href="yacht.html">
+          <img class="grid-image">
+          <div>Caribbean Boat Charter</div>
+        </a>
     </div>
   </div>
   <script>
-    let imageNames = ["nimLiSquare","lubaantunSquare","spiceFarmSquare","southStaanSquare","waterfallsSquare","inlandBlueHoleSquare","blueHoleSquare","southSnorkelSquare","southFishSquare","atmSquare","caveTubingSquare","twinCitiesSquare"];
+    let imageNames = ["nimLiSquare","spiceFarmSquare","waterfallsSquare",
+    "lubaantunSquare","southStaanSquare","inlandBlueHoleSquare","blueHoleSquare","southSnorkelSquare","southFishSquare","atmSquare","caveTubingSquare","twinCitiesSquare",
+    "zooSquare","yachtSquare"];
   </script>
   <script src="assets/js/homeScript.js"></script>
+  <script src="assets/js/genericScript.js">
+  </script>
 
 </body>
 
