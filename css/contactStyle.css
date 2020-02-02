@@ -251,6 +251,7 @@ select{
 
 	border-style: solid;
 	border-color: #ffde7d;
+	border-color: #00b8a9;
 	border-radius:10px;
 	border-width:3px;
 }
@@ -335,11 +336,14 @@ deal with it explicitly
   border-width:2px;
   border-style: solid;
   border-color: #00b8a9;
+	background-color: #1d3d75;
+border-color: #1d3d75;
 }
 
 .alertBox{
   color: rgb(200,200,200);
 	color: #00b8a9;
+	color: #F6416c;
   font-size: 1.6vw;
   line-height: 2vw;
 
@@ -350,7 +354,8 @@ deal with it explicitly
   border-width:2px;
   border-style: solid;
   border-color: rgb(23, 123, 211);
-	border-color: #F6416c;
+
+	/*border-color: #F6416c;*/
 }
 
 .creditCardForm .payment .btn:hover{
@@ -420,6 +425,7 @@ deal with it explicitly
   margin-right: 0px;
   font-size: 16px;
 	border-color: #F6416c;
+	border-color: rgb(23, 123, 211)
 }
 
 #ppCont{
