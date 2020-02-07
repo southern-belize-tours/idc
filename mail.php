@@ -1,5 +1,7 @@
 <?php
 
+require 'vendor/autoload.php';
+
 $email='ianfeekes@gmail.com';
 $senderEmail='ifeekes@ucsc.edu';
 $name='placencia action tours';
