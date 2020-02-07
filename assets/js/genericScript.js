@@ -128,7 +128,7 @@
       if (itms.length==0)itms=document.getElementsByClassName("grid-item-pic");
       for(let i=0;i<itms.length;++i)
       {
-        //For our cruise and hotel logos we don't want them to change 
+        //For our cruise and hotel logos we don't want them to change
         if(itms[i].parentElement.parentElement.getAttribute("class")=="grid-two")continue;
         let stripe = document.createElement("DIV");
         stripe.setAttribute("class","stripe");
