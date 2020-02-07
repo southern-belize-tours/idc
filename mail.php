@@ -1,56 +1,23 @@
 <?php
 
 require 'vendor/autoload.php';
+//require("<PATH TO>/sendgrid-php.php");
 
-$email='ianfeekes@gmail.com';
-$senderEmail='ifeekes@ucsc.edu';
-$name='placencia action tours';
-$body='Congrats on your reservation';
-$subject='test email';
-
-$headers=array(
-  "Authorization: Bearer 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",
-  "Content-Type: application/json"
+$email = new \SendGrid\Mail\Mail();
+$email->setFrom("test@example.com", "Example User");
+$email->setSubject("Sending with Twilio SendGrid is Fun");
+$email->addTo("test@example.com", "Example User");
+$email->addContent("text/plain", "and easy to do anywhere, even with PHP");
+$email->addContent(
+    "text/html", "<strong>and easy to do anywhere, even with PHP</strong>"
 );
-$data=array(
-  "personalizations"=>array(
-    array(
-      "to"=> array(
-        array(
-          "email"=> $email,
-          "name"=> $name
-        )
-      )
-    )
-  ),
-  "from"=>array(
-    "email"=> $senderEmail
-  ),
-  "subject"=>$subject,
-  "content"=>array(
-    array(
-      "type"=>"text/html",
-      "value"=>$body
-    )
-  )
-);
-
-$ch = curl_init();
-curl_setopt($ch,CURLOPT_URL,"https://api.sendgrid.com/v3/mail/send");
-curl_setopt($ch,CURLOPT_POST, 1);
-curl_setopt($ch,CURLOPT_POSTFIELDS,json_encode($data));
-curl_setopt($ch,CURLOPT_HTTPHEADER,$headers);
-curl_setopt($ch,CURLOPT_FOLLOWLOCATION,1);
-curl_setopt($ch,CURLOPT_RETURNTRANSFER,1);
-$response = curl_execute($ch);
-curl_close($ch);
-
-echo $response;
-
-/*if (mail($receiver,$subject,$message,$header)===TRUE){
-  echo "Thanks. Email sent";
+$sendgrid = new \SendGrid(getenv('SENDGRID_API_KEY'));
+try {
+    $response = $sendgrid->send($email);
+    print $response->statusCode() . "\n";
+    print_r($response->headers());
+    print $response->body() . "\n";
+} catch (Exception $e) {
+    echo 'Caught exception: '. $e->getMessage() ."\n";
 }
-else{
-  echo "We're sorry....";
-}*/
 ?>
