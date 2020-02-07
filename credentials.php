@@ -28,6 +28,8 @@ $sg = new \SendGrid($apiKey);
 
 $response = $sg->client->mail()->send()->post($request_body);
 echo $response->statusCode();
+echo "<br>";
 echo $response->body();
+echo "<br>";
 echo $response->headers();
 ?>
