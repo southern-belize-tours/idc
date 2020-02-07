@@ -11,7 +11,7 @@ $headers=array(
   "Content-Type: application/json"
 );
 $data=array(
-  "personalization"=>array(
+  "personalizations"=>array(
     array(
       "to"=> array(
         array(
@@ -42,6 +42,8 @@ curl_setopt($ch,CURLOPT_FOLLOWLOCATION,1);
 curl_setopt($ch,CURLOPT_RETURNTRANSFER,1);
 $response = curl_execute($ch);
 curl_close($ch);
+
+echo $response;
 
 /*if (mail($receiver,$subject,$message,$header)===TRUE){
   echo "Thanks. Email sent";
