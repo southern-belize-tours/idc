@@ -19,10 +19,12 @@ $email->addContent(
 $sendgrid = new \SendGrid(getenv('SENDGRID_API_KEY'));
 try {
     $response = $sendgrid->send($email);
+    echo'send it';
     print $response->statusCode() . "\n";
     print_r($response->headers());
     print $response->body() . "\n";
 } catch (Exception $e) {
+    echo 'fuck';
     echo 'Caught exception: '. $e->getMessage() ."\n";
 }
 ?>
