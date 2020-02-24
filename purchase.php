@@ -17,7 +17,7 @@
               . 'Congrats on your booking on '.$_POST['month'] .$_POST['day'] .$_POST['year'] . '! We are very excited to show you the wonders of Belize! \n'
               ;
 
-  $mail->Body = 'Congrats on your booking! We are very excited to show you the wonders of Belize!';
+  $mail->Body = $messageBody; 
   $mail->isHTML();
   $mail->AddAddress('ifeekes@ucsc.edu');    //Add addresses for all necessary people eg julian and whoever confirmed it
   //$mail->AddAddress('ianfeekes@gmail.com');
