@@ -39,9 +39,14 @@
     }
   }
 
+  $tourDeposit = strval((float)(floatval($_POST['totalUSD'])/10));
+  $remainderCost = strval(floatval($_POST['totalUSD'])-floatval($tourDeposit));
+  $remainderBZE = strval(floatval($remainderCost/2));
+
   $messageBody = '<div style="font-size:18;color: #222222;">Dear ' .$_POST['first_name'].' ' .$_POST['last_name'] .',<br>'
               . 'Congrats on your booking on '.$_POST['month'] .'/'.$_POST['day'].'/20' .$_POST['year'] . '! We are very excited to show you the wonders of Belize! <br>'
               .$checkedTours
+              . '<br>' . 'You have payed a nonrefundable tour deposit of ' . $tourDeposit ' through Paypal. The remainder of ' .$remainderCost . 'USD or '.$remainderBZE .'Belizian Dollars is to be payed to your tour guide in cash.'
               . '</div>';
 
   $mail->Body = $messageBody;
