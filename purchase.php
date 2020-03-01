@@ -31,11 +31,11 @@
     array('zoo','Belize Zoo')
   );
 
-  $checkedTours = "Your party of ".$_POST['partySize'] . "has booked the following tours: <br>";
+  $checkedTours = "Your party of ".$_POST['partySize'] . " has booked the following tours: <br>";
   foreach($tourOptions as $tour){
     if(!empty($_POST[$tour[0]]))
     {
-      $checkedTours = $checkedTours . '   ' . $tour[1] . '<br>';
+      $checkedTours = $checkedTours . '<div style="margin-left:15px;color: blue;">' . $tour[1] . '</div>;
     }
   }
 
