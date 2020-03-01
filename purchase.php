@@ -13,11 +13,23 @@
   $mail->SetFrom('no-reply@southern-belize-tours.com');
   $mail->Subject = 'Booking Confirmed!';
 
-  $messageBody = 'Dear ' .$_POST['first_name'] .$_POST['last_name'] .',\n'
-              . 'Congrats on your booking on '.$_POST['month'] .$_POST['day'] .$_POST['year'] . '! We are very excited to show you the wonders of Belize! \n'
+  $tourOptions = array('nimLi','spiceFarm','jungleTube','waterfallSightseeing','lubaantun',
+        'inlandBlueHole','blueHoleFlyover','southwaterSnorkelHalf','southwaterSnorkelFull',
+        'southWaterFishing','atmCave','caveTubing','twinCities','ziplining','zoo');
+  $checkedTours = "";
+  foreach($tourOptions as $tour){
+    if(!empty($_POST[$tour]))
+    {
+      $checkedTours.=$tour . '<br';
+    }
+  }
+
+  $messageBody = 'Dear ' .$_POST['first_name'].' ' .$_POST['last_name'] .',<br>'
+              . 'Congrats on your booking on '.$_POST['month'] .'/'.$_POST['day'].'/20' .$_POST['year'] . '! We are very excited to show you the wonders of Belize! <br>'
+              .
               ;
 
-  $mail->Body = $messageBody; 
+  $mail->Body = $messageBody;
   $mail->isHTML();
   $mail->AddAddress('ifeekes@ucsc.edu');    //Add addresses for all necessary people eg julian and whoever confirmed it
   //$mail->AddAddress('ianfeekes@gmail.com');
