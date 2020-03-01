@@ -28,7 +28,7 @@
     array('caveTubing','Cave Tubing'),
     array('twinCities','Twin Cities Mayan ruins'),
     array('ziplining','Jungle Ziplining'),
-    array('zoo','Belize Zoo'
+    array('zoo','Belize Zoo')
   );
 
   $checkedTours = "";
