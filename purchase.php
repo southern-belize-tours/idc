@@ -35,7 +35,7 @@
   foreach($tourOptions as $tour){
     if(!empty($_POST[$tour[0]]))
     {
-      $checkedTours = $checkedTours . '<div style="margin-left:15px;color: blue;">' . $tour[1] . '</div>;
+      $checkedTours = $checkedTours . '<div style="margin-left:15px;font-size:18;color: rgb(150,150,150);">' . $tour[1] . '</div>';
     }
   }
 
