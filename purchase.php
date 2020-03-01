@@ -25,9 +25,7 @@
   } */
 
   $messageBody = 'Dear ' .$_POST['first_name'].' ' .$_POST['last_name'] .',<br>'
-              . 'Congrats on your booking on '.$_POST['month'] .'/'.$_POST['day'].'/20' .$_POST['year'] . '! We are very excited to show you the wonders of Belize! <br>'
-              .
-              ;
+              . 'Congrats on your booking on '.$_POST['month'] .'/'.$_POST['day'].'/20' .$_POST['year'] . '! We are very excited to show you the wonders of Belize! <br>';
 
   $mail->Body = $messageBody;
   $mail->isHTML();
