@@ -35,7 +35,7 @@
   foreach($tourOptions as $tour){
     if(!empty($_POST[$tour[0]]))
     {
-      $checkedTours.=$tour[1] . '<br';
+      $checkedTours = $checkedTours . $tour[1] . '<br';
     }
   }
 
