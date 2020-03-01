@@ -35,13 +35,14 @@
   foreach($tourOptions as $tour){
     if(!empty($_POST[$tour[0]]))
     {
-      $checkedTours = $checkedTours . '<div style="margin-left:15px;font-size:18;color: rgb(150,150,150);">' . $tour[1] . '</div>';
+      $checkedTours = $checkedTours . '<div style="margin-left:15px;font-size:18;color: rgb(23,123,211);">' . $tour[1] . '</div>';
     }
   }
 
-  $messageBody = 'Dear ' .$_POST['first_name'].' ' .$_POST['last_name'] .',<br>'
+  $messageBody = '<div style="font-size:18;color: #222222;">Dear ' .$_POST['first_name'].' ' .$_POST['last_name'] .',<br>'
               . 'Congrats on your booking on '.$_POST['month'] .'/'.$_POST['day'].'/20' .$_POST['year'] . '! We are very excited to show you the wonders of Belize! <br>'
-              .$checkedTours;
+              .$checkedTours
+              . '</div>';
 
   $mail->Body = $messageBody;
   $mail->isHTML();
