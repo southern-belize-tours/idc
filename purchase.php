@@ -13,7 +13,7 @@
   $mail->SetFrom('no-reply@southern-belize-tours.com');
   $mail->Subject = 'Booking Confirmed!';
 
-  /*$tourOptions = array('nimLi','spiceFarm','jungleTube','waterfallSightseeing','lubaantun',
+  $tourOptions = array('nimLi','spiceFarm','jungleTube','waterfallSightseeing','lubaantun',
         'inlandBlueHole','blueHoleFlyover','southwaterSnorkelHalf','southwaterSnorkelFull',
         'southWaterFishing','atmCave','caveTubing','twinCities','ziplining','zoo');
   $checkedTours = "";
@@ -22,7 +22,7 @@
     {
       $checkedTours.=$tour . '<br';
     }
-  } */
+  }
 
   $messageBody = 'Dear ' .$_POST['first_name'].' ' .$_POST['last_name'] .',<br>'
               . 'Congrats on your booking on '.$_POST['month'] .'/'.$_POST['day'].'/20' .$_POST['year'] . '! We are very excited to show you the wonders of Belize! <br>';
