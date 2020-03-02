@@ -444,19 +444,42 @@ a
                         <label for="cardNumber">Message for Us <span style="color: rgb(180,180,180)">(optional)</span></label>
                         <textarea id="message" class= "form-control" rows=2 name="txt" placeholder="We are interested in trying some authentic Belizian cuisine. Could you take us to some places?"></textarea>
                 </div>
-                <div class="form-group full-width" id="card-number-field">
-                    <label for="cardNumber">Total
-                        <div class="alertBox" id="alertBox2"></div>
-                    </label>
-                    <div class="form-group prices blue">
-                        <span id="indent">
-                            USD: $<label id="totalField">0</label>
-                        </span>
+                <div class="form-group full-width priceGridContainer">
+
+                  <div class="priceBox">
+                    Total:
+                  </div>
+                  <div class="priceBox">
+                    $<span id="totalField">0</span> USD
+                  </div>
+                  <div class="priceBox">
+                    BZ $<span id="totalFieldBze">0</span>
+                  </div>
+                  <div class="priceBox">
+                    Booking Deposit:
+                  </div>
+                  <div class="priceBox">
+                    $<span id="depositUS">0</span> USD
+                  </div>
+                  <div class="priceBox">
+                  </div>
+                  <div class="priceBox">
+                    Remaining payment to guide:
+                  </div>
+                  <div class="priceBox">
+                    $<span id="guideUS">0</span> USD
+                  </div>
+                  <div class="priceBox">
+                    BZ $<span id="guideBze">0</span>
+                  </div>
+                  <input style="display:none" name="totalUSD" id="totalUSD">
+                </div>
+
+                <div class="form-group">
+                    You pay deposit fee now via Paypal and pay the remaining balance to tour guide on the day of tour.<span style="color:red;font-size:12pt";>*</span>
+                    <div style="font-size:8pt">
+                      *Deposit fee nonrefundable, USD only.
                     </div>
-                    <div class="form-group prices blue">
-                        BZE: $<label id="totalFieldBze">0</label>
-                    </div>
-                    <input style="display:none" id="totalUSD" name = "totalUSD">
                 </div>
 
                 <!--type="submit" name="submit" THose fields taken from submit button-->
@@ -579,8 +602,11 @@ a
                 sendTextToHTML(alertBoxes[i].getAttribute("id"),alertString);
             }
             sendTextToHTML("totalField", totalPrice);
-            document.getElementById("totalUSD").value=totalPrice;
+            sendTextToHTML("depositUS", totalPrice/10);
             sendTextToHTML("totalFieldBze", totalPrice*2);
+            sendTextToHTML("guideUS", totalPrice*.9);
+            sendTextToHTML("guideBze", totalPrice*2*.9);
+            document.getElementById("totalUSD").value=totalPrice;
             return totalPrice;
         }
 
