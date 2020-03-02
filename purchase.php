@@ -11,7 +11,7 @@
   $mail->Username = 'SouthernBelizeTours@gmail.com'; //change this later
   $mail->Password = 'eaglei`1pwcs!!';
   $mail->SetFrom('no-reply@southern-belize-tours.com');
-  $mail->Subject = 'Booking Confirmed!';
+  $mail->Subject = 'Booking Confirmed! Do Not Reply!';
 
   $tourOptions = array(
     array('nimLi','Nim Li Punit Mayan ruins'),
