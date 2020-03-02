@@ -41,7 +41,7 @@
   $location="";
   if(empty($_POST['hotelAddress']) || $_POST['hotelAddress']=='')
   {
-    $location="Placencia Docks. Please try to take the earliest possible ferry from Harvest Caye, the Norweigan Cruise Line drop off point.";
+    $location="Placencia Docks. Please try to take the earliest possible ferry from Harvest Caye, the Norweigan Cruise Line drop off point, as the ferries often meet capacity.";
   }
   else $location = $_POST['hotelAddress'];
 
@@ -52,11 +52,12 @@
   $messageBody = '<div style="font-size:18;">' .$_POST['first_name'].' ' .$_POST['last_name'] .',<br>'
               . 'Congrats on your booking on '.$_POST['month'] .'/'.$_POST['day'].'/20' .$_POST['year'] . '! We are very excited to show you the wonders of Belize! <br>'
               .$checkedTours
-              . '<br>' . 'The total cost for your bookings is $' .$_POST['totalUSD'] .
-              'You have payed a nonrefundable tour deposit of $' . $tourDeposit .
+              . '<br>' . 'The total cost for your bookings is $' .$_POST['totalUSD'] . '.<br>'
+              .'You have payed a nonrefundable tour deposit of $' . $tourDeposit .
               ' through Paypal. The remainder of $' .$remainderCost . ' USD or $'.$remainderBZE
                .' Belizian Dollars is to be payed to your tour guide in cash.'
-               .'<br> Before your tour, you can expect our guides to contact you at your email '.$_POST['email'].' discussing logistics. We will be picking you up from'
+               .'<br> Before your tour, you can expect our guides to contact you at your email '.$_POST['email'].' discussing logistics.'
+               .'<br> We will be picking you up from '
                .$location
               . '</div>';
 
