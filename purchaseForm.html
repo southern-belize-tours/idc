@@ -450,13 +450,13 @@ a
                     </label>
                     <div class="form-group prices blue">
                         <span id="indent">
-                            USD: $<label id="totalField" name="totalUSD">0</label>
+                            USD: $<label id="totalField">0</label>
                         </span>
                     </div>
                     <div class="form-group prices blue">
                         BZE: $<label id="totalFieldBze">0</label>
                     </div>
-                    <input style="display:none" name = "totalUSD">
+                    <input style="display:none" id="totalUSD" name = "totalUSD">
                 </div>
 
                 <!--type="submit" name="submit" THose fields taken from submit button-->
@@ -579,7 +579,7 @@ a
                 sendTextToHTML(alertBoxes[i].getAttribute("id"),alertString);
             }
             sendTextToHTML("totalField", totalPrice);
-            document.getElementByName("totalUSD").value=totalPrice;
+            document.getElementById("totalUSD").value=totalPrice;
             sendTextToHTML("totalFieldBze", totalPrice*2);
             return totalPrice;
         }
