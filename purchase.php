@@ -38,7 +38,8 @@
       $checkedTours = $checkedTours . '<div style="margin-left:15px;font-size:18;color: rgb(23,123,211);">' . $tour[1] . '</div>';
     }
   }
-  echo $_POST['totalUSD'];
+  if(empty($_POST['totalUSD']){echo 'cannot find html element for total usd';}
+  else {echo($_POST['totalUSD']);}
   $tourDeposit = strval((float)(floatval($_POST['totalUSD'])/10));
   $remainderCost = strval(floatval($_POST['totalUSD'])-floatval($tourDeposit));
   $remainderBZE = strval(floatval($remainderCost/2));

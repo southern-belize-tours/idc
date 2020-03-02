@@ -449,7 +449,7 @@ a
                         <div class="alertBox" id="alertBox2"></div>
                     </label>
                     <div class="form-group prices blue">
-                        <span id="indent">
+                        <span id="indent" name="totalUSD">
                             USD: $<label id="totalField" name="totalUSD">0</label>
                         </span>
                     </div>
@@ -505,7 +505,7 @@ a
         {
             let el = document.getElementById(elementId);
             el.innerHTML = textString;
-            el.innerText = textString; 
+            el.innerText = textString;
         }
 
         function computePrice()
