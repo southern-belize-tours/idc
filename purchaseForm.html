@@ -579,7 +579,7 @@ a
                 sendTextToHTML(alertBoxes[i].getAttribute("id"),alertString);
             }
             sendTextToHTML("totalField", totalPrice);
-            document.getElementById("totalUSD").value=totalPrice; 
+            document.getElementByName("totalUSD").value=totalPrice;
             sendTextToHTML("totalFieldBze", totalPrice*2);
             return totalPrice;
         }
