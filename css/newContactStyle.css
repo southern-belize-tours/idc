@@ -6,14 +6,29 @@
 
 }
 
+
+
+#months,#days,#years{
+	width:100%;
+	font-size: 16px;
+	height: 45px;
+	padding-left: 10px;
+}
+
+
+
+.checkbox-container-container{
+	margin-left: 10px;
+	margin-top: 10px;
+}
 .contactParagraph{
 	text-align: left;
-	size: 3vw;
-	line-height: 3vw;
+	font-size: 16;
+	line-height: 18px;
+	text-indent: 0px;
+	max-width: 800px;
 	margin-left: auto;
 	margin-right: auto;
-	text-indent: 0px;
-	max-width: 80%;
 }
 
 select{
@@ -91,9 +106,9 @@ select{
     display: block;
     position: relative;
     padding-left: 35px;
-    margin-bottom: 12px;
+    padding-bottom: 12px;
     cursor: pointer;
-    font-size: 1.2vw;
+    font-size: 15;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -207,7 +222,6 @@ select{
 /* Create a custom checkbox */
 .checkmark {
   position: absolute;
-  top: 0;
   left: 0;
   height: 25px;
   width: 25px;
@@ -248,13 +262,12 @@ select{
 }
 
 .creditCardForm {
-  max-width: 700px;
-  max-width: 70%;
+  max-width: 800px;
   background-color: #fff;
   margin: 100px auto;
   margin-top: 50px;
   overflow: hidden;
-  padding: 25px;
+	padding-top:0px;
   color: rgb(16, 133, 39);
 	color: #3b8ac4;
 	color: #345da7;
@@ -262,11 +275,12 @@ select{
 	border-style: solid;
 border-radius: 10px;
 border-width: 3px;
-border-color: #ffde7d
+border-color: #ffde7d;
+border-color: #00b8a9;
 }
 .creditCardForm label {
   width: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .creditCardForm .heading h1 {
   text-align: center;
@@ -278,8 +292,7 @@ border-color: #ffde7d
 }
 .creditCardForm .payment {
   float: left;
-  font-size: 18px;
-  font-size: 1.8vw;
+  font-size: 16px;
   padding: 10px 25px;
   margin-top: 20px;
   position: relative;
@@ -334,8 +347,16 @@ deal with it explicitly
 }
 
 .creditCardForm #expiration-date {
-  /*width: 49%; */
+	width:100%;
+	display:grid;
+	grid-template-columns:auto auto auto;
+	grid-column-gap:10px;
 }
+
+#tourDate{
+	width:100%;
+}
+
 .creditCardForm #credit_cards {
   width: 50%;
   margin-top: 25px;
@@ -355,6 +376,7 @@ deal with it explicitly
   border-width:2px;
   border-style: solid;
   border-color: rgb(23, 123, 211);
+	height: 40px;
 }
 
 .alertBox{
@@ -375,8 +397,8 @@ deal with it explicitly
 .creditCardForm .payment .btn:hover{
   /*color: rgb(27, 59, 187);
   background-color:white; */
-  border-color: rgb(27, 59, 187);
-  background-color: rgb(27, 59, 187);
+  border-color:  #1d3d75;
+  background-color:  #1d3d75;
 }
 .creditCardForm .payment select {
   padding: 10px;
@@ -409,18 +431,33 @@ deal with it explicitly
     z-index: 1;
   }
 
+@media(max-width: 900px)
+{
+	.contactParagraph,.creditCardForm{
+		max-width:80%;
+	}
+}
+
+@media(max-width:750px)
+{
+	.contactParagraph,.creditCardForm{
+		max-width: 90%;
+	}
+}
+
 @media(max-width: 650px) {
 .creditCardForm .owner,
 .creditCardForm .CVV,
 .creditCardForm #expiration-date,
-.creditCardForm #credit_cards {
+.creditCardForm #credit_cards,
+#email.form-group{
     width: 100%;
 }
 .creditCardForm #credit_cards {
     text-align: left;
 }
 	.checkbox-container{
-		font-size: 1.8vw;
+		font-size: 12;
 	}
 
 }
@@ -439,10 +476,15 @@ deal with it explicitly
   border-style:solid;
   border-color: rgb(23, 123, 211);
 	border-color: #F6416c;
+	border-color: rgb(23, 123, 211);
   border-radius:5px;
   width:100%;
   margin-right: 0px;
   font-size: 16px;
+}
+
+#days,#months,#years{
+	border-color: rgb(23, 123, 211);
 }
 
 #ppCont{
@@ -457,6 +499,14 @@ deal with it explicitly
   display:none;
 }
 
+
+@media(min-width:700px)
+{
+	.contactParagraph{
+		line-height:20px;
+	}
+}
+
 @media(min-width: 1100px)
 {
   #ppCont{
@@ -465,6 +515,7 @@ deal with it explicitly
     margin-left: auto;
     margin-right: auto;
   }
+
 }
 
 @media(max-width:1024px)
@@ -473,7 +524,6 @@ deal with it explicitly
   .title{
     margin-top: 20px;
     margin-bottom: 20px;
-
   }
 }
 
@@ -481,7 +531,12 @@ deal with it explicitly
 @media(max-width:426px)
 {
 	.checkbox-container{
-		font-size: 3vw;
+		font-size: 12;
+	}
+
+	.checkbox-container-container{
+		margin-left: 5px;
+		margin-top:0px;
 	}
 
 	.contactParagraph{
@@ -546,6 +601,10 @@ border-color: #ffde7d;
     margin-bottom: 7px;
   }
 
+	#textBox{
+		height: auto;
+	}
+
   #numPeople.form-control{
     font-size: 16px;
 
@@ -598,12 +657,15 @@ border-color: #ffde7d;
   }
 
   #days, #months, #years{
-    width: 30%;
     margin:auto;
-    margin-right: 8px;
     padding:0px;
-    font-size: 3vw;
+		padding-left:10px;
+    font-size: 12;
   }
+
+	#years{
+		right:0px;
+	}
 
   #expiration-date.form-group{
     margin-bottom: 7px;
@@ -635,4 +697,55 @@ border-color: #ffde7d;
    margin-bottom: 5px;
  }
 
+}
+
+@media(min-width:1000px)
+{
+
+.creditCardForm #expiration-date{
+	grid-column-gap: 20px;
+}
+
+	.contactParagraph,.creditCardForm{
+		/*margin-left: 200px;
+		margin-right:200px;*/
+		padding-left: 0px;
+		padding-right: 0px;
+		max-width: 800px;
+	}
+
+	.checkbox-container-container{
+		margin-left: 20px;
+		margin-top: 20px;
+	}
+
+	.creditCardForm .payment{
+		font-size: 20;
+	}
+
+	label.checkbox-container{
+		font-size: 18;
+		padding-top: 6px;
+		padding-bottom: 6px;
+	}
+}
+
+@media(min-width:1500px)
+{
+	.creditCardForm .introParagraph{
+		max-width: 1400px;
+	}
+
+
+	.creditCardForm .payment{
+		padding-left: 60px;
+		padding-right: 60px;
+	}
+	.creditCardForm #expiration-date{
+		grid-column-gap: 30px;
+	}
+
+	.contactParagraph,.creditCardForm{
+		max-width:1000px;
+	}
 }

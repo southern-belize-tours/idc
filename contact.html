@@ -225,16 +225,17 @@ If you have any questions, need any special accomodations, or are interested in 
 
 <div class="creditCardForm">
         <div class="payment">
-            <form action="credentials.php" method="POST"
-   accept-charset="UTF-8"
-   enctype="multipart/form-data">
+            <form action="contact.php"
+            accept-charset="UTF-8"
+            enctype="multipart/form-data"
+            method="post">
                 <div class="form-group owner">
                     <label for="first_name">First Name</label>
-                    <input type="text" class="form-control" name = "name" id="owner" placeholder="Eiluv" required>
+                    <input type="text" class="form-control" name = "first_name" id="owner" placeholder="Eiluv" required>
                 </div>
                 <div class="form-group CVV">
                     <label for="last_name">Last Name</label>
-                    <input type="text" class="form-control" id="cvv" placeholder="Belize" required>
+                    <input type="text" class="form-control" id="cvv" name="last_name" placeholder="Belize" required>
                 </div>
                 <div class="form-group" id="email">
                     <label for="cardNumber">Email Address</label>
@@ -242,69 +243,73 @@ If you have any questions, need any special accomodations, or are interested in 
                 </div>
                 <div class="form-group CVV">
                         <label for="cardNumber">Size of Party (minimum 2)</label>
-                        <input type="text" class="form-control" id="cardNumber" placeholder="13">
+                        <input type="text" class="form-control" name="partySize" id="cardNumber" placeholder="13">
                 </div>
                 <div class="form-group" id="card-number-field">
                     <label for="cardNumber">Tours (Check All Items of Interest)</label>
-                    <div style="margin-top:2vw;margin-left:2vw;">
+                    <div class="checkbox-container-container">
                         <label class=checkbox-container>
-                            <input type="checkbox"> Nim Li Punit Mayan Ruins
+                            <input type="checkbox"name="nimLi"> Nim Li Punit Mayan Ruins
                             <span class="checkmark"></span>
                         </label>
                         <label class=checkbox-container>
-                            <input type="checkbox"> Lubantuun Mayan Ruins
+                            <input type="checkbox"name="lubaantun"> Lubantuun Mayan Ruins
                             <span class="checkmark"></span>
                         </label>
                         <label class=checkbox-container>
-                            <input type="checkbox"> Spice Farm Tropical Botanical Garden
+                            <input type="checkbox"name = "spiceFarm"> Spice Farm Tropical Botanical Garden
                             <span class="checkmark"></span>
                         </label>
                         <label class=checkbox-container>
-                            <input type="checkbox"> Jungle River Tubing
+                            <input type="checkbox"name = "jungleTube"> Jungle River Tubing
                             <span class="checkmark"></span>
                         </label>
                         <label class=checkbox-container>
-                            <input type="checkbox"> Waterfall Sightseeing
+                            <input type="checkbox"name = "waterfallSightseeing"> Waterfall Sightseeing
                             <span class="checkmark"></span>
                         </label>
                         <label class=checkbox-container>
-                            <input type="checkbox"> Inland Blue Hole and Cave
+                            <input type="checkbox"name = "inlandBlueHole"> Inland Blue Hole and Cave
                             <span class="checkmark"></span>
                         </label>
                         <label class=checkbox-container>
-                            <input type="checkbox"> Blue Hole Flyover
+                            <input type="checkbox"name="blueHoleFlyover"> Blue Hole Flyover
                             <span class="checkmark"></span>
                         </label>
                         <label class=checkbox-container>
-                            <input type="checkbox"> Southwater Caye Snorkeling
+                            <input type="checkbox" class="tourOption" name="southwaterSnorkelHalf"> Southwater Caye Snorkeling (Half Day)
                             <span class="checkmark"></span>
                         </label>
                         <label class=checkbox-container>
-                            <input type="checkbox"> Southwater Caye Fishing
+                                <input type="checkbox" class="tourOption" name="southwaterSnorkelFull"> Southwater Caye Snorkeling (Full Day)
+                                <span class="checkmark"></span>
+                            </label>
+                        <label class=checkbox-container>
+                            <input type="checkbox"name="southwaterFishing"> Southwater Caye Fishing
                             <span class="checkmark"></span>
                         </label>
                         <label class=checkbox-container>
-                            <input type="checkbox"> ATM Cave Tour
+                            <input type="checkbox"name="atmCave"> ATM Cave Tour
                             <span class="checkmark"></span>
                         </label>
                         <label class=checkbox-container>
-                            <input type="checkbox"> Cave Tubing
+                            <input type="checkbox"name="caveTubing"> Cave Tubing
                             <span class="checkmark"></span>
                         </label>
                         <label class=checkbox-container>
-                            <input type="checkbox"> Twin Cities Mayan Ruins
+                            <input type="checkbox"name="twinCities"> Twin Cities Mayan Ruins
                             <span class="checkmark"></span>
                         </label>
                         <label class=checkbox-container>
-                            <input type="checkbox"> Rainforest Ziplining
+                            <input type="checkbox"name="ziplining"> Rainforest Ziplining
                             <span class="checkmark"></span>
                         </label>
                         <label class=checkbox-container>
-                            <input type="checkbox"> Belize Zoo
+                            <input type="checkbox"name="zoo"> Belize Zoo
                             <span class="checkmark"></span>
                         </label>
                         <label class=checkbox-container>
-                            <input type="checkbox"> Caribbean Boat Charter
+                            <input type="checkbox"name="boat"> Caribbean Boat Charter
                             <span class="checkmark"></span>
                         </label>
                     </div>
@@ -314,13 +319,14 @@ If you have any questions, need any special accomodations, or are interested in 
                 </div>
                 <div class="form-group" id="card-number-field">
                         <label for="cardNumber">Pick up Location</label>
-                        <input type="text" class="form-control" id="cardNumber" placeholder="Placencia Docks (Harvest Caye Drop-Off)">
+                        <input type="text" class="form-control" id="cardNumber" name="location" placeholder="Placencia Docks (Harvest Caye Drop-Off)">
                 </div>
-                <div class="form-group" id="expiration-date">
-                    <label>Desired Tour Date</label>
-                    <select id="days">
+                <div class="form-group" id="tourDate">
+                  <label>Desired Tour Date</label>
+                  <div id="expiration-date">
+                    <select id="days" name = "day">
                     </select>
-                    <select id="months" onchange = "showDays()">
+                    <select id="months" name = "month" onchange = "showDays()">
                         <option value="01">January</option>
                         <option value="02">February </option>
                         <option value="03">March</option>
@@ -334,7 +340,7 @@ If you have any questions, need any special accomodations, or are interested in 
                         <option value="11">November</option>
                         <option value="12">December</option>
                     </select>
-                    <select id="years" onchange="showDays()">
+                    <select id="years" name="year" onchange="showDays()">
                         <option value="19"> 2019</option>
                         <option value="20"> 2020</option>
                         <option value="21"> 2021</option>
@@ -343,11 +349,12 @@ If you have any questions, need any special accomodations, or are interested in 
                         <option value="24"> 2024</option>
                         <option value="25"> 2025</option>
                     </select>
+                  </div>
                 </div>
 
                 <div class="form-group" id="card-number-field">
                         <label for="cardNumber">Message for us</label>
-                        <textarea class= "form-control" required rows=8 name="text" style="width:100%;resize:none;line-height:25px;" placeholder="We have a school trip of 50+ students coming for the first week of July and were wondering if you could accomodate us for the week. Please email me at jdoe@example.com to discuss prices and logistics."></textarea>
+                        <textarea name = 'msg' class= "form-control" id="textBox" required rows=6 name="text" style="width:100%;resize:none;line-height:25px;" placeholder="We have a school trip of 50+ students coming for the first week of July and were wondering if you could accomodate us for the week. Please email me at jdoe@example.com to discuss prices and logistics."></textarea>
                 </div>
                 <div class="form-group" id="pay-now">
                     <button type="submit" name="submit" class="btn btn-default" id="confirm-purchase">Confirm</button>

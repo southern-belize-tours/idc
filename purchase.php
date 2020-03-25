@@ -64,7 +64,7 @@
 
   $mail->Body = $messageBody;
   $mail->isHTML();
-  //$mail->AddAddress('placencia.action.tours@outlook.com');    //Add addresses for all necessary people eg julian and whoever confirmed it
+  $mail->AddAddress('placencia.action.tours@outlook.com');    //Add addresses for all necessary people eg julian and whoever confirmed it
   //$mail->AddAddress('ianfeekes@gmail.com');
   $mail->AddAddress($_POST['email']);       //This line should be for the user address
 
