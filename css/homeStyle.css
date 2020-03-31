@@ -329,6 +329,14 @@
 @media(max-width:425px)
 {
 
+	#cruiseDropdown a{
+		position:absolute;
+	}
+
+	#cruiseDropdown.show a{
+		position:relative;
+	}
+
 	#exploreBelize{
 		margin-top: 0px;
 		padding-top: 25px;
