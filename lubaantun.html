@@ -8,14 +8,16 @@
 
 </head>
 
+<body>
+<a class="skip-link" href="#maincontent">Skip to main</a>
 <nav id="navbar">
 <div class = "container">
     <ul>
         <li>
             <div class="dropdown" id="ignore">
-                    <button class="dropbtn" id="dropbtnMobile" onclick=dropFunction()>Menu
-                      <img height=15px width=15px src="images/icon1.png" id="dropIndicator">
-                    </button>
+                    <div class="dropbtn" id="dropbtnMobile" onclick=dropFunction()>
+                      <img height=31px width=31px alt="dropdown icon" id="dropIndicator">
+                    </div>
                     <div id="mainDropdown" class="dropdown-content">
                             <a href="index.html" class="blueBtn">
                                 Home
@@ -26,20 +28,20 @@
                             <div class="dropdown">
                                     <button class="dropbtn" onclick=myFunction()>
                                         All Tours
-                                        <img height=15px width=15px src="images/icon3.png" id="dropIndicatorTour">
+                                        <img height=15px width=15px alt="dropdown icon" id="dropIndicatorTour">
                                     </button>
                                     <div id="myDropdown" class="dropdown-content">
-                                      <a href="allTours.html">Land Tours</a>
-                                      <a href="cruiseTours.html">Cruise Tours</a>
-                                      <a href="nimLi.html">Nim Li Punit Mayan Ruins</a>
+                                      <a href="allTours.html">Grid View</a>
+                                      <a href="cruiseTours.html">Cruise Tour Grid View</a>
+                                      <a href="nimLi.html">Nim Li Punit Ruins</a>
                                       <a href="lubaantun.html">Lubaantun Mayan Ruins</a>
                                       <a href="spiceFarm.html">Spice Farm</a>
                                       <a href="jungleTubing.html">River Tubing</a>
                                       <a href="waterfalls.html">Waterfall Sightseeing</a>
                                       <a href="cave.html">Inland Blue Hole & Cave</a>
                                       <a href="blueHole.html">Blue Hole Flyover</a>
-                                      <a href="southWaterSnorkel.html">South Water Caye Snorkeling</a>
-                                      <a href="southWaterFishing.html">South Water Caye Fishing</a>
+                                      <a href="southWaterSnorkel.html">Snorkeling Excursion</a>
+                                      <a href="southWaterFishing.html">Caribbean Fishing</a>
                                       <a href="atm.html">ATM Cave Tour</a>
                                       <a href="caveTubing.html">Cave Tubing</a>
                                       <a href="twinCities.html">Twin Cities Mayan Ruins</a>
@@ -49,11 +51,11 @@
                                     </div>
                                     <button class="dropbtn" onclick=cruiseFunction()>
                                         Cruise Tours
-                                            <img height=15px width=15px src="images/icon3.png" id="dropIndicatorCruise">
+                                            <img height=15px width=15px alt="dropdown icon" id="dropIndicatorCruise">
                                     </button>
                                     <div id="cruiseDropdown" class="dropdown-content">
-                                      <a href="cruiseTours.html">Cruise Tours</a>
-                                      <a href="nimLi.html">Nim Li Punit Mayan Ruins</a>
+                                      <a href="cruiseTours.html">Grid View</a>
+                                      <a href="nimLi.html">Nim Li Punit Ruins</a>
                                       <a href="waterfalls.html">Waterfall Sightseeing</a>
                                       <a href="ziplining.html">Rainforest Ziplining</a>
                                     </div>
@@ -81,19 +83,19 @@
 
         <li>
             <div class="dropdown" id="laptopDropdown">
-                <a class="dropbtn">All Tours</a>
-                <div id="myDropdown" class="dropdown-content">
+                <a class="dropbtn" id="tourNav">All Tours</a>
+                <div id="myDropdown2" class="dropdown-content">
                   <a href="allTours.html">Grid View</a>
                   <a href="cruiseTours.html">Cruise Tours</a>
-                  <a href="nimLi.html">Nim Li Punit Mayan Ruins</a>
+                  <a href="nimLi.html">Nim Li Punit Ruins</a>
                   <a href="lubaantun.html">Lubaantun Mayan Ruins</a>
                   <a href="spiceFarm.html">Spice Farm</a>
                   <a href="jungleTubing.html">River Tubing</a>
                   <a href="waterfalls.html">Waterfall Sightseeing</a>
                   <a href="cave.html">Inland Blue Hole & Cave</a>
                   <a href="blueHole.html">Blue Hole Flyover</a>
-                  <a href="southWaterSnorkel.html">South Water Caye Snorkeling</a>
-                  <a href="southWaterFishing.html">South Water Caye Fishing</a>
+                  <a href="southWaterSnorkel.html">Snorkeling Excursion</a>
+                  <a href="southWaterFishing.html">Caribbean Fishing</a>
                   <a href="atm.html">ATM Cave Tour</a>
                   <a href="caveTubing.html">Cave Tubing</a>
                   <a href="twinCities.html">Twin Cities Mayan Ruins</a>
@@ -103,10 +105,10 @@
                 </div>
             </div>
             <div class="dropdown" id="cruiseLaptopDropdown"style="margin-left: -5px;">
-                <a class="dropbtn">Cruise Tours</a>
-                <div id="myDropdown" class="dropdown-content">
+                <a class="dropbtn" id="cruiseNav">Cruise Tours</a>
+                <div id="cruiseDropdown2" class="dropdown-content">
                   <a href="cruiseTours.html">Grid View </a>
-                  <a href="nimLi.html">Nim Li Punit Mayan Ruins</a>
+                  <a href="nimLi.html">Nim Li Punit Ruins</a>
                   <a href="spiceFarm.html">Spice Farm</a>
                   <a href="waterfalls.html">Waterfall Sightseeing</a>
                   <a href="ziplining.html">Rainforest Ziplining</a>
@@ -126,11 +128,6 @@
         </a>
     </ul>
 </div>
-</nav>
-
-
-<nav id="navBorder">
-    a
 </nav>
 
 <body>
@@ -191,7 +188,7 @@
 </div>
 <p class="introParagraph">
     Also known as "The Place of the Fallen Stones," Lubaantun is well known for the huge difference in architectural design as in comparison to the other sites found in the rest of Belize.
-    The pyramids here are built of black slate with no mortar, rather than the typical limestone blocks  - it resembles more of an ancient military stronghold than a city. 
+    The pyramids here are built of black slate with no mortar, rather than the typical limestone blocks  - it resembles more of an ancient military stronghold than a city.
 </p>
 <p class="introParagraph">
   British explorer Anna Mitchell Hedges discovered a crystal skull in these ruins, which to this day is the most well-known in the international community.
