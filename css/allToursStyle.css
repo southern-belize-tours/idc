@@ -156,14 +156,13 @@
   transform: rotate(45deg);
 }
 
-/*@media(min-width: 1024px)
+@media(min-width: 1024px)
 {
-	.grid-image{
-		height: 300px;
-		width: 300px;
+	.cruiseTitle{
+		font-size:40px;
 	}
 }
-
+/*
 @media(min-width:1440px)
 {
   .grid-container{

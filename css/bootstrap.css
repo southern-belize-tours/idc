@@ -4,7 +4,6 @@
 .skip-link{ position: absolute;
   top: -40px;
   left: 0;
-  background: #000000;
   color: white;
   padding: 8px;
   z-index: 100;}
@@ -94,7 +93,8 @@ transition: all .3s ease-in-out 0s, visibility .3s ease-in-out 0s, z-index 1s li
  }
 
 	.grid-two a:hover > div .smolTitle{
-		color: #00b8a9;;
+		color: rgb(16, 133, 39);
+
 	}
 
 		.grid-container .grid-item-pic{
@@ -108,31 +108,20 @@ transition: all .3s ease-in-out 0s, visibility .3s ease-in-out 0s, z-index 1s li
   }
 
 .grid-item-pic a div{
-  color: rgb(23,123,211);
-  color: #4bb4de;
-  color: #222222;
-  color: #3B8AC4;
   color: #222222;
 }
 
 .grid-item-pic div{
-  color: #EFDBCB;
-  color: #dbc9ba
-  color: rgb(219, 202, 183);
   color: #222222;
 }
 
 .grid-item-pic:hover >a div{
-  color: #fdd036;
-  color: #1d3d75;
-  color: #00B8A9;
-  color: #F6416c;
-  color: #3b8ac4;
+  color: rgb(16, 133, 39);
 }
 
 .grid-two a div .smolTitle{
   transition: .5s ease;
-  color: #F6416c;
+  color: #1d3d75;
 }
 
 
@@ -165,8 +154,7 @@ z-index:100;
   width: 300px;
   z-index:1;
   position: absolute;
-  background-color: #ffde7d;
-  background-color: #00b8a9;
+  background-color: rgb(222, 60, 71);
   opacity: 0;
   height: 7px;
 }
@@ -227,8 +215,7 @@ p
   margin-left: 70px;
   margin-right: 70px;
   border-radius: 15px;
-  border-color: #ffde7d;
-  border-color: #00b8a9;
+  border-color: rgb(23,123,211);
 }
 
 .textBlock .introParagraph{
@@ -242,9 +229,7 @@ p
 }
 
 .bigTitle{
-		color: rgb(23, 123, 211);
     color: #345DA7;
-    color: #3b8ac4;
     font-size: 4vw;
     text-align: center;
     margin-bottom: 30px;
@@ -258,15 +243,6 @@ p
     text-indent:0px;
     text-align:justify;
   }
-
-#navBorderTop
-{
-    height:2px;
-    font-size: 1;
-    color: rgb(255,255,255);
-	background-color: rgb(0, 0, 0);
-    margin-top: 20px;
-}
 
 #navBorder
 {
@@ -325,10 +301,18 @@ p
 	padding-right: 15px;
 }
 
-#navbar
+#navbar, #navbar2
 {
 	background-color: rgb(225, 225, 116);
   background-color: #1d3d75;
+}
+
+#navbar2{
+  border-style:solid;
+  border-color: #222222;
+  border-width: 0px;
+  border-top-width: 2px;
+  margin-top:20px;
 }
 
 #navbar ul
@@ -339,13 +323,22 @@ p
 	padding: 20px 0px;
 }
 
-#navbar ol
+#navbar2 ol
 {
 	padding: 0;
 	margin-bottom:0px;
 	list-style: none;
   padding-top: 30px;
   padding-bottom: 30px;
+  width:100%;
+  text-align:center;
+}
+
+#navbar2 ol li{
+  display:inline-block;
+  padding:0px;
+  margin-left:20px;
+  margin-right:20px;
 }
 
 #navbar li
@@ -547,22 +540,15 @@ p
 
 .slideshowReel .dot {
   cursor: pointer;
-  background-color:#ffa5a5;
-  background-color: #bfcfff;
-  background-color: #c8e7ed;
-  background-color: #4bb4de;
+  background-color: #e3ba30;;
 }
 
 .smolTitle{
 	text-align:center;
-    color:rgb(16, 133, 39);
-    color: #3B8AC4;
-    color: #3B8AC4;
-    color: #222222;
-    color: #F6416c;
-    font-size: 3vw;
-    padding-bottom:10px;
-  }
+  color: rgb(16,133,39);
+  font-size: 3vw;
+  padding-bottom:10px;
+}
 
   .slideImage{
       margin-left: auto;
@@ -660,7 +646,7 @@ p
 	/*-webkit-filter: brightness(70%);*/
   background-color: #3B8ac4;
   background-color: #ffffc2;
-  background-color: #ffde7d;
+  background-color:#1d3d75;
   }
 
 
@@ -678,19 +664,20 @@ p
   @keyframes fading{0%{opacity:0}100%{opacity:1}}
   @keyframes fadeOut{0%{opacity:0}15%{opacity:1}30%{opacity:0}45%{opacity:1}60%{opacity:0}100%{opacity:1}}
 
-  @media(min-width:1440px)
+  @media(min-width:770px)
   {
-    introParagraph{
-      font-size: 2.5vw;
-    }
-
-    .slideshowReel{
-      margin-bottom: 30px;
-    }
+	  .prev, .next{
+		  top:40%;
+	  }
   }
 
   @media(min-width:1024px)
   {
+    .smolTitle{
+      font-size:30px;
+      margin-bottom:10px;
+    }
+
     .slideshowReel{
       margin-bottom: 20px;
     }
@@ -702,13 +689,11 @@ p
 		  width:12px;
 		  height:12px;
 	  }
-  }
 
-  @media(min-width:770px)
-  {
-	  .prev, .next{
-		  top:40%;
-	  }
+    .introParagraph{
+  		font-size:20px;
+  		line-height:24px;
+  	}
   }
 
   @media(max-width: 769px)
@@ -865,24 +850,6 @@ p
       display:none;
     }
 
-	#navbar ol{display:inline-block;width:100%;}
-
-	#bottomBar.container ol li a img{
-		margin-top:5px;
-    margin-top: 25px;
-    margin-bottom: 25px;
-	}
-
-	#bottomBar.container ol li a{
-		display:inline-block;
-    align-items: center;
-	}
-
-  #bottomBar ol{
-    width:100%;
-    text-align:center;
-  }
-
 	.smolTitle{
 		margin-top:10px;
 		margin-bottom:0px;
@@ -929,7 +896,7 @@ p
 		text-align:left;
     padding-left:5px;
     padding-right: 5px;
-    font-size: 11px;
+    font-size: 12px;
     background-color: #1d3d75;
 	}
 
@@ -998,7 +965,7 @@ p
     padding-bottom: 10px;
     text-align: left;
     padding-left: 5px;
-    font-size: 11px;
+    font-size: 12px;
     padding-top: 5px;
     padding-bottom:5px;
     padding-right:5px;
@@ -1132,32 +1099,108 @@ p
 
   @media(min-width:1000px)
   {
+
     .bigTitle{
       margin-top:30px;
-      font-size:40;
+      font-size:40px;
     }
   }
 
   @media(min-width:1440px)
   {
+
+    #exploreBelize{
+      margin-top:40px;
+      margin-bottom:20px;
+    }
+
+
+    .grid-container,.textGridContainer{
+      padding-left:120px;
+      padding-right:120px;
+    }
+
+    .introParagraph{
+      font-size:22px;
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+
+    .slideshowReel{
+      margin-bottom: 30px;
+    }
+
+    .smolTitle{
+      font-size: 30px;
+    }
+
+    .grid-two{
+      padding-top:30px;
+      padding-left:120px;
+      padding-right:120px;
+      grid-column-gap:100px;
+    }
+
+    .grid-two a{
+      padding-top:25px;
+      padding-bottom:25px;
+      padding-left:30px;
+      padding-right:30px;
+    }
+
     .grid-container{
       grid-template-columns: auto auto auto auto;
     }
 
   	.grid-two{
-  		font-size: 2vw;
-  		line-height: 2.4vw;
+      font-size:22px;
+  		line-height: 28px;
   	}
+
+  }
+
+  @media(min-width: 1700px)
+  {
+    .introParagraph{
+      padding-left:85px;
+      padding-right:85px;
+    }
+
+    .grid-two, .textGridContainer{
+      padding-left:160px;
+      padding-right:160px;
+    }
   }
 
   @media(min-width: 1900px)
   {
+    .introParagraph{
+      padding-left:125px;
+      padding-right:125px;
+    }
+
+    .grid-two, .textGridContainer{
+      padding-left:200px;
+      padding-right:200px;
+    }
+  }
+
+  @media(min-width: 2100px)
+  {
     .grid-container{
+
       grid-template-columns: auto auto auto auto auto;
+    }
+
+    .grid-container .grid-item-pic{
+      padding-left:0px;
+      padding-right:0px;
+      width:370px;
     }
 
     .grid-image{
       height: 370px;
+      width: 370px;
     }
 
   }
