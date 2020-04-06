@@ -10,7 +10,7 @@
 <body>
 <a class="skip-link" href="#maincontent">Skip to main</a>
 <nav id="navbar">
-<div class = "container">
+<div class = "container" style="margin-bottom:0px;">
     <ul>
         <li>
             <div class="dropdown" id="ignore">
@@ -132,93 +132,57 @@
 
 <body>
 
-<div class="slideshow-container">
-    <div class="mySlides fade">
-      <div class="numbertext">1 / 4</div>
-      <img class="slideImage" src="images/about/about1.jpg"> <!-- you could do "style=width:100% if you want"-->
-      <div class="text"></div>
-    </div>
-
-    <div class="mySlides fade">
-      <div class="numbertext">2 / 4</div>
-      <img class="slideImage" src="images/about/about2.jpg">
-      <div class="text"></div>
-    </div>
-
-    <div class="mySlides fade">
-        <div class="numbertext">3 / 4</div>
-        <img class="slideImage" src="images/about/about4.jpg">
-        <div class="text"></div>
-    </div>
-
-    <div class="mySlides fade">
-        <div class="numbertext">4 / 4</div>
-        <img class="slideImage" src="images/about/about5.jpg">
-    </div>
-
-
-
-
-
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-
-<div class="slideshowReel">
-<span class="dot" onclick="currentSlide(1)">
-  <image src="images/imageBullet.png"></image>
-</span>
-<span class="dot" onclick="currentSlide(2)">
-  <image src="images/imageBullet.png"></image>
-</span>
-<span class="dot" onclick="currentSlide(3)">
-  <image src="images/imageBullet.png"></image>
-</span>
-<span class="dot" onclick="currentSlide(4)">
-  <image src="images/imageBullet.png"></image>
-</span>
-</div>
-
 <script src="assets/js/genericScript.js"></script>
+<div class=aboutGrid>
+  <div class=aboutItem id="textdiv">
+      <div class = "bigTitle">About Us</div>
 
-<div class = "bigTitle">About Us</div>
+      <p class="introParagraph">
+          Placencia Action Tours is your number one choice in tour operations when visiting the Placencia peninsula. We offer tours in the southern region of Belize and with sister companies all across the country we are the most viable choice for reaching any and all of your vacation goals while visiting Beautiful Belize.
+      </p>
+      <div class="smolTitle">
+      The Best Guides Belize Offers
+      </div>
+      <p class="introParagraph">
+          We were founded as a family business from the first tour guides in Belize. All of our guides are friendly, experienced and licensed professionals who are very knowledgable of the country and its history. We love showing people the beauty that Belize has to offer, and teaching people the rich heritage of the sites.
+      </p>
+      <div class="smolTitle">
+        Bring the Whole family
+      </div>
+      <p class="introParagraph">
+          We offer a variety of inland, sea and air tours and with our courteous and professional guides at your full disposal.
+          Our guides have experience touring both small and large groups with sites all throughout the country: if you are looking for a particular experience that is not listed on the site, or have a larger group, please do not hesitate to <a href="contact.html" style="text-decoration:none;"> contact us.</a>
+      </p>
+      <div class="smolTitle">
+      Kick Back and Enjoy the Ride
+      </div>
+      <p class="introParagraph">
+          All of our tours will be comfortable, fun, and relaxing. Our guides will pick you up from Placencia Dock if you are coming from a cruise, or from your hotel if you are staying in Placencia. Rides will be smooth, safe and air-conditioned.
+      </p>
+  </div>
+  <div class=about-item id="caveImgContainer">
+    <img src="images/cave.jpg" id="caveImg">
+    <script>
+        var w = window,
+        d = document,
+        e = d.documentElement,
+        g = d.getElementsByTagName('body')[0],
+        x = w.innerWidth || e.clientWidth || g.clientWidth,
+        y = w.innerHeight|| e.clientHeight|| g.clientHeight;
 
-<p class="introParagraph">
-    Placencia Action Tours is your number one choice in tour operations when visiting the Placencia peninsula. We offer tours in the southern region of Belize and with sister companies all across the country we are the most viable choice for reaching any and all of your vacation goals while visiting Beautiful Belize.
-</p>
-<div class="smolTitle">
-The Best Guides Belize Offers
+        if(x<=728)
+        {
+          document.getElementById("caveImg").src="images/cave2.jpg";
+        }
+        console.log(x);
+    </script>
+  </div>
 </div>
-<p class="introParagraph">
-    We were founded as a family business from the first tour guides in Belize. All of our guides are friendly, experienced and licensed professionals who are very knowledgable of the country and its history. We love showing people the beauty that Belize has to offer, and teaching people the rich heritage of the sites.
-</p>
-<div class="smolTitle">
-  Bring the Whole family
-</div>
-<p class="introParagraph">
-    We offer a variety of inland, sea and air tours and with our courteous and professional guides at your full disposal.
-    Our guides have experience touring both small and large groups with sites all throughout the country: if you are looking for a particular experience that is not listed on the site, or have a larger group, please do not hesitate to <a href="contact.html" style="text-decoration:none;"> contact us.</a>
-</p>
-<div class="smolTitle">
-Kick Back and Enjoy the Ride
-</div>
-<p class="introParagraph">
-    All of our tours will be comfortable, fun, and relaxing. Our guides will pick you up from Placencia Dock if you are coming from a cruise, or from your hotel if you are staying in Placencia. Rides will be smooth, safe and air-conditioned.
-</p>
-<div class="smolTitle">
-
 </body>
-
-<nav id="navBorderTop">
-        a
-    </nav>
-
-<nav id="navbar">
-        <div class = "container" id="bottomBar">
-            <ol>
-                <li style="color:rgb(23, 123, 211)"> <a href="https://www.linkedin.com/in/ianfeekes/" target = "_blank"><img src="images/insta.png" width="50" height="50"/> </a></li>
-                <li style="color:rgb(16, 154, 43)"> <a href="https://www.facebook.com/pages/category/Tour-Agency/Placencia-Action-Tours-537314880112426/" target="_blank"> <img src="images/facebook.png" width="50" height="50"/> </a></li>
-                <li style="color:rgb(16, 154, 43)"> <a href="https://www.facebook.com/pages/category/Tour-Agency/Placencia-Action-Tours-537314880112426/" target="_blank"> <img src="images/whatsapp.png" width="50" height="50"/> </a></li>
-            </ol>
-        </div>
+    <nav id="navbar2" style="margin-top:0px;">
+                <ol>
+                    <li style="color:rgb(23, 123, 211)"> <a href="https://www.linkedin.com/in/ianfeekes/" target = "_blank" rel="noopener"><img src="images/insta.png" alt="instagram icon" width="50" height="50"/> </a></li>
+                    <li style="color:rgb(16, 154, 43)"> <a href="https://www.facebook.com/pages/category/Tour-Agency/Placencia-Action-Tours-537314880112426/" target="_blank" rel="noopener"> <img src="images/facebook.png" alt="facebook icon" width="50" height="50"/> </a></li>
+                    <li style="color:rgb(16, 154, 43)"> <a href="https://www.facebook.com/pages/category/Tour-Agency/Placencia-Action-Tours-537314880112426/" target="_blank" rel="noopener"> <img src="images/whatsapp.png" alt="whatsapp icon" width="50" height="50"/> </a></li>
+                </ol>
     </nav>

@@ -410,6 +410,7 @@ p
   }
 
   #dropIndicator{
+    padding-bottom:15px;
     pointer-events:none;
   }
 
@@ -534,7 +535,7 @@ p
     margin-right: none;
 	margin-top: -25px; 		/*The navbar has a 25px margin we don't want*/
     margin-bottom: 20px;
-	background: url(../images/backgroundImg-2.png) scroll center top transparent;
+	background: url(../images/backgroundImg.jpg) scroll center top transparent;
     /*TOOK OUT 'repeat' */
 }
 
@@ -605,11 +606,11 @@ p
 
   /* Caption text */
   .text {
-    color:white;
+  color:white;
 	font-size: 19px;
 	 width: 100%;
 	/*padding: 8px 12px;*/
-	margin-top: -2em;
+	margin-top: -3.3em;
 	/*bottom: 10%; */
 	position: absolute;
 	text-align: center;
@@ -802,7 +803,7 @@ p
 
 	.dropdown:hover .dropdown-content {display:block;}
 
-	#dropbtnMobile {display:none;margin:0px; }
+	#dropbtnMobile {display:none;margin:0px; } 
 
   #navbar a#tourNav{
     padding-left:49px;
@@ -819,11 +820,13 @@ p
 
 /*At this point we want to begin displaying our mobile dropdown navbar menu and hiding our laptop
   dropdown menu
-
   This style basically applies to phones of any size
   */
   @media(max-width: 426px)
   {
+
+    .grid-two a{border-width:2px;}
+
     .dot{
       height: 15px;
       width: 15px;
@@ -873,7 +876,6 @@ p
       display:none;
 	  }
 
-	/*EDIT THE NAVBAR HERE*/
 	#navbar ul{
 		margin: 0px;
 		width:100%;
@@ -947,12 +949,14 @@ p
 		/*width:100%;*/
 	}
 
+
   #dropbtnMobile{
+    display:inline;
     text-align: center;
-    padding-top: 5px;
+    padding-top:100%;
     padding-bottom: 5px;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
     border-style: solid;
     border-right-width: 2px;
     border-color: #222222;
@@ -960,7 +964,6 @@ p
 
 
 	.dropbtn{
-    width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: left;
@@ -977,6 +980,7 @@ p
 	}
 
   .dropdown-content .dropbtn{
+    width:100%;
     background-color: #1d3d75;
   }
 
