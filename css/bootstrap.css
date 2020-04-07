@@ -1,6 +1,8 @@
 *{
 
 }
+.logoContainer{display:inline;margin-left:7rem;}
+#companyLogo{padding-top:10px;}
 .skip-link{ position: absolute;
   top: -40px;
   left: 0;
@@ -793,29 +795,64 @@ p
 
   @media(min-width:427px)
   {
-  #navbar a{
-    padding:20px 20px 25px;
-  }
+    .logoContainer{padding-left:5rem;}
+    #navbar ul{padding:0px;}
+    #companyLogo{height:110px;width:110px;}
+    #dropIndicator{height:60px;width:60px;padding-bottom:25px;}
+    #mainDropdown{position:absolute;}
+    #dropbtnMobile{background-color: #1d3d75;display:inline;padding-right:25px;padding-top:110px;
+    border-style:solid;border-color:black;border-right-width:2px;}
+    #navbar a{padding:20px 20px 25px;padding-top:10px;}
+    #navbar a:hover{background-color:#3b8ac4;}
+    .dropdown-content{position:relative;margin-top:0px;}
+    .dropdown-content .dropbtn{background-color:#345da7;padding-top: 10px;
+    padding-bottom: 10px;text-align:left;}
+    .dropdown-content .dropbtn img{height:20px;width:20px;}
+    #mainDropdown, .dropdown-content{
+      max-height:0px;
+      visibility:hidden;
+    }
+    #cruiseBtn{margin-bottom:-25px;}
+    #cruiseDropdown.show{margin-top:50px;}
+    #cruiseDropdown, #myDropdown{margin-top:0px;margin-bottom:0px;}
+    #cruiseDropdown a, #myDropdown a{
+      padding-top:0px;
+      padding-bottom:0px;
+      margin-top:0px;
+      margin-bottom:0px;
+      font-size:18px;
+      width: 215px;
+      background-color: #345da7;
+    }
+    #cruiseDropdown a:hover, #myDropdown a:hover{background-color:#3b8ac4; }
+    #cruiseDropdown.show a, #myDropdown.show a{
+      padding-top: 10px;
+    padding-bottom: 10px;
+    }
 
-	#navbar .container ul li .dropdown {display:none; margin:0px; }
+    .dropbtn{width:100%;}
 
-	#navbar .container ul li #laptopDropdown, #navbar .container ul li #cruiseLaptopDropdown {display:inline-block;padding-right:0px}
+    #mainDropdown.show, .dropdown-content.show{visibility:visible;max-height:1700px;}
 
-	.dropdown:hover .dropdown-content {display:block;}
+	/*#navbar .container ul li .dropdown {display:none; margin:0px; }*/
 
-	#dropbtnMobile {display:none;margin:0px; } 
+	/*#navbar .container ul li #laptopDropdown, #navbar .container ul li #cruiseLaptopDropdown {display:inline-block;padding-right:0px}*/
 
-  #navbar a#tourNav{
+	/*.dropdown:hover .dropdown-content {display:block;}*/
+
+	/*#dropbtnMobile {display:none;margin:0px; }*/
+
+  /*#navbar a#tourNav{
     padding-left:49px;
     padding-right:50px;
   }
   #navbar a#cruiseNav{
     padding-right:25px;
-  }
+  }*/
 
-	.dropdown:hover .dropbtn {border-width:0px; background-color: #345da7; }
+	/*.dropdown:hover .dropbtn {border-width:0px; background-color: #345da7; }
 
-	.dropdown-content{margin-top:20px;}
+	.dropdown-content{margin-top:20px;}*/
 }
 
 /*At this point we want to begin displaying our mobile dropdown navbar menu and hiding our laptop
@@ -1103,7 +1140,7 @@ p
 
   @media(min-width:1000px)
   {
-
+    .logoContainer{padding-left:8rem;}
     .bigTitle{
       margin-top:30px;
       font-size:40px;
@@ -1112,7 +1149,7 @@ p
 
   @media(min-width:1440px)
   {
-
+    .logoContainer{padding-left:18rem;}
     #exploreBelize{
       margin-top:40px;
       margin-bottom:20px;
@@ -1165,6 +1202,7 @@ p
 
   @media(min-width: 1700px)
   {
+    .logoContainer{padding-left:25rem;}
     .introParagraph{
       padding-left:85px;
       padding-right:85px;
@@ -1178,6 +1216,7 @@ p
 
   @media(min-width: 1900px)
   {
+    .logoContainer{padding-left:30rem;}
     .introParagraph{
       padding-left:125px;
       padding-right:125px;
@@ -1191,6 +1230,7 @@ p
 
   @media(min-width: 2100px)
   {
+    .logoContainer{padding-left:37rem;}
     .grid-container{
 
       grid-template-columns: auto auto auto auto auto;
