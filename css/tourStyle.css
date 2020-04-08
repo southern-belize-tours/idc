@@ -5,15 +5,9 @@
 	  grid-template-columns: repeat(4, 1fr);
 	  display: grid;
     grid-gap: 2rem;
-
 }
 
-
-
 .textGridItem, .textGridItemThicc, .textGridItemThicccc {
-	/*justify-content: center;
-    align-items: center;
-    align-items: none;  */
     font-size: 18;
     padding:none;
     margin:none;
@@ -31,7 +25,7 @@
 }
 
 .textGridSmallTitle{
-    color: rgb(23, 123, 211);
+    color: #345da7;
     text-align:center;
     font-size: 27;
     font-size: 2.8vw;
@@ -58,13 +52,11 @@
       margin-top:0px;
       list-style:none;
       text-align:center;
-
   }
 
   .tourText:hover{
     -webkit-transform:scale(1.02,1.02);
   }
-
 
   .tourText:hover .tourDropdownContent{
     color: rgb(46, 44, 44);
@@ -75,16 +67,12 @@
     display:block;
     position:sticky;
     z-index: 1;
-
-
     color: rgb(219, 228, 235);
-
   }
 
   .tourText li, .price, .tourDropdownContent{
     padding: 10px;
     padding-left:none;
-    /*margin-bottom: .5rem;*/
     text-align: center;
     margin-left:-40px;
     font-size: 2vw;
@@ -95,60 +83,38 @@
   }
 
   .tourDropdownContent{
-    background-color:rgb(238, 219, 238);
     background-color: rgb(219, 228, 235);
   }
 
-
   .tourDropDownContent:hover{
       -webkit-transform: scale(1.03,1.03);
-  }
-
-  /*The + and = signs*/
-  .tourText .noShow{
-    background:none;
-    font-size:35px;
   }
 
   .price{
     background-color: rgb(225, 225, 116);
 }
 
-
-
 .grid-item {
 	background-color: none;
-	/*border: 1px solid rgba(0, 0, 0, 0.8);*/
 	max-width:300px;
-
 	border: none;
-	/*padding: 20px;
-	font-size: 20;*/
   text-align: center;
   }
 
   .grid-item a{
-      margin-top: 5px;
-	    font-size: 18;
-      text-decoration: none;
-      color: rgb(46, 44, 44);
-      color: #EFDBCB;
-	  /*background-color: rgba(255, 255, 255, 0.8);
-	  border: 1px solid rgba(0, 0, 0, 0.8);*/
+   margin-top: 5px;
+	 font-size: 18;
+   text-decoration: none;
+   color: #EFDBCB;
   }
 
   .grid-item:hover
   {
-	-webkit-filter: brightness(70%);
-	/*-webkit-transition: all 1s ease;
-	-moz-transition: all 1s ease;
-	-o-transition: all 1s ease;
-	-ms-transition: all 1s ease;
-	transition: all 1s ease;*/
+	 -webkit-filter: brightness(70%);
   }
 
   .grid-item:hover a{
-      color: rgb(23, 123, 211);
+   color: rgb(23, 123, 211);
   }
 
 .buttonContainer{
@@ -170,7 +136,6 @@
     padding-right: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
-    /*background-color: #4BB4DE;*/
     border-radius: 7px;
     text-decoration:none;
     padding: none;
@@ -253,9 +218,6 @@
   transform: rotate(45deg);
 }
 
-/*Smaller laptops and tablets look nice with 3 images per row*/
-
-
 /*Tablets should still have 3 images per row, but we downsize them
   so that they can fit nicely on the screen still*/
 @media(max-width: 900px)
@@ -295,8 +257,6 @@
 @media(max-width: 670px)
 {
 
-
-
   .grid-item{
     max-width: 220px;
   }
@@ -304,8 +264,6 @@
   .grid-item a{
     font-size: 3.4vw;
   }
-
-
 
   .textGridContainer{
     grid-gap:1rem;
@@ -339,9 +297,9 @@
 @media(max-width:440px)
 {
 
-.textGridItemThicc ul{
-  margin-top: 5px;
-}
+ .textGridItemThicc ul{
+   margin-top: 5px;
+ }
 
   .buttonContainer{
     margin-top: 10px;
@@ -359,15 +317,14 @@
     padding-right: 12px;
   }
 
-
   .grid-item{
     max-width: 170px;
   }
 
-
   .textGridSmallTitle{
     font-size: 4.3vw;
   }
+
 }
 
 @media(max-width:375px)
@@ -376,17 +333,13 @@
     max-width:150px;
   }
 
-
   .textBlock{
     margin-bottom: 15px;
   }
-
 }
 
 @media(max-width:320px)
 {
-
-
   .grid-item{
     max-width:250px;
   }
