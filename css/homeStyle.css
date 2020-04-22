@@ -398,12 +398,16 @@
 		min-height: 30%;
 	}
 
+	.aboutItem#textdiv{
+		width:95%;
+	}
+
 
 	#caveImgContainer{
 		text-align:center;
 	}
   #caveImgContainer #caveImg{
-		height:85%;
+		height:4750px;
 	}
 	#cruiseDropdown a{
 		position:absolute;

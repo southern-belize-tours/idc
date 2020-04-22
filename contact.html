@@ -5,7 +5,7 @@
        <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
        -->
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-        <link rel="stylesheet" type="text/css" href="css/newContactStyle.css">
+        <link rel="stylesheet" type="text/css" href="css/contactStyle.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="Description" content="Contact us with any questions of special accomodations.
         We have previously done tour bookings for school trips and weeklong family outings in the Placencia area.">
@@ -64,6 +64,7 @@
                                         <a href="nimLi.html">Nim Li Punit Ruins</a>
                                         <a href="waterfalls.html">Waterfall Sightseeing</a>
                                         <a href="ziplining.html">Rainforest Ziplining</a>
+                                        <a href="spiceFarm.html">Spice Farm</a>
                                       </div>
                                   </div>
                                   <a href="contact.html" class="orangeBtn" style="position:relative">
@@ -78,41 +79,7 @@
       </ul>
   </div>
   </nav>
-<script>
-
-    function showDays()
-        {
-            let numDays = 30;
-            let daySelect = document.getElementById("days");
-            while(daySelect.hasChildNodes())
-            {
-                daySelect.removeChild(daySelect.firstChild);
-            }
-            let month = document.getElementById("months").value;
-            if(month==="01" || month==="03" || month==="05"
-            || month==="07" || month==="08" || month==="10"
-            || month==="12") numDays=31;
-            else if(month==="02")
-            {
-                if(document.getElementById("years").value==="20") numDays=29;
-                else numDays=28;
-            }
-            for(let i=1; i<=numDays;++i)
-            {
-                let currDay = document.createElement("OPTION");
-                currDay.value=i;
-                currDay.text=i.toString();
-                daySelect.add(currDay);
-            }
-        }
-</script>
-
 <div class = "bigTitle">Contact Us</div>
-
-<p class="contactParagraph">
-If you have any questions, need any special accomodations, or are interested in any tours not listed on the site, please fill out this form or contact us by email at  <a onclick="ga('send','event','ontact', 'email', 'info', 1);" href="mailto:placencia.action.tours@outlook.com"style="color:#3b8ac4;">placencia.action.tours@outlook.com</a>
-</p>
-
 <div class="creditCardForm">
         <div class="payment">
             <form action="contact.php"
@@ -120,20 +87,20 @@ If you have any questions, need any special accomodations, or are interested in 
             enctype="multipart/form-data"
             method="post">
                 <div class="form-group owner">
-                    <label for="first_name">First Name</label>
+                    <label for="first_name">First Name*</label>
                     <input type="text" class="form-control" name = "first_name" id="owner" placeholder="Eiluv" required>
                 </div>
                 <div class="form-group CVV">
-                    <label for="last_name">Last Name</label>
+                    <label for="last_name">Last Name*</label>
                     <input type="text" class="form-control" id="cvv" name="last_name" placeholder="Belize" required>
                 </div>
-                <div class="form-group" id="email">
-                    <label for="cardNumber">Email Address</label>
-                    <input type="text" class="form-control" name = "email" id="cardNumber" placeholder="jdoe@example.com" required>
+                <div class="form-group owner" id="credit-number-field" style="display:inline-block;">
+                    <label for="email">Email Address*</label>
+                    <input type="text" class="form-control" name ="email" id="emailAddr" placeholder="jdoe@example.com" required>
                 </div>
                 <div class="form-group CVV">
-                        <label for="cardNumber">Size of Party (minimum 2)</label>
-                        <input type="text" class="form-control" name="partySize" id="cardNumber" placeholder="13">
+                        <label for="partySize">Size of Party (minimum 2)</label>
+                        <input type="text" class="form-control" name="partySize" id="numPeople" placeholder="13">
                 </div>
                 <div class="form-group" id="card-number-field">
                     <label for="cardNumber">Tours (Check All Items of Interest)</label>
@@ -203,19 +170,18 @@ If you have any questions, need any special accomodations, or are interested in 
                             <span class="checkmark"></span>
                         </label>
                     </div>
-
-
-
-                </div>
-                <div class="form-group" id="card-number-field">
-                        <label for="cardNumber">Pick up Location</label>
-                        <input type="text" class="form-control" id="cardNumber" name="location" placeholder="Placencia Docks (Harvest Caye Drop-Off)">
                 </div>
                 <div class="form-group" id="tourDate">
-                  <label>Desired Tour Date</label>
+                  <label>Desired Tour Date
+                    <div onclick="addShow();" class="calendarIcon">
+                      <img src="images/calendarIcon.png" height=30px width=30px id="calendarImg">
+                    </div>
+                  </label>
                   <div id="expiration-date">
-                    <select id="days" name = "day">
+                    <label for="day" style="display:none;"></label>
+                    <select id="days" name="day">
                     </select>
+                    <label for="month" style="display:none;"></label>
                     <select id="months" name = "month" onchange = "showDays()">
                         <option value="01">January</option>
                         <option value="02">February </option>
@@ -230,21 +196,30 @@ If you have any questions, need any special accomodations, or are interested in 
                         <option value="11">November</option>
                         <option value="12">December</option>
                     </select>
+                    <label for="year" style="display:none;"></label>
                     <select id="years" name="year" onchange="showDays()">
-                        <option value="19"> 2019</option>
                         <option value="20"> 2020</option>
                         <option value="21"> 2021</option>
                         <option value="22"> 2022</option>
-                        <option value="23"> 2023</option>
-                        <option value="24"> 2024</option>
-                        <option value="25"> 2025</option>
                     </select>
-                  </div>
+                    <div>
+                      <!--<input type=text onselect="addShow();" onclick="addShow();" class="calendarIcon"> -->
+                      <div class="calendar" id="calendarBody">
+                        <div class="calendarHeader">
+                          <a class="prevMonth" id="prevMonth" onclick="deltaMonth(-1);">&#10094;</a>
+                          <div id="calendarMonth"></div>
+                          <div id="calendarYear"></div>
+                          <a class="nextMonth" id="nextMonth" onclick="deltaMonth(1);">&#10095;</a>
+                        </div>
+                        <div class="calendarDays" id="daysField">
+                        </div>
+                      </div>
+                    </div>
                 </div>
-
-                <div class="form-group" id="card-number-field">
-                        <label for="cardNumber">Message for us</label>
-                        <textarea name = 'msg' class= "form-control" id="textBox" required rows=6 name="text" style="width:100%;resize:none;line-height:25px;" placeholder="We have a school trip of 50+ students coming for the first week of July and were wondering if you could accomodate us for the week. Please email me at jdoe@example.com to discuss prices and logistics."></textarea>
+              </div>
+                <div class="form-group full-width" id="card-number-field">
+                        <label for="txt">Message for Us* <span style="color: rgb(180,180,180)"></span></label>
+                        <textarea id="message" class= "form-control" rows=6 name="txt" placeholder="We have a school getaway for a week and were wondering if you could discuss possible accomodations for 50+ guests for the week" required></textarea>
                 </div>
                 <div class="form-group" id="pay-now">
                     <button type="submit" name="submit" class="btn btn-default" id="confirm-purchase">Confirm</button>
@@ -253,12 +228,7 @@ If you have any questions, need any special accomodations, or are interested in 
             </form>
         </div>
     </div>
-
-    <script>
-
-        showDays()
-
-    </script>
+    <script src="assets/js/calendarScript.js"></script>
     <script src="assets/js/genericScript.js"></script>
     <nav id="navbar2">
                 <ol>
@@ -266,6 +236,9 @@ If you have any questions, need any special accomodations, or are interested in 
                     <li style="color:rgb(16, 154, 43)"> <a href="https://www.facebook.com/pages/category/Tour-Agency/Placencia-Action-Tours-537314880112426/" target="_blank" rel="noopener"> <img src="images/facebook.png" alt="facebook icon" width="50" height="50"/> </a></li>
                     <li style="color:rgb(16, 154, 43)"> <a href="https://supplier.viator.com/listing/SL-f65e319a-8e21-43fa-aafd-e00daa459a9b" target="_blank" rel="noopener"> <img src="images/whatsapp.png" alt="whatsapp icon" width="50" height="50"/> </a></li>
                 </ol>
+                <div style="text-align:right;color:white;padding-right:10px;font-size:12px">
+                 &copy 2020 by Placencia Action Tours. All Rights Reserved.
+                </div>
     </nav>
 </body>
 </html>

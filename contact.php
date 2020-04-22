@@ -9,7 +9,7 @@ $mail->Port = '465'; //Can also be 587
 $mail->Username = 'SouthernBelizeTours@gmail.com'; //change this later
 $mail->Password = 'eaglei`1pwcs!!';
 $mail->SetFrom('no-reply@southern-belize-tours.com');
-$mail->Subject = 'Booking Confirmed! Do Not Reply!';
+$mail->Subject = 'We have received your message!';
 
 $tourOptions = array(
   array('nimLi','Nim Li Punit Mayan ruins'),
@@ -39,13 +39,17 @@ foreach($tourOptions as $tour){
 }
 $checkedTours = $checkedTours . '</div>';
 
-$messageBody = '<div style="background-color:#fafafa;padding:15px;line-height:25px;">'
-            .'<div style="font-size:18;">' .$_POST['first_name'].' ' .$_POST['last_name'] .',<br>'
+$messageBody =
+            '<div style="background-color:#1d3d75;display:inline-block;text-align:center;width:100%;padding-top:10px;padding-bottom:5px;">'
+            .'<img src="https://southern-belize-tours.com/images/companyLogo4.png" width=110px height=110px>'
+            .'</div>'
+            .'<div style="background-color:#fafafa;padding:15px;line-height:25px;">'
+            .'<div style="font-size:18;color:black;">' .$_POST['first_name'].' ' .$_POST['last_name'] .',<br>'
             .'You have contacted us with a question about booking on '.$_POST['month'] .'/'.$_POST['day'].'/20' .$_POST['year']
             .'.<br> We will respond shortly, and are eager to show you the wonders of Belize! <br>'
             .$checkedTours
             .'The message that you left for us is: '
-            .'<div style="font-size: 18;background-color: #ffffff; color: #505966; margin-top: 10px;margin-bottom : 10px;margin-left: 15px;margin-right: 15px;padding:7px;border-style:solid;border-width:2px;border-color: #ffde7d;border-radius:10px;">'.$_POST['msg'].'</div>'
+            .'<div style="font-size: 18;background-color: #ffffff; color: #505966; margin-top: 10px;margin-bottom : 10px;margin-left: 15px;margin-right: 15px;padding:7px;border-style:solid;border-width:2px;border-color: #ffde7d;border-radius:10px;">'.$_POST['txt'].'</div>'
             .'We will get back to you at your email '.$_POST['email'].' as soon as we can.'
             .'<br> If you have any more questions please contact us at placencia.action.tours@outlook.com'
             .'</div>'
@@ -53,12 +57,15 @@ $messageBody = '<div style="background-color:#fafafa;padding:15px;line-height:25
 
             $mail->Body = $messageBody;
             $mail->isHTML();
-            //$mail->AddAddress('placencia.action.tours@outlook.com');    //Add addresses for all necessary people eg julian and whoever confirmed it
+            $mail->AddAddress('placencia.action.tours@outlook.com');    //Add addresses for all necessary people eg julian and whoever confirmed it
             //$mail->AddAddress('ianfeekes@gmail.com');
             $mail->AddAddress($_POST['email']);       //This line should be for the user address
 
+            $mail->Send();
+            header('Location: thankYou.html');
+            exit;
 
-            $mail->SMTPDebug = 2; //This is a debugging line. Delete it for release.
+            /*$mail->SMTPDebug = 2; //This is a debugging line. Delete it for release.
             if(!$mail->Send()){
               echo 'message was not send.';
             }
@@ -66,6 +73,6 @@ $messageBody = '<div style="background-color:#fafafa;padding:15px;line-height:25
             //}
 
             //This is a debugging line. Delete it for release.
-            $mail->Debugoutput = function($str, $level) {echo "debug level $level; message: $str";};
+            $mail->Debugoutput = function($str, $level) {echo "debug level $level; message: $str";};*/
 
  ?>
