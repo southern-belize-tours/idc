@@ -108,7 +108,7 @@
                     <label for="email">Email Address*</label>
                     <input type="text" class="form-control" name ="email" id="emailAddr" placeholder="jdoe@example.com" required>
                 </div>
-                <div class="form-group CVV" id="card-number-field">
+                <div class="form-group CVV">
                         <label for="partySize">Size of Party (minimum 2)</label>
                         <select id ="numPeople" class="form-control" onchange="computePrice()" name="partySize">
                                 <option value="2">2 </option>
@@ -128,7 +128,7 @@
                                 <option value="16+">16+</option>
                             </select>
                 </div>
-                <div class="form-group full-width" id="card-number-field">
+                <div class="form-group full-width" >
                     <label for="location">Pick up Location</label>
                     <select id="loc"  onchange='checkLocSelect()' name = "location">
                         <option value="Docks">Placencia Docks (Norweigan Cruise Passenger Pickup from Harvest Caye Ferry)</option>
@@ -139,7 +139,7 @@
                         <input type="text" class="form-control" id="location" name = "hotelAddress" value="" placeholder="1234 Main St., Placencia">
                     </div>
                 </div>
-                <div class="form-group tours" id="card-number-field">
+                <div class="form-group tours">
                     <label for="cardNumber">Tours</label>
                     <div id="tourDiv">
                         <label class=checkbox-container>
@@ -208,7 +208,7 @@
                 </div>
                 <div class="form-group prices">
                         <label for="cardNumber">Pricing (USD)</label>
-                        <div id="tourDiv">
+                        <div id="tourDiv2">
                             <label class="priceLabel">$95/person</label>
                             <label class="priceLabel">$85/person</label>
                             <label class="priceLabel">$85/person</label>
@@ -231,7 +231,7 @@
                 <div class="form-group" id="tourDate">
                   <label>Desired Tour Date
                     <div onclick="addShow();" class="calendarIcon">
-                      <img src="images/calendarIcon.png" height=30px width=30px id="calendarImg">
+                      <img src="images/calendarIcon.png" height=30px width=30px id="calendarImg" alt="icon to toggle calendar display">
                     </div>
                   </label>
                   <div id="expiration-date">
@@ -276,7 +276,7 @@
               </div>
 
                 <div class="form-group full-width" id="card-number-field">
-                        <label for="cardNumber">Message for Us <span style="color: rgb(180,180,180)">(optional)</span></label>
+                        <label for="cardNumber">Message for Us <span style="color: rgb(117, 117, 117);">(optional)</span></label>
                         <textarea id="message" class= "form-control" rows=2 name="txt" placeholder="We are interested in trying some authentic Belizian cuisine. Could you take us to some places?"></textarea>
                 </div>
                 <div class="form-group full-width priceGridContainer">

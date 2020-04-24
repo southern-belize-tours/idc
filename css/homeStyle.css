@@ -16,11 +16,7 @@
 }
 
 .aboutGrid{
-	/*display:grid;
-	grid-template-columns: auto auto;
-	grid-column-gap:0px;*/
 	margin:0px;
-	padding-top:50px;
 	padding-bottom:50px;
 	background-color:black;
 	min-height:55%;
@@ -37,6 +33,7 @@
 	margin-right:0px;
 	margin-bottom:10px;
 	color:#c9beba;
+	background-color:rgba(0,0,0,.1);
 }
 
 .aboutItem .bigTitle{
@@ -394,6 +391,11 @@
 
 @media(max-width:425px)
 {
+	.aboutItem .introParagraph{
+		padding-left:0px;
+		padding-right:0px;
+	}
+	
 	.aboutGrid{
 		min-height: 30%;
 	}
@@ -407,7 +409,7 @@
 		text-align:center;
 	}
   #caveImgContainer #caveImg{
-		height:4750px;
+		height:475px;
 	}
 	#cruiseDropdown a{
 		position:absolute;

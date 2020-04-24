@@ -455,6 +455,7 @@ window.onclick = function(event) {
   //We only want to bother checking to reduce the calendar if the thing is displayed
   if((document.getElementById("calendarBody").classList.contains("show")))
   {
+    console.log("outside"); 
     //If click outside of calendar then remove css element that allows it to be displayed
     if (!(event.target.matches('.calendar'))&& !(event.target.matches('.calendarDay'))
     &&  !(event.target.matches('.calendarHeader'))&& !(event.target.matches('.calendarYear'))

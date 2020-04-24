@@ -10,6 +10,28 @@
         <meta name="Description" content="Contact us with any questions of special accomodations.
         We have previously done tour bookings for school trips and weeklong family outings in the Placencia area.">
 </head>
+<script>
+  /*
+  Checks to see if the user entered a valid email regex, then goes through to make
+  sure the required fields haven't been left blank. Then submits the form
+  */ 
+  function validateEmail(){
+    if(checkEmailValidity(document.getElementById("emailAddr"))){
+      let inputs = document.forms["contactForm"].elements;
+      for(let i=0;i<inputs.length;++i)
+      {
+        if(inputs[i].required && inputs[i].value==""){
+          alert("You have left an empty "+inputs[i].name);
+          return;
+        }
+      }
+      document.getElementById("contactForm").submit();
+    }
+    else{
+      alert("Please enter a valid email address");
+    }
+  }
+</script>
 
 <body>
   <a class="skip-link" href="#maincontent">Skip to main</a>
@@ -83,6 +105,7 @@
 <div class="creditCardForm">
         <div class="payment">
             <form action="contact.php"
+            id="contactForm"
             accept-charset="UTF-8"
             enctype="multipart/form-data"
             method="post">
@@ -100,7 +123,7 @@
                 </div>
                 <div class="form-group CVV">
                         <label for="partySize">Size of Party (minimum 2)</label>
-                        <input type="text" class="form-control" name="partySize" id="numPeople" placeholder="13">
+                        <input type="text" class="form-control" name="partySize" id="numPeople" placeholder="13" style="height:auto;">
                 </div>
                 <div class="form-group" id="card-number-field">
                     <label for="cardNumber">Tours (Check All Items of Interest)</label>
@@ -174,7 +197,7 @@
                 <div class="form-group" id="tourDate">
                   <label>Desired Tour Date
                     <div onclick="addShow();" class="calendarIcon">
-                      <img src="images/calendarIcon.png" height=30px width=30px id="calendarImg">
+                      <img src="images/calendarIcon.png" height=30px width=30px id="calendarImg" alt="icon to toggle calendar display">
                     </div>
                   </label>
                   <div id="expiration-date">
@@ -217,19 +240,20 @@
                     </div>
                 </div>
               </div>
-                <div class="form-group full-width" id="card-number-field">
+                <div class="form-group full-width" >
                         <label for="txt">Message for Us* <span style="color: rgb(180,180,180)"></span></label>
                         <textarea id="message" class= "form-control" rows=6 name="txt" placeholder="We have a school getaway for a week and were wondering if you could discuss possible accomodations for 50+ guests for the week" required></textarea>
                 </div>
-                <div class="form-group" id="pay-now">
-                    <button type="submit" name="submit" class="btn btn-default" id="confirm-purchase">Confirm</button>
-                </div>
 
             </form>
+            <div class="form-group" id="pay-now">
+                <button class="btn btn-default" id="confirm-purchase" onclick="validateEmail();">Confirm</button>
+            </div>
         </div>
     </div>
     <script src="assets/js/calendarScript.js"></script>
     <script src="assets/js/genericScript.js"></script>
+    <script src="assets/js/formScript.js"></script>
     <nav id="navbar2">
                 <ol>
                     <li style="color:rgb(23, 123, 211)"> <a href="https://www.instagram.com/placencia_action_tours/" target = "_blank" rel="noopener"><img src="images/insta.png" alt="instagram icon" width="50" height="50"/> </a></li>

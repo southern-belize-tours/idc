@@ -2,7 +2,7 @@
 
 }
 .logoContainer{display:inline;margin-left:7rem;}
-#companyLogo{padding-top:10px;}
+#companyLogo{padding-top:5px;height:90px;width:90px;}
 .skip-link{ position: absolute;
   top: -40px;
   left: 0;
@@ -14,7 +14,7 @@
   top: 0;
 }
 
-/*Bottom bar images responsive for user hovering to understand they are links*/ 
+/*Bottom bar images responsive for user hovering to understand they are links*/
 #navbar2 li a:hover{  -webkit-filter: brightness(70%);}
 
 #myDropdown2.dropdown-content a, #cruiseDropdown2.dropdown-content a{font-size: 14px;
@@ -805,7 +805,7 @@ p
     #dropIndicator{height:60px;width:60px;padding-bottom:25px;}
     #mainDropdown{position:absolute;}
     #dropbtnMobile{background-color: #1d3d75;display:inline;padding-right:25px;padding-top:110px;
-    border-style:solid;border-color:black;border-right-width:2px;}
+    border-style:solid;border-color:black;border-right-width:2px;cursor:pointer;}
     #navbar a{padding:20px 20px 25px;padding-top:10px;padding-bottom:30px;}
     #navbar a{background-color:#1d3d75;}
     #navbar a, .dropbtn{border-style:solid;border-color:black;border-width:0px;border-top-width:1px;border-bottom-width:1px;}
