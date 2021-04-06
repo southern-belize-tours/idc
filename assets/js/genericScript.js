@@ -85,7 +85,7 @@
     }
 
     //Should reduce both the dropdown arrows. Called when the user clicks outside of the mobile menu
-    function reduceMenu()
+    /*function reduceMenu()
     {
       document.getElementById("dropIndicator").src="images/icon1.jpg";
       document.getElementById("dropIndicatorTour").src="images/icon1.jpg";
@@ -96,7 +96,7 @@
           document.getElementById("myDropdown").classList.toggle("show");
         if(document.getElementById("cruiseDropdown").classList.contains("show"))
           document.getElementById("cruiseDropdown").classList.toggle("show");
-    }
+    }*/
 
     function setIconSrc(){
       document.getElementById("dropIndicator").src="images/icon1.jpg";
@@ -105,7 +105,7 @@
     }
 
     // Close the dropdown if the user clicks outside of it
-    window.onclick = function(event) {
+    /*window.onclick = function(event) {
       if (!event.target.matches('.dropbtn')&& !(event.target.id==="dropIndicatorTour"))
       {
         reduceMenu();
@@ -120,7 +120,7 @@
           }
         }
       }
-    }
+    }*/ 
 
     function addGridStripes()
     {

@@ -1,0 +1,125 @@
+.navBar {
+    /*BEGIN DEBUGGIN*/
+    display: grid;
+    grid-template-columns: 10% 90%;
+    height:132px;
+}
+
+.navBar div {
+    background-color:#1d3d75;
+
+        /*BEGIN DEBUGGING*/
+        border-style: solid;
+        border-color: red;
+        border-width: 2px;
+}
+
+.navBar div ul li a{
+    color: #EFDBCB;
+}
+
+.companyLogoContainer{
+    text-align:center; 
+}
+
+#dropdownArea {
+    padding:0px;
+    padding-top:5px;
+    padding-bottom:5px;
+    display: grid;
+    grid-template-columns: 16% 16% 16%;
+    grid-template-rows: auto;
+    justify-content:space-evenly; 
+    align-content:normal;
+}
+
+#dropdownArea.hamburger {
+    padding:0px;
+    padding-left:5px;
+    padding-right:5px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 16% 16% 16%;
+    align-content: space-evenly;
+    justify-content:normal;
+    cursor:pointer;
+}
+
+#dropdownArea.hamburger .mid{
+    display:block;
+}
+
+#dropdownArea.hamburger .left, #dropdownArea.hamburger .right{
+    transform:rotate(0deg);
+    transition:none;
+}
+
+#dropdownArea .left{
+    display:block;
+    transform: translateX(160%) rotate(45deg);
+    transition: transform 200ms ease-in-out 25ms;
+}
+
+#dropdownArea .mid{
+    display:none;
+}
+
+#dropdownArea .right{
+    display:block;
+    transform: translateX(-15%) rotate(-45deg);
+    transition: transform 200ms ease-in-out 25ms;
+}
+
+
+#dropdownArea.hamburger ul{
+    visibility:hidden;
+}
+
+#dropdownArea ul{
+    position:absolute;
+    left:0px;
+    top:132px;
+    margin:0px;
+    padding:0px;
+    background-color:#1d3d75;
+    visibility:visible;
+
+    transition: all .3s;
+    z-index:1;
+}
+
+#dropdownArea.hamburger ul li{
+    transition: all .3s ease-in-out 0s, visibility .3s ease-in-out 0s, z-index 1s linear 0.01s;
+    /*transition: all .4s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;*/
+    visibility:hidden;
+    max-height:0px;
+}
+
+#dropdownArea ul li{
+    padding:5px;
+    padding-left:10px;
+    padding-right:20px; 
+
+    visibility:visible;
+    transition: all .3s ease-in-out 0s, visibility .3s ease-in-out 0s, z-index 1s linear 0.01s;
+    max-height:40px;
+}
+
+#dropdownArea div{
+    background-color: #e3ba30;
+    border-radius: 10px;
+}
+
+/*.hamburger div{
+    background-color: #e3ba30;
+    border-radius:10px;
+}*/ 
+
+#companyLogo{
+    padding-top:5px;
+    padding-bottom:5px;
+}
+
+/*#dropIndicator{
+    pointer-events:none; 
+}*/ 
