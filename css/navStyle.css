@@ -6,16 +6,12 @@
 }
 
 .navBar div {
-    background-color:#1d3d75;
-
-        /*BEGIN DEBUGGING*/
-        border-style: solid;
-        border-color: red;
-        border-width: 2px;
+    background-color: #2284C4;
 }
 
 .navBar div ul li a{
     color: #EFDBCB;
+    color: #ffffff;
 }
 
 .companyLogoContainer{
@@ -33,16 +29,26 @@
     align-content:normal;
 }
 
-#dropdownArea.hamburger {
+#dropdownArea *{
+    color:#ffffff;
+}
+
+#dropdownArea.hamburger{
     padding:0px;
     padding-left:5px;
     padding-right:5px;
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 16% 16% 16%;
+    grid-template-rows: 10% 10% 10%;
     align-content: space-evenly;
     justify-content:normal;
     cursor:pointer;
+    max-height:75px;
+}
+
+#dropdownArea .mid, #dropdownArea .left, #dropdownArea .right {
+    background-color: #ffffff;
+    border-radius: 10px;
 }
 
 #dropdownArea.hamburger .mid{
@@ -70,56 +76,98 @@
     transition: transform 200ms ease-in-out 25ms;
 }
 
-
-#dropdownArea.hamburger ul{
+.dropdownContents{
     visibility:hidden;
-}
-
-#dropdownArea ul{
     position:absolute;
     left:0px;
-    top:132px;
+    top:130px;
     margin:0px;
     padding:0px;
     background-color:#1d3d75;
-    visibility:visible;
-
     transition: all .3s;
-    z-index:1;
+    z-index:100;
 }
 
-#dropdownArea.hamburger ul li{
+.dropdownContents div{
+        transition: all .3s ease-in-out 0s, visibility .3s ease-in-out 0s, z-index 1s linear 0.01s;
+    /*transition: all .4s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;*/
+    visibility:hidden;
+    max-height:0px;
+
+
+}
+
+#dropdownArea.hamburger .dropdownContents div{
     transition: all .3s ease-in-out 0s, visibility .3s ease-in-out 0s, z-index 1s linear 0.01s;
     /*transition: all .4s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;*/
     visibility:hidden;
     max-height:0px;
 }
 
-#dropdownArea ul li{
-    padding:5px;
+.dropdownContents div{
     padding-left:10px;
-    padding-right:20px; 
-
     visibility:visible;
     transition: all .3s ease-in-out 0s, visibility .3s ease-in-out 0s, z-index 1s linear 0.01s;
     max-height:40px;
 }
 
-#dropdownArea div{
-    background-color: #e3ba30;
-    border-radius: 10px;
-}
-
-/*.hamburger div{
-    background-color: #e3ba30;
-    border-radius:10px;
-}*/ 
-
 #companyLogo{
     padding-top:5px;
     padding-bottom:5px;
+    height:67px;
+    width:54px;
 }
 
-/*#dropIndicator{
-    pointer-events:none; 
-}*/ 
+#idc, #cruiseTourDropdown{
+    cursor:pointer;
+    padding-left:0px;
+    padding-right:0px;
+}
+#idc, #idc a, #cruiseTourDropdown, #cruiseTourDropdown a {
+    visibility: hidden;
+    max-height:0px;
+    transition: all .3s ease-in-out 0s, visibility .1s ease-in-out .1s, z-index 1s linear 5s;
+}
+
+#idc a, #cruiseTourDropdown a{
+    display:block;
+    padding-right:10px;
+    padding-left:10px;
+}
+
+#idc.show, #idc.show a, #cruiseTourDropdown.show, #cruiseTourDropdown.show a{
+    height:auto;
+    display:block;
+    visibility:visible;
+    background-color:black;
+    transition: all .3s ease-in-out 0s, visibility .1s ease-in-out .1s, z-index 1s linear 5s;
+    max-height:380px;
+}
+
+#idc.show a, cruiseTourDropdown.show a{
+    background-color:black;
+}
+
+#idc.show, #cruiseTourDropdown.show{
+    max-height:380px;
+}
+
+#dropdownArea *{
+    font-size:12px;
+}
+
+@media(max-width:425px){
+
+    .navBar{
+        grid-template-columns:15% 85%; 
+        max-height:75px;
+    }
+
+    .dropdownContents{
+        top:75px
+    }
+
+    #dropdownArea{
+        padding:20px 0px;
+    }
+}
