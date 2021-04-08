@@ -18,7 +18,7 @@
     text-align:center; 
 }
 
-#dropdownArea {
+#dropdownArea, .smallBurger{
     padding:0px;
     padding-top:5px;
     padding-bottom:5px;
@@ -33,7 +33,15 @@
     color:#ffffff;
 }
 
-#dropdownArea.hamburger{
+.cruiseTourBtn{
+    padding:10px;
+}
+
+.smallBurger{
+    grid-template-columns: 12% 12% 12%;
+}
+
+#dropdownArea.hamburger, .smallBurger.hamburger{
     padding:0px;
     padding-left:5px;
     padding-right:5px;
@@ -46,31 +54,47 @@
     max-height:75px;
 }
 
-#dropdownArea .mid, #dropdownArea .left, #dropdownArea .right {
+#dropdownArea .mid, #dropdownArea .left, #dropdownArea .right,
+#cruiseBurger .mid, #cruiseBurger .left, #cruiseBurger .right
+#landBurger .mid, #landBurger .left, #landBurger .right {
     background-color: #ffffff;
     border-radius: 10px;
 }
 
-#dropdownArea.hamburger .mid{
+#dropdownArea.hamburger .mid,#cruiseBurger.hamburger .mid, #landBurger.hamburger .mid{
     display:block;
 }
 
-#dropdownArea.hamburger .left, #dropdownArea.hamburger .right{
+#dropdownArea.hamburger .left, #dropdownArea.hamburger .right
+{
     transform:rotate(0deg);
     transition:none;
 }
 
-#dropdownArea .left{
+#cruiseBurger.hamburger .left, #cruiseBurger.hamburger .right,
+#landBurger.hamburger .left, #landBurger.hamburger .right
+{
+    transform: rotate(0deg);
+    transition: none;
+}
+
+#dropdownArea .left, #cruiseBurger .left, #landBurger .left
+{
     display:block;
     transform: translateX(160%) rotate(45deg);
     transition: transform 200ms ease-in-out 25ms;
 }
 
-#dropdownArea .mid{
+#cruiseBurger .left, #landBurger .left{
+    transform: translateX(200%) rotate(45deg);
+}
+
+#dropdownArea .mid, #cruiseBurger.mid, #landBurger.mid
+{
     display:none;
 }
 
-#dropdownArea .right{
+#dropdownArea .right, #cruiseBurger .right, #landBurger .right{
     display:block;
     transform: translateX(-15%) rotate(-45deg);
     transition: transform 200ms ease-in-out 25ms;
@@ -118,6 +142,17 @@
     width:54px;
 }
 
+.cruiseTourBtn, .allTourBtn {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    height: 20px;
+    padding-right:5px;
+}
+
+.cruiseTourBtn div, .allTourBtn div{
+    padding:0px;
+}
+
 #idc, #cruiseTourDropdown{
     cursor:pointer;
     padding-left:0px;
@@ -156,11 +191,24 @@
     font-size:12px;
 }
 
+.smallBurger.left, .smallBurger.mid, .smallBurger.right{
+    background-color:#fff;
+}
+
+.allTourBtn{
+    padding-bottom:10px;
+    padding-top:3px;
+}
+
+.rounded{
+   border-bottom-right-radius:10px;
+}
+
 @media(max-width:425px){
 
     .navBar{
         grid-template-columns:15% 85%; 
-        max-height:75px;
+        max-height:81px;  /*This is what seabass had for height */
     }
 
     .dropdownContents{
@@ -169,5 +217,9 @@
 
     #dropdownArea{
         padding:20px 0px;
+    }
+
+    #dropdownArea.hamburger{
+        max-height:81px;
     }
 }
