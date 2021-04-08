@@ -414,10 +414,10 @@ p
     transition: all .4s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
   }
 
-  #dropIndicator{
+  /*#dropIndicator{
     padding-bottom:15px;
     pointer-events:none;
-  }
+  }*/
 
   .dropdown-content .show a{
     max-height:40px;
@@ -538,7 +538,6 @@ p
   .slideshow-container {
     margin-left: none;
     margin-right: none;
-	margin-top: -25px; 		/*The navbar has a 25px margin we don't want*/
     margin-bottom: 20px;
 	background: url(../images/backgroundImg.jpg) scroll center top transparent;
     /*TOOK OUT 'repeat' */
@@ -802,7 +801,7 @@ p
     .logoContainer{padding-left:5rem;}
     #navbar ul{padding:0px;}
     #companyLogo{height:110px;width:110px;}
-    #dropIndicator{height:60px;width:60px;padding-bottom:25px;}
+    /*#dropIndicator{height:60px;width:60px;padding-bottom:25px;}*/
     #mainDropdown{position:absolute;}
     #dropbtnMobile{background-color: #1d3d75;display:inline;padding-right:25px;padding-top:110px;
     border-style:solid;border-color:black;border-right-width:2px;cursor:pointer;}

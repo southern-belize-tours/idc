@@ -4,13 +4,14 @@
         <title> Placencia Action Tours </title>
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
         <link rel="stylesheet" type="text/css" href="css/homeStyle.css">
+        <link rel="stylesheet" type="text/css" href="css/navStyle.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="Description" content="Premier, affordable, family-friendly  tours of tropical
         Placencia for Norweigan Cruise guests in Harvest Caye, and visitors in the Placencia area. ">
 </head>
 <body>
 <a class="skip-link" href="#maincontent">Skip to main</a>
-<nav id="navbar">
+<!--<nav id="navbar">
 <div class = "container">
     <ul>
         <li>
@@ -75,6 +76,90 @@
             </li>
     </ul>
 </div>
+</nav>--> 
+
+<nav class="navBar">
+    <div id="dropdownArea" class="hamburger">
+        <!--<img id="dropIndicator"/> -->
+        <div class="left"></div>
+        <div class="mid"></div>
+        <div class="right"></div>
+        <div class="dropdownContents" id="dropdownContents">
+            <div>
+                <a href="about.html">About Us</a>
+            </div>
+            <div>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <div>
+                <a href="allTours.html">Land Tour Grid View</a>
+            </div>
+            <div>
+                <a href="cruiseTours.html">Cruise Tour Grid View</a>
+            </div>
+            <div class="cruiseTourBtn" id="cruiseTourBtn">
+                <div id= "cruiseToursText">
+                    Cruise Tours
+                </div>
+                <div class="smallBurger hamburger
+                     " id="cruiseBurger">
+                    <div class="left"></div>
+                    <div class="mid"></div>
+                    <div class="right"></div>
+                </div>
+            </div>
+            <div class="cruiseTourDropdown" id="cruiseTourDropdown">
+                <a href="nimLi.html">Nim Li Punit Ruins</a>
+                <a href="waterfalls.html">Waterfall Sightseeing</a>
+                <a href="ziplining.html">Rainforest Ziplining</a>
+                <a href="spiceFarm.html">Spice Farm</a>
+            </div>
+            <div class="allTourBtn" id="allTourBtn">
+                <div id="landToursText">
+                    Land Tours
+                </div>
+                <div class="smallBurger hamburger
+                     " id="landBurger">
+                    <div class="left"></div>
+                    <div class="mid"></div>
+                    <div class="right"></div>
+                </div>
+            </div>
+            <div class="idc" id="idc">
+                <a href="nimLi.html">Nim Li Punit Ruins</a>
+                <a href="lubaantun.html">Lubaantun Mayan Ruins</a>
+                <a href="spiceFarm.html">Spice Farm</a>
+                <a href="jungleTubing.html">River Tubing</a>
+                <a href="waterfalls.html">Waterfall Sightseeing</a>
+                <a href="cave.html">Inland Blue Hole & Cave</a>
+                <a href="blueHole.html">Blue Hole Flyover</a>
+                <a href="southWaterSnorkel.html">Snorkeling Excursion</a>
+                <a href="southWaterFishing.html">Caribbean Fishing</a>
+                <a href="atm.html">ATM Cave Tour</a>
+                <a href="caveTubing.html">Cave Tubing</a>
+                <a href="twinCities.html">Twin Cities Mayan Ruins</a>
+                <a href="ziplining.html">Rainforest Ziplining</a>
+                <a href="zoo.html">Belize Zoo</a>
+                <a href="yacht.html">Caribbean Boat Charter</a>
+            </div>
+            <div>
+                <a href="contact.html" class="orangeBtn" style="position:relative">
+                    Contact
+                </a>
+            </div>
+            <div>
+                <a href="purchaseForm.html" class="dBlueBtn" style="position:relative">
+                    Book Now
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="navText">
+        Placencia Action Tours
+    </div>
+    <div class="companyLogoContainer">
+        <img id="companyLogo" alt="Placencia Action Tours quetzcoatl logo" src="images/companyLogoNewest.png">
+    </div>
 </nav>
 
 <div class="slideshow-container">
@@ -325,6 +410,7 @@
 
 <script src="assets/js/homeSlideScript.js"></script>
 <script src="assets/js/genericScript.js"></script>
+<script src="assets/js/navbarScript.js"></script>
 <nav id="navbar2">
             <ol>
                 <li style="color:rgb(23, 123, 211)"> <a href="https://www.instagram.com/placencia_action_tours/" target = "_blank" rel="noopener"><img src="images/insta.png" alt="instagram icon" width="50" height="50"/> </a></li>

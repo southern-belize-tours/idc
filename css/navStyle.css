@@ -1,0 +1,240 @@
+.navBar {
+    /*BEGIN DEBUGGIN*/
+    display: grid;
+    grid-template-columns: 10% 90%;
+    height:132px;
+}
+
+.navBar div {
+    background-color: #2284C4;
+}
+
+.navBar div ul li a{
+    color: #EFDBCB;
+    color: #ffffff;
+}
+
+.companyLogoContainer{
+    text-align:center; 
+}
+
+#dropdownArea, .smallBurger{
+    padding:0px;
+    padding-top:5px;
+    padding-bottom:5px;
+    display: grid;
+    grid-template-columns: 16% 16% 16%;
+    grid-template-rows: auto;
+    justify-content:space-evenly; 
+    align-content:normal;
+}
+
+#dropdownArea *{
+    color:#ffffff;
+}
+
+.cruiseTourBtn{
+    padding:10px;
+}
+
+.smallBurger{
+    grid-template-columns: 12% 12% 12%;
+}
+
+#dropdownArea.hamburger, .smallBurger.hamburger{
+    padding:0px;
+    padding-left:5px;
+    padding-right:5px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 10% 10% 10%;
+    align-content: space-evenly;
+    justify-content:normal;
+    cursor:pointer;
+    max-height:75px;
+}
+
+#dropdownArea .mid, #dropdownArea .left, #dropdownArea .right,
+#cruiseBurger .mid, #cruiseBurger .left, #cruiseBurger .right
+#landBurger .mid, #landBurger .left, #landBurger .right {
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+#dropdownArea.hamburger .mid,#cruiseBurger.hamburger .mid, #landBurger.hamburger .mid{
+    display:block;
+}
+
+#dropdownArea.hamburger .left, #dropdownArea.hamburger .right
+{
+    transform:rotate(0deg);
+    transition:none;
+}
+
+#cruiseBurger.hamburger .left, #cruiseBurger.hamburger .right,
+#landBurger.hamburger .left, #landBurger.hamburger .right
+{
+    transform: rotate(0deg);
+    transition: none;
+}
+
+#dropdownArea .left, #cruiseBurger .left, #landBurger .left
+{
+    display:block;
+    transform: translateX(160%) rotate(45deg);
+    transition: transform 200ms ease-in-out 25ms;
+}
+
+#cruiseBurger .left, #landBurger .left{
+    transform: translateX(200%) rotate(45deg);
+}
+
+#dropdownArea .mid, #cruiseBurger.mid, #landBurger.mid
+{
+    display:none;
+}
+
+#dropdownArea .right, #cruiseBurger .right, #landBurger .right{
+    display:block;
+    transform: translateX(-15%) rotate(-45deg);
+    transition: transform 200ms ease-in-out 25ms;
+}
+
+.dropdownContents{
+    visibility:hidden;
+    position:absolute;
+    left:0px;
+    top:130px;
+    margin:0px;
+    padding:0px;
+    background-color:#1d3d75;
+    transition: all .3s;
+    z-index:100;
+}
+
+.dropdownContents div{
+        transition: all .3s ease-in-out 0s, visibility .3s ease-in-out 0s, z-index 1s linear 0.01s;
+    /*transition: all .4s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;*/
+    visibility:hidden;
+    max-height:0px;
+
+
+}
+
+#dropdownArea.hamburger .dropdownContents div{
+    transition: all .3s ease-in-out 0s, visibility .3s ease-in-out 0s, z-index 1s linear 0.01s;
+    /*transition: all .4s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;*/
+    visibility:hidden;
+    max-height:0px;
+}
+
+.dropdownContents div{
+    padding-left:10px;
+    visibility:visible;
+    transition: all .3s ease-in-out 0s, visibility .3s ease-in-out 0s, z-index 1s linear 0.01s;
+    max-height:40px;
+}
+
+#companyLogo{
+    padding-top:5px;
+    padding-top:15px;
+    padding-bottom:5px;
+    height:54px;
+    width:54px;
+}
+
+.cruiseTourBtn, .allTourBtn {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    height: 20px;
+    padding-right:5px;
+}
+
+.cruiseTourBtn div, .allTourBtn div{
+    padding:0px;
+}
+
+#idc, #cruiseTourDropdown{
+    cursor:pointer;
+    padding-left:0px;
+    padding-right:0px;
+}
+#idc, #idc a, #cruiseTourDropdown, #cruiseTourDropdown a {
+    visibility: hidden;
+    max-height:0px;
+    transition: all .3s ease-in-out 0s, visibility .1s ease-in-out .1s, z-index 1s linear 5s;
+}
+
+#idc a, #cruiseTourDropdown a{
+    display:block;
+    padding-right:10px;
+    padding-left:10px;
+}
+
+#idc.show, #idc.show a, #cruiseTourDropdown.show, #cruiseTourDropdown.show a{
+    height:auto;
+    display:block;
+    visibility:visible;
+    transition: all .3s ease-in-out 0s, visibility .1s ease-in-out .1s, z-index 1s linear 5s;
+    max-height:380px;
+}
+
+#idc.show, #cruiseTourDropdown.show{
+    max-height:380px;
+}
+
+#dropdownArea *{
+    font-size:12px;
+}
+
+#dropdownArea, #dropdownArea.hamburger {
+    padding-left:20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.smallBurger.left, .smallBurger.mid, .smallBurger.right{
+    background-color:#fff;
+}
+
+.allTourBtn{
+    padding-bottom:10px;
+    padding-top:3px;
+}
+
+.rounded{
+   border-bottom-right-radius:10px;
+}
+
+.navText {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1.5rem;
+    vertical-align: middle;
+    padding-top: 35px;
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: #ffffff;
+}
+
+@media(max-width:425px){
+
+    .navBar{
+        grid-template-columns:15% 85%; 
+        grid-template-columns:15% 70% 15%; 
+        max-height:81px;  /*This is what seabass had for height */
+    }
+
+    .dropdownContents{
+        top:75px
+    }
+
+    #dropdownArea{
+        padding:20px 0px;
+        padding-left:20px;
+    }
+
+    #dropdownArea.hamburger{
+        max-height:81px;
+    }
+}
