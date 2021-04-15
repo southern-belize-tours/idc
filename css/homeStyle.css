@@ -92,10 +92,9 @@
 	text-align: center;
   }
 
-  a{
-    text-decoration:none;
-    color: rgb(23, 123, 211);
-  }
+a{
+	text-decoration:none;
+}
 
 
 	.tourTypeText{
