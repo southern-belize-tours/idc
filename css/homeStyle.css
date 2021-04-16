@@ -22,6 +22,22 @@
 	min-height:55%;
 }
 
+.redText {
+	color: #F63D69;
+}
+
+.blueText{
+	color: #2284c4; 
+}
+
+.greenText {
+	color: rgb(16,133,39);
+}
+
+.yellowText {
+	color: #e3ba30;
+}
+
 .aboutItem{
 
 }
@@ -43,6 +59,21 @@
 }
 
 .aboutItem .smolTitle{color:#d3ba30;}
+
+.slideshowText{
+	z-index:2;
+	font-size:4.5rem;
+	font-weight:700;
+	color:#ffffff;
+	line-height:6rem;
+	position:absolute;
+	margin-top:5%;
+	margin-left:70px;
+}
+
+.slideshowText div{
+	display:block; 
+}
 
 .textGridContainer{
 	margin: 70px;
@@ -133,6 +164,90 @@ a{
   text-align:center;
 }
 
+.homeTitleText{
+	font-size:3vw;
+	font-weight: 600;
+	margin-top:50px;
+	margin-bottom:20px;
+	margin-left:70px;
+}
+
+.homeTitleText div{
+	display:inline-block; 
+}
+
+.imageCardTitle{
+	font-size:1.2rem;
+	font-weight:600; 
+}
+
+.imageCardTitle, .imageCardText{
+	padding-left:20px;
+	padding-right:20px; 
+}
+
+.imageCardText{
+	text-align:justify;
+	margin-top:10px;
+	margin-bottom:10px;
+	font-size:1.05rem;
+	line-height: 1.2rem;
+	font-weight:400;
+}
+
+.viewMoreBtn{
+	padding:10px;
+	display:inline-block;
+	border-style:solid;
+	border-width: 2px;
+	border-color: #f63d69;
+	border-radius: 20px;
+	text-align:center;
+	overflow:hidden;
+	position:relative;
+}
+
+.viewMoreBtn:hover{
+	border-color: #2284c4;
+}
+
+.arrowIcon{
+	background-color:black;
+	color:black;
+	width:30px;
+	height:2px;
+	top:0;
+	top:10px;
+	bottom:0;
+	right:0;
+	left:0;
+	padding:0px;
+	/*position:absolute;*/
+	display:inline-block;
+	transform:rotate(-45deg);
+
+	&:before{
+				content:"";
+				width:2px;
+				height:20px;
+				display:block;
+				position:absolute;
+				bottom:0px;
+				right:0px;
+				transform:rotate(90deg);
+	        }
+
+&:after {
+	content: "";
+	width: 2px;
+	height: 20px;
+	display: block;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	transform:rotate(45deg);
+}
+}
 
 .bookThisButton{
 	margin-left: 70px;
@@ -237,10 +352,15 @@ a{
 .slideshowReel{
   display:inline-block;
   justify-content: center;
-  display:flex;
+  display:flex;/*
   margin-top:10px;
-  margin-bottom:10px;
+  margin-bottom:10px;*/
+  position:absolute;
+  width:100%;
+  top:92%;
+  z-index:3; 
 }
+
 .creditCardForm .payment {
   float: left;
   font-size: 18px;

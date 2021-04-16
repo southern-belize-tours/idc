@@ -11,35 +11,120 @@
         Placencia for Norweigan Cruise guests in Harvest Caye, and visitors in the Placencia area. ">
 </head>
 <body>
-<a class="skip-link" href="#maincontent">Skip to main</a>
+    <a class="skip-link" href="#maincontent">Skip to main</a>
 
-<div class="desktopNavbar">
-    <div class="desktopNavbarLogoSpace">
-        <img class="desktopLogo" src="images/companyLogoDesktop.png">
-    </div>
-    <div class="desktopNavbarTop">
-        <div class="desktopNavbarText">
-            Placencia Action Tours
+    <!--This is the desktop navbar for media greater than 769px-->
+    <div class="desktopNavbar">
+        <div class="desktopNavbarLogoSpace">
+            <img class="desktopLogo" src="images/companyLogoDesktop.png">
+        </div>
+        <div class="desktopNavbarTop">
+            <div class="desktopNavbarText">
+                Placencia Action Tours
+            </div>
+        </div>
+        <div class="desktopNavbarBottom">
+            <div class="desktopMenuContainer">
+                <div class="desktopMenuOption">
+                    <a href="index.html">Home</a>
+                    <div class="navStripe"></div>
+                </div>
+                <div class="desktopMenuOption">
+                    <a href="about.html">About</a>
+                    <div class="navStripe"></div>
+                </div>
+                <div class="desktopMenuOption">
+                    <a href="purchaseForm.html">Book Now</a>
+                    <div class="navStripe"></div>
+                </div>
+                <div class="desktopDropdown desktopMenuOption">
+                    All Tours
+                    <div class="navStripe"></div>
+                    <div id="desktopLand">
+                        <a href="nimLi.html">Nim Li Punit Ruins</a>
+                        <a href="lubaantun.html">Lubaantun Mayan Ruins</a>
+                        <a href="spiceFarm.html">Spice Farm</a>
+                        <a href="jungleTubing.html">River Tubing</a>
+                        <a href="waterfalls.html">Waterfall Sightseeing</a>
+                        <a href="cave.html">Inland Blue Hole & Cave</a>
+                        <a href="blueHole.html">Blue Hole Flyover</a>
+                        <a href="southWaterSnorkel.html">Snorkeling Excursion</a>
+                        <a href="southWaterFishing.html">Caribbean Fishing</a>
+                        <a href="atm.html">ATM Cave Tour</a>
+                        <a href="caveTubing.html">Cave Tubing</a>
+                        <a href="twinCities.html">Twin Cities Mayan Ruins</a>
+                        <a href="ziplining.html">Rainforest Ziplining</a>
+                        <a href="zoo.html">Belize Zoo</a>
+                        <a href="yacht.html">Caribbean Boat Charter</a>
+                    </div>
+                </div>
+                <div class="desktopDropdown desktopMenuOption">
+                    Cruise Tours
+                    <div class="navStripe"></div>
+                    <div id="desktopCruise">
+                        <a href="nimLi.html">Nim Li Punit Ruins</a>
+                        <a href="waterfalls.html">Waterfall Sightseeing</a>
+                        <a href="ziplining.html">Rainforest Ziplining</a>
+                        <a href="spiceFarm.html">Spice Farm</a>
+                    </div>
+                </div>
+                <div class="desktopMenuOption">
+                    <a href="contact.html">Contact Us</a>
+                    <div class="navStripe"></div>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="desktopNavbarBottom">
-        <div class="desktopMenuContainer">
-            <div class="desktopMenuOption">
-                <a href="index.html">Home</a>
-                <div class="navStripe"></div>
-            </div>
-            <div class="desktopMenuOption">
-                <a href="about.html">About</a>
-                <div class="navStripe"></div>
-            </div>
-            <div class="desktopMenuOption">
-                <a href="purchaseForm.html">Book Now</a>
-                <div class="navStripe"></div>
-            </div>
-            <div class="desktopDropdown desktopMenuOption">
-                All Tours
-                <div class="navStripe"></div>
-                <div id="desktopLand">
+
+    <!--This is the mobile navbar for media smaller than 769px-->
+    <nav class="navBar">
+        <div id="dropdownArea" class="hamburger">
+            <!--<img id="dropIndicator"/> -->
+            <div class="left"></div>
+            <div class="mid"></div>
+            <div class="right"></div>
+            <div class="dropdownContents" id="dropdownContents">
+                <div>
+                    <a href="about.html">About Us</a>
+                </div>
+                <div>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+                <div>
+                    <a href="allTours.html">Land Tour Grid View</a>
+                </div>
+                <div>
+                    <a href="cruiseTours.html">Cruise Tour Grid View</a>
+                </div>
+                <div class="cruiseTourBtn" id="cruiseTourBtn">
+                    <div id="cruiseToursText">
+                        Cruise Tours
+                    </div>
+                    <div class="smallBurger hamburger
+                     " id="cruiseBurger">
+                        <div class="left"></div>
+                        <div class="mid"></div>
+                        <div class="right"></div>
+                    </div>
+                </div>
+                <div class="cruiseTourDropdown" id="cruiseTourDropdown">
+                    <a href="nimLi.html">Nim Li Punit Ruins</a>
+                    <a href="waterfalls.html">Waterfall Sightseeing</a>
+                    <a href="ziplining.html">Rainforest Ziplining</a>
+                    <a href="spiceFarm.html">Spice Farm</a>
+                </div>
+                <div class="allTourBtn" id="allTourBtn">
+                    <div id="landToursText">
+                        Land Tours
+                    </div>
+                    <div class="smallBurger hamburger
+                     " id="landBurger">
+                        <div class="left"></div>
+                        <div class="mid"></div>
+                        <div class="right"></div>
+                    </div>
+                </div>
+                <div class="idc" id="idc">
                     <a href="nimLi.html">Nim Li Punit Ruins</a>
                     <a href="lubaantun.html">Lubaantun Mayan Ruins</a>
                     <a href="spiceFarm.html">Spice Farm</a>
@@ -56,207 +141,125 @@
                     <a href="zoo.html">Belize Zoo</a>
                     <a href="yacht.html">Caribbean Boat Charter</a>
                 </div>
-            </div>
-            <div class="desktopDropdown desktopMenuOption">
-                Cruise Tours
-                <div class="navStripe"></div>
-                <div id="desktopCruise">
-                    <a href="nimLi.html">Nim Li Punit Ruins</a>
-                    <a href="waterfalls.html">Waterfall Sightseeing</a>
-                    <a href="ziplining.html">Rainforest Ziplining</a>
-                    <a href="spiceFarm.html">Spice Farm</a>
+                <div>
+                    <a href="contact.html" class="orangeBtn" style="position:relative">
+                        Contact
+                    </a>
                 </div>
-            </div>
-            <div class="desktopMenuOption">
-                <a href="contact.html">Contact Us</a>
-                <div class="navStripe"></div>
+                <div>
+                    <a href="purchaseForm.html" class="dBlueBtn" style="position:relative">
+                        Book Now
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
-</div>
-
-<!--This is the mobile navbar for media smaller than 769px-->
-<nav class="navBar">
-    <div id="dropdownArea" class="hamburger">
-        <!--<img id="dropIndicator"/> -->
-        <div class="left"></div>
-        <div class="mid"></div>
-        <div class="right"></div>
-        <div class="dropdownContents" id="dropdownContents">
-            <div>
-                <a href="about.html">About Us</a>
-            </div>
-            <div>
-                <a href="contact.html">Contact Us</a>
-            </div>
-            <div>
-                <a href="allTours.html">Land Tour Grid View</a>
-            </div>
-            <div>
-                <a href="cruiseTours.html">Cruise Tour Grid View</a>
-            </div>
-            <div class="cruiseTourBtn" id="cruiseTourBtn">
-                <div id= "cruiseToursText">
-                    Cruise Tours
-                </div>
-                <div class="smallBurger hamburger
-                     " id="cruiseBurger">
-                    <div class="left"></div>
-                    <div class="mid"></div>
-                    <div class="right"></div>
-                </div>
-            </div>
-            <div class="cruiseTourDropdown" id="cruiseTourDropdown">
-                <a href="nimLi.html">Nim Li Punit Ruins</a>
-                <a href="waterfalls.html">Waterfall Sightseeing</a>
-                <a href="ziplining.html">Rainforest Ziplining</a>
-                <a href="spiceFarm.html">Spice Farm</a>
-            </div>
-            <div class="allTourBtn" id="allTourBtn">
-                <div id="landToursText">
-                    Land Tours
-                </div>
-                <div class="smallBurger hamburger
-                     " id="landBurger">
-                    <div class="left"></div>
-                    <div class="mid"></div>
-                    <div class="right"></div>
-                </div>
-            </div>
-            <div class="idc" id="idc">
-                <a href="nimLi.html">Nim Li Punit Ruins</a>
-                <a href="lubaantun.html">Lubaantun Mayan Ruins</a>
-                <a href="spiceFarm.html">Spice Farm</a>
-                <a href="jungleTubing.html">River Tubing</a>
-                <a href="waterfalls.html">Waterfall Sightseeing</a>
-                <a href="cave.html">Inland Blue Hole & Cave</a>
-                <a href="blueHole.html">Blue Hole Flyover</a>
-                <a href="southWaterSnorkel.html">Snorkeling Excursion</a>
-                <a href="southWaterFishing.html">Caribbean Fishing</a>
-                <a href="atm.html">ATM Cave Tour</a>
-                <a href="caveTubing.html">Cave Tubing</a>
-                <a href="twinCities.html">Twin Cities Mayan Ruins</a>
-                <a href="ziplining.html">Rainforest Ziplining</a>
-                <a href="zoo.html">Belize Zoo</a>
-                <a href="yacht.html">Caribbean Boat Charter</a>
-            </div>
-            <div>
-                <a href="contact.html" class="orangeBtn" style="position:relative">
-                    Contact
-                </a>
-            </div>
-            <div>
-                <a href="purchaseForm.html" class="dBlueBtn" style="position:relative">
-                    Book Now
-                </a>
-            </div>
+        <div class="navText">
+            Placencia Action Tours
         </div>
-    </div>
-    <div class="navText">
-        Placencia Action Tours
-    </div>
-    <div class="companyLogoContainer">
-        <img id="companyLogo" alt="Placencia Action Tours quetzcoatl logo" src="images/companyLogoNewest.png">
-    </div>
-</nav>
+        <div class="companyLogoContainer">
+            <img id="companyLogo" alt="Placencia Action Tours quetzcoatl logo" src="images/companyLogoNewest.png">
+        </div>
+    </nav>
 
-<div class="slideshow-container">
-    <div class="mySlides fade">
-      <div class="numbertext">1 / 7</div>
-         <img class="slideImage fade" src="images/home/quetz/quetz1024.jpeg" id="quetz" alt="Our mascott Quetzcoatl, bringer of Mayan teachings.">
-         <div class="text">
-             <span class="back">
-                   Effigy of the god "Quetzcoatl," our mascott. He was depicted as the bringer of knowledge into the Mayan world
-             </span>
-         </div>
-    </div>
-
-    <div class="mySlides fade">
-      <div class="numbertext">2 / 7</div>
-      <img class="slideImage fade" src="images/home/beach2/beach21024.jpeg" id="beach2" alt="Placencia offers the best white sand beach cabanas and hammocks.">
-      <div class="text ">
+    <div class="slideshowText">
+        <div>
+            Dream. Explore.
+        </div>
+        <div>
+            Discover.
+        </div>
+        <div>
+            Southern Belize.
         </div>
     </div>
 
-    <div class="mySlides fade">
-      <div class="numbertext">3 / 7</div>
-       <img class="slideImage fade" src = "images/home/turtle/turtle1024.jpeg" id="turtle" alt="You will see Caribbean sea turtles like this in our snorkeling excursions.">
-    </div>
-
-    <div class="mySlides fade">
-        <div class="numbertext">4 / 7</div>
-        <img class="slideImage fade" src="images/home/beach/beach1024.jpeg" alt="South Water Caye has the most beautiful waters and fish.">
-        <div class="text" >
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img class="slideImage fade" src="images/home/beach/beach1024.jpeg" alt="South Water Caye has the most beautiful waters and fish.">
         </div>
-    </div>
-
-    <div class="mySlides fade">
-        <div class="numbertext">5 / 7</div>
-        <img class="slideImage fade " src="images/home/ruins/ruins1024.jpeg" id="ruins" alt="Lubaantun Mayan Ruins can be seen from our excursion in the Placencia area.">
-        <div class="text">
+        <div class="mySlides fade">
+            <img class="slideImage fade" loading="lazy" src="images/home/beach2/beach21024.jpeg" id="beach2" alt="Placencia offers the best white sand beach cabanas and hammocks.">
+            <div class="text ">
+            </div>
         </div>
-    </div>
-
-    <div class="mySlides fade">
-            <div class="numbertext">6 / 7</div>
-            <img class="slideImage fade " src="images/home/coatimundi/coatimundi1024.jpeg" id="coatimundi" alt="Coatimundi: The tropical raccoon of Placencia, Belize.">
+        <div class="mySlides fade">
+            <img class="slideImage fade" loading="lazy" src="images/home/turtle/turtle1024.jpeg" id="turtle" alt="You will see Caribbean sea turtles like this in our snorkeling excursions.">
+        </div>
+        <div class="mySlides fade">
+            <img class="slideImage fade" loading="lazy" src="images/home/quetz/quetz1024.jpeg" id="quetz" alt="Our mascott Quetzcoatl, bringer of Mayan teachings.">
             <div class="text">
-              <span class="back">
-                A tropical raccoon: the Coatimundi
-              </span>
+                <span class="back">
+                    Effigy of the god "Quetzcoatl," our mascott. He was depicted as the bringer of knowledge into the Mayan world
+                </span>
             </div>
-    </div>
-
-    <div class="mySlides fade">
-        <div class="numbertext">7 / 7</div>
-        <img class="slideImage fade" src="images/home/jungle/jungle1024.jpeg" alt="Jungle views atop Mayan Ruins. ">
-        <div class="text">
+        </div>
+        <div class="mySlides fade">
+            <img class="slideImage fade " loading="lazy" src="images/home/ruins/ruins1024.jpeg" id="ruins" alt="Lubaantun Mayan Ruins can be seen from our excursion in the Placencia area.">
+            <div class="text">
+            </div>
+        </div>
+        <div class="mySlides fade">
+            <img class="slideImage fade " loading="lazy" src="images/home/coatimundi/coatimundi1024.jpeg" id="coatimundi" alt="Coatimundi: The tropical raccoon of Placencia, Belize.">
+            <div class="text">
+                <span class="back">
+                    A tropical raccoon: the Coatimundi
+                </span>
+            </div>
+        </div>
+        <div class="mySlides fade">
+            <img class="slideImage fade" loading="lazy" src="images/home/jungle/jungle1024.jpeg" alt="Jungle views atop Mayan Ruins. ">
+            <div class="text">
+            </div>
         </div>
     </div>
 
+    <div class=slideshowReel>
+        <span class="dot" onclick="currentSlide(1)">
+            <image src="images/imageBullet.png"></image>
+        </span>
+        <span class="dot" onclick="currentSlide(2)">
+            <image src="images/imageBullet.png"></image>
+        </span>
+        <span class="dot" onclick="currentSlide(3)">
+            <image src="images/imageBullet.png"></image>
+        </span>
+        <span class="dot" onclick="currentSlide(4)">
+            <image src="images/imageBullet.png"></image>
+        </span>
+        <span class="dot" onclick="currentSlide(5)">
+            <image src="images/imageBullet.png"></image>
+        </span>
+        <span class="dot" onclick="currentSlide(6)">
+            <image src="images/imageBullet.png"></image>
+        </span>
+        <span class="dot" onclick="currentSlide(7)">
+            <image src="images/imageBullet.png"></image>
+        </span>
+    </div>
 
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1)">&#10095;</a>
+<div class="homeTitleText">
+    <div class="redText">
+        Southern
+    </div>
+    <div class="blueText">
+        Belize
+    </div>
+    <div class="greenText">
+        Group
+    </div>
+    <div class="yellowText">
+        Tours
+    </div>
 </div>
 
-<div class=slideshowReel>
-<span class="dot" onclick="currentSlide(1)">
-    <image src="images/imageBullet.png"></image>
-</span>
-<span class="dot" onclick="currentSlide(2)">
-  <image src="images/imageBullet.png"></image>
-</span>
-<span class="dot" onclick="currentSlide(3)">
-  <image src="images/imageBullet.png"></image>
-</span>
-<span class="dot" onclick="currentSlide(4)">
-  <image src="images/imageBullet.png"></image>
-</span>
-<span class="dot" onclick="currentSlide(5)">
-  <image src="images/imageBullet.png"></image>
-</span>
-<span class="dot" onclick="currentSlide(6)">
-  <image src="images/imageBullet.png"></image>
-</span>
-<span class="dot" onclick="currentSlide(7)">
-  <image src="images/imageBullet.png"></image>
-</span>
-</div>
-<div class="homeTitle">
-    <span style="color: #1d3d75">Dream.</span>
-    <span style="color:rgb(26, 117, 197);">Explore.</span>
-    <span style="color: rgb(16,133,39);">Discover.</span>
-    <span style="color: rgb(210, 57, 67);">Southern Belize.</span>
-</div>
 
-
-<p class="introParagraph" >
+    <p class="introParagraph">
         Placencia Action Tours is your number one choice in tour operations when visiting the Placencia peninsula. We offer tours in the southern region of Belize and with sister companies all across the country we are the most viable choice for reaching any and all of your vacation goals while visiting Beautiful Belize.
-</p>
+    </p>
 
-<div class="grid-two">
-    <a href="cruiseTours.html" >
-        <div class="grid-item-pic">
+    <div class="grid-two">
+        <a href="cruiseTours.html">
+            <div class="grid-item-pic">
                 <div class="smolTitle">Cruise Excursions </div>
                 <img class="logoImg" alt="Norweigan cruise passengers staying at Harvest Caye" id="cruiseImage">
                 <div class="tourTypeText">
@@ -265,37 +268,44 @@
                     ferries to Placencia Docks, where your guides will be waiting for a sign to take you to your adventure!
                     You will have plenty of time to see the sites before we get you back to the Placencia Docks to make the ferry back to Harvest Caye
                 </div>
-        </div>
-    </a>
-    <a href="allTours.html">
-        <div class="grid-item-pic">
-                <div class="smolTitle" >Hotel Excursions </div>
-            <img class="logoimg" alt="Tourists staying in the Placencia area." id="hotelImage">
-            <div class="tourTypeText">
-                Staying in Placencia? Let us know where, and we can come and get you for a day filled with as many adventures
-                as you could possibly want. There will be as much time as you need to relax, and stop at whatever sites and attractions
-                take your fancy along the journey! We will take you to anything that crosses your mind, and drive you back to where you are
-                staying when your journey is over.
             </div>
-        </div>
-    </a>
-</div>
+        </a>
+        <a href="allTours.html">
+            <div class="grid-item-pic">
+                <div class="smolTitle">Hotel Excursions </div>
+                <img class="logoimg" alt="Tourists staying in the Placencia area." id="hotelImage">
+                <div class="tourTypeText">
+                    Staying in Placencia? Let us know where, and we can come and get you for a day filled with as many adventures
+                    as you could possibly want. There will be as much time as you need to relax, and stop at whatever sites and attractions
+                    take your fancy along the journey! We will take you to anything that crosses your mind, and drive you back to where you are
+                    staying when your journey is over.
+                </div>
+            </div>
+        </a>
+    </div>
 
-  <div class="smolTitle" id="exploreBelize">Explore Belize </div>
-<div class="grid-container" id="gridImages">
+    <div class="smolTitle" id="exploreBelize">Explore Belize </div>
+    <div class="grid-container" id="gridImages">
         <div class="grid-item-pic">
-                <a href="nimLi.html">
-                        <img class="grid-image" alt="Nim Li Punit Mayan Ruins tour.">
-                        <div>
-                          Nim Li Punit Mayan Ruins
-                        </div>
-                </a>
+            <a href="nimLi.html">
+                <img class="grid-image" alt="Nim Li Punit Mayan Ruins tour.">
+                <div class="imageCardTitle">
+                    Nim Li Punit Mayan Ruins
+                </div>
+                <div class="imageCardText">
+                    Seeing how the ancient Mayans played basketball? The ball is in your court.
+                    Nim Li Punit is one of the oldest and most well preserved Mayan ruin sites.
+                    <div class="viewMoreBtn">
+                        <div class="arrowIcon"></div>
+                    </div>
+                </div>
+            </a>
         </div>
         <div class="grid-item-pic">
             <a href="lubaantun.html">
                 <img class="grid-image" alt="Lubaantun Mayan Ruins tour.">
                 <div>
-                  Lubaantun Mayan Ruins
+                    Lubaantun Mayan Ruins
                 </div>
             </a>
         </div>
@@ -303,7 +313,7 @@
             <a href="spiceFarm.html">
                 <img class="grid-image" alt="Spice Farm tropical botanical garden tour.">
                 <div>
-                  Spice Farm Tropical Garden
+                    Spice Farm Tropical Garden
                 </div>
             </a>
         </div>
@@ -311,7 +321,7 @@
             <a href="jungleTubing.html">
                 <img class="grid-image" alt="South Staan creek Jungle River tubing excursion.">
                 <div>
-                  Jungle River Tubing
+                    Jungle River Tubing
                 </div>
             </a>
         </div>
@@ -319,7 +329,7 @@
             <a href="waterfalls.html">
                 <img class="grid-image" alt="Tropical waterfalls seen from South Staan creek river basin.">
                 <div>
-                  Waterfall Sightseeing
+                    Waterfall Sightseeing
                 </div>
             </a>
         </div>
@@ -327,97 +337,97 @@
             <a href="cave.html">
                 <img class="grid-image" alt="Inland blue hole and cave spelunking and exploration tour.">
                 <div>
-                  Inland Blue Hole & Cave
+                    Inland Blue Hole & Cave
                 </div>
             </a>
         </div>
         <div class="grid-item-pic">
-                <a href="blueHole.html">
-                    <img class="grid-image" alt="Private airplane flyover for views of Belize's Great Blue Hole.">
-                    <div>
-                      Blue Hole Flyover
-                    </div>
-                </a>
-            </div>
-            <div class="grid-item-pic">
-                    <a href="southWaterSnorkel.html">
-                        <img class="grid-image" alt="South Water Caye Caribbean snorkelling. Both half day and full day options.">
-                        <div>
-                          South Water Caye Snorkeling
-                        </div>
-                    </a>
+            <a href="blueHole.html">
+                <img class="grid-image" alt="Private airplane flyover for views of Belize's Great Blue Hole.">
+                <div>
+                    Blue Hole Flyover
                 </div>
-                <div class="grid-item-pic">
-                        <a href="southWaterFishing.html">
-                            <img class="grid-image" alt="South Water Caye fishing. Deep sea, lobster traps, line fishing.">
-                            <div>
-                              South Water Caye Fishing
-                            </div>
-                        </a>
-                    </div>
-                    <div class="grid-item-pic">
-                            <a href="atm.html">
-                                <img class="grid-image" alt="Actun Tunichil Muknal cave Mayan sacrifice adventure exploration tour.">
-                                <div>
-                                  ATM Cave
-                                </div>
-                            </a>
-                        </div>
-                        <div class="grid-item-pic">
-                                <a href="caveTubing.html">
-                                    <img class="grid-image" alt="Subterranean river tubing Xibalba Mayan cave passage and jungle creek tour.">
-                                    <div>
-                                      Cave Tubing
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="grid-item-pic">
-                                    <a href="twinCities.html">
-                                        <img class="grid-image" alt="Twin Cities Mayan Ruins tour.">
-                                        <div>
-                                          Twin Cities Mayan Ruins
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="grid-item-pic">
-                                        <a href="ziplining.html">
-                                            <img class="grid-image" alt="Ziplining in Belize's broadleaf rainforest.">
-                                            <div>
-                                              Rainforest Ziplining
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="grid-item-pic">
-                                            <a href="zoo.html">
-                                                <img class="grid-image" alt="Belize Zoo tour.">
-                                                <div>
-                                                  Belize Zoo
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="grid-item-pic">
-                                                <a href="yacht.html">
-                                                    <img class="grid-image" alt="Charter a Caribbean boat.">
-                                                    <div>
-                                                      Caribbean Boat Charter
-                                                    </div>
-                                                </a>
-                                            </div>
-      </div>
+            </a>
+        </div>
+        <div class="grid-item-pic">
+            <a href="southWaterSnorkel.html">
+                <img class="grid-image" alt="South Water Caye Caribbean snorkelling. Both half day and full day options.">
+                <div>
+                    South Water Caye Snorkeling
+                </div>
+            </a>
+        </div>
+        <div class="grid-item-pic">
+            <a href="southWaterFishing.html">
+                <img class="grid-image" alt="South Water Caye fishing. Deep sea, lobster traps, line fishing.">
+                <div>
+                    South Water Caye Fishing
+                </div>
+            </a>
+        </div>
+        <div class="grid-item-pic">
+            <a href="atm.html">
+                <img class="grid-image" alt="Actun Tunichil Muknal cave Mayan sacrifice adventure exploration tour.">
+                <div>
+                    ATM Cave
+                </div>
+            </a>
+        </div>
+        <div class="grid-item-pic">
+            <a href="caveTubing.html">
+                <img class="grid-image" alt="Subterranean river tubing Xibalba Mayan cave passage and jungle creek tour.">
+                <div>
+                    Cave Tubing
+                </div>
+            </a>
+        </div>
+        <div class="grid-item-pic">
+            <a href="twinCities.html">
+                <img class="grid-image" alt="Twin Cities Mayan Ruins tour.">
+                <div>
+                    Twin Cities Mayan Ruins
+                </div>
+            </a>
+        </div>
+        <div class="grid-item-pic">
+            <a href="ziplining.html">
+                <img class="grid-image" alt="Ziplining in Belize's broadleaf rainforest.">
+                <div>
+                    Rainforest Ziplining
+                </div>
+            </a>
+        </div>
+        <div class="grid-item-pic">
+            <a href="zoo.html">
+                <img class="grid-image" alt="Belize Zoo tour.">
+                <div>
+                    Belize Zoo
+                </div>
+            </a>
+        </div>
+        <div class="grid-item-pic">
+            <a href="yacht.html">
+                <img class="grid-image" alt="Charter a Caribbean boat.">
+                <div>
+                    Caribbean Boat Charter
+                </div>
+            </a>
+        </div>
+    </div>
 
 
-<script src="assets/js/homeSlideScript.js"></script>
-<script src="assets/js/genericScript.js"></script>
-<script src="assets/js/navbarScript.js"></script>
-<nav id="navbar2">
-            <ol>
-                <li style="color:rgb(23, 123, 211)"> <a href="https://www.instagram.com/placencia_action_tours/" target = "_blank" rel="noopener"><img src="images/insta.png" alt="instagram icon" width="50" height="50"/> </a></li>
-                <li style="color:rgb(16, 154, 43)"> <a href="https://www.facebook.com/pages/category/Tour-Agency/Placencia-Action-Tours-537314880112426/" target="_blank" rel="noopener"> <img src="images/facebook.png" alt="facebook icon" width="50" height="50"/> </a></li>
-                <li style="color:rgb(16, 154, 43)"> <a href="https://supplier.viator.com/listing/SL-f65e319a-8e21-43fa-aafd-e00daa459a9b" target="_blank" rel="noopener"> <img src="images/whatsapp.png" alt="whatsapp icon" width="50" height="50"/> </a></li>
-            </ol>
-            <div style="text-align:right;color:white;padding-right:10px;font-size:12px">
-             &copy 2020 by Placencia Action Tours. All Rights Reserved.
-            </div>
-</nav>
+    <script src="assets/js/homeSlideScript.js"></script>
+    <script src="assets/js/genericScript.js"></script>
+    <script src="assets/js/navbarScript.js"></script>
+    <nav id="navbar2">
+        <ol>
+            <li style="color:rgb(23, 123, 211)"> <a href="https://www.instagram.com/placencia_action_tours/" target="_blank" rel="noopener"><img src="images/insta.png" alt="instagram icon" width="50" height="50" /> </a></li>
+            <li style="color:rgb(16, 154, 43)"> <a href="https://www.facebook.com/pages/category/Tour-Agency/Placencia-Action-Tours-537314880112426/" target="_blank" rel="noopener"> <img src="images/facebook.png" alt="facebook icon" width="50" height="50" /> </a></li>
+            <li style="color:rgb(16, 154, 43)"> <a href="https://supplier.viator.com/listing/SL-f65e319a-8e21-43fa-aafd-e00daa459a9b" target="_blank" rel="noopener"> <img src="images/whatsapp.png" alt="whatsapp icon" width="50" height="50" /> </a></li>
+        </ol>
+        <div style="text-align:right;color:white;padding-right:10px;font-size:12px">
+            &copy 2020 by Placencia Action Tours. All Rights Reserved.
+        </div>
+    </nav>
 </body>
 </html>

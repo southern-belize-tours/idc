@@ -110,6 +110,13 @@ transition: all .3s ease-in-out 0s, visibility .3s ease-in-out 0s, z-index 1s li
   background-color: none;
   text-align: center;
   border: none;
+
+
+    border-radius: 50px;
+    /* z-index: 3; */
+    border-radius: 30px;
+    overflow: hidden;
+    background-color:#eeeeee;
   }
 
 .grid-item-pic a div{
@@ -545,7 +552,9 @@ p
 
 .slideshowReel .dot {
   cursor: pointer;
-  background-color: #e3ba30;;
+  background-color: #e3ba30;
+  background-color: #ffffff;
+  opacity: .5; 
 }
 
 .smolTitle{
@@ -649,9 +658,7 @@ p
 
   .slideshowReel .active, .dot:hover {
 	/*-webkit-filter: brightness(70%);*/
-  background-color: #3B8ac4;
-  background-color: #ffffc2;
-  background-color:#1d3d75;
+     opacity: 1;
   }
 
 
