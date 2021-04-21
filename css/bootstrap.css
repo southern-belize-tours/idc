@@ -14,6 +14,10 @@
   top: 0;
 }
 
+#exploreBelize{
+    color: #3b8acf;
+}
+
 /*Bottom bar images responsive for user hovering to understand they are links*/
 #navbar2 li a:hover{  -webkit-filter: brightness(70%);}
 
@@ -32,6 +36,74 @@ transition: all .3s ease-in-out 0s, visibility .3s ease-in-out 0s, z-index 1s li
 #cruiseLaptopDropdown:hover #cruiseDropdown2.dropdown-content{visibility:visible;max-height:1000px;}
 #cruiseLaptopDropdown:hover #cruiseDropdown2.dropdown-content a{visibility:visible;}
 
+.bottomBar {
+    background-color: #3b8acf;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: auto auto;
+   justify-content: space-between; 
+    padding: 20px 40px;
+}
+
+.bottomBarImgContainer{
+    display: inline-block;
+}
+
+.bottomBarLogoText {
+    display: inline-block;
+    position: absolute;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-top: 40px;
+    color: #ffffff;
+}
+
+.bottomBarLogoText div{
+    margin: 25px 0px;
+}
+
+.bottomBarLogoText .bottomBarLogoTextBack{
+    margin-left:-10px;
+}
+
+.bottomBarLogoMenu{
+    font-size:1.1rem;
+    color:#ffffff;
+    font-weight:600;
+    margin-bottom:20px;
+}
+
+.bottomBarLogoList *{
+    display:inline-block;
+
+    vertical-align:middle;
+}
+
+.bottomBarLogoList a{
+    margin:0px;
+    margin-left:20px;
+}
+
+.floatRight{
+    float:right;
+}
+
+.bottomBarLogoGrid{
+    display:grid;
+    grid-template-columns:40% 40%;
+    grid-row-gap:20px;
+    grid-column-gap:20%;
+    margin-top:20px;
+}
+
+.bottomBarLogoGrid div{
+
+}
+
+.bottomBarLogoGrid div img{
+    float:right;
+}
+
 .slideshowReel{
   display:inline-block;
   justify-content: center;
@@ -43,11 +115,6 @@ transition: all .3s ease-in-out 0s, visibility .3s ease-in-out 0s, z-index 1s li
 .fullContainer{
   background-color: #c8e7ed;
 }
-
-/*
-.grid-item-pic:hover >grid-image{
-  -webkit-filter: brightness(70%);
-} */
 
 .grid-image{
   height: 300px;
@@ -110,19 +177,14 @@ transition: all .3s ease-in-out 0s, visibility .3s ease-in-out 0s, z-index 1s li
   background-color: none;
   text-align: center;
   border: none;
+
+
+    border-radius: 50px;
+    /* z-index: 3; */
+    border-radius: 30px;
+    overflow: hidden;
+    background-color:#eeeeee;
   }
-
-.grid-item-pic a div{
-  color: #222222;
-}
-
-.grid-item-pic div{
-  color: #222222;
-}
-
-.grid-item-pic:hover >a div{
-  color: rgb(16, 133, 39);
-}
 
 .grid-two a div .smolTitle{
   transition: .5s ease;
@@ -545,7 +607,9 @@ p
 
 .slideshowReel .dot {
   cursor: pointer;
-  background-color: #e3ba30;;
+  background-color: #e3ba30;
+  background-color: #ffffff;
+  opacity: .5; 
 }
 
 .smolTitle{
@@ -649,9 +713,7 @@ p
 
   .slideshowReel .active, .dot:hover {
 	/*-webkit-filter: brightness(70%);*/
-  background-color: #3B8ac4;
-  background-color: #ffffc2;
-  background-color:#1d3d75;
+     opacity: 1;
   }
 
 
@@ -678,9 +740,10 @@ p
 
   @media(min-width:1024px)
   {
-    .smolTitle{
-      font-size:30px;
-      margin-bottom:10px;
+    .smolTitle {
+        font-size: 40px;
+        font-weight: 700;
+        margin-bottom: 10px;
     }
 
     .slideshowReel{
@@ -1134,8 +1197,8 @@ p
   {
     .logoContainer{padding-left:18rem;}
     #exploreBelize{
-      margin-top:40px;
-      margin-bottom:20px;
+      margin-top:50px;
+      margin-bottom:30px;
     }
 
 
@@ -1150,6 +1213,11 @@ p
       padding-right: 60px;
     }
 
+    .homeTitleText{
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
     .slideshowReel{
       margin-bottom: 30px;
     }
@@ -1160,9 +1228,9 @@ p
 
     .grid-two{
       padding-top:30px;
-      padding-left:120px;
-      padding-right:120px;
-      grid-column-gap:100px;
+      padding-left:130px;
+      padding-right:130px;
+      grid-column-gap:50px;
     }
 
     .grid-two a{

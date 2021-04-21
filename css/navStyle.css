@@ -217,6 +217,13 @@
     color: #ffffff;
 }
 
+/*
+    For anything smaller than a tablet this asset should not be present.
+*/
+.desktopNavbar{
+    display:none;
+}
+
 @media(max-width:425px){
 
     .navBar{
@@ -236,5 +243,221 @@
 
     #dropdownArea.hamburger{
         max-height:81px;
+    }
+}
+
+/*
+    Anything bigger than a tablet
+
+    The navbar should not be displayed in the same fashion
+*/
+@media(min-width:769px){
+    .navBar{
+        display:none;
+    }
+
+    .desktopNavbar {
+        width: 100%;
+        max-width:100%;
+        background-color: #2284C4;
+        display:block;
+    }
+
+    .desktopNavbarTop {
+        height: 70px;
+        width: 100%;
+        display: block;
+        background-color: #FFFFFF;
+    }
+
+    .desktopNavbarBottom {
+        width: 100%;
+        display: block;
+        background-color: #2284C4;
+    }
+
+    .desktopNavbarLogoSpace {
+        position: absolute;
+        background-color: #ffffff;
+        left: 70px;
+        top: 13px;
+        border-style: solid;
+        border-width: 5px;
+        border-color: #ffffff;
+        height: 94px;
+        width: 94px;
+        border-radius: 94px;
+    }
+
+    .desktopLogo{
+        width:94px;
+        height:108px;
+        margin-top:-12px;
+    }
+
+    .desktopNavbarText {
+        font-weight: 700;
+        font-size: 45px;
+        line-height: 56px;
+        color: #fc436f;
+        padding-left: 175px;
+        padding-top:15px;
+    }
+
+    .desktopMenuContainer{
+        width:100%;
+        height:100%;
+        padding:0px;
+    }
+
+    .desktopMenuOption{
+        display:inline-block;
+        padding: 10px 0px;
+        text-align:center;
+        width:200px;
+        font-weight:400;
+        font-size:18px;
+        color:#ffffff;
+        cursor:pointer;
+        margin-left:-5px;
+    }
+    
+    .desktopMenuOption a{
+        color:#ffffff;
+    }
+
+    .desktopDropdown{
+        cursor: default;
+    }
+
+    .desktopDropdown div {
+        height: 0px;
+        display: block;
+        visibility: hidden;
+        position: absolute;
+        width: 200px;
+        margin-top: 10px;
+        transition: all .3s ease-in-out 0s, visibility .1s ease-in-out .1s, z-index 1s linear 5s;
+        background-color: #2284C4;
+        color: #ffffff;
+        text-align:left;
+    }
+
+
+    .desktopDropdown div a{
+        padding-top:5px;
+        padding-bottom:5px;
+        display:block;
+        color:#ffffff;
+        padding-left:13px;
+        font-size: 14px;
+        border-left-width:2px;
+        border-left-color:#2284C4;
+    }
+
+    .desktopDropdown:hover div{
+        z-index:50;
+        height:auto;
+        visibility:visible;
+        display:block;
+    }
+
+    .desktopDropdown:hover #desktopCruise{
+        height: 140px;
+    }
+
+    .desktopDropdown:hover #desktopLand{
+        height: 525px;
+    }
+
+    .desktopDropdown:hover div a{
+        padding-left:10px;
+        border-left-style:solid;
+    }
+
+    .desktopDropdown div a:hover{
+        border-left-color:#ffffff;
+    }
+
+    .navStripe {
+        margin-top: 7px;
+        transition: .5s ease;
+        display: block;
+        opacity: 0;
+        position: absolute;
+        width: 200px;
+        height: 3px;
+        background-color: #ffffff;
+    }
+
+    .desktopMenuContainer div:hover .navStripe {
+        opacity: 1;
+    }
+
+    .desktopMenuOption, .navStripe, .desktopDropdown div{
+        width: 110px;
+    }
+
+    .desktopDropdown div a{
+        font-size: 12px;
+    }
+
+    .desktopMenuOption {
+        font-size: 16px;
+    }
+
+    .desktopMenuContainer{
+        margin-left:100px;
+    }
+}
+
+@media(min-width:1024px)
+{
+    .desktopMenuOption, .navStripe, .desktopDropdown div {
+        width: 150px;
+    }
+
+    .desktopDropdown div a{
+        padding-top:3px;
+        padding-bottom:3px;
+        font-size: 12px; 
+    }
+
+    .desktopDropdown:hover #desktopLand{
+        height: 465px;
+    }
+
+    .desktopDropdown:hover #desktopCruise{
+        height: 125px;
+    }
+    .desktopMenuContainer {
+        margin-left: 130px;
+    }
+
+    .desktopNavbarLogoSpace{
+        left:40px;
+    }
+}
+
+@media(min-width:1550px)
+{
+    .desktopMenuOption {
+        font-weight: 400;
+        font-size: 18px;
+    }
+
+    .desktopMenuOption, .navStripe, .desktopDropdown div {
+        width: 200px;
+    }
+
+    .desktopMenuContainer {
+        margin-left: 300px;
+    }
+
+}
+
+@media(max-width:1024px){
+    .desktopNavbarLogoSpace{
+        left:20px;
     }
 }

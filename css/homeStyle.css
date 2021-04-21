@@ -1,5 +1,5 @@
 #exploreBelize{
-	margin-top: 20px;
+	margin-top: 40px;
 	padding-top: 20px;
 }
 #caveImgContainer #caveImg{
@@ -7,6 +7,10 @@
 }
 #caveImgContainer{
 	text-align:right;padding-right:40px;padding-left:40px;overflow:hidden
+}
+
+#gridImages{
+	padding-bottom:0px;
 }
 
 .aboutItem#textdiv{
@@ -20,6 +24,22 @@
 	padding-bottom:50px;
 	background-color:black;
 	min-height:55%;
+}
+
+.redText {
+	color: #F63D69;
+}
+
+.blueText{
+	color: #2284c4; 
+}
+
+.greenText {
+	color: rgb(16,133,39);
+}
+
+.yellowText {
+	color: #e3ba30;
 }
 
 .aboutItem{
@@ -43,6 +63,21 @@
 }
 
 .aboutItem .smolTitle{color:#d3ba30;}
+
+.slideshowText{
+	z-index:2;
+	font-size:4.5rem;
+	font-weight:700;
+	color:#ffffff;
+	line-height:6rem;
+	position:absolute;
+	margin-top:5%;
+	margin-left:70px;
+}
+
+.slideshowText div{
+	display:block; 
+}
 
 .textGridContainer{
 	margin: 70px;
@@ -92,14 +127,15 @@
 	text-align: center;
   }
 
-  a{
-    text-decoration:none;
-    color: rgb(23, 123, 211);
-  }
+a{
+	text-decoration:none;
+}
 
 
 	.tourTypeText{
 		text-align: justify;
+		color:black;
+		font-weight:500;
 	}
 
 
@@ -126,6 +162,10 @@
     text-align:center;
 }
 
+.topMargin{
+	margin-top:40px;
+}
+
 .homeTitle{
   margin-top: 30px;
   margin-bottom: 20px;
@@ -134,6 +174,190 @@
   text-align:center;
 }
 
+.homeTitleText{
+	font-size:3vw;
+	font-weight: 600;
+	margin-top:50px;
+	margin-bottom:20px;
+	margin-left:70px;
+}
+
+.homeTitleText div{
+	display:inline-block; 
+}
+
+.imageCardTitle{
+	font-size:1.1rem;
+	font-weight:600; 
+}
+
+.imageCardTitle, .imageCardText {
+	padding-left: 20px;
+	padding-right: 20px;
+	color: black;
+}
+
+.imageCardText{
+	text-align:justify;
+	margin-top:10px;
+	margin-bottom:10px;
+	font-size:1.05rem;
+	line-height: 1.2rem;
+	font-weight:400;
+}
+
+.viewMoreBtn {
+	padding: 8px 25px;
+	width: 100%;
+	padding: 10px 0px;
+	border-color: #f63d69;
+	border-radius: 20px;
+	background-color: #F63D69;
+	color: #ffffff;
+	font-weight: 700;
+	font-size: 18px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+} 
+
+.viewMoreBtn:hover{
+	color: #ffffff;
+	background-color: #3b8acf;
+	border-color:#3b8acf;
+}
+
+.imageCardBtnContainer {
+	display: grid;
+	padding: 0px;
+	margin: 0px;
+	grid-template-columns: auto auto;
+	grid-column-gap: 10px;
+	grid-column-gap: 15px;
+	padding: 10px;
+	padding: 10px 10px;
+	padding-bottom: 20px;
+	padding-bottom: 15px;
+}
+
+.arrowIcon {
+	padding: 0.5em;
+	position: relative;
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+	border-color: #F63D69;
+	border-style: solid;
+	border-width: 2px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	background-color: #ffffff; /*Make it pop out*/
+	transition: border-color 0.3s ease;
+}
+
+.leftBar {
+	position: absolute;
+	background-color: transparent;
+	left: 0;
+	left: 2px;
+	top: 12px;
+	top: 14px;
+	width: 20px;
+	width: 15px;
+	height: 6px;
+	display: block;
+	transform: rotate( 35deg );
+	float: right;
+	border-radius: 2px;
+}
+
+.leftBar:after {
+    content: "";
+    background-color: white;
+    width: 40px;
+    height: 10px;
+    display: block;
+    float: right;
+    border-radius: 6px 10px 10px 6px;
+    transition: all .5s cubic-bezier(.25,1.7,.35,.8);
+    z-index: -1;
+    width: 22px;
+    width: 15px;
+    height: 6px;
+    height: 4px;
+    background-color: #F63D69;
+}
+
+.rightBar {
+	position: absolute;
+	background-color: transparent;
+	top: 12px;
+	top: 14px;
+	left: 14px;
+	left: 13px;
+	width: 20px;
+	width: 15px;
+	height: 6px;
+	height: 3px;
+	display: block;
+	transform: rotate( -35deg );
+	float: right;
+	border-radius: 2px;
+}
+
+.rightBar:after
+{
+    content: "";
+    background-color: white;
+    width: 40px;
+    height: 10px;
+    display: block;
+    float: right;
+    border-radius: 10px 6px 6px 10px;
+    transition: all .5s cubic-bezier(.25,1.7,.35,.8);
+    z-index: -1;
+    width: 22px;
+    width: 15px;
+    height: 6px;
+    height: 4px;
+    background-color: #F63D69;
+}
+
+.open .leftBar:after
+{
+	transform-origin: center center;
+	transform: rotate(-70deg);
+}
+
+.open .rightBar:after {
+	transform-origin: center center;
+	transform: rotate(70deg);
+}
+
+.arrowIcon:hover {
+	border-color: #3b8acf;
+}
+
+.arrowIcon:hover > .leftBar:after, 
+.arrowIcon:hover > .rightBar:after{
+	background-color: #3b8acf; 
+}
+
+.textHidden {
+	margin-top:20px; 
+	display: block;
+	visibility: hidden;
+	height: 0px;
+	transition: all .3s ease-in-out 0s, visibility .1s ease-in-out .1s, z-index 1s linear 5s;
+}
+
+.visible{
+	visibility:visible; 
+	height:200px;
+}
 
 .bookThisButton{
 	margin-left: 70px;
@@ -238,10 +462,15 @@
 .slideshowReel{
   display:inline-block;
   justify-content: center;
-  display:flex;
+  display:flex;/*
   margin-top:10px;
-  margin-bottom:10px;
+  margin-bottom:10px;*/
+  position:absolute;
+  width:100%;
+  top:92%;
+  z-index:3; 
 }
+
 .creditCardForm .payment {
   float: left;
   font-size: 18px;
@@ -336,8 +565,36 @@
   font-size: 16px;
 }
 
+.excursionsContainer {
+	background-color: none;
+	text-align: center;
+	border: none;
+	border-radius: 50px;
+}
 
+.loadMoreToursBtn {
+	width: 40%;
+	padding: 10px 0px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	background-color: red;
+	background-color: #3b8acf;
+	font-size: 1.4rem;
+	font-weight: 600;
+	color: #ffffff;
+	border-radius: 20px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
 
+.loadMoreToursBtn:hover
+{
+	background-color:#F63D69;
+}
+
+/* Begin media queries.
+ */
 @media(max-width:1024px)
 {
 	.aboutGrid{
@@ -385,6 +642,41 @@
 		margin-top: 15px;
 	}
 
+	.imageCardBtnContainer{
+		grid-template-columns:auto;
+		grid-row-gap:15px;
+	}
+
+	.imageCardTitle{
+		padding-left:10px;
+		padding-right:10px;
+		font-size:1rem;
+	}
+
+	.imageCardText{
+		text-align:left;
+		font-size:.9rem;
+		padding-left:10px;
+		padding-right:10px;
+	}
+
+	.viewMoreBtn{
+		font-size: 16px;
+		padding:5px 0px;
+	}
+
+	.bottomBarLogoText{
+		font-size:2rem;
+	}
+
+	.bottomBar{
+		grid-template-columns:auto;
+		grid-row-gap:60px;
+	}
+
+	.slideshowText{
+		display:none;
+	}
 
 }
 
@@ -458,6 +750,40 @@
     font-size: 5vw;
   }
 
+  .homeTitleText{
+	  font-size: 1.2rem;
+  }
+
+  .imageCardText{
+	  padding-left:5px;
+	  padding-right:5px;
+	  font-size:.7rem;
+	  line-height:.9rem;
+  }
+
+  .imageCardTitle{
+	  padding-left:5px;
+	  padding-right:5px;
+	  font-size:.8rem;
+	  line-height:.9rem;
+  }
+
+  .loadMoreToursBtn{
+	  width:50%;
+	  font-size: 1rem;
+  }
+
+  .bottomBar{
+	  padding:20px;
+  }
+
+  .bottomBarLogoText{
+	  font-size:1.7rem;
+  }
+
+  .bottomBarLogoMenu{
+	  font-size:.9rem;
+  }
 
 }
 
@@ -486,27 +812,29 @@
 	}
 }
 
-
-@media(min-width:1600px)
-{
-	.aboutItem#textDiv{
-		width:45%;
+@media(min-width:1440px) {
+	.slideshowText{
+		margin-left: 130px;
 	}
-
-	.homeTitle{
-		font-size:50px;
-	}
-
-	.tourTypeText{
-		margin-top:25px;
-	}
-
-	.aboutGrid{
-		min-height:70%;padding-top:100px;
-	}
-
 }
 
-@media(min-width:1900px)
-{
+	@media(min-width:1900px) {
+	}
+
+/***************************************************************
+ * Begin classes involving javascript appending and toggling. 
+ * Ideally none of these classes should set size elements such as 
+ * height, width, padding, margin, etc. as that would best be 
+ * processed in the media queries, and if it is processed here it
+ * may overwrite media queries. 
+ ***************************************************************/
+
+/*
+ * Currently used for hiding grid-item-pics. Should make them effectively
+ * invisible. Should also give them a smooth up and down transition. 
+ */
+.hidden {
+	visibility: hidden;
+	height: 0px;
+	transition: all .3s ease-in-out 0s, visibility .1s ease-in-out .1s, z-index 1s linear 5s;
 }
