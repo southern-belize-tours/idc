@@ -128,17 +128,18 @@ transition: all .3s ease-in-out 0s, visibility .3s ease-in-out 0s, z-index 1s li
 }
 
 .grid-container {
-	display: grid;
-	padding-top: 15px;
-	padding-right: 70px;
-	padding-left: 70px;
-	padding-bottom: 70px;
-	grid-template-columns: auto auto auto;
-	grid-column-gap: 30px;
-	grid-row-gap: 30px;
-
-	justify-content: space-evenly;
-  }
+    display: grid;
+    padding-top: 15px;
+    padding-right: 70px;
+    padding-left: 70px;
+    padding-bottom: 70px;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    justify-content: space-evenly;
+    max-width: 100%;
+    overflow: hidden;
+}
 
   .grid-two{
     padding: 70px;

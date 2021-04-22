@@ -774,17 +774,20 @@ a{
   }
 
   .bottomBar{
-	  padding:20px;
+	  padding:5px; 
   }
 
   .bottomBarLogoText{
-	  font-size:1.7rem;
+    font-size: 1.3rem;
   }
 
   .bottomBarLogoMenu{
 	  font-size:.9rem;
   }
 
+  .bottomBarLogoList a{
+	  margin-left:10px;
+  }
 }
 
 @media(min-width:1024px)
