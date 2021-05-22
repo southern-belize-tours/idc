@@ -1,3 +1,10 @@
+:root {
+	--clr-red: #F63D69;
+	--clr-blue: #3b8acf;
+	--clr-black: hsl(207, 19%, 9%); 
+	--clr-white: #eeeeee;
+}
+
 #exploreBelize{
 	margin-top: 40px;
 	padding-top: 20px;
@@ -534,6 +541,138 @@ a{
 .transparent {
   opacity: 0.2;
 }
+
+.imageCard {
+	color: var(--clr-black);
+	background-image: url("../images/square/lubaantunSquare/lubaantunSquare300.jpg");
+	background-size:cover;
+	padding:10rem 0 0;
+	max-width:35ch;
+	border-radius: .75rem; 
+	overflow:hidden;
+
+	transition: transform 300ms ease; 
+	max-height:55%;
+}
+
+#nimLiCard{
+	background-image: url("../images/nimLi/nimLi1Square.png"); 
+}
+
+#spiceFarmCard{
+	background-image: url("../images/spiceFarm/spiceFarm1.jpg"); 
+}
+
+#jungleTubingCard{
+	background-image: url("../images/riverTubing/riverTubing1.jpg");
+}
+
+#waterfallsCard{
+	background-image: url("../images/waterfalls/waterfalls1.jpg");
+}
+
+#caveCard{
+	background-image: url("../images/cave/cave3.jpg");
+}
+
+#blueHoleCard {
+	background-image: url("../images/blueHole/blueHole2.jpg");
+}
+
+#snorkelCard{
+	background-image: url("../images/southwaterSnorkel/southwater1.jpg")
+}
+
+#fishingCard{
+	background-image: url("../images/southwaterSnorkel/southwater6.jpg");
+}
+
+.imageCard:hover{
+	transform: scale(1.03); 
+}
+
+.imageCard:hover .imageCardCaption::after{
+	transform: scaleX(1); 
+
+}
+
+.imageCard:hover .imageCardContent{
+	transform: translateY(0); 
+	transition-delay:500ms; 
+}
+
+.imageCardCaption {
+	position:relative;
+	color:var(--clr-white);
+	width:max-content;
+}
+
+.imageCardCaption::after{
+	content: "";
+	position: absolute; 
+	height: 3px; 
+	background: var(--clr-blue); 
+	width: calc(100% + 1.5rem); 
+	left:0px;
+	bottom:-5px;
+	left: calc(1.5rem * -1);
+	transform: scaleX(0); 
+	transform-origin: left; 
+	transition: transform 500ms ease; 
+
+}
+
+.imageCardBody{
+	text-indent:0px;
+	padding:0px;
+	margin:0px;
+	color: var(--clr-white); 
+	margin-bottom:1.5rem;
+}
+
+.imageCardBtns{
+	display:grid;
+	grid-template-columns:auto auto; 
+	grid-column-gap: 1.5rem;
+}
+
+.imageCardBtn {
+	cursor: pointer;
+	display: inline;
+	text-decoration: none;
+	color: var(--clr-white);
+	background-color: var(--clr-blue);
+	padding: .5em 1.25em;
+	font-weight: 600;
+	border-radius: .25rem;
+	transition: all 0.3s ease;
+}
+
+.imageCardBtn:hover, .imageCardBtn:focus{
+	background-color: var(--clr-red); 
+}
+
+.imageCardContent{
+	padding:1.5em;
+	background: linear-gradient(
+		hsl(0 0% 0% / 0),
+		hsl(0 0% 0% / .3) 20%, 
+	    hsl(0 0% 0% / 1) 100%
+		);
+    transform: translateY(130px); 
+	transition: transform 500ms ease; 
+}
+
+.imageCardContent > *:not(.imageCardCaption) {
+	opacity: 0; 
+	transition: opacity 500ms linear; 
+	transition-delay: 800ms; 
+}
+
+.imageCard:hover .imageCardContent > * {
+	opacity: 1;
+}
+
 @media(max-width: 650px) {
 .creditCardForm .owner,
 .creditCardForm .CVV,
@@ -591,6 +730,10 @@ a{
 .loadMoreToursBtn:hover
 {
 	background-color:#F63D69;
+}
+
+#lubaantunGridImg{
+	background-image: url("images/square/lubaantunSquare/lubaantunSquare300.png");
 }
 
 /* Begin media queries.

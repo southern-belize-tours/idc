@@ -169,7 +169,8 @@ var w = window,
     x = w.innerWidth  || e.clientWidth  || g.clientWidth,
     y = w.innerHeight || e.clientHeight || g.clientHeight;
 
-let gridImages = document.getElementById("gridImages").getElementsByClassName("grid-item-pic"); 
+let gridImages = document.getElementById("gridImages").getElementsByClassName("imageCard"); 
+console.log(gridImages); 
 let numColumns = computeGridImageColumns(); 
 hideRows(gridImages, numColumns); 
 let hidden = true; //Keeps track of if we are hiding the rows or not, allows us to avoid a computationally-extensive toggle function handler. 
